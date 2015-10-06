@@ -1,0 +1,31 @@
+/* COMMENTS */
+// Styling rules for the article comments area.
+// Comment form inputs are styled using the form fields styles located in the "_forms.scss" partial.
+.comments {
+  padding: 28px 50px;
+
+  @include query($tablet-2) {
+    padding: 28px 20px;
+  }
+
+  .comments-title {
+    margin-bottom: 22px;
+    font-size: 24px;
+    @include color($secondary-color);
+  }
+
+  .comment {
+    margin-bottom: 31px;
+    padding-left: 24px;
+    font-size: 18px;
+    @include color($primary-color);
+    @include border(left, 5px, solid, $grey-4, 0.4);
+  }
+
+  .comment-form {
+    .form_field_textfield,
+    .form_field_textarea {
+      @include bg($grey-4);
+    }
+  }
+}

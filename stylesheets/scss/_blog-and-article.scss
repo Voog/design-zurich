@@ -1,0 +1,146 @@
+/* BLOG & BLOG ARTICLE */
+.post {
+  .post-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1em;
+    @include color($white);
+    @include bg($secondary-color, 0.5);
+
+    &:hover {
+      @include bg($secondary-color, 0.8);
+    }
+  }
+
+  .post-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    @include color($secondary-color);
+
+    a {
+      @include color($secondary-color);
+
+      &:hover {
+        @include color($secondary-color, 0.8);
+      }
+    }
+  }
+
+  .post-excerpt,
+  .post-body {
+    line-height: 1.3em;
+  }
+
+  .post-excerpt {
+    margin-top: 12px;
+  }
+}
+
+.blog-page {
+  .edy-site-menu-add {
+    margin-left: 10px;
+  }
+
+  @include query($tablet-2) {
+    .edy-site-menu-add {
+      margin-left: 0;
+    }
+  }
+
+  .post {
+    margin-top: 45px;
+
+    .no-flexbox & {
+      display: table;
+    }
+
+    .flexbox & {
+      @include display(flex);
+    }
+
+    &:first-child,
+    .editmode &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    @include query($mobile-1) {
+      .no-flexbox &,
+      .flexbox & {
+        display: block;
+      }
+    }
+  }
+
+  .post-left,
+  .post-right {
+    .no-flexbox & {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+
+  .post-left {
+    display: inline-block;
+    min-width: 87px;
+    margin-left: 5px;
+    padding-right: 26px;
+
+    @include query($tablet-2) {
+      width: 91px;
+      margin-left: 0;
+    }
+
+    @include query($mobile-1) {
+      width: auto;
+    }
+  }
+
+  .post-right {
+    @include flex;
+  }
+
+  .post-date {
+    font-size: 14px;
+    @include color($secondary-color, 0.5);
+  }
+}
+
+.post-page {
+  .post {
+    .post-header {
+      text-align: center;
+    }
+
+    .post-header-inner {
+      margin-top: 4px;
+      @include color($secondary-color);
+    }
+
+    .post-title {
+      font-size: 36px;
+      line-height: 1em;
+
+      input {
+        text-align: center;
+      }
+    }
+
+    .post-content {
+      margin-top: 29px;
+    }
+
+    .post-body {
+      margin-top: 28px;
+    }
+
+    .post-excerpt,
+    .post-body {
+      .fci-editor {
+        min-height: 38px;
+      }
+    }
+  }
+}

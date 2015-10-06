@@ -1,0 +1,220 @@
+// Styling rules for the site's editable content area and its elements.
+// NB! Each editable content-area - {% content %} - should be wrapped in the element that has the "content-formatted" class.
+// NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
+.content-formatted {
+  @extend %clearfix;
+  @include hyphenate(true);
+
+  // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  pre,
+  code,
+  .edy-positionable-container-center,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block,
+  .edy-texteditor-container-wrapper-center,
+  .edy-texteditor-container-wrapper-left-block,
+  .edy-texteditor-container-wrapper-right-block {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Colors for editable content area elements with editable background.
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table {
+    .light-background & {
+      @include color($black);
+    }
+
+    .dark-background & {
+      @include color($white);
+    }
+  }
+
+  // Editable content area headings.
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+
+    @include query($mobile-1) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+
+    @include query($mobile-1) {
+      font-size: 20px;
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+
+    @include query($mobile-1) {
+      font-size: 16px;
+    }
+  }
+
+  // Editable content area links.
+  a {
+    @include color($blue-1, 1);
+
+    &:hover {
+      @include color($blue-1, 0.8);
+    }
+  }
+
+  // Sets the dynamic line-height for the text with custom font-size.
+  span[style*="font-size"] {
+    line-height: 1.7em;
+  }
+
+  // Disables hyphenation for the elements that shouldn't hyphenate.
+  pre,
+  code,
+  iframe,
+  table,
+  form {
+    @include hyphenate(false);
+  }
+
+  // Top and bottom margin for the elements that doesn't have the default margin.
+  pre,
+  .edy-positionable-container-center,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block,
+  .edy-texteditor-container-wrapper-center,
+  .edy-texteditor-container-wrapper-left-block,
+  .edy-texteditor-container-wrapper-right-block,
+  .embed-container,
+  .table-container,
+  .editmode & table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  // Code blocks and preformatted content.
+  pre,
+  code {
+    font-size: 14px;
+    @include bg($grey-5);
+    line-height: 1.2;
+
+    .front-page & {
+      @include color($black);
+    }
+  }
+
+  pre {
+    overflow: auto;
+    padding: 10px;
+
+
+    code {
+      display: inline;
+      padding: 0;
+      white-space: pre;
+      line-height: inherit;
+      background-color: transparent;
+      @include word-wrap(normal);
+    }
+  }
+
+  code {
+    display: inline-block;
+    padding: 5px;
+    @include word-wrap(break-word);
+  }
+
+  blockquote {
+    margin: 20px 40px;
+  }
+
+  // Embeddable iframe content.
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  // Image container positioning
+  .edy-positionable-container-left,
+  .edy-positionable-container-right {
+    width: 45%;
+  }
+
+  .edy-positionable-container-left,
+  .edy-texteditor-container-wrapper-left {
+    margin-right: 20px;
+  }
+
+  .edy-positionable-container-right,
+  .edy-texteditor-container-wrapper-right {
+    margin-left: 20px;
+  }
+
+  // Content area image title
+  .edy-image-container-with-title {
+    &:after {
+      display: block;
+      padding: 4px;
+      font-size: 16px;
+      line-height: 1.3em;
+      content: attr(data-title);
+    }
+  }
+
+  // Content area tables
+  // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
+  .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: collapse;
+
+    td {
+      padding: 10px;
+      @include border(top, 1px, solid, $third-color);
+      @include border(bottom, 1px, solid, $third-color);
+    }
+  }
+}

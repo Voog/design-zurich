@@ -1,0 +1,34 @@
+/* FOOTER */
+// Styling rules for the site's footer. These rules affect the entire site.
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  @include color($secondary-color, 0.75);
+
+  @include query($tablet-5) {
+    font-size: 12px;
+  }
+  @include query($mobile-1) {
+    padding: 20px 15px;
+  }
+
+  .voog-reference {
+    margin-top: 15px;
+
+    a {
+      display: inline-block;
+      padding: 7px 9px;
+      font-size: 10px;
+      line-height: 1em;
+      @include color($secondary-color, 0.75);
+      @include bg($white);
+      @include border(all,1px,solid,$black, 0.1);
+
+      &:hover {
+        @include color($secondary-color, 0.75);
+        @include border(all,1px,solid,$black, 0.75);
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+/* GENERAL */
+// Styling rules for the basic parts of the page. These rules affect the entire site.
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4em;
+  @include color($primary-color);
+
+  &.search-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include query($tablet-3) {
+    background-image: none !important;
+  }
+}
+
+// Pseudo classes to declare commonly used styling rules for different elements.
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+%stretch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+%button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: none;
+  }
+}
+
+// Styling rules for the independent elements that can be located everywhere in the DOM and always have the same look.
+.bgpicker-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.background-image,
+.background-color {
+  @extend %stretch;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+
+    img {
+      border: none;
+    }
+  }
+}

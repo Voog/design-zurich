@@ -1,0 +1,157 @@
+/* CONTENT */
+// Styling rules for the site's main content area. These rules affect the entire site.
+.content-topbar {
+  min-height: 18px;
+  @include bg($grey-4);
+
+  .two-column-page & {
+    padding-bottom: 20px;
+
+    @include query($tablet-4) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.content {
+  @extend %clearfix;
+  display: block;
+
+  &.two-columns {
+    @extend %clearfix;
+    @include bg($grey-4);
+
+    & .content-formatted {
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  .content-inner {
+    padding: 33px 50px 50px;
+    @include bg($grey-4);
+
+    @include query($tablet-2) {
+      padding: 33px 20px 50px;
+    }
+  }
+
+  .content-left,
+  .content-right {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+
+    iframe {
+      display: block;
+      height: 525px;
+    }
+  }
+
+  .content-left {
+    padding: 43px 50px;
+  }
+
+  .content-right {
+    // TODO: Maybe there's a better way to style Google Maps?
+    iframe {
+      display: block !important;
+      width: 100% !important;
+
+      @include query($tablet-4) {
+        max-height: 262px;
+      }
+    }
+  }
+
+  @include query($tablet-4) {
+    .content-left,
+    .content-right {
+      display: block;
+      width: auto;
+      float: none;
+    }
+
+    .content-left {
+      padding: 33px 20px 0;
+    }
+
+    .content-right {
+      padding: 33px 20px 50px;
+    }
+  }
+
+  .front-page & {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    @include bg($grey-4);
+
+    .background-image,
+    .background-color {
+      z-index: 0;
+    }
+
+    .background-image {
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // background-image: url('../images/front-page-bg.jpg');
+    }
+
+    .background-color {
+      // @include bg($blue-1, 0.25);
+    }
+
+    .content-inner {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 0;
+      height: 525px;
+      background: none;
+
+      @include query($mobile-1) {
+        height: 295px;
+      }
+
+      .content-body {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 40px;
+
+        @include query($tablet-5) {
+          padding: 20px;
+        }
+
+        @include query($mobile-1) {
+          padding: 78px 25px;
+        }
+
+
+        .edy-texteditor-view {
+          min-height: 43px;
+        }
+      }
+
+      .content-formatted {
+        font-size: 36px;
+        line-height: 1.16em;
+
+        .fci-editor {
+          min-height: 41px;
+        }
+
+        @include query($mobile-1) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

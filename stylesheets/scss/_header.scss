@@ -1,0 +1,105 @@
+/* HEADER */
+// Styling rules for the site's header. These rules affect the entire site.
+.header {
+  @extend %clearfix;
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  .flexbox & {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(flex-end);
+  }
+
+  @include query($mobile-1) {
+    position: static;
+    padding: 15px;
+  }
+
+  @include query($tablet-2) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.header-left,
+.header-right {
+  @include query($mobile-1) {
+    padding: 0;
+  }
+}
+
+.header-left {
+  position: relative;
+  max-width: 100%;
+  min-width: 1em;
+
+  .flexbox & {
+    @include flex(1 0 auto);
+  }
+
+  .no-flexbox & {
+    float: left;
+
+    @include query($tablet-3) {
+      float: none;
+    }
+  }
+
+  @include query($tablet-3) {
+    float: none;
+    min-width: 0;
+  }
+}
+
+.header-right {
+  text-align: right;
+  margin-left: 15px;
+
+  .no-flexbox & {
+    float: right;
+  }
+
+  // @include query($tablet-1) {
+  //   margin-left: 0;
+  // }
+
+  @include query($tablet-3) {
+    margin: 0;
+  }
+}
+
+.header-title {
+  position: relative;
+  z-index: 11;
+  font-weight: 600;
+  font-size: 24px;
+
+  @include query($tablet-3) {
+    margin-right: 40px;
+
+    .search-enabled & {
+      margin-right: 202px;
+    }
+  }
+
+  @include query($mobile-1) {
+    .search-enabled & {
+      margin-right: 65px;
+    }
+  }
+
+  &, a {
+    @include color($secondary-color);
+  }
+
+  .header-link {
+    display: inline-block;
+
+    &:hover {
+      @include color($secondary-color,.8);
+    }
+  }
+
+}
