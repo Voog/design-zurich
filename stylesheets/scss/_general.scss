@@ -68,6 +68,14 @@ body {
 .background-image,
 .background-color {
   @extend %stretch;
+  .front-page & {
+    z-index: -1;
+  }
+}
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {

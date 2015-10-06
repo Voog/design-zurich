@@ -61,6 +61,17 @@ body.search-open {
   outline: none;
 }
 
+.front-page .background-image, .front-page
+.background-color {
+  z-index: -1;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -351,6 +362,15 @@ body.search-open {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
+}
+.front-page .menu .menu-item a.menu-link {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+}
+.front-page .menu .menu-item a.menu-link.active {
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .menu-main {
@@ -1092,6 +1112,10 @@ body.search-open {
   }
 }
 
+.header-center {
+  margin: 0 auto;
+}
+
 .header-title {
   position: relative;
   z-index: 11;
@@ -1195,7 +1219,6 @@ body.search-open {
   position: relative;
   padding: 0;
   width: 100%;
-  background-color: #eeeeee;
 }
 .front-page .content .background-image,
 .front-page .content .background-color {
