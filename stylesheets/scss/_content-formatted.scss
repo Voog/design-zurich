@@ -218,3 +218,16 @@
     }
   }
 }
+
+.front-page {
+  .main-feature {
+    .content-formatted {
+      font-family: $font-serif;
+      h1 {
+        font-size: 150px;
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 /* GENERAL */
 // Styling rules for the basic parts of the page. These rules affect the entire site.
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
@@ -79,7 +80,7 @@ body {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 1400px;
   margin: 0 auto;
 
   a {
@@ -89,4 +90,9 @@ body {
       border: none;
     }
   }
+}
+
+.site-container {
+  position: relative;
+  min-height: 100vh;
 }

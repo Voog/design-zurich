@@ -17,14 +17,29 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% comment %}{% if editmode %}<button class="bgpicker-btn js-front-page-content-cover-settings" data-bg-image="{{ cover_image }}" data-bg-color="{{ cover_color }}"></button>{% endif %}{% endcomment %}
-      {% if editmode %}<button class="bgpicker-btn js-front-page-content-cover-settings" {% unless front_page_content_cover_image == '' %}data-bg-image="{{ front_page_content_cover_image }}"{% endunless %} {% unless front_page_content_cover_image_sizes == '' %}data-bg-image-sizes="{{ front_page_content_cover_image_sizes_str | escape }}"{% endunless %} {% unless front_page_content_cover_color == nil or front_page_content_cover_color == 'rgba(255,255,255,0)' %}data-bg-color="{{ front_page_content_cover_color }}"{% endunless %} {% unless front_page_content_cover_color_data == nil %}data-bg-color-data="{{ front_page_content_cover_color_data_str | escape }}"{% endunless %}></button>{% endif %}
+      <div class="main-feature">
+        {% comment %}{% if editmode %}<button class="bgpicker-btn js-front-page-content-cover-settings" data-bg-image="{{ cover_image }}" data-bg-color="{{ cover_color }}"></button>{% endif %}{% endcomment %}
+        {% if editmode %}<button class="bgpicker-btn js-front-page-content-cover-settings" {% unless front_page_content_cover_image == '' %}data-bg-image="{{ front_page_content_cover_image }}"{% endunless %} {% unless front_page_content_cover_image_sizes == '' %}data-bg-image-sizes="{{ front_page_content_cover_image_sizes_str | escape }}"{% endunless %} {% unless front_page_content_cover_color == nil or front_page_content_cover_color == 'rgba(255,255,255,0)' %}data-bg-color="{{ front_page_content_cover_color }}"{% endunless %} {% unless front_page_content_cover_color_data == nil %}data-bg-color-data="{{ front_page_content_cover_color_data_str | escape }}"{% endunless %}></button>{% endif %}
 
-      <div class="content-inner js-content-inner js-background-type {{ front_page_content_cover_type }}">
-        <section class="content-body content-formatted">{% content %}</section>
+        <div class="content-inner js-content-inner js-background-type {{ front_page_content_cover_type }}">
+          <section class="content-body content-formatted">{% content %}</section>
+        </div>
+      </div>
+      <div class="sections">
+        <div class="feature-section">
+          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</div>
+        </div>
+        <div class="feature-section">
+          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</div>
+        </div>
+        <div class="feature-section">
+          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</div>
+        </div>
+        <div class="feature-section">
+
+        </div>
       </div>
     </main>
-    {% include "footer" %}
   </div>
 </div>
 

@@ -107,7 +107,6 @@
       display: table;
       table-layout: fixed;
       width: 100%;
-      max-width: 660px;
       margin: 0 auto;
       padding: 0;
       height: 525px;
@@ -152,5 +151,15 @@
         }
       }
     }
+  }
+}
+
+.sections {
+  @extend %clearfix;
+  .feature-section {
+    width: 25%;
+    float: left;
+    min-height: 250px;
+    @include bg(#000, .5);
   }
 }

@@ -77,12 +77,12 @@
     {% assign front_page_content_cover_color = fallback_cover_color %}
   {% else %}
     {% if front_page_content_cover_color == nil %}
-      {% assign front_page_content_cover_color = 'rgba(0,102,187,0.25)' %}
+      {% assign front_page_content_cover_color = 'rgba(0,102,187,0)' %}
     {% endif %}
   {% endif %}
 
   {% if front_page_content_cover_color_data == nil %}
-    {% assign front_page_content_cover_color_data_str = '{"r": 0, "g": 102, "b": 187, "a": 0.25, "lightness": 0.34}' %}
+    {% assign front_page_content_cover_color_data_str = '{"r": 0, "g": 102, "b": 187, "a": 0, "lightness": 0.34}' %}
   {% else %}
     {% assign front_page_content_cover_color_data_str = front_page_content_cover_color_data | json %}
   {% endif %}
