@@ -25,21 +25,19 @@
           <section class="content-body content-formatted">{% content %}</section>
         </div>
       </div>
-      <div class="sections">
-        <div class="feature-section">
-          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</div>
-        </div>
-        <div class="feature-section">
-          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</div>
-        </div>
-        <div class="feature-section">
-          <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</div>
-        </div>
-        <div class="feature-section">
-
-        </div>
-      </div>
     </main>
+    <footer class="sections">
+      <div class="feature-section">
+        <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</div>
+      </div>
+      <div class="feature-section"></div>
+    </footer>
   </div>
 </div>
 

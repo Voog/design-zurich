@@ -224,9 +224,15 @@
     .content-formatted {
       font-family: $font-serif;
       h1 {
-        font-size: 150px;
+        @include rem-fallback(font-size, 150px);
         font-style: italic;
         font-weight: normal;
+        line-height: 1;
+      }
+      @include query($tablet-2) {
+        h1 {
+          @include rem-fallback(font-size, 75px);
+        }
       }
     }
   }

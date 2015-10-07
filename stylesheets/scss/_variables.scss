@@ -24,6 +24,16 @@ $grey-4: #EEEEEE;
 $grey-5: #FAFAFA;
 $yellow: #F9EC5A;
 
+// Font sizes.
+$font-size-xs: 12px;
+$font-size-small: 14px;
+$font-size-base: 16px;
+$font-size-normal: 18px;
+$font-size-large: 24px;
+$font-size-huge: 32px;
+$font-size-xl: 36px;
+$font-size-header: 70px;
+
 // Media queries
 $tablet-1: 1020px;
 $tablet-2: 960px;
@@ -42,3 +52,11 @@ $search-height-1: 30px;
 $search-height-2: 40px;
 
 $font-serif: Georgia, "Times New Roman", sans-serif;
+
+// The size of 1rem in pixels
+$baseSize: 16;
+
+// The size of a pixel in rems
+$px: 1 / $baseSize + 0rem;
+
+$rem-base: $font-size-base;

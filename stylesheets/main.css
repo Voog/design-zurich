@@ -1,13 +1,23 @@
 /* GENERAL */
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 961px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 24px;
   line-height: 1.4em;
   color: #696b6c;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 body.search-open {
   position: fixed;
@@ -76,6 +86,25 @@ body.search-open {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+.front-page .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 .container a {
   text-decoration: none;
@@ -311,8 +340,16 @@ body.search-open {
 }
 .front-page .main-feature .content-formatted h1 {
   font-size: 150px;
+  font-size: 9.375rem;
   font-style: italic;
   font-weight: normal;
+  line-height: 1;
+}
+@media screen and (max-width: 960px) {
+  .front-page .main-feature .content-formatted h1 {
+    font-size: 75px;
+    font-size: 4.6875rem;
+  }
 }
 
 /* MENUS */
@@ -1250,7 +1287,6 @@ body.search-open {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 525px;
   background: none;
 }
 @media screen and (max-width: 480px) {
@@ -1292,12 +1328,24 @@ body.search-open {
   }
 }
 
+.sections {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .sections .feature-section {
   width: 25%;
   float: left;
   min-height: 250px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  padding: 1.25rem;
+}
+.sections .feature-section:last-child {
+  background: none;
 }
 
 /* BLOG & BLOG ARTICLE */

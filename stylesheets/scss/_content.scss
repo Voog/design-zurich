@@ -109,7 +109,6 @@
       width: 100%;
       margin: 0 auto;
       padding: 0;
-      height: 525px;
       background: none;
 
       @include query($mobile-1) {
@@ -156,10 +155,18 @@
 
 .sections {
   @extend %clearfix;
+  @include flexbox;
   .feature-section {
     width: 25%;
     float: left;
     min-height: 250px;
     @include bg(#000, .5);
+    @include rem-fallback(padding, 20px);
+    &:last-child {
+      background: none;
+    }
+  }
+  .feature-content {
+
   }
 }
