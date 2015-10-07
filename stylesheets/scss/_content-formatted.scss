@@ -236,4 +236,19 @@
       }
     }
   }
+  .feature-section {
+    .content-formatted {
+      @include rem-fallback(font-size, $font-size-xl);
+      font-weight: $font-weight-thin;
+      h1 {
+        @include rem-fallback(font-size, $font-size-header);
+        font-weight: $font-weight-thin;
+        text-align: left;
+        line-height: 1;
+      }
+      b {
+        font-weight: $font-weight-normal;
+      }
+    }
+  }
 }

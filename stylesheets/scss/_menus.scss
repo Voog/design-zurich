@@ -257,7 +257,7 @@
       }
     }
   }
-  @include querymin($tablet-2) {
+  @include querymin($tablet-3) {
     .front-page & {
       .menu-item {
         .menu-link {

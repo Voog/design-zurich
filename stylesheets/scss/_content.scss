@@ -124,13 +124,12 @@
         padding: 40px;
 
         @include query($tablet-5) {
-          padding: 20px;
+          padding: 80px 20px;
         }
 
         @include query($mobile-1) {
-          padding: 78px 25px;
+          padding: 80px 20px;
         }
-
 
         .edy-texteditor-view {
           min-height: 43px;
@@ -156,17 +155,26 @@
 .sections {
   @extend %clearfix;
   @include flexbox;
+  @include flex-wrap(wrap);
   .feature-section {
+    @include flexbox;
+    @include align-items(center);
+    min-width: 200px;
     width: 25%;
     float: left;
-    min-height: 250px;
-    @include bg(#000, .5);
-    @include rem-fallback(padding, 20px);
+    min-height: 280px;
+    @include bg($black, .5);
+    padding: 40px;
+    box-sizing: border-box;
     &:last-child {
       background: none;
     }
-  }
-  .feature-content {
-
+    @include query($tablet-2) {
+      padding: 20px;
+      width: 50%;
+    }
+    @include query($tablet-5) {
+      width: 100%;
+    }
   }
 }

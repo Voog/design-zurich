@@ -7,7 +7,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.4em;
   color: #696b6c;
@@ -347,6 +347,21 @@ body.search-open {
     font-size: 4.6875rem;
   }
 }
+.front-page .feature-section .content-formatted {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 100;
+}
+.front-page .feature-section .content-formatted h1 {
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1;
+}
+.front-page .feature-section .content-formatted b {
+  font-weight: 400;
+}
 
 /* MENUS */
 .menu-btn {
@@ -579,7 +594,7 @@ body.search-open {
     padding: 0;
   }
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 841px) {
   .front-page .menu-main .menu-item .menu-link {
     display: inline-block;
     padding: 0 10px;
@@ -1306,12 +1321,12 @@ body.search-open {
 }
 @media screen and (max-width: 600px) {
   .front-page .content .content-inner .content-body {
-    padding: 20px;
+    padding: 80px 20px;
   }
 }
 @media screen and (max-width: 480px) {
   .front-page .content .content-inner .content-body {
-    padding: 78px 25px;
+    padding: 80px 20px;
   }
 }
 .front-page .content .content-inner .content-body .edy-texteditor-view {
@@ -1336,18 +1351,44 @@ body.search-open {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .sections .feature-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  min-width: 200px;
   width: 25%;
   float: left;
-  min-height: 250px;
-  background-color: #000;
+  min-height: 280px;
+  background-color: #000000;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 40px;
+  box-sizing: border-box;
 }
 .sections .feature-section:last-child {
   background: none;
+}
+@media screen and (max-width: 960px) {
+  .sections .feature-section {
+    padding: 20px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sections .feature-section {
+    width: 100%;
+  }
 }
 
 /* BLOG & BLOG ARTICLE */

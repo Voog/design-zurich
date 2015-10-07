@@ -32,7 +32,13 @@ $font-size-normal: 18px;
 $font-size-large: 24px;
 $font-size-huge: 32px;
 $font-size-xl: 36px;
-$font-size-header: 70px;
+$font-size-header: 50px;
+
+// Font weights.
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 // Media queries
 $tablet-1: 1020px;
@@ -51,6 +57,7 @@ $mobile-2: 420px;
 $search-height-1: 30px;
 $search-height-2: 40px;
 
+$font-main: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
 $font-serif: Georgia, "Times New Roman", sans-serif;
 
 // The size of 1rem in pixels
