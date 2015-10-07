@@ -33,6 +33,9 @@
       border: 0;
     }
   }
+  .front-page & {
+    padding: 20px;
+  }
 
   @include query($mobile-1) {
     right: 20px;
@@ -68,17 +71,6 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
-    .front-page & {
-      a.menu-link {
-        display: inline-block;
-        padding: 0 10px;
-        color: #fff;
-        &.active {
-          border: 2px solid #fff;
-          color: #fff;
-        }
-      }
-    }
   }
 }
 
@@ -265,6 +257,22 @@
       }
     }
   }
+  @include querymin($tablet-2) {
+    .front-page & {
+      .menu-item {
+        .menu-link {
+          display: inline-block;
+          padding: 0 10px;
+          color: $white;
+          text-transform: uppercase;
+          &.active {
+            border: 2px solid $white;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Styling rules for the site's sub menu.
@@ -339,7 +347,7 @@
 
   .flags-enabled & {
     width: 30px;
-    height: 25px;
+    height: 30px;
 
     .lang-title {
       display: none;
