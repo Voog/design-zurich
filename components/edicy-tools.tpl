@@ -5,9 +5,6 @@
       type: 'site'
     });
 
-    // Initiates language flag toggleing functionality.
-    site.toggleFlags();
-
     {% if blog_article_page %}
       var pageType = 'articlePage';
       siteData = new Edicy.CustomData({
@@ -29,18 +26,10 @@
         id: '{{ page.id }}'
       });
     {% endif %}
-    $('.js-img-dropper-area').each(function(index, imgDropperArea) {
-      var dataImgKey = $(imgDropperArea).data('img-key');
-      var imgDropper = new Edicy.ImgDropArea($(imgDropperArea), {
-        positionable: false,
-        target_width: 1280,
-        change: function(data) {
-          var saveObj = {};
-          saveObj[dataImgKey] = data;
-          pageData.set(saveObj);
-        }
-      });
-    });
+
+    // Initiates language flag toggling functionality.
+    site.toggleFlags();
+
     $('.js-bg-picker-area').each(function(index, bgPickerArea) {
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key'),
