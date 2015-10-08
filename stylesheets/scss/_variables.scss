@@ -40,6 +40,13 @@ $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
+// Line heights.
+$line-height-normal: 1;
+$line-height-small: 1.2;
+$line-height-middle: 1.4;
+$line-height-medium: 1.7;
+$line-height-double: 2;
+
 // Media queries
 $tablet-1: 1020px;
 $tablet-2: 960px;
@@ -67,3 +74,5 @@ $baseSize: 16;
 $px: 1 / $baseSize + 0rem;
 
 $rem-base: $font-size-base;
+
+$transition: 500ms;
