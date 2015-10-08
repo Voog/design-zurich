@@ -1099,6 +1099,7 @@ body.search-open {
 /* HEADER */
 .header {
   position: relative;
+  z-index: 1;
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -1285,7 +1286,6 @@ body.search-open {
   }
 }
 .front-page .content {
-  position: relative;
   padding: 0;
   width: 100%;
 }
@@ -1346,6 +1346,7 @@ body.search-open {
 }
 
 .sections {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;

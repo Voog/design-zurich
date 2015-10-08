@@ -11256,7 +11256,7 @@ MMCQ = (function() {
     return sizes[sizes.length - 1];
   };
 
-  var frontPageContentBgImageSizesContains = function(sizes, url) {
+  var bgPickerImageSizesContains = function(sizes, url) {
     for (var i = sizes.length; i--;) {
       if (url.indexOf(sizes[i].url.trim()) > -1) {
         return true;
@@ -11266,61 +11266,74 @@ MMCQ = (function() {
   };
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
-  var handlefrontPageContentLightnessClass = function() {
-    if (frontPageContentCoverCombinedLightness >= 0.5) {
-      $('.js-background-type').addClass('light-background').removeClass('dark-background');
+  var bgPickerContentLightnessClass = function(bgPickerArea) {
+    if (bgPickerCombinedLightness >= 0.5) {
+      $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
     } else {
-      $('.js-background-type').addClass('dark-background').removeClass('light-background');
+      $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
     }
   };
 
   // Header background image and color preview logic function.
-  var frontPageContentCoverBgPreview = function(data, frontPageContent) {
+  var bgPickerPreview = function(bgPickerArea, data, bgPicker) {
     // Defines the variables used in preview logic.
 
-    var frontPageContentBgImagePrevious = $('.js-bgpicker-cover-image').css('background-image'),
-        frontPageContentBgImageSuitable = data.imageSizes ? getImageByWidth(data.imageSizes, $(window).width()) : null,
-        frontPageContentBgImage = (data.image && data.image !== '') ? 'url(' + frontPageContentBgImageSuitable.url + ')' : 'none',
-        frontPageContentBgImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
-        frontPageContentBgColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
-        frontPageContentBgColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
+    var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
+        bgPickerImageSuitable = data.imageSizes ? getImageByWidth(data.imageSizes, $(window).width()) : null,
+        bgPickerImage = (data.image && data.image !== '') ? 'url(' + bgPickerImageSuitable.url + ')' : 'none',
+        bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
+        bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
+        bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
         colorExtractImage = $('<img>'),
         colorExtractCanvas = $('<canvas>'),
         colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
 
     if (colorExtractImageUrl) {
-      if (frontPageContentBgImageSizesContains(frontPageContentBgImageSizes, frontPageContentBgImagePrevious)) {
-        frontPageContentCoverCombinedLightness = getCombinedLightness(frontPageContentBg.frontPageContentBgImageColor, frontPageContentBgColor);
-        handlefrontPageContentLightnessClass();
+      if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
+        bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
+        bgPickerContentLightnessClass(bgPickerArea);
       } else {
         colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/photos/g,'/photos'));
         colorExtractImage.load(function() {
           ColorExtract.extract(colorExtractImage[0], colorExtractCanvas[0], function(data) {
-            frontPageContentBg.frontPageContentBgImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
-            frontPageContentCoverCombinedLightness = getCombinedLightness(frontPageContentBg.frontPageContentBgImageColor, frontPageContentBgColor);
-            handlefrontPageContentLightnessClass();
+            bgPicker.bgPickerImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
+            bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
+            bgPickerContentLightnessClass(bgPickerArea);
           });
         });
       };
     } else {
-      frontPageContentCoverCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', frontPageContentBgColor);
-      handlefrontPageContentLightnessClass();
+      bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
+      bgPickerContentLightnessClass(bgPickerArea);
     };
 
-    // Updates the frontPageContent background image and background color.
-    $(frontPageContent).find('.js-bgpicker-cover-image').css({'background-image' : frontPageContentBgImage});
-    $(frontPageContent).find('.js-bgpicker-cover-color').css({'background-color' : frontPageContentBgColor});
+    // Updates the bgPickerContent background image and background color.
+    $(bgPickerArea).find('.js-background-image').css({'background-image' : bgPickerImage});
+    $(bgPickerArea).find('.js-background-color').css({'background-color' : bgPickerColor});
   };
 
   // Header background image and color save logic function.
-  var frontPageContentCoverBgCommit = function(data, dataName) {
+  var bgPickerCommit = function(dataBgKey, data) {
     var commitData = $.extend(true, {}, data);
     commitData.image = data.image || '';
     commitData.imageSizes = data.imageSizes || '';
-    commitData.color = data.color || 'rgba(255,255,255,0)';
-    commitData.combinedLightness = frontPageContentCoverCombinedLightness;
-    pageData.set(dataName, commitData);
-  }
+    commitData.color = data.color || '';
+    commitData.combinedLightness = bgPickerCombinedLightness;
+
+    if (pageType === 'articlePage') {
+      if (dataBgKey == 'footer_bg') {
+        siteData.set(dataBgKey, commitData);
+      } else {
+        Edicy.articles.currentArticle.setData(dataBgKey, commitData);
+      }
+    } else {
+      if (pageType === 'contentPage' && (dataBgKey === 'footer_bg') || (dataBgKey === 'body_bg')) {
+        siteData.set(dataBgKey, commitData);
+      } else {
+        pageData.set(dataBgKey, commitData);
+      }
+    }
+  };
 
   var colorSum = function(bgColor, fgColor) {
     if (bgColor && fgColor) {
@@ -11359,7 +11372,7 @@ MMCQ = (function() {
     return color;
   };
 
-  var handleFrontPageContentCoverColorScheme = function(lightness) {
+  var bgPickerColorScheme = function(lightness) {
     if (typeof lightness != 'undefined') {
       if (lightness > 0.6) {
         $('.header-wrapper').addClass('light').removeClass('dark');
@@ -11368,6 +11381,7 @@ MMCQ = (function() {
       }
     }
   };
+
 
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
@@ -11416,9 +11430,9 @@ MMCQ = (function() {
     initArticlePage: initArticlePage,
     initCommonPage: initCommonPage,
     toggleFlags: toggleFlags,
-    frontPageContentCoverBgPreview: frontPageContentCoverBgPreview,
-    frontPageContentCoverBgCommit: frontPageContentCoverBgCommit,
-    handleFrontPageContentCoverColorScheme: handleFrontPageContentCoverColorScheme
+    bgPickerPreview: bgPickerPreview,
+    bgPickerCommit: bgPickerCommit,
+    bgPickerColorScheme: bgPickerColorScheme
   });
 
   // Initiates site wide functions.
