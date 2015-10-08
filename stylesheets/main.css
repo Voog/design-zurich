@@ -67,7 +67,7 @@ body.search-open {
   outline: none;
 }
 
-.front-page .background-image, .front-page
+.main-feature .background-image, .main-feature
 .background-color {
   z-index: -1;
 }
@@ -112,6 +112,10 @@ body.search-open {
 .site-container {
   position: relative;
   min-height: 100vh;
+}
+
+.wrap {
+  position: relative;
 }
 
 .content-formatted {
@@ -1358,6 +1362,7 @@ body.search-open {
   flex-wrap: wrap;
 }
 .sections .feature-section {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1372,8 +1377,6 @@ body.search-open {
   width: 25%;
   float: left;
   min-height: 280px;
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   box-sizing: border-box;
 }

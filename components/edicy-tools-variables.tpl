@@ -166,22 +166,20 @@
   {% endif %}
 
   {% if content_bg_1_color == nil %}
-    {% assign content_bg_1_color = "" %}
+    {% assign content_bg_1_color = "rgba(255, 255, 255, 1)" %}
   {% endif %}
 
   {% if content_bg_1_color_data == nil %}
-    {% assign content_bg_1_color_data_str = "" %}
+    {% assign content_bg_1_color_data_str = "{"r": 255, "g": 255, "b": 255, "a": 1, "lightness": 1}" %}
   {% else %}
     {% assign content_bg_1_color_data_str = content_bg_1_color_data | json %}
   {% endif %}
 
 
-  {% comment %}FRONT PAGE CONTENT AREA 2 RELATED VARIABLES.{% endcomment %}
+  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_2 = page.data.content_bg_2 %}
 
-  {% assign content_bg_2_image = content_bg_2.image %}
-  {% assign content_bg_2_image_sizes = content_bg_2.imageSizes %}
   {% assign content_bg_2_color = content_bg_2.color %}
   {% assign content_bg_2_color_data = content_bg_2.colorData %}
   {% assign content_bg_2_combined_lightness = content_bg_2.combinedLightness %}
@@ -206,27 +204,99 @@
       {% endif %}
     {% endif %}
   {% else %}
-    {% assign content_bg_2_type = "dark-background" %}
-  {% endif %}
-
-  {% if content_bg_2_image == nil %}
-    {% assign content_bg_2_image = images_path | append: "/front-header-bg_block.jpg" %}
-  {% endif %}
-
-  {% if content_bg_2_image_sizes == nil %}
-      {% assign content_bg_2_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-header-bg.jpg", "width":2560, "height":1702}, {"url":"' | append: images_path | append: '/front-header-bg_huge.jpg", "width":2048, "height":1362}, {"url":"' | append: images_path | append: '/front-header-bg_large.jpg", "width":1280, "height":851}]' %}
-  {% else %}
-    {% assign content_bg_2_image_sizes_str = content_bg_2_image_sizes | json %}
+    {% assign content_bg_2_type = "light-background" %}
   {% endif %}
 
   {% if content_bg_2_color == nil %}
-    {% assign content_bg_2_color = "" %}
+    {% assign content_bg_2_color = "rgba(233, 233, 233, 1)" %}
   {% endif %}
 
   {% if content_bg_2_color_data == nil %}
-    {% assign content_bg_2_color_data_str = "" %}
+    {% assign content_bg_2_color_data_str = "{"r": 233, "g": 233, "b": 233, "a": 1, "lightness": 1}" %}
   {% else %}
     {% assign content_bg_2_color_data_str = content_bg_2_color_data | json %}
+  {% endif %}
+
+  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
+  {% comment %}Assign variables based on page type.{% endcomment %}
+  {% assign content_bg_3 = page.data.content_bg_3 %}
+
+  {% assign content_bg_3_color = content_bg_3.color %}
+  {% assign content_bg_3_color_data = content_bg_3.colorData %}
+  {% assign content_bg_3_combined_lightness = content_bg_3.combinedLightness %}
+
+  {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
+  {% if content_bg_3 %}
+    {% if content_bg_3_combined_lightness %}
+      {% if content_bg_3_combined_lightness > 0.5 %}
+        {% assign content_bg_3_type = "light-background" %}
+      {% else %}
+        {% assign content_bg_3_type = "dark-background" %}
+      {% endif %}
+    {% else %}
+      {% if content_bg_3_color_data.a >= 0.5 %}
+        {% if content_bg_3_color_data.lightness >= 0.5 %}
+          {% assign content_bg_3_type = "light-background" %}
+        {% else %}
+          {% assign content_bg_3_type = "dark-background" %}
+        {% endif %}
+      {% else %}
+        {% assign content_bg_3_type = "light-background" %}
+      {% endif %}
+    {% endif %}
+  {% else %}
+    {% assign content_bg_3_type = "dark-background" %}
+  {% endif %}
+
+  {% if content_bg_3_color == nil %}
+    {% assign content_bg_3_color = "rgba(21, 39, 51, 1)" %}
+  {% endif %}
+
+  {% if content_bg_3_color_data == nil %}
+    {% assign content_bg_3_color_data_str = "{"r": 21, "g": 39, "b": 51, "a": 1, "lightness": 0}" %}
+  {% else %}
+    {% assign content_bg_3_color_data_str = content_bg_3_color_data | json %}
+  {% endif %}
+
+  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
+  {% comment %}Assign variables based on page type.{% endcomment %}
+  {% assign content_bg_4 = page.data.content_bg_4 %}
+
+  {% assign content_bg_4_color = content_bg_4.color %}
+  {% assign content_bg_4_color_data = content_bg_4.colorData %}
+  {% assign content_bg_4_combined_lightness = content_bg_4.combinedLightness %}
+
+  {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
+  {% if content_bg_4 %}
+    {% if content_bg_4_combined_lightness %}
+      {% if content_bg_4_combined_lightness > 0.5 %}
+        {% assign content_bg_4_type = "light-background" %}
+      {% else %}
+        {% assign content_bg_4_type = "dark-background" %}
+      {% endif %}
+    {% else %}
+      {% if content_bg_4_color_data.a >= 0.5 %}
+        {% if content_bg_4_color_data.lightness >= 0.5 %}
+          {% assign content_bg_4_type = "light-background" %}
+        {% else %}
+          {% assign content_bg_4_type = "dark-background" %}
+        {% endif %}
+      {% else %}
+        {% assign content_bg_4_type = "light-background" %}
+      {% endif %}
+    {% endif %}
+  {% else %}
+    {% assign content_bg_4_type = "light-background" %}
+  {% endif %}
+
+  {% if content_bg_4_color == nil %}
+    {% assign content_bg_4_color = "" %}
+  {% endif %}
+
+  {% if content_bg_4_color_data == nil %}
+    {% assign content_bg_4_color_data_str = "" %}
+  {% else %}
+    {% assign content_bg_4_color_data_str = content_bg_4_color_data | json %}
   {% endif %}
 
 

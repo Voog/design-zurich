@@ -105,58 +105,26 @@
 
   {% comment %}/* FRONT PAGE CONTENT AREA 1 BACKGROUND */{% endcomment %}
   {% comment %}/* Front page content area 1 background color style. */{% endcomment %}
-  .main-inner-row .background-color {
+  .feature-1 .background-color {
     background-color: {{ content_bg_1_color }};
   }
 
   {% comment %}/* FRONT PAGE CONTENT AREA 2 BACKGROUND */{% endcomment %}
-  {% comment %}/* Front content area 2 background image styles. */{% endcomment %}
-  {% if content_bg_2.imageSizes != nil %}
-    {% if content_bg_2.imageSizes == "" %}
-      .blog-feed .background-image {
-        background-image: none;
-      }
-    {% else %}
-      {% for imageSize in content_bg_2.imageSizes %}
-        {% if forloop.first %}
-          .blog-feed .background-image {
-            background-image: url("{{ imageSize.url }}");
-          }
-        {% elsif imageSize.url contains "_block" %}
-          {% break %}
-        {% else %}
-          @media screen and (max-width: {{ imageSize.width }}px) {
-            .blog-feed .background-image {
-              background-image: url("{{ imageSize.url }}");
-            }
-          }
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
-  {% else %}
-    {% assign bg_image_prefix = images_path | append: "/front-header-bg" %}
-
-    .blog-feed .background-image {
-      background-image: url("{{ bg_image_prefix }}.jpg");
-    }
-
-    @media screen and (max-width: 2048px) {
-      .blog-feed .background-image {
-        background-image: url("{{ bg_image_prefix }}_huge.jpg");
-      }
-    }
-
-    @media screen and (max-width: 1280px) {
-      .blog-feed .background-image {
-        background-image: url("{{ bg_image_prefix }}_large.jpg");
-      }
-    }
-  {% endif %}
-
   {% comment %}/* Front page content area 2 background color style. */{% endcomment %}
-  .blog-feed .background-color {
+  .feature-2 .background-color {
     background-color: {{ content_bg_2_color }};
+  }
+
+  {% comment %}/* FRONT PAGE CONTENT AREA 3 BACKGROUND */{% endcomment %}
+  {% comment %}/* Front page content area 3 background color style. */{% endcomment %}
+  .feature-3 .background-color {
+    background-color: {{ content_bg_3_color }};
+  }
+
+  {% comment %}/* FRONT PAGE CONTENT AREA 4 BACKGROUND */{% endcomment %}
+  {% comment %}/* Front page content area 4 background color style. */{% endcomment %}
+  .feature-4 .background-color {
+    background-color: {{ content_bg_4_color }};
   }
 
   {% comment %}/* SITE MAIN CONTENT AREA BACKGROUND */{% endcomment %}

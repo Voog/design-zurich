@@ -157,13 +157,13 @@
   @include flexbox;
   @include flex-wrap(wrap);
   .feature-section {
+    position: relative;
     @include flexbox;
     @include align-items(center);
     min-width: 200px;
     width: 25%;
     float: left;
     min-height: 280px;
-    @include bg($black, .5);
     padding: 40px;
     box-sizing: border-box;
     &:last-child {

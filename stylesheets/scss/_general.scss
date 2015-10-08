@@ -73,7 +73,7 @@ body {
 .background-image,
 .background-color {
   @extend %stretch;
-  .front-page & {
+  .main-feature & {
     z-index: -1;
   }
 }
@@ -106,4 +106,8 @@ body {
 .site-container {
   position: relative;
   min-height: 100vh;
+}
+
+.wrap {
+  position: relative;
 }
