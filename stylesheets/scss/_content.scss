@@ -121,7 +121,7 @@
         margin: 0 auto;
         padding: 40px;
 
-        @include query($tablet-5) {
+        @include query($tablet-2) {
           padding: 80px 20px;
         }
 
@@ -188,6 +188,9 @@
             .edy-gallery-view {
               .edy-tb {
                 margin-top: -75px!important;
+                @include query($tablet-2) {
+                  margin-top: -60px!important;
+                }
               }
             }
           }

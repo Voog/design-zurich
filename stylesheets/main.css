@@ -474,6 +474,21 @@ body.search-open {
   }
 }
 
+.front-page .dark-background .menu-btn .menu-stripe {
+  background-color: white;
+}
+.front-page .dark-background .menu-btn.open .menu-stripe, .front-page .dark-background .menu-btn:hover .menu-stripe {
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.front-page .light-background .menu-btn .menu-stripe {
+  background-color: black;
+}
+.front-page .light-background .menu-btn.open .menu-stripe, .front-page .light-background .menu-btn:hover .menu-stripe {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -810,6 +825,9 @@ body.search-open {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 10001;
 }
+.front-page .menu-lang-popover.expanded {
+  top: 35px;
+}
 .editmode .menu-lang-popover.expanded {
   padding-bottom: 0;
 }
@@ -857,6 +875,10 @@ body.search-open {
 .menu-lang .menu-item .menu-link:before, .menu-lang .menu-item .menu-link:after {
   top: 4px;
   right: 11px;
+}
+.menu-lang .edit-btn {
+  padding: 5px 10px 4px 0;
+  text-align: right;
 }
 .menu-lang .edit-btn .edy-menu-langadd {
   margin: 7px 20px;
@@ -1400,7 +1422,7 @@ body.search-open {
   margin: 0 auto;
   padding: 40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .front-page .content .content-inner .content-body {
     padding: 80px 20px;
   }
@@ -1466,6 +1488,11 @@ body.search-open {
 }
 .editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-view .edy-tb {
   margin-top: -75px !important;
+}
+@media screen and (max-width: 960px) {
+  .editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-view .edy-tb {
+    margin-top: -60px !important;
+  }
 }
 @media screen and (max-width: 960px) {
   .sections .feature-section {

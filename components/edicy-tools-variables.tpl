@@ -176,7 +176,7 @@
   {% endif %}
 
 
-  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
+  {% comment %}FRONT PAGE CONTENT AREA 2 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_2 = page.data.content_bg_2 %}
 
@@ -217,7 +217,7 @@
     {% assign content_bg_2_color_data_str = content_bg_2_color_data | json %}
   {% endif %}
 
-  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
+  {% comment %}FRONT PAGE CONTENT AREA 3 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_3 = page.data.content_bg_3 %}
 
@@ -258,7 +258,7 @@
     {% assign content_bg_3_color_data_str = content_bg_3_color_data | json %}
   {% endif %}
 
-  {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
+  {% comment %}FRONT PAGE CONTENT AREA 4 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_4 = page.data.content_bg_4 %}
 

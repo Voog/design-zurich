@@ -27,7 +27,7 @@
       </main>
 
       <footer class="sections">
-        <div class="feature-section feature-1 js-bg-picker-area">
+        <div class="feature-section js-bg-picker-area feature-1">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_1_image }}" data-bg-image-sizes="{{ content_bg_1_image_sizes_str | escape }}" data-bg-color="{{ content_bg_1_color }}" data-bg-color-data="{{ content_bg_1_color_data_str | escape }}"></button>{% endif %}
@@ -36,7 +36,7 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
           </div>
         </div>
-        <div class="feature-section feature-2 js-bg-picker-area">
+        <div class="feature-section js-bg-picker-area feature-2">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_2_image }}" data-bg-image-sizes="{{ content_bg_2_image_sizes_str | escape }}" data-bg-color="{{ content_bg_2_color }}" data-bg-color-data="{{ content_bg_2_color_data_str | escape }}"></button>{% endif %}
@@ -45,7 +45,7 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</section>
           </div>
         </div>
-        <div class="feature-section feature-3 js-bg-picker-area">
+        <div class="feature-section js-bg-picker-area feature-3">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_3" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_3_image }}" data-bg-image-sizes="{{ content_bg_3_image_sizes_str | escape }}" data-bg-color="{{ content_bg_3_color }}" data-bg-color-data="{{ content_bg_3_color_data_str | escape }}"></button>{% endif %}
@@ -54,7 +54,7 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</section>
           </div>
         </div>
-        <div class="feature-section feature-4 js-bg-picker-area">
+        <div class="feature-section js-bg-picker-area feature-4">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_4" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_4_image }}" data-bg-image-sizes="{{ content_bg_4_image_sizes_str | escape }}" data-bg-color="{{ content_bg_4_color }}" data-bg-color-data="{{ content_bg_4_color_data_str | escape }}"></button>{% endif %}
