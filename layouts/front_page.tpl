@@ -14,7 +14,7 @@
     <div class="container">
       {% include "header" %}
 
-      <main class="content js-site-header js-bg-picker-area" role="main">
+      <main class="content js-bg-picker-area js-site-header" role="main">
         <div class="main-feature js-background-type {{ header_bg_type }}" data-blog-bg-type="{{ header_bg_type }}" data-article-bg-type="{{ article_header_bg_type }}">
           <div class="background-image stretch js-background-image"></div>
           <div class="background-color stretch js-background-color"></div>

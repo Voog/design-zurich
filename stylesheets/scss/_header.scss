@@ -1,6 +1,6 @@
 /* HEADER */
 // Styling rules for the site's header. These rules affect the entire site.
-.header {
+.header-container {
   @extend %clearfix;
   position: relative;
   z-index: 1;

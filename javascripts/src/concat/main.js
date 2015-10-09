@@ -167,10 +167,16 @@
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
   var bgPickerContentLightnessClass = function(bgPickerArea) {
+    var splitBgPicker = bgPickerArea.context.className.split(/[ ]+/).pop();
+    var spotBgPicker = '.' + splitBgPicker;
+
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+      $(spotBgPicker).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      $(spotBgPicker).find('.js-background-type').addClass('dark-background').removeClass('light-background');
     }
   };
 
