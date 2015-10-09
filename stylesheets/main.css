@@ -651,15 +651,37 @@ body.search-open {
   }
 }
 @media screen and (min-width: 841px) {
-  .front-page .menu-main .menu-item .menu-link {
+  .front-page .menu-main .menu .menu-item .menu-link {
     display: inline-block;
     padding: 0 10px;
-    color: #FFFFFF;
     text-transform: uppercase;
   }
-  .front-page .menu-main .menu-item .menu-link.active {
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+  .front-page .menu-main .menu .menu-item .menu-link,
+  .front-page .menu-main .menu .menu-item .menu-link .dark-background {
+    color: white;
+    border: 2px solid transparent;
+  }
+  .front-page .menu-main .menu .menu-item .menu-link.active, .dark-background .front-page .menu-main .menu .menu-item .menu-link {
+    border: 2px solid #fff;
+  }
+  .light-background .front-page .menu-main .menu .menu-item .menu-link {
+    border: 2px solid #222;
+    color: #222222;
+  }
+  .front-page .menu-main .menu .menu-item .menu-link:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+  }
+  .front-page .menu-main .menu .menu-item .menu-link:hover, .dark-background .front-page .menu-main .menu .menu-item .menu-link:hover {
+    border: 2px solid #fff;
+    background-color: white;
+    color: black;
+  }
+  .light-background .front-page .menu-main .menu .menu-item .menu-link:hover {
+    border: 2px solid #222222;
+    background-color: #222222;
+    color: white;
   }
 }
 
@@ -723,7 +745,7 @@ body.search-open {
 }
 .flags-enabled .menu-lang-btn {
   width: 30px;
-  height: 30px;
+  height: 27px;
 }
 .flags-enabled .menu-lang-btn .lang-title {
   display: none;
@@ -1437,6 +1459,9 @@ body.search-open {
 }
 .editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-area {
   margin: -40px -40px 0 -40px;
+}
+.editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-view .edy-tb {
+  margin-top: -75px !important;
 }
 @media screen and (max-width: 960px) {
   .sections .feature-section {
@@ -2310,9 +2335,9 @@ body.search-open {
   padding: 20px;
 }
 .front-page footer .voog-reference a {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 12px;
 }
 .front-page footer .voog-reference svg {
-  fill: #fff;
+  fill: #FFFFFF;
 }

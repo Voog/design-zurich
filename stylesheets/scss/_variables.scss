@@ -22,9 +22,12 @@ $grey-2: #CCCCCC;
 $grey-3: #333333;
 $grey-4: #EEEEEE;
 $grey-5: #FAFAFA;
-$yellow: #F9EC5A;
 
-// Font sizes.
+// Font type.
+$font-main: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
+$font-serif: Georgia, "Times New Roman", sans-serif;
+
+// Font sizes
 $font-size-xs: 12px;
 $font-size-small: 14px;
 $font-size-base: 16px;
@@ -34,13 +37,13 @@ $font-size-huge: 32px;
 $font-size-xl: 36px;
 $font-size-header: 50px;
 
-// Font weights.
+// Font weights
 $font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
-// Line heights.
+// Line heights
 $line-height-normal: 1;
 $line-height-small: 1.2;
 $line-height-middle: 1.4;
@@ -58,21 +61,13 @@ $mobile-1: 480px;
 $mobile-2: 420px;
 
 // Reusable values
-// Define the reusable variables here.
-// For example the width of several different elements, that allways have to be with the same height:
-// $box-width: 400px;
 $search-height-1: 30px;
 $search-height-2: 40px;
 
-$font-main: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
-$font-serif: Georgia, "Times New Roman", sans-serif;
-
-// The size of 1rem in pixels
-$baseSize: 16;
-
-// The size of a pixel in rems
-$px: 1 / $baseSize + 0rem;
-
+// REM specific values
+$baseSize: 16; // The size of 1rem in pixels
+$px: 1 / $baseSize + 0rem; // The size of a pixel in rems
 $rem-base: $font-size-base;
 
+// Transition values
 $transition: 500ms;
