@@ -257,43 +257,62 @@
       }
     }
   }
-  @include querymin($tablet-3) {
-    .front-page & {
+}
+
+@include querymin($tablet-3) {
+  .front-page {
+    .menu-main {
       .menu {
         .menu-item {
           .menu-link {
             display: inline-block;
             padding: 0 10px;
             text-transform: uppercase;
-
-            &,
-            .dark-background {
-              @include color($white, 1);
-              border: 2px solid transparent;
-            }
-            &.active,
-            .dark-background & {
-              border: 2px solid #fff;
-            }
-
-            .light-background & {
-              border: 2px solid #222;
-              @include color(#222222);
-            }
+            border: 2px solid transparent;
 
             &:hover {
               @include transition($transition);
+            }
+            &.untranslated {
+              opacity: .5;
+            }
+          }
+        }
+      }
+    }
+    .dark-background {
+      .menu-main {
+        .menu {
+          .menu-item {
+            .menu-link {
+              @include color($white, 1);
 
-              &,
-              .dark-background & {
-                border: 2px solid #fff;
-                @include bg(#fff, 1);
-                @include color(#000, 1);
+              &.active {
+                border: 2px solid $white;
               }
+              &:hover {
+                border: 2px solid $white;
+                @include bg($white, 1);
+                @include color($black, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+    .light-background {
+      .menu-main {
+        .menu {
+          .menu-item {
+            .menu-link {
+              @include color($black, 1);
 
-              .light-background & {
-                border: 2px solid #222222;
-                @include bg(#222222);
+              &.active {
+                border: 2px solid $black;
+              }
+              &:hover {
+                border: 2px solid $black;
+                @include bg($black, 1);
                 @include color($white, 1);
               }
             }

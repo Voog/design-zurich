@@ -1,4 +1,4 @@
-<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %}">
+<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %} {{ header_bg_type }}">
 
   <div class="{% unless front_page %}header-left{% endunless %} js-header-left">
     {% unless front_page %}
