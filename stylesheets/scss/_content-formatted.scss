@@ -238,27 +238,27 @@
     }
 
     .dark-background & {
-      border: 2px solid #fff;
+      border: 2px solid $white;
       @include color($white, 1);
     }
 
     .light-background & {
-      border: 2px solid #222;
-      @include color(#222222);
+      border: 2px solid $black;
+      @include color($black, 1);
     }
 
     &:hover {
       @include transition($transition);
 
       .dark-background & {
-        border: 2px solid #fff;
-        @include bg(#fff, 1);
-        @include color(#000, .71);
+        border: 2px solid $white;
+        @include bg($white, 1);
+        @include color($black, .71);
       }
 
       .light-background & {
-        border: 2px solid #222222;
-        @include bg(#222222);
+        border: 2px solid $black;
+        @include bg($black);
         @include color($white, 1);
       }
     }

@@ -62,10 +62,6 @@
     float: right;
   }
 
-  // @include query($tablet-1) {
-  //   margin-left: 0;
-  // }
-
   @include query($tablet-3) {
     margin: 0;
   }

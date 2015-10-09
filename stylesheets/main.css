@@ -101,7 +101,7 @@ body.search-open {
   -moz-justify-content: space-between;
   justify-content: space-between;
   min-height: 100vh;
-  max-width: 1400px;
+  max-width: 1920px;
 }
 .container a {
   text-decoration: none;
@@ -362,12 +362,12 @@ body.search-open {
   margin: 30px 0;
 }
 .dark-background .content-formatted .custom-btn {
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   color: white;
 }
 .light-background .content-formatted .custom-btn {
-  border: 2px solid #222;
-  color: #222222;
+  border: 2px solid #000000;
+  color: black;
 }
 .content-formatted .custom-btn:hover {
   -webkit-transition: 500ms;
@@ -375,14 +375,14 @@ body.search-open {
   transition: 500ms;
 }
 .dark-background .content-formatted .custom-btn:hover {
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   background-color: white;
-  color: #000;
+  color: #000000;
   color: rgba(0, 0, 0, 0.71);
 }
 .light-background .content-formatted .custom-btn:hover {
-  border: 2px solid #222222;
-  background-color: #222222;
+  border: 2px solid #000000;
+  background-color: black;
   color: white;
 }
 
@@ -1466,52 +1466,15 @@ body.search-open {
   width: 25%;
   float: left;
   min-height: 280px;
-  padding: 40px;
   box-sizing: border-box;
 }
 .sections .feature-section:last-child {
   background: none;
 }
-.sections .feature-section .edy-gallery-area,
-.sections .feature-section .edys-gallery-area {
-  margin: 0 -40px 0 -40px;
-}
-.sections .feature-section .edy-gallery-area:first-child,
-.sections .feature-section .edys-gallery-area:first-child {
-  margin: -40px -40px 0 -40px;
-}
-.editmode .sections .feature-section .edys-gallery-area {
-  margin: 0;
-}
-.editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-area {
-  margin: -40px -40px 0 -40px;
-}
-.editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-view .edy-tb {
-  margin-top: -75px !important;
-}
-@media screen and (max-width: 960px) {
-  .editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-view .edy-tb {
-    margin-top: -60px !important;
-  }
-}
 @media screen and (max-width: 960px) {
   .sections .feature-section {
     padding: 20px;
     width: 50%;
-  }
-  .sections .feature-section .edy-gallery-area,
-  .sections .feature-section .edys-gallery-area {
-    margin: 0 -20px 0 -20px;
-  }
-  .sections .feature-section .edy-gallery-area:first-child,
-  .sections .feature-section .edys-gallery-area:first-child {
-    margin: -20px -20px 0 -20px;
-  }
-  .editmode .sections .feature-section .edys-gallery-area {
-    margin: 0;
-  }
-  .editmode .sections .feature-section .edy-content-elements > div:first-child .edy-gallery-area {
-    margin: -20px -20px 0 -20px;
   }
 }
 @media screen and (max-width: 600px) {
