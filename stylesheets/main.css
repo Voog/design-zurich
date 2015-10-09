@@ -1462,6 +1462,7 @@ body.search-open {
 }
 .sections .feature-section {
   position: relative;
+  transition: 500ms;
   min-width: 200px;
   width: 25%;
   float: left;
@@ -1471,10 +1472,17 @@ body.search-open {
 .sections .feature-section:last-child {
   background: none;
 }
+.sections .feature-section.section-wide {
+  padding: 40px;
+  transition: 500ms;
+}
 @media screen and (max-width: 960px) {
   .sections .feature-section {
-    padding: 20px;
     width: 50%;
+  }
+  .sections .feature-section.section-wide {
+    padding: 20px;
+    transition: 500ms;
   }
 }
 @media screen and (max-width: 600px) {

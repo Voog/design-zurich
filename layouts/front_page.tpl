@@ -27,37 +27,49 @@
       </main>
 
       <footer class="sections">
-        <div class="feature-section js-bg-picker-area feature-1">
+        <div class="feature-section {{ feature_1_wide }} js-bg-picker-area feature-1" data-section-name="feature_1">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
-          {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_1_image }}" data-bg-image-sizes="{{ content_bg_1_image_sizes_str | escape }}" data-bg-color="{{ content_bg_1_color }}" data-bg-color-data="{{ content_bg_1_color_data_str | escape }}"></button>{% endif %}
+          {% if editmode %}
+            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_1_image }}" data-bg-image-sizes="{{ content_bg_1_image_sizes_str | escape }}" data-bg-color="{{ content_bg_1_color }}" data-bg-color-data="{{ content_bg_1_color_data_str | escape }}"></button>
+            <button class="voog-padding-switcher" type="button" name="button"></button>
+          {% endif %}
 
           <div class="wrap js-background-type {{ content_bg_1_type }}">
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
           </div>
         </div>
-        <div class="feature-section js-bg-picker-area feature-2">
+        <div class="feature-section {{ feature_2_wide }} js-bg-picker-area feature-2" data-section-name="feature_2">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
-          {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_2_image }}" data-bg-image-sizes="{{ content_bg_2_image_sizes_str | escape }}" data-bg-color="{{ content_bg_2_color }}" data-bg-color-data="{{ content_bg_2_color_data_str | escape }}"></button>{% endif %}
+          {% if editmode %}
+            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_2_image }}" data-bg-image-sizes="{{ content_bg_2_image_sizes_str | escape }}" data-bg-color="{{ content_bg_2_color }}" data-bg-color-data="{{ content_bg_2_color_data_str | escape }}"></button>
+            <button class="voog-padding-switcher" type="button" name="button"></button>
+          {% endif %}
 
           <div class="wrap js-background-type {{ content_bg_2_type }}">
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</section>
           </div>
         </div>
-        <div class="feature-section js-bg-picker-area feature-3">
+        <div class="feature-section {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
-          {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_3" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_3_image }}" data-bg-image-sizes="{{ content_bg_3_image_sizes_str | escape }}" data-bg-color="{{ content_bg_3_color }}" data-bg-color-data="{{ content_bg_3_color_data_str | escape }}"></button>{% endif %}
+          {% if editmode %}
+            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_3" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_3_image }}" data-bg-image-sizes="{{ content_bg_3_image_sizes_str | escape }}" data-bg-color="{{ content_bg_3_color }}" data-bg-color-data="{{ content_bg_3_color_data_str | escape }}"></button>
+            <button class="voog-padding-switcher" type="button" name="button"></button>
+          {% endif %}
 
           <div class="wrap js-background-type {{ content_bg_3_type }}">
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</section>
           </div>
         </div>
-        <div class="feature-section js-bg-picker-area feature-4">
+        <div class="feature-section js-bg-picker-area feature-4" data-section-name="feature_4">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
-          {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_4" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_4_image }}" data-bg-image-sizes="{{ content_bg_4_image_sizes_str | escape }}" data-bg-color="{{ content_bg_4_color }}" data-bg-color-data="{{ content_bg_4_color_data_str | escape }}"></button>{% endif %}
+          {% if editmode %}
+            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_4" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_4_image }}" data-bg-image-sizes="{{ content_bg_4_image_sizes_str | escape }}" data-bg-color="{{ content_bg_4_color }}" data-bg-color-data="{{ content_bg_4_color_data_str | escape }}"></button>
+            <button class="voog-padding-switcher" type="button" name="button"></button>
+          {% endif %}
 
           {% if site.branding.enabled %}
             <div class="js-background-type {{ content_bg_4_type }}">

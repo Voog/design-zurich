@@ -6,6 +6,23 @@
     {% assign flags_state = site.data.flags_state %}
   {% endif %}
 
+  {% assign feature_1 = site.data.feature_1 %}
+  {% if feature_1 == true %}
+    {% assign feature_1_wide = "section-wide" %}
+  {% endif %}
+  {% assign feature_2 = site.data.feature_2 %}
+  {% if feature_2 == true %}
+    {% assign feature_2_wide = "section-wide" %}
+  {% endif %}
+  {% assign feature_3 = site.data.feature_3 %}
+  {% if feature_3 == true %}
+    {% assign feature_3_wide = "section-wide" %}
+  {% endif %}
+  {% assign feature_4 = site.data.feature_4 %}
+  {% if feature_4 == true %}
+    {% assign feature_4_wide = "section-wide" %}
+  {% endif %}
+
   {% comment %}SITE HEADER RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign header_bg = page.data.header_bg %}

@@ -30,6 +30,8 @@
     // Initiates language flag toggling functionality.
     site.toggleFlags();
 
+    site.togglePadding();
+
     $('.js-bg-picker-area').each(function(index, bgPickerArea) {
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key'),

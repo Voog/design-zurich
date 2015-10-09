@@ -133,6 +133,28 @@
     });
   };
 
+  var togglePadding = function() {
+    $('.voog-padding-switcher').on('click', function(event) {
+      event.stopPropagation();
+      var sectionTarget = $(this).closest('.feature-section');
+      var sectionId = sectionTarget.attr('data-section-name');
+      console.log(sectionId);
+      console.log('wide');
+
+      $(sectionTarget).toggleClass('section-wide');
+
+      if ($(this).closest(sectionTarget).hasClass('section-wide')) {
+        var sectionWideBool = true;
+      } else {
+        var sectionWideBool = false;
+      }
+
+      siteData.set(sectionId, sectionWideBool);
+
+      $(this).toggleClass('js-section-wide');
+    });
+  };
+
   var bindFallbackHeaderLeftWidthCalculation = function() {
     var headerWidth = $('.js-header').width(),
         headerRight = $('.js-header-right'),
@@ -336,6 +358,7 @@
     initArticlePage: initArticlePage,
     initCommonPage: initCommonPage,
     toggleFlags: toggleFlags,
+    togglePadding: togglePadding,
     bgPickerPreview: bgPickerPreview,
     bgPickerCommit: bgPickerCommit,
     bgPickerColorScheme: bgPickerColorScheme
