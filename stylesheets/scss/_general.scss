@@ -89,10 +89,15 @@ body {
   margin: 0 auto;
   .front-page & {
     @include flexbox;
+    @include flex(1);
     @include flex-direction(column);
     @include justify-content(space-between);
     min-height: 100vh;
     max-width: $site-width-wide;
+  }
+
+  .no-flexbox .front-page & {
+    display: table;
   }
 
   a {
@@ -107,6 +112,7 @@ body {
 .site-container {
   position: relative;
   min-height: 100vh;
+  @include flexbox;
 }
 
 .wrap {

@@ -310,6 +310,17 @@
     }
   };
 
+  // No flexbox fallbacks.
+  var noFlexSectionEqualHeight = function() {
+    var parentSectionHeight = $('.sections').height();
+    $('.feature-section').outerHeight(parentSectionHeight);
+  };
+
+  var noFlexMainHeight = function() {
+    var vpHeight = $(window).height(),
+        calcHeight = vpHeight + $('header').height() - $('footer').height();
+    $('main.content').height(calcHeight);
+  };
 
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
@@ -349,6 +360,18 @@
     if (!Modernizr.flexbox && editmode) {
       bindFallbackHeaderLeftWidthCalculation();
     };
+
+    if (!Modernizr.flexbox && !Modernizr.flexwrap) {
+      $('html').addClass('no-flexbox');
+    }
+
+    if ($('html').hasClass('no-flexbox')) {
+      noFlexSectionEqualHeight();
+
+      if ($('body').hasClass('front-page')) {
+        noFlexMainHeight();
+      }
+    }
   };
 
   // Enables the usage of the initiations outside this file.

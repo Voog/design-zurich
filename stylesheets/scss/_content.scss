@@ -150,9 +150,13 @@
   @extend %clearfix;
   @include flexbox;
   @include flex-wrap(wrap);
+  .no-flexbox & {
+    display: table-footer-group;
+  }
   .feature-section {
     position: relative;
     transition: 500ms;
+    @extend %clearfix;
     // @include flexbox;
     // @include align-items(center);
     min-width: 200px;

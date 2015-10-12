@@ -36,11 +36,11 @@
       background-image: url("{{ bg_image_prefix }}.jpg");
     }
 
-    /*@media screen and (max-width: 2048px) {
+    @media screen and (max-width: 2048px) {
       .main-feature .background-image {
         background-image: url("{{ bg_image_prefix }}_huge.jpg");
       }
-    }*/
+    }
 
     @media screen and (max-width: 1280px) {
       .main-feature .background-image {

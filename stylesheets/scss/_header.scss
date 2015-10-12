@@ -13,6 +13,17 @@
     @include justify-content(flex-end);
   }
 
+  .flexbox .front-page & {
+    @include justify-content(center);
+  }
+
+  .no-flexbox .front-page & {
+    text-align: center;
+    .js-header-right {
+      margin: 0 auto;
+    }
+  }
+
   @include query($mobile-1) {
     position: static;
     padding: 15px;
