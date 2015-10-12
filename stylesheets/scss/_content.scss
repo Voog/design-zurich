@@ -157,8 +157,6 @@
     position: relative;
     transition: 500ms;
     @extend %clearfix;
-    // @include flexbox;
-    // @include align-items(center);
     min-width: 200px;
     width: 25%;
     float: left;
@@ -171,6 +169,8 @@
     &.section-wide {
       padding: 40px;
       transition: 500ms;
+      @include flexbox;
+      @include align-items(center);
     }
     // .edy-gallery-area,
     // .edys-gallery-area {
@@ -234,4 +234,8 @@
       width: 100%;
     }
   }
+}
+
+.bottom-separation {
+  padding-bottom: 40px;
 }
