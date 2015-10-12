@@ -65,9 +65,9 @@
 
   {% if header_bg_image_sizes == nil %}
     {% if front_page %}
-      {% assign header_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-page-bg.jpg", "width":2560, "height":1702}, {"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "width":2048, "height":1362}, {"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "width":1280, "height":851}]' %}
+      {% assign header_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-page-bg.jpg", "width":2800, "height":1866}, {"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "width":2048, "height":1365}, {"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "width":1280, "height":853}]' %}
     {% else %}
-      {% assign header_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/page-page-bg.jpg", "width":2560, "height":1707}, {"url":"' | append: images_path | append: '/page-page-bg_huge.jpg", "width":2048, "height":1366}, {"url":"' | append: images_path | append: '/page-page-bg_large.jpg", "width":1280, "height":853}]' %}
+      {% assign header_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/page-page-bg.jpg", "width":2800, "height":1866}, {"url":"' | append: images_path | append: '/page-page-bg_huge.jpg", "width":2048, "height":1365}, {"url":"' | append: images_path | append: '/page-page-bg_large.jpg", "width":1280, "height":853}]' %}
     {% endif %}
   {% else %}
     {% assign header_bg_image_sizes_str = header_bg_image_sizes | json %}

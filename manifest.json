@@ -185,6 +185,12 @@
     },
     {
       "content_type": "image/jpeg",
+      "file": "images/front-page-bg_huge.jpg",
+      "kind": "images",
+      "filename": "front-page-bg_huge.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
       "file": "images/front-page-bg_large.jpg",
       "kind": "images",
       "filename": "front-page-bg_large.jpg"
