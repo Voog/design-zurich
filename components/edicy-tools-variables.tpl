@@ -6,20 +6,31 @@
     {% assign flags_state = site.data.flags_state %}
   {% endif %}
 
-  {% assign feature_1 = site.data.feature_1 %}
-  {% if feature_1 == true %}
+  {% assign feature_1 = page.data.feature_1 %}
+  {% if feature_1 == false %}
+    {% assign feature_1_wide = "" %}
+  {% else %}
     {% assign feature_1_wide = "section-wide" %}
   {% endif %}
-  {% assign feature_2 = site.data.feature_2 %}
-  {% if feature_2 == true %}
+  
+  {% assign feature_2 = page.data.feature_2 %}
+  {% if feature_2 == false %}
+    {% assign feature_2_wide = "" %}
+  {% else %}
     {% assign feature_2_wide = "section-wide" %}
   {% endif %}
-  {% assign feature_3 = site.data.feature_3 %}
-  {% if feature_3 == true %}
+
+  {% assign feature_3 = page.data.feature_3 %}
+  {% if feature_3 == false %}
+    {% assign feature_3_wide = "" %}
+  {% else %}
     {% assign feature_3_wide = "section-wide" %}
   {% endif %}
-  {% assign feature_4 = site.data.feature_4 %}
-  {% if feature_4 == true %}
+
+  {% assign feature_4 = page.data.feature_4 %}
+  {% if feature_4 == false %}
+    {% assign feature_4_wide = "" %}
+  {% else %}
     {% assign feature_4_wide = "section-wide" %}
   {% endif %}
 

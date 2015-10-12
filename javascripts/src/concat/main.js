@@ -149,7 +149,7 @@
         var sectionWideBool = false;
       }
 
-      siteData.set(sectionId, sectionWideBool);
+      pageData.set(sectionId, sectionWideBool);
 
       $(this).toggleClass('js-section-wide');
     });
