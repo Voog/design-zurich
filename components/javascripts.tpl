@@ -1,5 +1,5 @@
 {% comment %}SITE WIDE JAVASCRIPTS{% endcomment %}
-<script src="{{ javascripts_path }}/application.min.js?4"></script>
+<script src="{{ javascripts_path }}/application.min.js"></script>
 {% sitejs_include %}
 
 {% if site.search.enabled %}

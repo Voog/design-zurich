@@ -65,6 +65,13 @@
   z-index: 9;
 
   svg {
-    @include fill(blue, .5);
+    @include fill(#1479CF, .3);
+  }
+
+  &:hover {
+
+    svg {
+      @include fill(#1479CF, 1);
+    }
   }
 }

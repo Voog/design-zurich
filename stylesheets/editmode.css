@@ -55,6 +55,9 @@
   border: none;
 }
 .voog-padding-switcher svg {
-  fill: blue;
-  fill: rgba(0, 0, 255, 0.5);
+  fill: #1479CF;
+  fill: rgba(20, 121, 207, 0.3);
+}
+.voog-padding-switcher:hover svg {
+  fill: #1479cf;
 }

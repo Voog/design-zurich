@@ -138,8 +138,6 @@
       event.stopPropagation();
       var sectionTarget = $(this).closest('.feature-section');
       var sectionId = sectionTarget.attr('data-section-name');
-      console.log(sectionId);
-      console.log('wide');
 
       $(sectionTarget).toggleClass('section-wide');
 
