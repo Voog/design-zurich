@@ -11233,6 +11233,7 @@ MMCQ = (function() {
     });
   };
 
+  // Adds/removes padding class to front page content areas when toggled.
   var togglePadding = function() {
     $('.voog-padding-switcher').on('click', function(event) {
       event.stopPropagation();

@@ -1,6 +1,6 @@
 /* FORMS */
 .content-formatted {
-  
+
   form {
     max-width: 100%;
   }
@@ -64,6 +64,10 @@
     font-family: inherit;
     font-size: 14px;
     @include inputiosreset;
+
+    .light-background & {
+      @include color($white, 1);
+    }
   }
 
   .form_field_textfield,

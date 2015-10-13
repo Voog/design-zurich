@@ -102,6 +102,7 @@
   @include bg($white);
   box-sizing: border-box;
   border: none;
+  text-overflow: ellipsis;
 
   // Removes the clear input button in IE11
   &::-ms-clear {
@@ -111,6 +112,14 @@
   &::-webkit-input-placeholder {
     padding: 3px 0 4px 0;
     line-height: 1em;
+    text-overflow: ellipsis;
+  }
+
+  &:-ms-input-placeholder {
+    text-overflow: ellipsis;
+  }
+  &::-moz-placeholder {
+    text-overflow: ellipsis;
   }
 
   @include query($mobile-1) {
