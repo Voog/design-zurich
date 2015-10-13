@@ -1,7 +1,7 @@
 <header class="header js-site-header {% if site.search.enabled %} search-enabled{% endif %}">
 
   <div class="header-container js-background-type {{ header_bg_type }}">
-    <div class="{% unless front_page %}header-left{% endunless %} js-header-left">
+    <div class="header-left js-header-left">
       {% unless front_page %}
         <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
       {% endunless %}

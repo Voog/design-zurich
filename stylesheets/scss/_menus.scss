@@ -33,9 +33,6 @@
       border: 0;
     }
   }
-  .front-page & {
-    padding: 20px;
-  }
 
   @include query($mobile-1) {
     right: 20px;
@@ -73,6 +70,10 @@
         }
       }
     }
+
+    svg {
+      @include fill($white);
+    }
   }
   .light-background {
     .menu-btn {
@@ -85,6 +86,10 @@
           @include bg($black, .9);
         }
       }
+    }
+
+    svg {
+      @include fill($black);
     }
   }
 }
@@ -557,6 +562,7 @@
   }
 
   &.flags-disabled  {
+
     .menu-link {
       padding-right: 12px;
 
@@ -575,12 +581,14 @@
 }
 
 .lang-flag {
+
   &:after {
     background-position: -189px -60px;
   }
 
   &:before,
   &:after {
+
     .flags-disabled & {
       display: none;
     }
@@ -694,6 +702,7 @@ $flags:
 ;
 
 @each $flag, $pos in $flags {
+
   .lang-flag-#{$flag}:after { background-position: $pos; }
 }
 
@@ -701,6 +710,7 @@ $flags:
   @include bg($primary-color, 0.09);
 
   .menu {
+
     .menu-item {
       margin-top: 8px;
       padding: 5px 10px;
@@ -727,20 +737,26 @@ $flags:
   }
 
   .flags-disabled & {
+
     .disable-text {
+
       display: none;
     }
   }
 
   .flags-enabled & {
+
     .enable-text {
+
       display: none;
     }
   }
 
   .disable-text,
   .enable-text {
+
     &:first-letter {
+
       text-transform: capitalize;
     }
   }
@@ -748,10 +764,12 @@ $flags:
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags {
+
   .editmode & {
     margin-top: 20px;
   }
 }
+
 .tags-title {
   display: inline-block;
   font-size: 14px;
@@ -780,6 +798,7 @@ $flags:
 }
 
 .menu-tags {
+  
   .post-page & {
     margin-left: 25px;
   }
@@ -826,7 +845,9 @@ $flags:
     .menu-link, {
       @include color($third-color);
     }
+
     .menu-link {
+
       &:hover {
         @include color($secondary-color);
       }

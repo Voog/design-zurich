@@ -65,6 +65,12 @@
     float: none;
     min-width: 0;
   }
+
+  @include querymin($tablet-3) {
+    .flexbox .front-page & {
+      flex: 100%;
+    }
+  }
 }
 
 .header-right {

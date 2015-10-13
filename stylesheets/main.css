@@ -467,9 +467,6 @@ body.search-open {
     border: 0;
   }
 }
-.front-page .menu-btn {
-  padding: 20px;
-}
 @media screen and (max-width: 480px) {
   .menu-btn {
     right: 20px;
@@ -500,12 +497,18 @@ body.search-open {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
 }
+.front-page .dark-background svg {
+  fill: white;
+}
 .front-page .light-background .menu-btn .menu-stripe {
   background-color: black;
 }
 .front-page .light-background .menu-btn.open .menu-stripe, .front-page .light-background .menu-btn:hover .menu-stripe {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.9);
+}
+.front-page .light-background svg {
+  fill: black;
 }
 
 .menu {
@@ -1298,6 +1301,11 @@ body.search-open {
   .header-left {
     float: none;
     min-width: 0;
+  }
+}
+@media screen and (min-width: 841px) {
+  .flexbox .front-page .header-left {
+    flex: 100%;
   }
 }
 
