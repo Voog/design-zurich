@@ -123,7 +123,6 @@
   }
 }
 
-
 // REM CALC
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
@@ -151,4 +150,22 @@
 
   #{$property}: $pxValue;
   #{$property}: $remValue;
+}
+
+// BUTTONS
+@mixin button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: none;
+  }
 }

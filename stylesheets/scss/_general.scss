@@ -74,10 +74,12 @@ body {
 .background-image,
 .background-color {
   @extend %stretch;
+
   .main-feature & {
     z-index: -1;
   }
 }
+
 .background-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,6 +89,7 @@ body {
 .container {
   max-width: 940px;
   margin: 0 auto;
+
   .front-page & {
     @include flexbox;
     @include flex(1);
@@ -107,6 +110,10 @@ body {
       border: none;
     }
   }
+}
+
+.main-feature {
+  min-height: 250px;
 }
 
 .site-container {

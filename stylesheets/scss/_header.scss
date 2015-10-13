@@ -19,6 +19,7 @@
 
   .no-flexbox .front-page & {
     text-align: center;
+
     .js-header-right {
       margin: 0 auto;
     }
@@ -37,6 +38,7 @@
 
 .header-left,
 .header-right {
+
   @include query($mobile-1) {
     padding: 0;
   }
@@ -113,5 +115,4 @@
       @include color($secondary-color,.8);
     }
   }
-
 }

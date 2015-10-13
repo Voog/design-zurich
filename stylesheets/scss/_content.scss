@@ -150,92 +150,84 @@
   @extend %clearfix;
   @include flexbox;
   @include flex-wrap(wrap);
+
   .no-flexbox & {
     display: table-footer-group;
   }
+
   .feature-section {
     position: relative;
-    transition: 500ms;
+    transition: $transition-std;
     @extend %clearfix;
     min-width: 200px;
     width: 25%;
     float: left;
     min-height: 280px;
-    // padding: 40px;
     box-sizing: border-box;
+
     &:last-child {
       background: none;
     }
+
     &.section-wide {
       padding: 40px;
-      transition: 500ms;
+      transition: $transition-std;
       @include flexbox;
       @include align-items(center);
     }
-    // .edy-gallery-area,
-    // .edys-gallery-area {
-    //   margin: 0 -40px 0 -40px;
-    //   &:first-child {
-    //     margin: -40px -40px 0 -40px;
-    //   }
-    // }
-    // .editmode & {
-    //   .edys-gallery-area {
-    //     margin: 0;
-    //   }
-    //   .edy-content-elements {
-    //     > div {
-    //       &:first-child {
-    //         .edy-gallery-area {
-    //           margin: -40px -40px 0 -40px;
-    //         }
-    //         .edy-gallery-view {
-    //           .edy-tb {
-    //             margin-top: -75px!important;
-    //             @include query($tablet-2) {
-    //               margin-top: -60px!important;
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+
     @include query($tablet-2) {
-      // padding: 20px;
       width: 50%;
       &.section-wide {
         padding: 20px;
-        transition: 500ms;
+        transition: $transition-std;
       }
-      // .edy-gallery-area,
-      // .edys-gallery-area {
-      //   margin: 0 -20px 0 -20px;
-      //   &:first-child {
-      //     margin: -20px -20px 0 -20px;
-      //   }
-      // }
-      // .editmode & {
-      //   .edys-gallery-area {
-      //     margin: 0;
-      //   }
-      //   .edy-content-elements {
-      //     > div {
-      //       &:first-child {
-      //         .edy-gallery-area {
-      //           margin: -20px -20px 0 -20px;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     }
+
     @include query($tablet-5) {
       width: 100%;
     }
   }
-}
 
-.bottom-separation {
-  padding-bottom: 40px;
+  .voog-reference {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 20px 5px;
+
+    a {
+      font-size: $font-size-xs;
+      font-weight: $font-weight-thin;
+    }
+  }
+
+  .voog-reference-separation {
+    padding-bottom: 40px;
+  }
+
+  .light-background {
+    .voog-reference {
+
+      a {
+        @include color($black, 1);
+      }
+
+      svg {
+        @include fill($black, 1);
+      }
+    }
+  }
+
+  .dark-background {
+    .voog-reference {
+
+      a {
+        @include color($white, 1);
+      }
+
+      svg {
+        @include fill($white, 1);
+      }
+    }
+  }
 }

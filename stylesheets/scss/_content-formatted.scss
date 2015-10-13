@@ -222,13 +222,13 @@
     display: inline-block;
     @include bg($black, .0);
     box-sizing: border-box;
-    padding: 12px 30px 13px;
+    padding: 10px 20px 10px;
     text-transform: uppercase;
     @include rem-fallback(font-size, $font-size-base);
     font-weight: $font-weight-normal;
     line-height: $line-height-medium;
     text-align: center;
-    margin: 10px 0;
+    margin: 25px 0;
     cursor: pointer;
     @include hyphenate(true);
     text-decoration: none;
@@ -248,7 +248,7 @@
     }
 
     &:hover {
-      @include transition($transition);
+      @include transition($transition-std);
 
       .dark-background & {
         border: 2px solid $white;
@@ -266,16 +266,20 @@
 }
 
 .front-page {
+
   .main-feature {
+
     .content-formatted {
       font-family: $font-serif;
       text-align: center;
+
       h1 {
         @include rem-fallback(font-size, 150px);
         font-style: italic;
         font-weight: normal;
-        line-height: 1;
+        line-height: normal;
       }
+
       @include query($tablet-2) {
         h1 {
           @include rem-fallback(font-size, 75px);
@@ -283,16 +287,21 @@
       }
     }
   }
+
   .feature-section {
+
     .content-formatted {
       @include rem-fallback(font-size, $font-size-xl);
       font-weight: $font-weight-thin;
+      line-height: $line-height-medium;
+
       h1 {
         @include rem-fallback(font-size, $font-size-header);
         font-weight: $font-weight-thin;
+        line-height: $line-height-normal;
         text-align: left;
-        line-height: 1;
       }
+
       b {
         font-weight: $font-weight-normal;
       }

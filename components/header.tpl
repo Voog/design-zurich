@@ -27,7 +27,6 @@
       </button>
     </div>
 
-
     <div class="{% unless front_page %}header-right{% endunless %} js-header-right">
       <nav class="menu-main js-menu-main js-popover js-prevent-sideclick">
         {% include "menu-level-1" %}

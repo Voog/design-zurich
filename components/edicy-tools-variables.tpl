@@ -12,7 +12,7 @@
   {% else %}
     {% assign feature_1_wide = "section-wide" %}
   {% endif %}
-  
+
   {% assign feature_2 = page.data.feature_2 %}
   {% if feature_2 == false %}
     {% assign feature_2_wide = "" %}
@@ -314,7 +314,7 @@
       {% endif %}
     {% endif %}
   {% else %}
-    {% assign content_bg_4_type = "light-background" %}
+    {% assign content_bg_4_type = "dark-background" %}
   {% endif %}
 
   {% if content_bg_4_color == nil %}

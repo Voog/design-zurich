@@ -32,21 +32,3 @@
     }
   }
 }
-
-footer {
-  .front-page & {
-    .voog-reference {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 20px;
-      a {
-        color: $white;
-        font-size: $font-size-xs;
-      }
-      svg {
-        fill: $white;
-      }
-    }
-  }
-}
