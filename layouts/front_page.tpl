@@ -16,8 +16,8 @@
 
       <main class="content js-bg-picker-area js-site-header" role="main">
         <div class="main-feature js-background-type {{ header_bg_type }}" data-blog-bg-type="{{ header_bg_type }}" data-article-bg-type="{{ article_header_bg_type }}">
-          <div class="background-image stretch js-background-image"></div>
-          <div class="background-color stretch js-background-color"></div>
+          <div class="background-image js-background-image"></div>
+          <div class="background-color js-background-color"></div>
           {% if editmode %}<button class="voog-bg-picker-btn js-background-settings" data-bg-key="header_bg" data-bg-picture-boolean="true" data-target-width="600" data-bg-image="{{ header_bg_image }}" data-bg-image-sizes="{{ header_bg_image_sizes_str | escape }}" data-bg-color="{{ header_bg_color }}" data-bg-color-data="{{ header_bg_color_data_str | escape }}"></button>{% endif %}
 
           <div class="content-inner">

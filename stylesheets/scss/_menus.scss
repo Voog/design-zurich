@@ -154,7 +154,7 @@
 
       .menu-link {
         @include hyphenate(true);
-        font-weight: 600;
+        font-weight: $font-weight-semibold;
         @include color($secondary-color, 0.67);
 
 
@@ -181,7 +181,7 @@
 
         &:first-child {
           .menu-link {
-            font-weight: 600;
+            font-weight: $font-weight-semibold;
           }
         }
 
@@ -527,12 +527,12 @@
 
       &.active,
       &.active:hover {
-        @include opacity(0.5);
+        opacity: .5;
         @include filter(grayscale(100%));
       }
 
       &:hover {
-        @include opacity(0.75);
+        opacity: .75;
         @include filter(grayscale(50%));
       }
 

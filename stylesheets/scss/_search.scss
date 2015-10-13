@@ -130,6 +130,8 @@
   padding: 1px 0 0 1px;
 
   svg {
+    @include fill($secondary-color, .67);
+
     .search-open-btn &,
     .search-close-btn & {
       width: 20px;
@@ -140,12 +142,11 @@
       width: 16px;
       height: 16px;
     }
-    fill: rgba($secondary-color, 0.67);
   }
 }
 
 .search-submit {
-  @include opacity(0.33);
+  opacity: .33;
 
   @include query($mobile-1) {
     width: 45px;
@@ -273,10 +274,6 @@
   }
 }
 
-.voog-search-modal-results {
-
-}
-
 .voog-search-modal-result {
   margin-top: 18px;
 
@@ -286,12 +283,12 @@
 
   h3 {
     margin: 0;
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
     font-size: 16px;
 
     a {
       text-decoration: none;
-      font-weight: 600;
+      font-weight: $font-weight-semibold;
       @include color($secondary-color);
 
       &:hover {
