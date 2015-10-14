@@ -294,18 +294,31 @@
 
 @include querymin($tablet-3) {
   .front-page {
+
+    .header-container {
+      padding-top: 18px;
+    }
+
     .menu-main {
       .menu {
         .menu-item {
+          line-height: normal;
+          margin-left: 5px;
+
+          &:first-child {
+            margin-left: 0
+          }
+
           .menu-link {
             display: inline-block;
-            padding: 0 10px;
+            padding: 4px 10px;
             text-transform: uppercase;
             border: 2px solid transparent;
 
             &:hover {
               @include transition($transition-std);
             }
+
             &.untranslated {
               opacity: .5;
             }
@@ -323,6 +336,7 @@
               &.active {
                 border: 2px solid $white;
               }
+
               &:hover {
                 border: 2px solid $white;
                 @include bg($white, 1);
@@ -343,6 +357,7 @@
               &.active {
                 border: 2px solid $black;
               }
+
               &:hover {
                 border: 2px solid $black;
                 @include bg($black, 1);
@@ -445,6 +460,7 @@
 
 .menu-lang-btn,
 .menu-lang .menu-item .lang-flag {
+
   &:before,
   &:after {
     position: absolute;
@@ -473,6 +489,7 @@
 }
 
 .menu-lang-btn {
+
   &:before,
   &:after {
     top: 6px;
@@ -552,6 +569,7 @@
   .edit-btn {
     padding: 5px 10px 4px 0;
     text-align: right;
+
     .edy-menu-langadd {
       margin: 7px 20px;
 
@@ -798,7 +816,7 @@ $flags:
 }
 
 .menu-tags {
-  
+
   .post-page & {
     margin-left: 25px;
   }

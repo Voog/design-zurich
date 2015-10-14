@@ -685,9 +685,19 @@ body.search-open {
 }
 
 @media screen and (min-width: 841px) {
+  .front-page .header-container {
+    padding-top: 18px;
+  }
+  .front-page .menu-main .menu .menu-item {
+    line-height: normal;
+    margin-left: 5px;
+  }
+  .front-page .menu-main .menu .menu-item:first-child {
+    margin-left: 0;
+  }
   .front-page .menu-main .menu .menu-item .menu-link {
     display: inline-block;
-    padding: 0 10px;
+    padding: 4px 10px;
     text-transform: uppercase;
     border: 2px solid transparent;
   }
