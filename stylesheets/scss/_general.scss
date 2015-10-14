@@ -2,6 +2,10 @@
 // Styling rules for the basic parts of the page. These rules affect the entire site.
 html {
   font-size: $font-size-base;
+
+  @include query($tablet-1) {
+    font-size: $font-size-base - 2px;
+  }
 }
 
 body {

@@ -23,6 +23,7 @@
   .edy-texteditor-container-wrapper-center,
   .edy-texteditor-container-wrapper-left-block,
   .edy-texteditor-container-wrapper-right-block {
+
     &:first-child {
       margin-top: 0;
     }
@@ -44,6 +45,7 @@
   ul,
   ol,
   table {
+
     .light-background & {
       @include color($black);
     }
@@ -189,7 +191,7 @@
 
   // Content area image title
   .edy-image-container-with-title {
-    
+
     &:after {
       display: block;
       padding: 4px;
@@ -281,6 +283,14 @@
       }
 
       @include query($tablet-2) {
+
+        h1 {
+          @include rem-fallback(font-size, 125px);
+        }
+      }
+
+      @include query($tablet-4) {
+
         h1 {
           @include rem-fallback(font-size, 75px);
         }
@@ -291,12 +301,12 @@
   .feature-section {
 
     .content-formatted {
-      @include rem-fallback(font-size, $font-size-xl);
+      @include rem-fallback(font-size, 36px);
       font-weight: $font-weight-thin;
       line-height: $line-height-medium;
 
       h1 {
-        @include rem-fallback(font-size, $font-size-header);
+        @include rem-fallback(font-size, 50px);
         font-weight: $font-weight-thin;
         line-height: $line-height-normal;
         text-align: left;
@@ -304,6 +314,18 @@
 
       b {
         font-weight: $font-weight-normal;
+      }
+
+      @include queryminmax($tablet-2, $desktop-1) {
+        @include rem-fallback(font-size, 26px);
+
+        h1 {
+          @include rem-fallback(font-size, 37px);
+        }
+      }
+
+      @include queryminmax($tablet-2, $tablet-1) {
+        @include rem-fallback(font-size, 24px);
       }
     }
   }

@@ -191,7 +191,7 @@
     min-width: 200px;
     width: 25%;
     float: left;
-    min-height: 280px;
+    min-height: 285px;
     box-sizing: border-box;
 
     &:last-child {
@@ -199,14 +199,21 @@
     }
 
     &.section-wide {
-      padding: 40px;
-      transition: $transition-std;
+      @include rem-fallback(padding, 40px);
       @include flexbox;
       @include align-items(center);
+      transition: $transition-std;
     }
 
     &.has-voog-reference {
       padding-bottom: 50px;
+    }
+
+    @include query() {
+
+      &.section-wide {
+        @include rem-fallback(padding, 35px);
+      }
     }
 
     @include query($tablet-2) {
