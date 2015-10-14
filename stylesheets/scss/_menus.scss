@@ -300,10 +300,13 @@
     }
 
     .menu-main {
+
       .menu {
+
         .menu-item {
+          font-size: 12px;
           line-height: normal;
-          margin-left: 5px;
+          margin-left: 9px;
 
           &:first-child {
             margin-left: 0
@@ -311,7 +314,7 @@
 
           .menu-link {
             display: inline-block;
-            padding: 4px 10px;
+            padding: 6px 12px;
             text-transform: uppercase;
             border: 2px solid transparent;
 
@@ -326,7 +329,9 @@
         }
       }
     }
+
     .dark-background {
+
       .menu-main {
         .menu {
           .menu-item {
@@ -347,10 +352,15 @@
         }
       }
     }
+
     .light-background {
+
       .menu-main {
+
         .menu {
+
           .menu-item {
+
             .menu-link {
               @include color($black, 1);
 
