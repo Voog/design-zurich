@@ -47,9 +47,36 @@
 
 .feature-section {
 
+  .voog-bg-picker-btn,
+  .voog-padding-switcher {
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-std;
+  }
+
   .voog-bg-picker-btn {
     top: 0;
     left: 0;
+  }
+
+  .voog-padding-switcher {
+    top: 0;
+    right: 0;
+  }
+
+  &:hover {
+
+    .voog-bg-picker-btn,
+    .voog-padding-switcher {
+      visibility: visible;
+      opacity: .3;
+      transition: $transition-std;
+
+      &:hover {
+        opacity: 1;
+        transition: $transition-std;
+      }
+    }
   }
 }
 
@@ -57,15 +84,13 @@
 .voog-padding-switcher {
   @include button;
   position: absolute;
-  top: 0;
-  right: 0;
   margin: 10px 10px 0 0;
   width: 45px;
   height: 45px;
   z-index: 9;
 
   svg {
-    @include fill(#1479CF, .3);
+    @include fill(#1479CF, 1);
   }
 
   &:hover {

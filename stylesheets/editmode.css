@@ -28,9 +28,30 @@
   min-height: 525px;
 }
 
+.feature-section .voog-bg-picker-btn,
+.feature-section .voog-padding-switcher {
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms;
+}
 .feature-section .voog-bg-picker-btn {
   top: 0;
   left: 0;
+}
+.feature-section .voog-padding-switcher {
+  top: 0;
+  right: 0;
+}
+.feature-section:hover .voog-bg-picker-btn,
+.feature-section:hover .voog-padding-switcher {
+  visibility: visible;
+  opacity: .3;
+  transition: 500ms;
+}
+.feature-section:hover .voog-bg-picker-btn:hover,
+.feature-section:hover .voog-padding-switcher:hover {
+  opacity: 1;
+  transition: 500ms;
 }
 
 .voog-padding-switcher {
@@ -40,8 +61,6 @@
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
   margin: 10px 10px 0 0;
   width: 45px;
   height: 45px;
@@ -55,8 +74,7 @@
   border: none;
 }
 .voog-padding-switcher svg {
-  fill: #1479CF;
-  fill: rgba(20, 121, 207, 0.3);
+  fill: #1479cf;
 }
 .voog-padding-switcher:hover svg {
   fill: #1479cf;

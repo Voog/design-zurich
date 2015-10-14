@@ -145,6 +145,35 @@
   }
 }
 
+.front-page {
+
+  .main-feature {
+    min-height: 250px;
+  }
+
+  @include query($tablet-3) {
+
+    .content {
+      @include flexbox;
+      @include flex(1 1 auto);
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .main-feature {
+      @include flexbox;
+      @include align-items(center);
+      position: relative;
+      padding-top: 80px;
+    }
+  }
+}
+
 .sections {
   position: relative;
   @extend %clearfix;
@@ -176,11 +205,21 @@
       @include align-items(center);
     }
 
+    &.has-voog-reference {
+      padding-bottom: 50px;
+    }
+
     @include query($tablet-2) {
       width: 50%;
+
       &.section-wide {
         padding: 20px;
         transition: $transition-std;
+      }
+
+      &.has-voog-reference {
+        min-height: 0;
+        padding-bottom: 50px;
       }
     }
 
@@ -199,10 +238,6 @@
       font-size: $font-size-xs;
       font-weight: $font-weight-thin;
     }
-  }
-
-  .voog-reference-separation {
-    padding-bottom: 40px;
   }
 
   .light-background {
