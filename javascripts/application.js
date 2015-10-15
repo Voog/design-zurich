@@ -11291,7 +11291,6 @@ MMCQ = (function() {
     var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-section-name');
     var bgPickerAreaGlobal = 'div[data-section-name="' + bgPickerAreaGlobalAttr + '"]';
 
-
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
       $(bgPickerAreaGlobal).find('.js-background-type').addClass('light-background').removeClass('dark-background');

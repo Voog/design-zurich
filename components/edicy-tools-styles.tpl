@@ -1,13 +1,13 @@
 <style>
   {% comment %}/* FRONT PAGE MAIN CONTENT AREA BACKGROUND */{% endcomment %}
   {% comment %}/* Site header background image styles. */{% endcomment %}
-  {% if header_bg.imageSizes != nil %}
-    {% if header_bg.imageSizes == "" %}
+  {% if main_bg.imageSizes != nil %}
+    {% if main_bg.imageSizes == "" %}
       .main-feature .background-image {
         background-image: none;
       }
     {% else %}
-      {% for imageSize in header_bg.imageSizes %}
+      {% for imageSize in main_bg.imageSizes %}
         {% if forloop.first %}
           .main-feature .background-image {
             background-image: url("{{ imageSize.url }}");
@@ -51,7 +51,7 @@
 
   {% comment %}/* Site header background color style. */{% endcomment %}
   .main-feature .background-color {
-    background-color: {{ header_bg_color }};
+    background-color: {{ main_bg_color }};
   }
 
   {% comment %}/* FRONT PAGE CONTENT AREA 1 BACKGROUND */{% endcomment %}

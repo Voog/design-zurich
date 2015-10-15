@@ -19,10 +19,10 @@
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}
-            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="header_bg" data-bg-picture-boolean="true" data-target-width="600" data-bg-image="{{ header_bg_image }}" data-bg-image-sizes="{{ header_bg_image_sizes_str | escape }}" data-bg-color="{{ header_bg_color }}" data-bg-color-data="{{ header_bg_color_data_str | escape }}"></button>
+            <button class="voog-bg-picker-btn js-background-settings" data-bg-key="main_bg" data-bg-picture-boolean="true" data-target-width="600" data-bg-image="{{ main_bg_image }}" data-bg-image-sizes="{{ main_bg_image_sizes_str | escape }}" data-bg-color="{{ main_bg_color }}" data-bg-color-data="{{ main_bg_color_data_str | escape }}"></button>
           {% endif %}
 
-          <div class="content-inner js-background-type {{ header_bg_type }}">
+          <div class="content-inner js-background-type {{ main_bg_type }}">
             <section class="content-body content-formatted">{% content %}</section>
           </div>
         </div>

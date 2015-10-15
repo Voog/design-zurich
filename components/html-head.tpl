@@ -19,7 +19,6 @@
 {% comment %}STYLESHEETS{% endcomment %}
 {% stylesheet_link "main.min.css" %}
 {% if editmode %}{% stylesheet_link "editmode.min.css" %}{% endif %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
 {% comment %}SITE TITLE{% endcomment %}
 {% capture page_title %}{% if article %}{{ article.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% else %}{% if site.root_item.selected? and page.site_title != "" %}{{ page.site_title }}{% else %}{{ page.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% endif %}{% endif %}{% endcapture %}
