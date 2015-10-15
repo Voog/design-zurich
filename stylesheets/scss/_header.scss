@@ -67,6 +67,7 @@
   }
 
   @include querymin($tablet-3) {
+
     .flexbox .front-page & {
       flex: 100%;
     }
@@ -119,6 +120,25 @@
 
     &:hover {
       @include color($secondary-color,.8);
+    }
+
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+.feature-section {
+
+  .dark-background {
+    .header-link {
+      @include color($white);
+    }
+  }
+
+  .light-background {
+    .header-link {
+      @include color($secondary-color);
     }
   }
 }

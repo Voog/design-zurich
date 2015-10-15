@@ -5,7 +5,7 @@
 .menu-btn {
   display: none;
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     position: absolute;
     z-index: 10001;
     top: 7px;
@@ -58,13 +58,18 @@
 }
 
 .front-page {
+
   .dark-background {
+
     .menu-btn {
+
       .menu-stripe {
         @include bg($white, 1);
       }
+
       &.open,
       &:hover {
+
         .menu-stripe {
           @include bg($white, .9);
         }
@@ -75,13 +80,18 @@
       @include fill($white);
     }
   }
+
   .light-background {
+
     .menu-btn {
+
       .menu-stripe {
         @include bg($black, 1);
       }
+
       &.open,
       &:hover {
+
         .menu-stripe {
           @include bg($black, .9);
         }
@@ -115,7 +125,7 @@
   display: inline-block;
   vertical-align: middle;
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     display: none;
 
     &.expanded {
@@ -137,6 +147,7 @@
   }
 
   @include query($mobile-1) {
+
     &.expanded {
       top: -3px;
       left: 0;
@@ -177,7 +188,7 @@
         }
       }
 
-      @include query($tablet-3) {
+      @include query($tablet-2) {
         display: block;
         margin: 0;
         font-size: 20px;
@@ -215,7 +226,7 @@
       display: inline-block;
       margin-left: 20px;
 
-      @include query($tablet-3) {
+      @include query($tablet-2) {
         position: static;
         display: block;
         margin-left: 0;
@@ -238,11 +249,12 @@
   .menu-lang {
     display: none;
 
-    @include query($tablet-3) {
+    @include query($tablet-2) {
       display: block;
       padding-left: 0;
 
       .menu {
+
         .menu-item {
           text-align: left;
 
@@ -292,7 +304,7 @@
   }
 }
 
-@include querymin($tablet-3) {
+@include querymin($tablet-2) {
   .front-page {
 
     .header-container {
@@ -542,7 +554,7 @@
   vertical-align: middle;
   line-height: 1;
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     display: none;
   }
 
@@ -583,7 +595,7 @@
     .edy-menu-langadd {
       margin: 7px 20px;
 
-      @include query($tablet-3) {
+      @include query($tablet-2) {
         margin: 0;
       }
     }
@@ -745,7 +757,7 @@ $flags:
       font-size: 13px;
       background-color: transparent;
 
-      @include query($tablet-3) {
+      @include query($tablet-2) {
         margin-top: 0;
         padding: 4px 25px;
         font-size: 15px;

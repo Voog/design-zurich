@@ -91,6 +91,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 940px;
   margin: 0 auto;
 
@@ -114,12 +115,6 @@ body {
       border: none;
     }
   }
-}
-
-.site-container {
-  position: relative;
-  min-height: 100vh;
-  @include flexbox;
 }
 
 .wrap {

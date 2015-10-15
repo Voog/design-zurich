@@ -1,7 +1,7 @@
 <header class="header {% if site.search.enabled %} search-enabled{% endif %}">
 
-  <div class="header-container" data-section-name="main_feature">
-    <div class="header-left js-header-left js-background-type {{ main_bg_type }}">
+  <div class="header-container" {% if front_page %}data-section-name="main_feature"{% endif %}>
+    <div class="header-left js-header-left {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
       {% unless front_page %}
         <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
       {% endunless %}
@@ -27,7 +27,7 @@
       </button>
     </div>
 
-    <div class="{% unless front_page %}header-right{% endunless %} js-header-right js-background-type {{ main_bg_type }}">
+    <div class="{% unless front_page %}header-right{% endunless %} js-header-right {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
       <nav class="menu-main js-menu-main js-popover js-prevent-sideclick">
         {% include "menu-level-1" %}
 
