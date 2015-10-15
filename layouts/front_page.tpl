@@ -14,15 +14,15 @@
     <div class="container">
       {% include "header" %}
 
-      <main class="content js-bg-picker-area js-site-header" role="main">
-        <div class="main-feature js-background-type {{ header_bg_type }}">
+      <main class="content" role="main">
+        <div class="main-feature js-bg-picker-area" data-section-name="main_feature">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}
             <button class="voog-bg-picker-btn js-background-settings" data-bg-key="header_bg" data-bg-picture-boolean="true" data-target-width="600" data-bg-image="{{ header_bg_image }}" data-bg-image-sizes="{{ header_bg_image_sizes_str | escape }}" data-bg-color="{{ header_bg_color }}" data-bg-color-data="{{ header_bg_color_data_str | escape }}"></button>
           {% endif %}
 
-          <div class="content-inner">
+          <div class="content-inner js-background-type {{ header_bg_type }}">
             <section class="content-body content-formatted">{% content %}</section>
           </div>
         </div>
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="feature-section {% if site.branding.enabled %}has-voog-reference{% endif %} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4">
+        <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}

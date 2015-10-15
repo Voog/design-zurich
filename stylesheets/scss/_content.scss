@@ -205,7 +205,7 @@
       transition: $transition-std;
     }
 
-    &.has-voog-reference {
+    &.voog-reference-enabled {
       padding-bottom: 50px;
     }
 
@@ -224,7 +224,7 @@
         transition: $transition-std;
       }
 
-      &.has-voog-reference {
+      &.voog-reference-enabled {
         min-height: 0;
         padding-bottom: 50px;
       }

@@ -1599,7 +1599,7 @@ body.search-open {
   align-items: center;
   transition: 500ms;
 }
-.sections .feature-section.has-voog-reference {
+.sections .feature-section.voog-reference-enabled {
   padding-bottom: 50px;
 }
 @media screen and (max-width: 1020px) {
@@ -1616,7 +1616,7 @@ body.search-open {
     padding: 20px;
     transition: 500ms;
   }
-  .sections .feature-section.has-voog-reference {
+  .sections .feature-section.voog-reference-enabled {
     min-height: 0;
     padding-bottom: 50px;
   }
