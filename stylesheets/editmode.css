@@ -34,6 +34,11 @@
   opacity: 0;
   transition: 500ms;
 }
+.feature-section .voog-bg-picker-btn.open,
+.feature-section .voog-padding-switcher.open {
+  visibility: visible;
+  opacity: 1;
+}
 .feature-section .voog-bg-picker-btn {
   top: 0;
   left: 0;

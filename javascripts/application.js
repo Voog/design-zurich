@@ -11254,6 +11254,25 @@ MMCQ = (function() {
     });
   };
 
+  // Toggle visibility for editor buttons
+  var btnActivityStateToggle = function() {
+    $('.voog-bg-picker-btn').on('click', function(event) {
+      event.stopPropagation();
+
+      $(this).toggleClass('open');
+    });
+  };
+
+  var btnActivitySideClick = function() {
+    $('.container').on('mousedown', function(event) {
+
+      if (!$(event.target).closest('.voog-bg-picker-btn').length) {
+        $(this).find('.voog-bg-picker-btn').removeClass('open');
+        $('.js-search-close-btn').trigger('click');
+      };
+    });
+  };
+
   var bindFallbackHeaderLeftWidthCalculation = function() {
     var headerWidth = $('.js-header').width(),
         headerRight = $('.js-header-right'),
@@ -11455,6 +11474,8 @@ MMCQ = (function() {
     handleSearchFocus();
     handleSearchMobilePosition();
     wrapTables();
+    btnActivityStateToggle();
+    btnActivitySideClick();
 
     if (!Modernizr.flexbox && editmode) {
       bindFallbackHeaderLeftWidthCalculation();

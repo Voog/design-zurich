@@ -52,6 +52,11 @@
     visibility: hidden;
     opacity: 0;
     transition: $transition-std;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   .voog-bg-picker-btn {
