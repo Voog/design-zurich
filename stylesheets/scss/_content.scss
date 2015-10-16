@@ -228,6 +228,14 @@
         min-height: 0;
         padding-bottom: 50px;
       }
+
+      &.transparent-dark-background {
+        background: $black;
+      }
+
+      &.transparent-light-background {
+        background: $white;
+      }
     }
 
     @include query($tablet-5) {

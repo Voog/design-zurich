@@ -52,22 +52,28 @@
     {% if main_bg_combined_lightness %}
       {% if main_bg_combined_lightness > 0.5 %}
         {% assign main_bg_type = "light-background" %}
+        {% assign content_bg_transparent = "transparent-light-background" %}
       {% else %}
         {% assign main_bg_type = "dark-background" %}
+        {% assign content_bg_transparent = "transparent-dark-background" %}
       {% endif %}
     {% else %}
       {% if main_bg_color_data.a >= 0.5 %}
         {% if main_bg_color_data.lightness >= 0.5 %}
           {% assign main_bg_type = "light-background" %}
+          {% assign content_bg_transparent = "transparent-light-background" %}
         {% else %}
           {% assign main_bg_type = "dark-background" %}
+          {% assign content_bg_transparent = "transparent-dark-background" %}
         {% endif %}
       {% else %}
         {% assign main_bg_type = "light-background" %}
+        {% assign content_bg_transparent = "transparent-light-background" %}
       {% endif %}
     {% endif %}
   {% else %}
     {% assign main_bg_type = "dark-background" %}
+    {% assign content_bg_transparent = "transparent-dark-background" %}
   {% endif %}
 
   {% if main_bg_image == nil %}

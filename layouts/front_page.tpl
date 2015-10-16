@@ -32,7 +32,7 @@
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
-          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_1_image }}" data-bg-image-sizes="{{ content_bg_1_image_sizes_str | escape }}" data-bg-color="{{ content_bg_1_color }}" data-bg-color-data="{{ content_bg_1_color_data_str | escape }}"></button>
+          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_1_image }}" data-bg-image-sizes="{{ content_bg_1_image_sizes_str | escape }}" data-bg-color="{{ content_bg_1_color }}" data-bg-color-data="{{ content_bg_1_color_data_str | escape }}" data-bg-global-lightness="{{ main_bg_combined_lightness }}"></button>
           <button class="voog-padding-switcher" type="button" name="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512"><path d="M256 10.24C120.27 10.24 10.24 120.27 10.24 256S120.27 501.76 256 501.76 501.76 391.73 501.76 256 391.73 10.24 256 10.24zm-6.95 263.518h-58.158v25.5l-57.765-45.56 57.763-40.96.002 24.243 58.16.42v36.358zm72.08 25.502v-24.246l-57.75-.832V238.23h56.94v-.414h.81l.418-25.078 57.325 45.567-57.742 40.955z"/></svg>
           </button>
@@ -47,7 +47,7 @@
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
-          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_2_image }}" data-bg-image-sizes="{{ content_bg_2_image_sizes_str | escape }}" data-bg-color="{{ content_bg_2_color }}" data-bg-color-data="{{ content_bg_2_color_data_str | escape }}"></button>
+          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_2_image }}" data-bg-image-sizes="{{ content_bg_2_image_sizes_str | escape }}" data-bg-color="{{ content_bg_2_color }}" data-bg-color-data="{{ content_bg_2_color_data_str | escape }}" data-bg-global-lightness="{{ main_bg_combined_lightness }}"></button>
           <button class="voog-padding-switcher" type="button" name="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512"><path d="M256 10.24C120.27 10.24 10.24 120.27 10.24 256S120.27 501.76 256 501.76 501.76 391.73 501.76 256 391.73 10.24 256 10.24zm-6.95 263.518h-58.158v25.5l-57.765-45.56 57.763-40.96.002 24.243 58.16.42v36.358zm72.08 25.502v-24.246l-57.75-.832V238.23h56.94v-.414h.81l.418-25.078 57.325 45.567-57.742 40.955z"/></svg>
           </button>
@@ -62,7 +62,7 @@
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
-          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_3" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_3_image }}" data-bg-image-sizes="{{ content_bg_3_image_sizes_str | escape }}" data-bg-color="{{ content_bg_3_color }}" data-bg-color-data="{{ content_bg_3_color_data_str | escape }}"></button>
+          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_3" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_3_image }}" data-bg-image-sizes="{{ content_bg_3_image_sizes_str | escape }}" data-bg-color="{{ content_bg_3_color }}" data-bg-color-data="{{ content_bg_3_color_data_str | escape }}" data-bg-global-lightness="{{ main_bg_combined_lightness }}"></button>
           <button class="voog-padding-switcher" type="button" name="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512"><path d="M256 10.24C120.27 10.24 10.24 120.27 10.24 256S120.27 501.76 256 501.76 501.76 391.73 501.76 256 391.73 10.24 256 10.24zm-6.95 263.518h-58.158v25.5l-57.765-45.56 57.763-40.96.002 24.243 58.16.42v36.358zm72.08 25.502v-24.246l-57.75-.832V238.23h56.94v-.414h.81l.418-25.078 57.325 45.567-57.742 40.955z"/></svg>
           </button>
@@ -73,11 +73,11 @@
         </div>
       </div>
 
-      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4">
+      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ content_bg_transparent }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
-          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_4" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_4_image }}" data-bg-image-sizes="{{ content_bg_4_image_sizes_str | escape }}" data-bg-color="{{ content_bg_4_color }}" data-bg-color-data="{{ content_bg_4_color_data_str | escape }}"></button>
+          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_4" data-bg-picture-boolean="false" data-target-width="600" data-bg-image="{{ content_bg_4_image }}" data-bg-image-sizes="{{ content_bg_4_image_sizes_str | escape }}" data-bg-color="{{ content_bg_4_color }}" data-bg-color-data="{{ content_bg_4_color_data_str | escape }}" data-bg-global-lightness="{{ main_bg_combined_lightness }}"></button>
           <button class="voog-padding-switcher" type="button" name="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512"><path d="M256 10.24C120.27 10.24 10.24 120.27 10.24 256S120.27 501.76 256 501.76 501.76 391.73 501.76 256 391.73 10.24 256 10.24zm-6.95 263.518h-58.158v25.5l-57.765-45.56 57.763-40.96.002 24.243 58.16.42v36.358zm72.08 25.502v-24.246l-57.75-.832V238.23h56.94v-.414h.81l.418-25.078 57.325 45.567-57.742 40.955z"/></svg>
           </button>

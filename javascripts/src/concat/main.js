@@ -222,7 +222,7 @@
   };
 
   // Header background image and color preview logic function.
-  var bgPickerPreview = function(bgPickerArea, data, bgPicker) {
+  var bgPickerPreview = function(bgPickerArea, data, bgPicker, globalLightness) {
     // Defines the variables used in preview logic.
 
     var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
@@ -230,7 +230,10 @@
         bgPickerImage = (data.image && data.image !== '') ? 'url(' + bgPickerImageSuitable.url + ')' : 'none',
         bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
         bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
-        bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
+        bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.a : 0,
+
+        bgPickerColorDataGlobalLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
+
         colorExtractImage = $('<img>'),
         colorExtractCanvas = $('<canvas>'),
         colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
@@ -249,6 +252,11 @@
           });
         });
       };
+    } else if (bgPickerColorDataLightness === 0) {
+
+      // Get global bg lightness when parent has transparent bg
+      bgPickerCombinedLightness = globalLightness;
+      bgPickerContentLightnessClass(bgPickerArea);
     } else {
       bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
       bgPickerContentLightnessClass(bgPickerArea);

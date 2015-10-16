@@ -1621,6 +1621,12 @@ body.search-open {
     min-height: 0;
     padding-bottom: 50px;
   }
+  .sections .feature-section.transparent-dark-background {
+    background: #000;
+  }
+  .sections .feature-section.transparent-light-background {
+    background: #fff;
+  }
 }
 @media screen and (max-width: 600px) {
   .sections .feature-section {
