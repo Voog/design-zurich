@@ -207,22 +207,31 @@
   };
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
-  var bgPickerContentLightnessClass = function(bgPickerArea) {
+  var bgPickerContentLightnessClass = function(bgPickerArea, bgPickerColorAlpha) {
     var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global');
-    var bgPickerAreaGlobal = 'div[data-bg-global="' + bgPickerAreaGlobalAttr + '"]';
+    var bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]';
     var bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean');
     var bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
 
-    console.log(bgPickerAreaGlobalBoolean);
+    if ( bgPickerColorAlpha > 0 && $(bgPickerArea).is('[data-bg-global-boolean="true"]') ) {
+      $(bgPickerArea).attr('data-bg-global-boolean', false);
+      console.log('boolchange');
+    } else {
+      $(bgPickerArea).attr('data-bg-global-boolean', true);
+    }
 
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-      $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-
+      if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+        $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+      }
 
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-      $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+        $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      }
+
     }
   };
 
@@ -236,24 +245,26 @@
         bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
         bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
         bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.a : 0,
-
+        bgPickerColorAlpha = bgPickerColorDataLightness,
         bgPickerColorDataGlobalLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
 
         colorExtractImage = $('<img>'),
         colorExtractCanvas = $('<canvas>'),
         colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
 
+        console.log(bgPickerColorAlpha);
+
     if (colorExtractImageUrl) {
       if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
         bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
-        bgPickerContentLightnessClass(bgPickerArea);
+        bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
       } else {
         colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/photos/g,'/photos'));
         colorExtractImage.load(function() {
           ColorExtract.extract(colorExtractImage[0], colorExtractCanvas[0], function(data) {
             bgPicker.bgPickerImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
             bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
-            bgPickerContentLightnessClass(bgPickerArea);
+            bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
           });
         });
       };
@@ -266,7 +277,7 @@
     // }
      else {
       bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
-      bgPickerContentLightnessClass(bgPickerArea);
+      bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
     };
 
     // Updates the bgPickerContent background image and background color.
