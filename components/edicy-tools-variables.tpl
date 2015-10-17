@@ -103,9 +103,24 @@
   {% assign content_bg_1_color = content_bg_1.color %}
   {% assign content_bg_1_color_data = content_bg_1.colorData %}
   {% assign content_bg_1_combined_lightness = content_bg_1.combinedLightness %}
+  {% assign content_bg_1_alpha = content_bg_1.colorData.a %}
 
+  {% if content_bg_1 == nil %}
+    {% assign content_1_global_bg_boolean = "false" %}
+  {% endif %}
   {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
   {% if content_bg_1 %}
+
+    {% comment %}Allow global bg change to alter bg{% endcomment %}
+    {% if content_bg_1_color_data.a >= 0.5 %}
+      {% assign content_1_global_bg_boolean = "false" %}
+    {% else %}
+      {% assign content_1_global_bg_boolean = "true" %}
+    {% endif %}
+    {% if content_bg_1_alpha == nil %}
+      {% assign content_1_global_bg_boolean = "true" %}
+    {% endif %}
+
     {% if content_bg_1_combined_lightness %}
       {% if content_bg_1_combined_lightness > 0.5 %}
         {% assign content_bg_1_type = "light-background" %}
@@ -144,9 +159,28 @@
   {% assign content_bg_2_color = content_bg_2.color %}
   {% assign content_bg_2_color_data = content_bg_2.colorData %}
   {% assign content_bg_2_combined_lightness = content_bg_2.combinedLightness %}
+  {% assign content_bg_2_alpha = content_bg_2.colorData.a %}
+
+  {% if content_bg_2 == nil %}
+    {% assign content_2_global_bg_boolean = "false" %}
+  {% endif %}
 
   {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
   {% if content_bg_2 %}
+
+    {% comment %}Allow global bg change to alter bg{% endcomment %}
+    {% if content_bg_2_color_data.a >= 0.5 %}
+      {% assign content_2_global_bg_boolean = "false" %}
+    {% else %}
+      {% assign content_2_global_bg_boolean = "true" %}
+    {% endif %}
+    {% if content_bg_2_alpha == nil %}
+      {% assign content_2_global_bg_boolean = "true" %}
+    {% endif %}
+
+    {% if content_bg_2_color_data.a >= 0.5 %}
+      {% assign content_2_global_bg_boolean = "false" %}
+    {% endif %}
     {% if content_bg_2_combined_lightness %}
       {% if content_bg_2_combined_lightness > 0.5 %}
         {% assign content_bg_2_type = "light-background" %}
@@ -185,9 +219,29 @@
   {% assign content_bg_3_color = content_bg_3.color %}
   {% assign content_bg_3_color_data = content_bg_3.colorData %}
   {% assign content_bg_3_combined_lightness = content_bg_3.combinedLightness %}
+  {% assign content_bg_3_alpha = content_bg_3.colorData.a %}
 
+  {% if content_bg_3 == nil %}
+    {% assign content_3_global_bg_boolean = "false" %}
+  {% endif %}
   {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
   {% if content_bg_3 %}
+
+    {% comment %}Allow global bg change to alter bg{% endcomment %}
+    {% if content_bg_3_color_data.a >= 0.5 %}
+      {% assign content_3_global_bg_boolean = "false" %}
+    {% else %}
+      {% assign content_3_global_bg_boolean = "true" %}
+    {% endif %}
+    {% if content_bg_3_alpha == nil %}
+      {% assign content_3_global_bg_boolean = "true" %}
+    {% endif %}
+
+
+
+    {% if content_bg_3_color_data.a >= 0.5 %}
+      {% assign content_3_global_bg_boolean = "false" %}
+    {% endif %}
     {% if content_bg_3_combined_lightness %}
       {% if content_bg_3_combined_lightness > 0.5 %}
         {% assign content_bg_3_type = "light-background" %}
@@ -226,9 +280,24 @@
   {% assign content_bg_4_color = content_bg_4.color %}
   {% assign content_bg_4_color_data = content_bg_4.colorData %}
   {% assign content_bg_4_combined_lightness = content_bg_4.combinedLightness %}
+  {% assign content_bg_4_alpha = content_bg_4.colorData.a %}
 
   {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
   {% if content_bg_4 %}
+
+    {% comment %}Allow global bg change to alter bg{% endcomment %}
+    {% if content_bg_4_color_data.a >= 0.5 %}
+      {% assign content_4_global_bg_boolean = "false" %}
+    {% else %}
+      {% assign content_4_global_bg_boolean = "true" %}
+    {% endif %}
+    {% if content_bg_4_alpha == nil %}
+      {% assign content_4_global_bg_boolean = "true" %}
+    {% endif %}
+    {% if content_bg_4 == nil %}
+      {% assign content_4_global_bg_boolean = "false" %}
+    {% endif %}
+
     {% if content_bg_4_combined_lightness %}
       {% if content_bg_4_combined_lightness > 0.5 %}
         {% assign content_bg_4_type = "light-background" %}
@@ -251,11 +320,11 @@
   {% endif %}
 
   {% if content_bg_4_color == nil %}
-    {% assign content_bg_4_color = "" %}
+    {% assign content_bg_4_color = "rgba(0, 0, 0, 0)" %}
   {% endif %}
 
   {% if content_bg_4_color_data == nil %}
-    {% assign content_bg_4_color_data_str = "" %}
+    {% assign content_bg_4_color_data_str = "{"r": 0, "g": 0, "b": 0, "a": 0, "lightness": 0}" %}
   {% else %}
     {% assign content_bg_4_color_data_str = content_bg_4_color_data | json %}
   {% endif %}

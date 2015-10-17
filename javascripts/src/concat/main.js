@@ -208,16 +208,21 @@
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
   var bgPickerContentLightnessClass = function(bgPickerArea) {
-    var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-section-name');
-    var bgPickerAreaGlobal = 'div[data-section-name="' + bgPickerAreaGlobalAttr + '"]';
+    var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global');
+    var bgPickerAreaGlobal = 'div[data-bg-global="' + bgPickerAreaGlobalAttr + '"]';
+    var bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean');
+    var bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
+
+    console.log(bgPickerAreaGlobalBoolean);
 
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-      $(bgPickerAreaGlobal).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+      $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+
 
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-      $(bgPickerAreaGlobal).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
     }
   };
 
@@ -252,12 +257,14 @@
           });
         });
       };
-    } else if (bgPickerColorDataLightness === 0) {
-
-      // Get global bg lightness when parent has transparent bg
-      bgPickerCombinedLightness = globalLightness;
-      bgPickerContentLightnessClass(bgPickerArea);
-    } else {
+    }
+    // else if (bgPickerColorDataLightness === 0) {
+    //
+    //   // Get global bg lightness when parent has transparent bg
+    //   bgPickerCombinedLightness = globalLightness;
+    //   bgPickerContentLightnessClass(bgPickerArea);
+    // }
+     else {
       bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
       bgPickerContentLightnessClass(bgPickerArea);
     };

@@ -14,7 +14,7 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      <div class="main-feature js-bg-picker-area" data-section-name="main_feature">
+      <div class="main-feature js-bg-picker-area" data-section-name="main_feature" data-bg-global="main_bg">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
@@ -28,7 +28,7 @@
     </main>
 
     <footer class="sections">
-      <div class="feature-section {{ feature_1_wide }} js-bg-picker-area feature-1" data-section-name="feature_1">
+      <div class="feature-section {{ content_bg_transparent }} {{ feature_1_wide }} js-bg-picker-area feature-1" data-section-name="feature_1" data-bg-global="main_bg" data-bg-global-boolean="{{ content_1_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="feature-section {{ feature_2_wide }} js-bg-picker-area feature-2" data-section-name="feature_2">
+      <div class="feature-section {{ content_bg_transparent }} {{ feature_2_wide }} js-bg-picker-area feature-2" data-section-name="feature_2" data-bg-global="main_bg" data-bg-global-boolean="{{ content_2_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="feature-section {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3">
+      <div class="feature-section {{ content_bg_transparent }} {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_3_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
@@ -73,7 +73,7 @@
         </div>
       </div>
 
-      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ content_bg_transparent }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4">
+      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ content_bg_transparent }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
