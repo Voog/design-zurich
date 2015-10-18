@@ -208,16 +208,15 @@
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
   var bgPickerContentLightnessClass = function(bgPickerArea, bgPickerColorAlpha) {
-    var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global');
-    var bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]';
-    var bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean');
-    var bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
+    var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
+        bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
+        bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
+        bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
 
-    if ( bgPickerColorAlpha > 0 && $(bgPickerArea).is('[data-bg-global-boolean="true"]') ) {
-      $(bgPickerArea).attr('data-bg-global-boolean', false);
-      console.log('boolchange');
+    if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
+      var bgPickerAreaGlobalClass = 'light-background';
     } else {
-      $(bgPickerArea).attr('data-bg-global-boolean', true);
+      var bgPickerAreaGlobalClass = 'dark-background';
     }
 
     if (bgPickerCombinedLightness >= 0.5) {
@@ -232,6 +231,13 @@
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
       }
 
+    }
+
+    if ( bgPickerColorAlpha > 0 ) {
+      $(bgPickerArea).attr('data-bg-global-boolean', false);
+    } else {
+      $(bgPickerArea).attr('data-bg-global-boolean', true);
+      $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
     }
   };
 
@@ -251,8 +257,6 @@
         colorExtractImage = $('<img>'),
         colorExtractCanvas = $('<canvas>'),
         colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
-
-        console.log(bgPickerColorAlpha);
 
     if (colorExtractImageUrl) {
       if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
