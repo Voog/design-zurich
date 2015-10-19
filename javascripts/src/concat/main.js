@@ -213,12 +213,6 @@
         bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
         bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
 
-    if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
-      var bgPickerAreaGlobalClass = 'light-background';
-    } else {
-      var bgPickerAreaGlobalClass = 'dark-background';
-    }
-
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
       if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
@@ -231,14 +225,23 @@
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
       }
 
-    }
+    };
+
+    if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
+      var bgPickerAreaGlobalClass = 'light-background';
+    } else {
+      var bgPickerAreaGlobalClass = 'dark-background';
+    };
+
+    // Set mobile base bg when main section image bg isn't covering individual content areas.
+    $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
 
     if ( bgPickerColorAlpha > 0 ) {
       $(bgPickerArea).attr('data-bg-global-boolean', false);
     } else {
       $(bgPickerArea).attr('data-bg-global-boolean', true);
       $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-    }
+    };
   };
 
   // Header background image and color preview logic function.
