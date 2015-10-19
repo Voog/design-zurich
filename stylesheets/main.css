@@ -400,14 +400,14 @@ body.search-open {
   background-color: #000;
   background-color: transparent;
   box-sizing: border-box;
-  padding: 10px 20px 10px;
+  padding: 9px 21px 9px;
   text-transform: uppercase;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
-  margin: 30px 0;
+  margin: 31px 0;
   cursor: pointer;
   word-break: break-word;
   word-wrap: break-word;
@@ -1463,6 +1463,9 @@ body.search-open {
 .content.two-columns .content-formatted h1 {
   text-align: left;
 }
+.front-page .content {
+  padding-bottom: 75px;
+}
 .content .content-inner {
   padding: 33px 50px 50px;
   background-color: #eeeeee;
@@ -1635,8 +1638,8 @@ body.search-open {
   background: none;
 }
 .sections .feature-section.section-wide {
-  padding: 40px;
-  padding: 2.5rem;
+  padding: 50px;
+  padding: 3.125rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1652,7 +1655,7 @@ body.search-open {
 .sections .feature-section.voog-reference-enabled {
   padding-bottom: 50px;
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1366px) {
   .sections .feature-section.section-wide {
     padding: 35px;
     padding: 2.1875rem;

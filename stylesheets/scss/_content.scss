@@ -28,6 +28,10 @@
     }
   }
 
+  .front-page & {
+    padding-bottom: 75px;
+  }
+
   .content-inner {
     padding: 33px 50px 50px;
     @include bg($grey-4);
@@ -199,7 +203,7 @@
     }
 
     &.section-wide {
-      @include rem-fallback(padding, 40px);
+      @include rem-fallback(padding, 50px);
       @include flexbox;
       @include align-items(center);
       transition: $transition-std;
@@ -209,7 +213,7 @@
       padding-bottom: 50px;
     }
 
-    @include query() {
+    @include query($desktop-1) {
 
       &.section-wide {
         @include rem-fallback(padding, 35px);
