@@ -85,7 +85,7 @@
   }
 }
 
-// Toggle content area padding switch
+// Button switch to toggle content area padding.
 .voog-padding-switcher {
   @include button;
   position: absolute;
@@ -93,15 +93,6 @@
   width: 45px;
   height: 45px;
   z-index: 9;
-
-  svg {
-    @include fill(#1479CF, 1);
-  }
-
-  &:hover {
-
-    svg {
-      @include fill(#1479CF, 1);
-    }
-  }
+  background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
+  border-radius: 100%;
 }

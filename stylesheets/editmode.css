@@ -70,6 +70,8 @@
   width: 45px;
   height: 45px;
   z-index: 9;
+  background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
+  border-radius: 100%;
 }
 .voog-padding-switcher:focus {
   outline: none;
@@ -77,10 +79,4 @@
 .voog-padding-switcher::-moz-focus-inner {
   padding: 0;
   border: none;
-}
-.voog-padding-switcher svg {
-  fill: #1479cf;
-}
-.voog-padding-switcher:hover svg {
-  fill: #1479cf;
 }

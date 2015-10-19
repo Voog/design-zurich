@@ -172,6 +172,12 @@
       "filename": "ico-tick.svg"
     },
     {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-toggle.svg",
+      "kind": "assets",
+      "filename": "ico-toggle.svg"
+    },
+    {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/roboto-bold-italic.eot",
       "kind": "assets",
