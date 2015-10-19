@@ -11257,9 +11257,10 @@ MMCQ = (function() {
   // Toggle visibility for editor buttons
   var btnActivityStateToggle = function() {
     $('.voog-bg-picker-btn').on('click', function(event) {
-      event.stopPropagation();
-
+      $(this).closest('.container').find('.voog-bg-picker-btn.open').not(this).trigger('click').removeClass('open');
       $(this).toggleClass('open');
+
+      event.stopPropagation();
     });
   };
 
@@ -11267,9 +11268,8 @@ MMCQ = (function() {
     $('.container').on('mousedown', function(event) {
 
       if (!$(event.target).closest('.voog-bg-picker-btn').length) {
-
         $(this).find('.voog-bg-picker-btn').removeClass('open');
-        $('.js-search-close-btn').trigger('click');
+        event.stopPropagation();
       };
     });
   };
