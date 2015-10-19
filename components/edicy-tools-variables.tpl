@@ -137,12 +137,14 @@
     {% assign content_bg_1_color_data_str = content_bg_1_color_data | json %}
   {% endif %}
 
-  {% comment %}Allow global bg to apply lightness into individual content areas, when transparent{% endcomment %}
+  {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
   {% if content_bg_1_color_data.a > 0 %}
     {% assign content_1_global_bg_boolean = "false" %}
   {% else %}
-    {% assign content_1_global_bg_boolean = "true" %}
-    {% assign content_bg_1_type = main_bg_type %}
+    {% unless content_bg_1 == nil %}
+      {% assign content_1_global_bg_boolean = "true" %}
+      {% assign content_bg_1_type = main_bg_type %}
+    {% endunless%}
   {% endif %}
   {% if content_bg_1_alpha == nil %}
     {% assign content_1_global_bg_boolean = "true" %}
@@ -195,13 +197,14 @@
     {% assign content_bg_2_color_data_str = content_bg_2_color_data | json %}
   {% endif %}
 
-  {% comment %}Allow global bg to apply lightness into individual content areas, when transparent{% endcomment %}
+  {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
   {% if content_bg_2_color_data.a > 0 %}
     {% assign content_2_global_bg_boolean = "false" %}
   {% else %}
-    {% assign content_2_global_bg_boolean = "true" %}
-
-    {% assign content_bg_2_type = main_bg_type %}
+    {% unless content_bg_2 == nil %}
+      {% assign content_2_global_bg_boolean = "true" %}
+      {% assign content_bg_2_type = main_bg_type %}
+    {% endunless%}
   {% endif %}
   {% if content_bg_2_alpha == nil %}
     {% assign content_2_global_bg_boolean = "true" %}
@@ -254,12 +257,14 @@
     {% assign content_bg_3_color_data_str = content_bg_3_color_data | json %}
   {% endif %}
 
-  {% comment %}Allow global bg to apply lightness into individual content areas, when transparent{% endcomment %}
+  {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
   {% if content_bg_3_color_data.a > 0 %}
     {% assign content_3_global_bg_boolean = "false" %}
   {% else %}
-    {% assign content_3_global_bg_boolean = "true" %}
-    {% assign content_bg_3_type = main_bg_type %}
+    {% unless content_bg_3 == nil %}
+      {% assign content_3_global_bg_boolean = "true" %}
+      {% assign content_bg_3_type = main_bg_type %}
+    {% endunless%}
   {% endif %}
   {% if content_bg_3_alpha == nil %}
     {% assign content_3_global_bg_boolean = "true" %}
@@ -309,17 +314,19 @@
     {% assign content_bg_4_color_data_str = content_bg_4_color_data | json %}
   {% endif %}
 
-  {% comment %}Allow global bg to apply lightness into individual content areas, when transparent{% endcomment %}
+  {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
   {% if content_bg_4_color_data.a > 0 %}
     {% assign content_4_global_bg_boolean = "false" %}
   {% else %}
-    {% assign content_4_global_bg_boolean = "true" %}
+    {% unless content_bg_4 == nil %}
+      {% assign content_4_global_bg_boolean = "true" %}
+    {% endunless%}
     {% assign content_bg_4_type = main_bg_type %}
   {% endif %}
   {% if content_bg_4_alpha == nil %}
     {% assign content_4_global_bg_boolean = "true" %}
   {% endif %}
   {% if content_bg_4 == nil %}
-    {% assign content_4_global_bg_boolean = "false" %}
+    {% assign content_4_global_bg_boolean = "true" %}
   {% endif %}
 {% endcapture %}
