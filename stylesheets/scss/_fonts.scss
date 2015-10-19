@@ -7,6 +7,12 @@
 // 3. Replace the "custom-font-file-name" with the fonts file names (without the file extension).
 // 4. Add more fonts with the same pattern if needed.
 // 5. Uncomment the "_fonts.scss" partial in the "main.scss" file.
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 400);
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 400, italic);
-@include font-face('Custom Font name', '../assets/custom-font-file-name', 700);
+
+@include font-face('Roboto', '../assets/roboto-light', 300);
+@include font-face('Roboto', '../assets/roboto-light-italic', 300, italic);
+@include font-face('Roboto', '../assets/roboto-regular', 400);
+@include font-face('Roboto', '../assets/roboto-italic', 400, italic);
+@include font-face('Roboto', '../assets/roboto-medium', 500);
+@include font-face('Roboto', '../assets/roboto-medium-italic', 500, italic);
+@include font-face('Roboto', '../assets/roboto-bold', 700);
+@include font-face('Roboto', '../assets/roboto-bold-italic', 700, italic);
