@@ -36,15 +36,14 @@
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key'),
           pictureBoolean = $(bgPickerButton).data('bg-picture-boolean'),
-          targetWidth = $(bgPickerButton).data('target-width'),
-          globalLightness = $(bgPickerButton).data('bg-global-lightness');
+          targetWidth = $(bgPickerButton).data('target-width');
       var bgPicker = new Edicy.BgPicker(bgPickerButton, {
             picture: pictureBoolean,
             target_width: targetWidth,
             color: true,
             showAlpha: true,
         preview: function(data) {
-          site.bgPickerPreview($(bgPickerArea), data, bgPicker, globalLightness);
+          site.bgPickerPreview($(bgPickerArea), data, bgPicker);
         },
         commit: function(data) {
           site.bgPickerCommit(dataBgKey, data, pageType);
