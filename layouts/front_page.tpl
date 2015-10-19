@@ -73,7 +73,7 @@
         </div>
       </div>
 
-      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ content_bg_transparent }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
+      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ feature_4_empty }} {{ content_bg_transparent }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}

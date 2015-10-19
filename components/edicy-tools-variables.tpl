@@ -329,4 +329,15 @@
   {% if content_bg_4 == nil %}
     {% assign content_4_global_bg_boolean = "true" %}
   {% endif %}
+
+  {% comment %}Minimize section height when only voog reference is show.{% endcomment %}
+  {% capture feature_4_html %}{% unless editmode %}{% content name="feature_4" %}{% endunless %}{% endcapture %}
+  {% capture feature_4_size %}{{ feature_4_html | size | minus : 1 }}{% endcapture %}
+  {% unless feature_4_size contains "-" %}
+    {% assign feature_4_has_content = true %}
+  {% endunless %}
+  {% unless feature_4_has_content or editmode %}
+    {% assign feature_4_empty = "section-empty" %}
+  {% endunless %}
+
 {% endcapture %}

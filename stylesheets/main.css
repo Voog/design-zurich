@@ -1618,8 +1618,11 @@ body.search-open {
     transition: 500ms;
   }
   .sections .feature-section.voog-reference-enabled {
-    min-height: 0;
     padding-bottom: 50px;
+  }
+  .sections .feature-section.section-empty {
+    min-height: 0;
+    padding: 50px 0 0;
   }
   .sections .feature-section.transparent-dark-background {
     background: #000;
