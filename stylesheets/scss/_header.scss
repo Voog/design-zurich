@@ -13,15 +13,18 @@
     @include justify-content(flex-end);
   }
 
-  .flexbox .front-page & {
-    @include justify-content(center);
-  }
+  @include querymin($tablet-2) {
 
-  .no-flexbox .front-page & {
-    text-align: center;
+    .flexbox .front-page & {
+      @include justify-content(center);
+    }
 
-    .js-header-right {
-      margin: 0 auto;
+    .no-flexbox .front-page & {
+      text-align: center;
+
+      .js-header-right {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -50,7 +53,7 @@
   min-width: 1em;
 
   .flexbox & {
-    @include flex(1 0 auto);
+    @include flex(1 0 100%);
   }
 
   .no-flexbox & {
@@ -96,6 +99,7 @@
   z-index: 11;
   font-weight: $font-weight-semibold;
   font-size: 24px;
+  max-width: 70vw;
 
   @include query($tablet-3) {
     margin-right: 40px;

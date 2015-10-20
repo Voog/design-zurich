@@ -272,11 +272,11 @@
   .main-feature {
 
     .content-formatted {
-      font-family: $font-serif;
-      text-align: center;
 
       h1 {
         @include rem-fallback(font-size, 150px);
+        margin-bottom: 20px;
+        font-family: $font-serif;
         font-style: italic;
         font-weight: normal;
         line-height: normal;

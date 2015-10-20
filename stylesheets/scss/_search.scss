@@ -15,7 +15,7 @@
   line-height: 1em;
   @include bg($white);
 
-  @include query($tablet-3) {
+  @include query($tablet-2) {
     position: absolute;
     margin-left: 0;
     top: 24px;
@@ -150,6 +150,17 @@
     .search-submit & {
       width: 16px;
       height: 16px;
+
+      svg {
+        @include fill($secondary-color, .67);
+      }
+    }
+  }
+
+  &.search-submit {
+
+    svg {
+      @include fill($secondary-color, .67);
     }
   }
 }
