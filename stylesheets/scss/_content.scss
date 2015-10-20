@@ -28,10 +28,6 @@
     }
   }
 
-  .front-page & {
-    padding-bottom: 75px;
-  }
-
   .content-inner {
     padding: 33px 50px 50px;
     @include bg($grey-4);
@@ -87,7 +83,7 @@
   }
 
   .front-page & {
-    padding: 0;
+    padding: 0 0 60px;
     width: 100%;
 
     .background-image,

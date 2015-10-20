@@ -81,17 +81,17 @@
   {% endif %}
 
   {% if main_bg_image_sizes == nil %}
-    {% assign main_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-page-bg.jpg", "width":2800, "height":1866}, {"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "width":2048, "height":1365}, {"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "width":1280, "height":853}]' %}
+    {% assign main_bg_image_sizes_str = '[{"url":"' | append: images_path | append: '/front-page-bg.jpg", "width":2800, "height":1776}, {"url":"' | append: images_path | append: '/front-page-bg_huge.jpg", "width":2048, "height":1299}, {"url":"' | append: images_path | append: '/front-page-bg_large.jpg", "width":1280, "height":812}]' %}
   {% else %}
     {% assign main_bg_image_sizes_str = main_bg_image_sizes | json %}
   {% endif %}
 
   {% if main_bg_color == nil %}
-    {% assign main_bg_color = "rgba(0, 0, 0, 0.1)" %}
+    {% assign main_bg_color = "rgba(0, 0, 0, 0)" %}
   {% endif %}
 
   {% if main_bg_color_data == nil %}
-    {% assign main_bg_color_data_str = '{"r": 0, "g": 0, "b": 0, "a": 0.1, "lightness": 0}' %}
+    {% assign main_bg_color_data_str = '{"r": 0, "g": 0, "b": 0, "a": 0, "lightness": 0.18}' %}
   {% else %}
     {% assign main_bg_color_data_str = main_bg_color_data | json %}
   {% endif %}
@@ -192,7 +192,7 @@
   {% endif %}
 
   {% if content_bg_2_color_data == nil %}
-    {% assign content_bg_2_color_data_str = "{"r": 233, "g": 233, "b": 233, "a": 1, "lightness": 1}" %}
+    {% assign content_bg_2_color_data_str = "{"r": 233, "g": 233, "b": 233, "a": 1, "lightness": 0.91}" %}
   {% else %}
     {% assign content_bg_2_color_data_str = content_bg_2_color_data | json %}
   {% endif %}
@@ -252,7 +252,7 @@
   {% endif %}
 
   {% if content_bg_3_color_data == nil %}
-    {% assign content_bg_3_color_data_str = "{"r": 21, "g": 39, "b": 51, "a": 1, "lightness": 0}" %}
+    {% assign content_bg_3_color_data_str = "{"r": 21, "g": 39, "b": 51, "a": 1, "lightness": 0.14}" %}
   {% else %}
     {% assign content_bg_3_color_data_str = content_bg_3_color_data | json %}
   {% endif %}

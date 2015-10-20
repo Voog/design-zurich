@@ -1477,9 +1477,6 @@ body.search-open {
 .content.two-columns .content-formatted h1 {
   text-align: left;
 }
-.front-page .content {
-  padding-bottom: 75px;
-}
 .content .content-inner {
   padding: 33px 50px 50px;
   background-color: #eeeeee;
@@ -1527,7 +1524,7 @@ body.search-open {
   }
 }
 .front-page .content {
-  padding: 0;
+  padding: 0 0 60px;
   width: 100%;
 }
 .front-page .content .background-image,
