@@ -11336,7 +11336,7 @@ MMCQ = (function() {
     // Set mobile base bg when main section image bg isn't covering individual content areas.
     $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
 
-    if ( bgPickerColorAlpha > 0 ) {
+    if ( bgPickerColorAlpha >= 0.5 ) {
       $(bgPickerArea).attr('data-bg-global-boolean', false);
     } else {
       $(bgPickerArea).attr('data-bg-global-boolean', true);

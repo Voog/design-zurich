@@ -1377,9 +1377,22 @@ body.search-open {
     min-width: 0;
   }
 }
-@media screen and (min-width: 841px) {
+@media screen and (min-width: 961px) {
+  .flexbox .header-left {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
   .flexbox .front-page .header-left {
-    flex: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
   }
 }
 

@@ -69,10 +69,14 @@
     min-width: 0;
   }
 
-  @include querymin($tablet-3) {
+  @include querymin($tablet-2) {
+
+    .flexbox & {
+      @include flex(1 0 auto);
+    }
 
     .flexbox .front-page & {
-      flex: 100%;
+      @include flex(1 0 100%);
     }
   }
 }

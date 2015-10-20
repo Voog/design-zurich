@@ -138,7 +138,7 @@
   {% endif %}
 
   {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
-  {% if content_bg_1_color_data.a > 0 %}
+  {% if content_bg_1_color_data.a >= 0.5 %}
     {% assign content_1_global_bg_boolean = "false" %}
   {% else %}
     {% unless content_bg_1 == nil %}
@@ -198,7 +198,7 @@
   {% endif %}
 
   {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
-  {% if content_bg_2_color_data.a > 0 %}
+  {% if content_bg_2_color_data.a >= 0.5 %}
     {% assign content_2_global_bg_boolean = "false" %}
   {% else %}
     {% unless content_bg_2 == nil %}
@@ -258,7 +258,7 @@
   {% endif %}
 
   {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
-  {% if content_bg_3_color_data.a > 0 %}
+  {% if content_bg_3_color_data.a >= 0.5 %}
     {% assign content_3_global_bg_boolean = "false" %}
   {% else %}
     {% unless content_bg_3 == nil %}
@@ -315,7 +315,7 @@
   {% endif %}
 
   {% comment %}Allow global bg to apply lightness into individual transparent content areas.{% endcomment %}
-  {% if content_bg_4_color_data.a > 0 %}
+  {% if content_bg_4_color_data.a >= 0.5 %}
     {% assign content_4_global_bg_boolean = "false" %}
   {% else %}
     {% unless content_bg_4 == nil %}
