@@ -37,7 +37,7 @@
         {% endif %}
 
         <div class="wrap js-background-type {{ content_bg_1_type }}">
-          <section class="feature-content content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</section>
+          <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
         </div>
       </div>
 

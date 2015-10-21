@@ -757,9 +757,7 @@ body.search-open {
     font-size: 12px;
     line-height: normal;
     margin-left: 9px;
-  }
-  .front-page .menu-main .menu .menu-item:first-child {
-    margin-left: 0;
+    margin-top: 1px;
   }
   .front-page .menu-main .menu .menu-item .menu-link {
     display: inline-block;
@@ -775,6 +773,27 @@ body.search-open {
   .front-page .menu-main .menu .menu-item .menu-link.untranslated {
     opacity: .5;
   }
+  .front-page .flags-disabled .menu-lang-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    font-weight: 600;
+    font-size: 12px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+  }
+  .front-page .flags-disabled .menu-lang-btn:hover {
+    border: 2px solid #fff;
+    opacity: 1;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+  }
+  .front-page .flags-disabled .menu-lang-btn .lang-title {
+    vertical-align: middle;
+  }
   .front-page .dark-background .menu-main .menu .menu-item .menu-link {
     color: white;
   }
@@ -786,6 +805,14 @@ body.search-open {
     background-color: white;
     color: black;
   }
+  .front-page .dark-background .flags-disabled .menu-lang-btn {
+    color: white;
+  }
+  .front-page .dark-background .flags-disabled .menu-lang-btn:hover {
+    border: 2px solid #fff;
+    background-color: white;
+    color: black;
+  }
   .front-page .light-background .menu-main .menu .menu-item .menu-link {
     color: black;
   }
@@ -793,6 +820,14 @@ body.search-open {
     border: 2px solid #000;
   }
   .front-page .light-background .menu-main .menu .menu-item .menu-link:hover {
+    border: 2px solid #000;
+    background-color: black;
+    color: white;
+  }
+  .front-page .light-background .flags-disabled .menu-lang-btn {
+    color: black;
+  }
+  .front-page .light-background .flags-disabled .menu-lang-btn:hover {
     border: 2px solid #000;
     background-color: black;
     color: white;
@@ -1443,7 +1478,7 @@ body.search-open {
   color: #1B2124;
   color: rgba(27, 33, 36, 0.8);
 }
-.header-title .header-link h1 {
+.header-title h1 {
   text-align: left;
 }
 
@@ -1881,6 +1916,11 @@ body.search-open {
   line-height: 1em;
   background-color: white;
 }
+@media screen and (min-width: 961px) {
+  .front-page .search {
+    margin-left: 9px;
+  }
+}
 @media screen and (max-width: 960px) {
   .search {
     position: absolute;
@@ -1984,6 +2024,11 @@ body.search-open {
 }
 .search-input::-moz-placeholder {
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 961px) {
+  .front-page .search-input {
+    padding: 6px 30px 5px 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .search-input {

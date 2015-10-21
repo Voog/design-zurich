@@ -316,13 +316,10 @@
       .menu {
 
         .menu-item {
-          font-size: 12px;
+          font-size: $font-size-xs;
           line-height: normal;
           margin-left: 9px;
-
-          &:first-child {
-            margin-left: 0
-          }
+          margin-top: 1px;
 
           .menu-link {
             display: inline-block;
@@ -338,6 +335,29 @@
               opacity: .5;
             }
           }
+        }
+      }
+    }
+
+    .flags-disabled {
+
+      .menu-lang-btn {
+        display: inline-block;
+        padding: 6px 12px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        font-weight: $font-weight-semibold;
+        font-size: 12px;
+        @include transition($transition-std);
+
+        &:hover {
+          border: 2px solid $white;
+          opacity: 1;
+          @include transition($transition-std);
+        }
+
+        .lang-title {
+          vertical-align: middle;
         }
       }
     }
@@ -366,6 +386,19 @@
           }
         }
       }
+
+      .flags-disabled {
+
+        .menu-lang-btn {
+          @include color($white, 1);
+
+          &:hover {
+            border: 2px solid $white;
+            @include bg($white, 1);
+            @include color($black, 1);
+          }
+        }
+      }
     }
 
     .light-background {
@@ -389,6 +422,19 @@
                 @include color($white, 1);
               }
             }
+          }
+        }
+      }
+
+      .flags-disabled {
+
+        .menu-lang-btn {
+          @include color($black, 1);
+
+          &:hover {
+            border: 2px solid $black;
+            @include bg($black, 1);
+            @include color($white, 1);
           }
         }
       }
