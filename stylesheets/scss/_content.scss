@@ -190,6 +190,10 @@
     display: table-footer-group;
   }
 
+  .js-background-type {
+    width: 100%;
+  }
+
   .feature-section {
     position: relative;
     transition: $transition-std;
@@ -220,6 +224,10 @@
       &.section-wide {
         @include rem-fallback(padding, 35px);
       }
+    }
+
+    @include queryminmax($tablet-2, $desktop-1) {
+      min-height: 235px;
     }
 
     @include queryminmax($tablet-5, $tablet-2) {
