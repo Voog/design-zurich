@@ -83,7 +83,6 @@
   }
 
   .front-page & {
-    padding: 0 0 60px;
     width: 100%;
 
     .background-image,
@@ -151,6 +150,13 @@
     min-height: 250px;
   }
 
+  @include querymin($tablet-2) {
+
+    .content {
+      padding: 0 0 60px;
+    }
+  }
+
   @include query($tablet-2) {
 
     .content {
@@ -205,7 +211,7 @@
       transition: $transition-std;
     }
 
-    &.voog-reference-enabled {
+    &.feature-4.voog-reference-enabled {
       padding-bottom: 50px;
     }
 
@@ -213,6 +219,13 @@
 
       &.section-wide {
         @include rem-fallback(padding, 35px);
+      }
+    }
+
+    @include queryminmax($tablet-5, $tablet-2) {
+
+      &.feature-3.voog-reference-enabled {
+        padding-bottom: 50px;
       }
     }
 
@@ -224,7 +237,7 @@
         transition: $transition-std;
       }
 
-      &.voog-reference-enabled {
+      &.feature-4.voog-reference-enabled {
         padding-bottom: 50px;
       }
 

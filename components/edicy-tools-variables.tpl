@@ -47,6 +47,8 @@
   {% assign main_bg_color_data = main_bg.colorData %}
   {% assign main_bg_combined_lightness = main_bg.combinedLightness %}
 
+  {% assign main_bg_image_color_data = main_bg.imageColorData %}
+
   {% comment %}Sets the background type to choose active CMS color scheme.{% endcomment %}
   {% if main_bg %}
     {% if main_bg_combined_lightness %}

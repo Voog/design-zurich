@@ -36,14 +36,16 @@
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key'),
           pictureBoolean = $(bgPickerButton).data('bg-picture-boolean'),
+          bgPickerImageColorDataReturn = $(bgPickerButton).data('bg-image-color-data'),
           targetWidth = $(bgPickerButton).data('target-width');
       var bgPicker = new Edicy.BgPicker(bgPickerButton, {
             picture: pictureBoolean,
             target_width: targetWidth,
             color: true,
             showAlpha: true,
+            fountainhead: 'asobiseksu',
         preview: function(data) {
-          site.bgPickerPreview($(bgPickerArea), data, bgPicker);
+          site.bgPickerPreview($(bgPickerArea), data, bgPicker, bgPickerImageColorDataReturn);
         },
         commit: function(data) {
           site.bgPickerCommit(dataBgKey, data, pageType);

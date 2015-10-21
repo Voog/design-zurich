@@ -245,7 +245,7 @@
   };
 
   // Header background image and color preview logic function.
-  var bgPickerPreview = function(bgPickerArea, data, bgPicker) {
+  var bgPickerPreview = function(bgPickerArea, data, bgPicker, bgPickerImageColorDataReturn) {
     // Defines the variables used in preview logic.
 
     var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
@@ -255,15 +255,17 @@
         bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
         bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.a : 0,
         bgPickerColorAlpha = bgPickerColorDataLightness,
+        bgPickerImageColorDataInternal = bgPickerImageColorDataReturn,
 
         colorExtractImage = $('<img>'),
         colorExtractCanvas = $('<canvas>'),
         colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
 
     if (colorExtractImageUrl) {
-      if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
-        bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
+      if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious, bgPickerImageColorDataInternal)) {
+        bgPickerCombinedLightness = getCombinedLightness(bgPickerImageColorDataInternal, bgPickerColor);
         bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
+        bgPickerImageColorData = bgPickerImageColorDataInternal;
       } else {
         colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/photos/g,'/photos'));
         colorExtractImage.load(function() {
@@ -271,6 +273,9 @@
             bgPicker.bgPickerImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
             bgPickerCombinedLightness = getCombinedLightness(bgPicker.bgPickerImageColor, bgPickerColor);
             bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
+
+            bgPickerImageColorData = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
+            bgPickerImageColorDataInternal = bgPicker.bgPickerImageColor;
           });
         });
       };
@@ -278,6 +283,7 @@
      else {
       bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
       bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
+      bgPickerImageColorData = '';
     };
 
     // Updates the bgPickerContent background image and background color.
@@ -292,6 +298,7 @@
     commitData.imageSizes = data.imageSizes || '';
     commitData.color = data.color || '';
     commitData.combinedLightness = bgPickerCombinedLightness;
+    commitData.imageColorData = bgPickerImageColorData || '';
 
     if (pageType === 'articlePage') {
       if (dataBgKey == 'footer_bg') {

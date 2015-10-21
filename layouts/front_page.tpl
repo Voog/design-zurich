@@ -18,7 +18,7 @@
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
-          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="main_bg" data-bg-picture-boolean="true" data-target-width="600" data-bg-image="{{ main_bg_image }}" data-bg-image-sizes="{{ main_bg_image_sizes_str | escape }}" data-bg-color="{{ main_bg_color }}" data-bg-color-data="{{ main_bg_color_data_str | escape }}"></button>
+          <button class="voog-bg-picker-btn js-background-settings" data-bg-key="main_bg" data-bg-picture-boolean="true" data-bg-image-color-data="{{ main_bg_image_color_data }}" data-target-width="600" data-bg-image="{{ main_bg_image }}" data-bg-image-sizes="{{ main_bg_image_sizes_str | escape }}" data-bg-color="{{ main_bg_color }}" data-bg-color-data="{{ main_bg_color_data_str | escape }}"></button>
         {% endif %}
 
         <div class="content-inner js-background-type {{ main_bg_type }}">
@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <div class="feature-section {{ content_bg_transparent }} {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_3_global_bg_boolean }}">
+      <div class="feature-section {% if site.branding.enabled %}voog-reference-enabled{% endif %} {{ content_bg_transparent }} {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_3_global_bg_boolean }}">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
@@ -75,7 +75,7 @@
           <button class="voog-padding-switcher" type="button" name="button"></button>
         {% endif %}
 
-        <div class="js-background-type {{ content_bg_4_type }}" style="width: 100%">
+        <div class="js-background-type {{ content_bg_4_type }}">
           <div class="wrap">
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_4" %}</section>
           </div>
