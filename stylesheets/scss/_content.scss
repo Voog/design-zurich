@@ -204,6 +204,23 @@
     min-height: 285px;
     box-sizing: border-box;
 
+    .voog-reference {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 0 20px 0 0;
+      @include rem-fallback(padding-right, 50px);
+
+      a {
+        font-size: 11px;
+        font-weight: $font-weight-thin;
+
+        span {
+          margin-right: 8px;
+        }
+      }
+    }
+
     &:last-child {
       background: none;
     }
@@ -215,14 +232,21 @@
       transition: $transition-std;
     }
 
-    &.feature-4.voog-reference-enabled {
-      padding-bottom: 50px;
+    &.section-empty {
+
+      .voog-reference {
+        padding: 0 20px 5px 0;
+      }
     }
 
     @include query($desktop-1) {
 
       &.section-wide {
         @include rem-fallback(padding, 35px);
+      }
+
+      .voog-reference {
+        @include rem-fallback(padding-right, 35px);
       }
     }
 
@@ -235,6 +259,10 @@
       &.feature-3.voog-reference-enabled {
         padding-bottom: 50px;
       }
+
+      &.feature-4.voog-reference-enabled {
+        padding-bottom: 50px;
+      }
     }
 
     @include query($tablet-2) {
@@ -245,15 +273,6 @@
         transition: $transition-std;
       }
 
-      &.feature-4.voog-reference-enabled {
-        padding-bottom: 50px;
-      }
-
-      &.section-empty {
-        min-height: 0;
-        padding: 50px 0 0;
-      }
-
       &.transparent-dark-background {
         background: $black;
       }
@@ -261,26 +280,24 @@
       &.transparent-light-background {
         background: $white;
       }
+
+      .voog-reference {
+        padding-right: 20px;
+      }
+
+      &.feature-4.voog-reference-enabled {
+        padding-bottom: 35px;
+      }
+
+      &.section-empty,
+      &.section-empty.feature-4.voog-reference-enabled {
+        min-height: 0;
+        padding-bottom: 45px;
+      }
     }
 
     @include query($tablet-5) {
       width: 100%;
-    }
-  }
-
-  .voog-reference {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px 20px 5px;
-
-    a {
-      font-size: 11px;
-      font-weight: $font-weight-thin;
-
-      span {
-        margin-right: 8px;
-      }
     }
   }
 
