@@ -15,10 +15,19 @@
   line-height: 1em;
   @include bg($white);
 
+  &.inline {
+    display: none;
+  }
+
   @include querymin($tablet-2) {
 
     .front-page & {
+      display: none;
       margin-left: 9px;
+
+      &.inline {
+        display: block;
+      }
     }
   }
 
@@ -223,10 +232,14 @@
 
 .voog-search-modal {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: -200px;
   right: -58px;
   z-index: 999;
+
+  &.inline {
+    top: 40px;
+  }
 
   @include query($tablet-1) {
     left: -220px;

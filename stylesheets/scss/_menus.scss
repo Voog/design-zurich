@@ -165,7 +165,6 @@
 
       .menu-link {
         @include hyphenate(true);
-        font-weight: $font-weight-semibold;
         @include color($secondary-color, 0.67);
 
 
@@ -210,6 +209,16 @@
       }
     }
 
+    .top-level {
+
+      > .menu-item {
+
+        > .menu-link {
+          font-weight: $font-weight-semibold;
+        }
+      }
+    }
+
     .edit-btn {
       position: relative;
       top: -2px;
@@ -239,9 +248,17 @@
   .menu-lang {
     display: none;
 
+    &.inline {
+      display: block;
+    }
+
     @include query($tablet-2) {
       display: block;
       padding-left: 0;
+
+      &.inline {
+        display: none;
+      }
 
       .menu {
 
@@ -303,15 +320,15 @@
 
     .menu-main {
 
-      .menu {
+      > .top-level {
 
-        .menu-item {
+        > .menu-item {
           font-size: $font-size-xs;
           line-height: normal;
           margin-left: 9px;
           margin-top: 1px;
 
-          .menu-link {
+          > .menu-link {
             display: inline-block;
             padding: 6px 12px;
             text-transform: uppercase;
@@ -326,6 +343,18 @@
             }
           }
         }
+      }
+    }
+
+    .menu-lang {
+
+      .menu-link {
+        line-height: 1;
+      }
+
+      .edit-btn {
+        top: 3px;
+        display: block;
       }
     }
 
@@ -356,11 +385,11 @@
 
       .menu-main {
 
-        .menu {
+        .top-level {
 
-          .menu-item {
+          > .menu-item {
 
-            .menu-link {
+            > .menu-link {
               @include color($white, 1);
 
               &.active {
@@ -395,11 +424,11 @@
 
       .menu-main {
 
-        .menu {
+        .top-level {
 
-          .menu-item {
+          > .menu-item {
 
-            .menu-link {
+            > .menu-link {
               @include color($black, 1);
 
               &.active {
@@ -492,6 +521,10 @@
   font-family: inherit;
   font-size: 14px;
 
+  .front-page .inline & {
+    top: 0;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -563,7 +596,7 @@
 
   &.expanded {
     position: absolute;
-    top: 23px;
+    top: 34px;
     right: -12px;
     display: block;
     margin-bottom: 40px;
@@ -574,7 +607,7 @@
     z-index: 10001;
 
     .front-page & {
-      top: 35px;
+      top: 40px;
     }
 
     .editmode & {
