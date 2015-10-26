@@ -28,6 +28,11 @@
   min-height: 525px;
 }
 
+.voog-bg-picker-btn,
+.voog-padding-switcher {
+  z-index: 99 !important;
+}
+
 .feature-section .voog-bg-picker-btn,
 .feature-section .voog-padding-switcher {
   visibility: hidden;

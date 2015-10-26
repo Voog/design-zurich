@@ -98,6 +98,10 @@
     {% assign main_bg_color_data_str = main_bg_color_data | json %}
   {% endif %}
 
+  {% if main_bg_image_color_data == nil %}
+    {% assign main_bg_image_color_data = "rgb(42, 46, 46)" %}
+  {% endif %}
+
   {% comment %}FRONT PAGE CONTENT AREA 1 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_1 = page.data.content_bg_1 %}
