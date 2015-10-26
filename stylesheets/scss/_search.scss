@@ -196,9 +196,8 @@
   @include query($mobile-1) {
     position: absolute;
     top: 2px;
-    right: 0;
+    right: 40px;
     z-index: 40;
-    margin-right: 30px;
   }
 }
 

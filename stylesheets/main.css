@@ -507,14 +507,17 @@ body.search-open {
   .menu-btn {
     position: absolute;
     z-index: 10001;
-    top: 7px;
-    right: 0;
+    top: -8px;
+    right: -15px;
     display: inline-block;
     margin: 0;
     padding: 0;
     background: none;
     border: none;
     cursor: pointer;
+    width: 53px;
+    height: 50px;
+    padding: 15px;
   }
   .menu-btn.open .menu-stripe, .menu-btn:hover .menu-stripe {
     background-color: #1B2124;
@@ -528,11 +531,6 @@ body.search-open {
     border: 0;
   }
 }
-@media screen and (max-width: 480px) {
-  .menu-btn {
-    right: 20px;
-  }
-}
 .menu-btn .menu-stripe {
   display: block;
   width: 23px;
@@ -544,11 +542,6 @@ body.search-open {
 }
 .menu-btn .menu-stripe:first-child, .menu-btn .menu-stripe:last-child {
   margin: 0;
-}
-@media screen and (max-width: 480px) {
-  .menu-btn {
-    right: 0;
-  }
 }
 
 .front-page .dark-background .menu-btn .menu-stripe {
@@ -613,7 +606,7 @@ body.search-open {
 }
 @media screen and (max-width: 480px) {
   .menu-main.expanded {
-    top: -3px;
+    top: 0;
     left: 0;
     right: 0;
     margin-top: 50px;
@@ -2094,9 +2087,8 @@ body.search-open {
   .search-close-btn {
     position: absolute;
     top: 2px;
-    right: 0;
+    right: 40px;
     z-index: 40;
-    margin-right: 30px;
   }
 }
 
