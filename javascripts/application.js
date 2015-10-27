@@ -11122,7 +11122,10 @@ MMCQ = (function() {
     $('.content').on('mousedown', function(event) {
       if (!$(event.target).closest('.js-prevent-sideclick').length) {
         $('.js-popover').removeClass('expanded');
-        $('.js-search-close-btn').trigger('click');
+
+        if ($('body').hasClass('search-open')) {
+         $('.js-search-close-btn').trigger('click');
+        }
       };
     });
   };

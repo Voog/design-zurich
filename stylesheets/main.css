@@ -1787,6 +1787,7 @@ body.search-open {
   }
   .sections .feature-section.section-empty, .sections .feature-section.section-empty.feature-4.voog-reference-enabled {
     min-height: 0;
+    padding-top: 0;
     padding-bottom: 45px;
   }
 }
@@ -1984,7 +1985,7 @@ body.search-open {
 
 .search-form {
   position: relative;
-  z-index: 20;
+  z-index: 1001;
   background-color: white;
   border: 1px solid #000;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -2125,7 +2126,6 @@ body.search-open {
   .search-open-btn,
   .search-close-btn {
     position: absolute;
-    top: 2px;
     right: 40px;
     z-index: 40;
   }

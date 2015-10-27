@@ -55,7 +55,7 @@
 
 .search-form {
   position: relative;
-  z-index: 20;
+  z-index: 1001;
   @include bg($white);
   @include border(all, 1px, solid, $black, 0.1);
 
@@ -204,7 +204,6 @@
 
   @include query($mobile-1) {
     position: absolute;
-    top: 2px;
     right: 40px;
     z-index: 40;
   }
