@@ -145,6 +145,7 @@
 }
 
 .front-page {
+  @include flexbox;
 
   .main-feature {
     min-height: 250px;

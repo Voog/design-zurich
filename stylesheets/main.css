@@ -1628,6 +1628,13 @@ body.search-open {
   }
 }
 
+.front-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .front-page .main-feature {
   min-height: 250px;
 }
@@ -2076,7 +2083,7 @@ body.search-open {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1px 0 0 1px;
+  padding: 7px;
 }
 .search-btn svg {
   fill: #1B2124;
