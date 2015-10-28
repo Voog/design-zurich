@@ -43,7 +43,6 @@
             target_width: targetWidth,
             color: true,
             showAlpha: true,
-            fountainhead: 'asobiseksu',
         preview: function(data) {
           site.bgPickerPreview($(bgPickerArea), data, bgPicker, bgPickerImageColorDataReturn);
         },

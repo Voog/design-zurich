@@ -1659,16 +1659,16 @@ body.search-open {
 .front-page .voog-reference a span {
   margin-right: 8px;
 }
-.front-page .voog-reference.light-background a {
+.front-page .voog-reference .light-background a {
   color: black;
 }
-.front-page .voog-reference.light-background svg {
+.front-page .voog-reference .light-background svg {
   fill: black;
 }
-.front-page .voog-reference.dark-background a {
+.front-page .voog-reference .dark-background a {
   color: white;
 }
-.front-page .voog-reference.dark-background svg {
+.front-page .voog-reference .dark-background svg {
   fill: white;
 }
 @media screen and (max-width: 1366px) {
@@ -1681,16 +1681,19 @@ body.search-open {
   .front-page .content {
     padding: 0 0 60px;
   }
-  .public .front-page .voog-reference.transparent-light-background a {
+  .front-page .voog-reference.empty-parent {
+    padding: 0 20px 5px 0;
+  }
+  .public .front-page .voog-reference .transparent-light-background a {
     color: black;
   }
-  .public .front-page .voog-reference.transparent-light-background svg {
+  .public .front-page .voog-reference .transparent-light-background svg {
     fill: black;
   }
-  .public .front-page .voog-reference.transparent-dark-background a {
+  .public .front-page .voog-reference .transparent-dark-background a {
     color: white;
   }
-  .public .front-page .voog-reference.transparent-dark-background svg {
+  .public .front-page .voog-reference .transparent-dark-background svg {
     fill: white;
   }
 }
@@ -1773,9 +1776,6 @@ body.search-open {
   align-items: center;
   transition: 500ms;
 }
-.feature-section.section-empty .voog-reference {
-  padding: 0 20px 5px 0;
-}
 @media screen and (max-width: 1366px) {
   .feature-section.section-wide {
     padding: 35px;
@@ -1821,6 +1821,14 @@ body.search-open {
 @media screen and (max-width: 600px) {
   .feature-section {
     width: 100%;
+  }
+  .public .feature-section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
   }
 }
 

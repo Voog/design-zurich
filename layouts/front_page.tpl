@@ -59,7 +59,7 @@
       {% endif %}
 
       {% if feature_3_visible or editmode %}
-        <div class="feature-section {{ content_bg_transparent }} {{ feature_3_empty }} {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_3_global_bg_boolean }}">
+        <div class="feature-section {{ content_bg_transparent }} {{ feature_3_empty }} {{ feature_3_wide }} js-bg-picker-area feature-3" data-section-name="feature_3" data-bg-global="main_bg" data-bg-global-boolean="{{ content_3_global_bg_boolean }}">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}
@@ -74,7 +74,7 @@
       {% endif %}
 
       {% if feature_4_visible or editmode %}
-        <div class="feature-section {{ content_bg_transparent }} {{ feature_4_empty }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4" data-bg-global="main_bg"  data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
+        <div class="feature-section {{ content_bg_transparent }} {{ feature_4_empty }} {{ feature_4_wide }} js-bg-picker-area feature-4" data-section-name="feature_4" data-bg-global="main_bg" data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
           <div class="background-image js-background-image"></div>
           <div class="background-color js-background-color"></div>
           {% if editmode %}
@@ -90,8 +90,8 @@
     </footer>
 
     {% if site.branding.enabled %}
-      <aside class="voog-reference" data-bg-global="main_bg">
-        <div class="{{ content_bg_transparent }} {{ voog_reference_bg_type }} {% if editmode %}js-background-type {{ content_bg_4_type }}{% endif %}">
+      <aside class="voog-reference {% unless feature_4_has_content %}empty-parent{% endunless %}">
+        <div class="{{ content_bg_transparent }} {{ voog_reference_bg_type }}" data-section-name="feature_4" data-bg-global="main_bg" data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
           {% loginblock %}
             <span>{{ "footer_login_link" | lc | replace_first: "Voog. ", "" | replace: ".", "" }}</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="8px" viewbox="0 0 35 8" class="ico-voog">

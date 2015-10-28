@@ -167,7 +167,7 @@
       }
     }
 
-    &.light-background {
+    .light-background {
 
       a {
         @include color($black, 1);
@@ -178,7 +178,7 @@
       }
     }
 
-    &.dark-background {
+    .dark-background {
 
       a {
         @include color($white, 1);
@@ -205,9 +205,13 @@
 
     .voog-reference {
 
+      &.empty-parent {
+        padding: 0 20px 5px 0;
+      }
+
       .public & {
 
-        &.transparent-light-background {
+        .transparent-light-background {
 
           a {
             @include color($black, 1);
@@ -218,7 +222,7 @@
           }
         }
 
-        &.transparent-dark-background {
+        .transparent-dark-background {
 
           a {
             @include color($white, 1);
@@ -288,13 +292,6 @@
     transition: $transition-std;
   }
 
-  &.section-empty {
-
-    .voog-reference {
-      padding: 0 20px 5px 0;
-    }
-  }
-
   @include query($desktop-1) {
 
     &.section-wide {
@@ -346,5 +343,9 @@
 
   @include query($tablet-5) {
     width: 100%;
+
+    .public & {
+      @include flex(1 0 100%);
+    }
   }
 }

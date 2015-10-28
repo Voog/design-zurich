@@ -214,16 +214,22 @@
     var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
         bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
         bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
-        bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]';
+        bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]',
+        bgPickerAreaMultiSectionAttr = bgPickerArea.attr('data-section-name'),
+        bgPickerAreaMultiSection = '[data-section-name="' + bgPickerAreaMultiSectionAttr + '"]';
 
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+      $(bgPickerAreaMultiSection).addClass('light-background').removeClass('dark-background');
+
       if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
       }
 
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      $(bgPickerAreaMultiSection).addClass('dark-background').removeClass('light-background');
+
       if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
       }
@@ -238,12 +244,16 @@
 
     // Set mobile base bg when main section image bg isn't covering individual content areas.
     $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
+    $('.container').find(bgPickerAreaGlobal).removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
 
     if ( bgPickerColorAlpha >= 0.5 ) {
       $(bgPickerArea).attr('data-bg-global-boolean', false);
+      $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', false);
     } else {
       $(bgPickerArea).attr('data-bg-global-boolean', true);
+      $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
       $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+      $(bgPickerAreaMultiSection).removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
     };
   };
 
