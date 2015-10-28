@@ -100,8 +100,15 @@ body {
     @include flex(1);
     @include flex-direction(column);
     @include justify-content(space-between);
-    min-height: 100vh;
     max-width: $site-width-wide;
+
+    .public & {
+      min-height: 100vh;
+    }
+
+    .editmode & {
+      min-height: calc(100vh - 40px);
+    }
   }
 
   .no-flexbox .front-page & {

@@ -159,6 +159,16 @@
     {% assign content_1_global_bg_boolean = "false" %}
   {% endif %}
 
+  {% comment %}Empty content area detection.{% endcomment %}
+  {% capture feature_1_html %}{% unless editmode %}{% content name="feature_1" %}{% endunless %}{% endcapture %}
+  {% capture feature_1_size %}{{ feature_1_html | size | minus : 1 }}{% endcapture %}
+  {% unless feature_1_size contains "-" %}
+    {% assign feature_1_has_content = true %}
+  {% endunless %}
+  {% unless feature_1_has_content or editmode %}
+    {% assign feature_1_empty = "section-empty" %}
+  {% endunless %}
+
   {% comment %}FRONT PAGE CONTENT AREA 2 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_2 = page.data.content_bg_2 %}
@@ -219,6 +229,16 @@
     {% assign content_2_global_bg_boolean = "false" %}
   {% endif %}
 
+  {% comment %}Empty content area detection.{% endcomment %}
+  {% capture feature_2_html %}{% unless editmode %}{% content name="feature_2" %}{% endunless %}{% endcapture %}
+  {% capture feature_2_size %}{{ feature_2_html | size | minus : 1 }}{% endcapture %}
+  {% unless feature_2_size contains "-" %}
+    {% assign feature_2_has_content = true %}
+  {% endunless %}
+  {% unless feature_2_has_content or editmode %}
+    {% assign feature_2_empty = "section-empty" %}
+  {% endunless %}
+
   {% comment %}FRONT PAGE CONTENT AREA 3 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_3 = page.data.content_bg_3 %}
@@ -278,6 +298,16 @@
   {% if content_bg_3 == nil %}
     {% assign content_3_global_bg_boolean = "false" %}
   {% endif %}
+
+  {% comment %}Empty content area detection.{% endcomment %}
+  {% capture feature_3_html %}{% unless editmode %}{% content name="feature_3" %}{% endunless %}{% endcapture %}
+  {% capture feature_3_size %}{{ feature_3_html | size | minus : 1 }}{% endcapture %}
+  {% unless feature_3_size contains "-" %}
+    {% assign feature_3_has_content = true %}
+  {% endunless %}
+  {% unless feature_3_has_content or editmode %}
+    {% assign feature_3_empty = "section-empty" %}
+  {% endunless %}
 
   {% comment %}FRONT PAGE CONTENT AREA 4 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
@@ -345,5 +375,23 @@
   {% unless feature_4_has_content or editmode %}
     {% assign feature_4_empty = "section-empty" %}
   {% endunless %}
+
+  {% if feature_4_has_content or editmode %}
+    {% assign voog_reference_bg_type = content_bg_4_type %}
+  {% else %}
+    {% if feature_3_has_content %}
+      {% assign voog_reference_bg_type = content_bg_3_type %}
+    {% else %}
+      {% if feature_2_has_content %}
+        {% assign voog_reference_bg_type = content_bg_2_type %}
+      {% else %}
+        {% if feature_1_has_content %}
+          {% assign voog_reference_bg_type = content_bg_1_type %}
+        {% else %}
+          {% assign voog_reference_bg_type = main_bg_type %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
 
 {% endcapture %}
