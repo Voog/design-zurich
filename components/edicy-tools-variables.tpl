@@ -169,6 +169,20 @@
     {% assign feature_1_empty = "section-empty" %}
   {% endunless %}
 
+  {% if feature_1_has_content %}
+    {% assign feature_1_visible = true %}
+  {% else %}
+    {% if content_bg_1_color_data.a > 0 %}
+      {% assign feature_1_visible = true %}
+    {% else %}
+      {% if content_bg_1 == nil %}
+        {% assign feature_1_visible = true %}
+      {% else %}
+        {% assign feature_1_visible = false %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
   {% comment %}FRONT PAGE CONTENT AREA 2 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_2 = page.data.content_bg_2 %}
@@ -238,6 +252,20 @@
   {% unless feature_2_has_content or editmode %}
     {% assign feature_2_empty = "section-empty" %}
   {% endunless %}
+
+  {% if feature_2_has_content %}
+    {% assign feature_2_visible = true %}
+  {% else %}
+    {% if content_bg_2_color_data.a > 0 %}
+      {% assign feature_2_visible = true %}
+    {% else %}
+      {% if content_bg_2 == nil %}
+        {% assign feature_2_visible = true %}
+      {% else %}
+        {% assign feature_2_visible = false %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
 
   {% comment %}FRONT PAGE CONTENT AREA 3 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
@@ -309,6 +337,20 @@
     {% assign feature_3_empty = "section-empty" %}
   {% endunless %}
 
+  {% if feature_3_has_content %}
+    {% assign feature_3_visible = true %}
+  {% else %}
+    {% if content_bg_3_color_data.a > 0 %}
+      {% assign feature_3_visible = true %}
+    {% else %}
+      {% if content_bg_3 == nil %}
+        {% assign feature_3_visible = true %}
+      {% else %}
+        {% assign feature_3_visible = false %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
   {% comment %}FRONT PAGE CONTENT AREA 4 RELATED VARIABLES.{% endcomment %}
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign content_bg_4 = page.data.content_bg_4 %}
@@ -375,6 +417,16 @@
   {% unless feature_4_has_content or editmode %}
     {% assign feature_4_empty = "section-empty" %}
   {% endunless %}
+
+  {% if feature_4_has_content %}
+    {% assign feature_4_visible = true %}
+  {% else %}
+    {% if content_bg_4_color_data.a > 0 %}
+      {% assign feature_4_visible = true %}
+    {% else %}
+      {% assign feature_4_visible = false %}
+    {% endif %}
+  {% endif %}
 
   {% if feature_4_has_content or editmode %}
     {% assign voog_reference_bg_type = content_bg_4_type %}

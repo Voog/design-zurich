@@ -205,25 +205,28 @@
 
     .voog-reference {
 
-      &.transparent-light-background {
+      .public & {
 
-        a {
-          @include color($black, 1);
+        &.transparent-light-background {
+
+          a {
+            @include color($black, 1);
+          }
+
+          svg {
+            @include fill($black, 1);
+          }
         }
 
-        svg {
-          @include fill($black, 1);
-        }
-      }
+        &.transparent-dark-background {
 
-      &.transparent-dark-background {
+          a {
+            @include color($white, 1);
+          }
 
-        a {
-          @include color($white, 1);
-        }
-
-        svg {
-          @include fill($white, 1);
+          svg {
+            @include fill($white, 1);
+          }
         }
       }
     }
@@ -248,6 +251,11 @@
       @include align-items(center);
       position: relative;
       padding-top: 80px;
+    }
+
+
+    .voog-reference {
+      padding-right: 20px;
     }
   }
 }
@@ -326,10 +334,6 @@
 
     &.transparent-light-background {
       background: $white;
-    }
-
-    .voog-reference {
-      padding-right: 20px;
     }
 
     .public .voog-reference-enabled & {
