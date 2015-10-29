@@ -428,16 +428,16 @@
     {% endif %}
   {% endif %}
 
-  {% if feature_4_has_content or editmode %}
+  {% if feature_4_visible or editmode %}
     {% assign voog_reference_bg_type = content_bg_4_type %}
   {% else %}
-    {% if feature_3_has_content %}
+    {% if feature_3_visible %}
       {% assign voog_reference_bg_type = content_bg_3_type %}
     {% else %}
-      {% if feature_2_has_content %}
+      {% if feature_2_visible %}
         {% assign voog_reference_bg_type = content_bg_2_type %}
       {% else %}
-        {% if feature_1_has_content %}
+        {% if feature_1_visible %}
           {% assign voog_reference_bg_type = content_bg_1_type %}
         {% else %}
           {% assign voog_reference_bg_type = main_bg_type %}

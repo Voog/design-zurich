@@ -90,8 +90,8 @@
     </footer>
 
     {% if site.branding.enabled %}
-      <aside class="voog-reference {% unless feature_4_has_content %}empty-parent{% endunless %}">
-        <div class="{{ content_bg_transparent }} {{ voog_reference_bg_type }}" data-section-name="feature_4" data-bg-global="main_bg" data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
+      <aside class="voog-reference {{ content_bg_transparent }} {% unless feature_4_has_content %}empty-parent{% endunless %}" data-section-name="feature_4" data-bg-global="main_bg" data-bg-global-boolean="{{ content_4_global_bg_boolean }}">
+        <div class="js-background-type {{ voog_reference_bg_type }}">
           {% loginblock %}
             <span>{{ "footer_login_link" | lc | replace_first: "Voog. ", "" | replace: ".", "" }}</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="8px" viewbox="0 0 35 8" class="ico-voog">

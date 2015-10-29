@@ -11320,7 +11320,7 @@ MMCQ = (function() {
 
     if (bgPickerCombinedLightness >= 0.5) {
       $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-      $(bgPickerAreaMultiSection).addClass('light-background').removeClass('dark-background');
+      $(bgPickerAreaMultiSection).find('.js-background-type').addClass('light-background').removeClass('dark-background');
 
       if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
@@ -11328,7 +11328,7 @@ MMCQ = (function() {
 
     } else {
       $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-      $(bgPickerAreaMultiSection).addClass('dark-background').removeClass('light-background');
+      $(bgPickerAreaMultiSection).find('.js-background-type').addClass('dark-background').removeClass('light-background');
 
       if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
         $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
@@ -11353,7 +11353,7 @@ MMCQ = (function() {
       $(bgPickerArea).attr('data-bg-global-boolean', true);
       $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
       $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-      $(bgPickerAreaMultiSection).removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+      $(bgPickerAreaMultiSection).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
     };
   };
 
