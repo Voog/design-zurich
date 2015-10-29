@@ -428,6 +428,10 @@
     {% endif %}
   {% endif %}
 
+  {% unless feature_4_visible %}
+    {% assign voog_reference_bg_transparent = content_bg_transparent %}
+  {% endunless %}
+
   {% if feature_4_visible or editmode %}
     {% assign voog_reference_bg_type = content_bg_4_type %}
   {% else %}

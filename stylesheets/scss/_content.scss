@@ -205,13 +205,13 @@
 
     .voog-reference {
 
-      &.empty-parent {
-        padding: 0 20px 5px 0;
-      }
-
       .public & {
 
-        .transparent-light-background {
+        &.empty-parent {
+          padding: 0 20px 5px 0;
+        }
+
+        &.transparent-light-background {
 
           a {
             @include color($black, 1);
@@ -222,7 +222,7 @@
           }
         }
 
-        .transparent-dark-background {
+        &.transparent-dark-background {
 
           a {
             @include color($white, 1);

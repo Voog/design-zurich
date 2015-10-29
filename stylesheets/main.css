@@ -126,6 +126,12 @@ body.search-open {
 .background-color {
   z-index: -1;
 }
+@media screen and (min-width: 961px) {
+  .main-feature .background-image, .main-feature
+  .background-color {
+    background-attachment: fixed;
+  }
+}
 
 .background-image {
   background-repeat: no-repeat;
@@ -1681,19 +1687,19 @@ body.search-open {
   .front-page .content {
     padding: 0 0 60px;
   }
-  .front-page .voog-reference.empty-parent {
+  .public .front-page .voog-reference.empty-parent {
     padding: 0 20px 5px 0;
   }
-  .public .front-page .voog-reference .transparent-light-background a {
+  .public .front-page .voog-reference.transparent-light-background a {
     color: black;
   }
-  .public .front-page .voog-reference .transparent-light-background svg {
+  .public .front-page .voog-reference.transparent-light-background svg {
     fill: black;
   }
-  .public .front-page .voog-reference .transparent-dark-background a {
+  .public .front-page .voog-reference.transparent-dark-background a {
     color: white;
   }
-  .public .front-page .voog-reference .transparent-dark-background svg {
+  .public .front-page .voog-reference.transparent-dark-background svg {
     fill: white;
   }
 }
