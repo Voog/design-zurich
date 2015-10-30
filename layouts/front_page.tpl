@@ -41,6 +41,10 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
           </div>
         </div>
+      {% else %}
+        {% if feature_2_visible or feature_3_visible or feature_4_visible %}
+          <div class="empty-section"></div>
+        {% endif %}
       {% endif %}
 
       {% if feature_2_visible or editmode %}
@@ -56,6 +60,10 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</section>
           </div>
         </div>
+      {% else %}
+        {% if feature_3_visible or feature_4_visible %}
+          <div class="empty-section"></div>
+        {% endif %}
       {% endif %}
 
       {% if feature_3_visible or editmode %}
@@ -71,6 +79,10 @@
             <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</section>
           </div>
         </div>
+      {% else %}
+        {% if feature_4_visible %}
+          <div class="empty-section"></div>
+        {% endif %}
       {% endif %}
 
       {% if feature_4_visible or editmode %}
