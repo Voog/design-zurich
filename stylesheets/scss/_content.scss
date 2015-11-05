@@ -197,6 +197,10 @@
 
   &.edy-bar-open {
     margin-bottom: 150px;
+
+    @include query($tablet-5) {
+      margin-bottom: 125px;
+    }
   }
 
   @include query($desktop-1) {

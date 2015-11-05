@@ -86,6 +86,14 @@
     .light-background & {
       @include box-shadow(4px, 4px, 0, rgba($black, .2));
     }
+
+    .feature-section:not(.section-wide) & {
+      @include box-shadow(0, 4px, 0, rgba($black, .1));
+    }
+
+    .feature-section:not(.section-wide) .light-background & {
+      @include box-shadow(0, 4px, 0, rgba($black, .2));
+    }
   }
 
   .form_field_textfield,

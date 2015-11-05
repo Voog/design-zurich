@@ -101,3 +101,10 @@
   background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
   border-radius: 100%;
 }
+
+.feature-section:not(.section-wide) {
+  
+  .edy-fef-bottom .edy-fef-add {
+    margin-left: 0;
+  }
+}
