@@ -168,13 +168,7 @@ body.search-open {
   -moz-justify-content: space-between;
   justify-content: space-between;
   max-width: 1920px;
-}
-.public .front-page .container {
   min-height: 100vh;
-}
-.editmode .front-page .container {
-  min-height: calc(100vh - 40px);
-  margin-bottom: 40px;
 }
 .no-flexbox .front-page .container {
   display: table;
@@ -1676,6 +1670,12 @@ body.search-open {
 }
 .front-page .voog-reference .dark-background svg {
   fill: white;
+}
+.editmode .front-page {
+  margin-bottom: 40px;
+}
+.front-page.edy-bar-open {
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 1366px) {
   .front-page .voog-reference {

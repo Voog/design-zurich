@@ -190,6 +190,15 @@
     }
   }
 
+  .editmode & {
+    margin-bottom: 40px;
+  }
+
+
+  &.edy-bar-open {
+    margin-bottom: 150px;
+  }
+
   @include query($desktop-1) {
 
     .voog-reference {
