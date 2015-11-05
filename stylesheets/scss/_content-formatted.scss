@@ -230,7 +230,7 @@
     font-weight: $font-weight-normal;
     line-height: $line-height-medium;
     text-align: center;
-    margin: 31px 0;
+    margin: 31px 10px;
     cursor: pointer;
     @include hyphenate(true);
     text-decoration: none;
@@ -244,6 +244,7 @@
       @include color($white, 1);
     }
 
+    &,
     .light-background & {
       border: 2px solid $black;
       @include color($black, 1);
@@ -258,6 +259,7 @@
         @include color($black, .71);
       }
 
+      &,
       .light-background & {
         border: 2px solid $black;
         @include bg($black);

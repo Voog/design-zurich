@@ -126,7 +126,7 @@
     &.expanded {
       position: absolute;
       z-index: 10001;
-      top: 60px;
+      top: 64px;
       right: 20px;
       display: block;
       min-width: 350px;
@@ -607,7 +607,7 @@
     z-index: 10001;
 
     .front-page & {
-      top: 40px;
+      top: 37px;
     }
 
     .editmode & {
