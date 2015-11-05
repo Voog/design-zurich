@@ -149,6 +149,12 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow-down-white.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-down-white.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
       "filename": "ico-arrow-down.svg"
