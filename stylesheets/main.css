@@ -2366,6 +2366,12 @@ body.search-open {
 .content-formatted form {
   max-width: 100%;
 }
+.content-formatted select::-ms-expand {
+  display: none;
+}
+.content-formatted textarea {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 .footer .content-formatted .form_area, .footer
 .content-formatted .form {
   text-align: left;
@@ -2485,10 +2491,10 @@ body.search-open {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .content-formatted .form_field_select {
-  padding: 7px 20px 6px 9px;
+  padding: 7px 30px 6px 9px;
   text-indent: .01px;
   text-overflow: '';
-  background-position: 97.5% 13px;
+  background-position: 96% 15px;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
