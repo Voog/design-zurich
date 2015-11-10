@@ -676,8 +676,10 @@ body.search-open {
     background-color: rgba(199, 229, 255, 0.5);
   }
 }
-.menu-main .menu .top-level > .menu-item > .menu-link {
-  font-weight: 600;
+@media screen and (min-width: 961px) {
+  .menu-main .menu.top-level > .menu-item > .menu-link {
+    font-weight: 600;
+  }
 }
 .menu-main .menu .edit-btn {
   position: relative;
@@ -766,6 +768,7 @@ body.search-open {
     display: inline-block;
     padding: 6px 12px;
     text-transform: uppercase;
+    font-weight: 400;
     border: 2px solid transparent;
   }
   .front-page .menu-main > .top-level > .menu-item > .menu-link:hover {
@@ -2005,6 +2008,7 @@ body.search-open {
   .front-page .search {
     display: none;
     margin-left: 9px;
+    top: -1px;
   }
   .front-page .search.inline {
     display: block;

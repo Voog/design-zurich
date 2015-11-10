@@ -209,12 +209,15 @@
       }
     }
 
-    .top-level {
+    @include querymin($tablet-2) {
 
-      > .menu-item {
+      &.top-level {
 
-        > .menu-link {
-          font-weight: $font-weight-semibold;
+        > .menu-item {
+
+          > .menu-link {
+            font-weight: $font-weight-semibold;
+          }
         }
       }
     }
@@ -332,6 +335,7 @@
             display: inline-block;
             padding: 6px 12px;
             text-transform: uppercase;
+            font-weight: $font-weight-normal;
             border: 2px solid transparent;
 
             &:hover {
