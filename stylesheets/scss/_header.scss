@@ -25,6 +25,10 @@
 
     .flexbox .front-page & {
       @include justify-content(center);
+
+      &.no-menu {
+        @include justify-content(flex-end);
+      }
     }
 
     .no-flexbox .front-page & {

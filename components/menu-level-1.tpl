@@ -1,8 +1,10 @@
 <ul class="menu top-level">
   {% unless site.root_item.hidden? %}
-    <li class="menu-item">
-      <a class="menu-link{% if site.root_item.selected? %} active{% endif %}" href="{{ site.root_item.url }}">{{ site.root_item.title }}</a>
-    </li>
+    {% if site.visible_menuitems.size > 0 or editmode %}
+      <li class="menu-item">
+        <a class="menu-link{% if site.root_item.selected? %} active{% endif %}" href="{{ site.root_item.url }}">{{ site.root_item.title }}</a>
+      </li>
+    {% endif %}
   {% endunless %}
 
   {% for item in site.visible_menuitems %}

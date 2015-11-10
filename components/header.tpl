@@ -1,6 +1,6 @@
 <header class="header {% if site.search.enabled %} search-enabled{% endif %}">
 
-  <div class="header-container" {% if front_page %}data-bg-global="main_bg"{% endif %}>
+  <div class="header-container {% unless editmode %}{% if site.visible_menuitems.size == 0 %}no-menu{% endif %}{% endunless %}" {% if front_page %}data-bg-global="main_bg"{% endif %}>
     <div class="header-left js-header-left {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
       {% unless front_page %}
         <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
@@ -20,11 +20,13 @@
         </button>
       {% endif %}
 
-      <button class="menu-btn js-menu-btn js-prevent-sideclick">
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-      </button>
+      {% if site.visible_menuitems.size > 0 or site.has_many_languages? or editmode %}
+        <button class="menu-btn js-menu-btn js-prevent-sideclick">
+          <span class="menu-stripe"></span>
+          <span class="menu-stripe"></span>
+          <span class="menu-stripe"></span>
+        </button>
+      {% endif %}
     </div>
 
     <div class="{% unless front_page %}header-right{% endunless %} js-header-right {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">

@@ -617,6 +617,10 @@
     .flags-disabled & {
       min-width: 123px;
     }
+
+    .no-menu .flags-disabled & {
+      right: -5px;
+    }
   }
 }
 
