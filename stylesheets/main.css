@@ -2369,6 +2369,9 @@ body.search-open {
 .content-formatted select::-ms-expand {
   display: none;
 }
+.content-formatted select {
+  -moz-appearance: none;
+}
 .content-formatted textarea {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }

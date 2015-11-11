@@ -9,6 +9,10 @@
       display: none;
   }
 
+  select {
+    -moz-appearance: none;
+  }
+
   textarea {
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
