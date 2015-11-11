@@ -173,6 +173,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-tick-white.svg",
+      "kind": "assets",
+      "filename": "ico-tick-white.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-tick.svg",
       "kind": "assets",
       "filename": "ico-tick.svg"
@@ -452,6 +458,12 @@
       "file": "images/ico-tags.png",
       "kind": "images",
       "filename": "ico-tags.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-tick-white.png",
+      "kind": "images",
+      "filename": "ico-tick-white.png"
     },
     {
       "content_type": "image/png",
