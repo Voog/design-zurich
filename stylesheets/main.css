@@ -1545,12 +1545,12 @@ body.search-open {
   text-align: left;
 }
 .content .content-inner {
-  padding: 33px 50px 50px;
+  padding: 33px 50px;
   background-color: #eeeeee;
 }
 @media screen and (max-width: 960px) {
   .content .content-inner {
-    padding: 33px 20px 50px;
+    padding: 33px 20px;
   }
 }
 .content .content-left,
@@ -1567,6 +1567,24 @@ body.search-open {
 .content .content-left {
   padding: 43px 50px;
 }
+.content .content-left.left-full {
+  float: none;
+  padding: 33px 50px;
+  width: auto;
+}
+.content .content-left.left-full.with-submenu {
+  padding-top: 13px;
+}
+@media screen and (max-width: 960px) {
+  .content .content-left.left-full.with-submenu {
+    padding-top: 33px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .content .content-left.left-full {
+    padding: 33px 20px;
+  }
+}
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
@@ -1575,6 +1593,28 @@ body.search-open {
   .content .content-right iframe {
     max-height: 262px;
   }
+}
+.content .content-right.with-padding {
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 760px) {
+  .content .content-right.with-padding {
+    padding-right: 20px;
+    padding-bottom: 33px;
+  }
+}
+.content .content-right.with-padding.right-full {
+  padding-left: 50px;
+}
+@media screen and (max-width: 760px) {
+  .content .content-right.with-padding.right-full {
+    padding-left: 20px;
+  }
+}
+.content .content-right.right-full {
+  float: none;
+  width: auto;
 }
 @media screen and (max-width: 760px) {
   .content .content-left,
@@ -1587,7 +1627,7 @@ body.search-open {
     padding: 33px 20px 0;
   }
   .content .content-right {
-    padding: 33px 20px 50px;
+    padding: 33px 20px;
   }
 }
 .front-page .content {
