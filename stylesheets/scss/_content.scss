@@ -29,11 +29,11 @@
   }
 
   .content-inner {
-    padding: 33px 50px;
+    padding: 33px 50px 50px;
     @include bg($grey-4);
 
     @include query($tablet-2) {
-      padding: 33px 20px;
+      padding: 33px 20px 50px;
     }
   }
 
@@ -51,24 +51,6 @@
 
   .content-left {
     padding: 43px 50px;
-
-    &.left-full {
-      float: none;
-      padding: 33px 50px;
-      width: auto;
-
-      &.with-submenu {
-        padding-top: 13px;
-
-        @include query($tablet-2) {
-          padding-top: 33px;
-        }
-      }
-
-      @include query($tablet-2) {
-        padding: 33px 20px;
-      }
-    }
   }
 
   .content-right {
@@ -80,29 +62,6 @@
       @include query($tablet-4) {
         max-height: 262px;
       }
-    }
-
-    &.with-padding {
-      padding-right: 50px;
-      padding-bottom: 20px;
-
-      @include query($tablet-4) {
-        padding-right: 20px;
-        padding-bottom: 33px;
-      }
-
-      &.right-full {
-        padding-left: 50px;
-
-        @include query($tablet-4) {
-          padding-left: 20px;
-        }
-      }
-    }
-
-    &.right-full {
-      float: none;
-      width: auto;
     }
   }
 
@@ -119,15 +78,12 @@
     }
 
     .content-right {
-      padding: 33px 20px;
+      padding: 33px 20px 50px;
     }
   }
 
   .front-page & {
-    position: relative;
-    padding: 0;
     width: 100%;
-    @include bg($grey-4);
 
     .background-image,
     .background-color {
@@ -138,21 +94,14 @@
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      // background-image: url('../images/front-page-bg.jpg');
-    }
-
-    .background-color {
-      // @include bg($blue-1, 0.25);
     }
 
     .content-inner {
       display: table;
       table-layout: fixed;
       width: 100%;
-      max-width: 660px;
       margin: 0 auto;
       padding: 0;
-      height: 525px;
       background: none;
 
       @include query($mobile-1) {
@@ -163,18 +112,16 @@
         display: table-cell;
         vertical-align: middle;
         position: relative;
-        z-index: 1;
         margin: 0 auto;
         padding: 40px;
 
-        @include query($tablet-5) {
-          padding: 20px;
+        @include query($tablet-2) {
+          padding: 80px 20px;
         }
 
         @include query($mobile-1) {
-          padding: 78px 25px;
+          padding: 80px 20px;
         }
-
 
         .edy-texteditor-view {
           min-height: 43px;
