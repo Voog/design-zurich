@@ -1,9 +1,9 @@
 {
-  "name": "voog-design-zurich",
-  "description": "The Zürich design template for Voog",
+  "name": "voog-design-bern",
+  "description": "The Bern design template for Voog",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Voog/design-zurich.git"
+    "url": "git://github.com/Voog/design-bern.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -14,7 +14,7 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^0.4.6",
-    "grunt-modernizr": "^0.6.0",
+    "grunt-modernizr-builder": "^0.1.7",
     "grunt-svgmin": "^2.0.1"
   }
 }
