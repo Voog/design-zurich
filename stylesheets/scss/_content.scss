@@ -196,3 +196,230 @@
     }
   }
 }
+
+.front-page {
+  @include flexbox;
+
+  .main-feature {
+    min-height: 250px;
+  }
+
+  .voog-reference {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px 0 0;
+    @include rem-fallback(padding-right, 50px);
+
+    a {
+      font-size: 11px;
+      font-weight: $font-weight-thin;
+
+      span {
+        margin-right: 8px;
+      }
+    }
+
+    .light-background {
+
+      a {
+        @include color($black, 1);
+      }
+
+      svg {
+        @include fill($black, 1);
+      }
+    }
+
+    .dark-background {
+
+      a {
+        @include color($white, 1);
+      }
+
+      svg {
+        @include fill($white, 1);
+      }
+    }
+  }
+
+  .editmode & {
+    margin-bottom: 40px;
+  }
+
+
+  &.edy-bar-open {
+    margin-bottom: 150px;
+
+    @include query($tablet-5) {
+      margin-bottom: 125px;
+    }
+  }
+
+  @include query($desktop-1) {
+
+    .voog-reference {
+      @include rem-fallback(padding-right, 35px);
+    }
+  }
+
+  @include querymin($tablet-2) {
+
+    .content {
+      padding: 0 0 60px;
+    }
+
+    .empty-section {
+      width: 25%;
+    }
+
+    .voog-reference {
+
+      .public & {
+
+        &.empty-parent {
+          padding: 0 20px 5px 0;
+        }
+
+        &.transparent-light-background {
+
+          a {
+            @include color($black, 1);
+          }
+
+          svg {
+            @include fill($black, 1);
+          }
+        }
+
+        &.transparent-dark-background {
+
+          a {
+            @include color($white, 1);
+          }
+
+          svg {
+            @include fill($white, 1);
+          }
+        }
+      }
+    }
+  }
+
+  @include query($tablet-2) {
+
+    .content {
+      @include flexbox;
+      @include flex(1 1 auto);
+    }
+
+    .empty-section {
+      display: none;
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .main-feature {
+      @include flexbox;
+      @include align-items(center);
+      position: relative;
+      padding-top: 80px;
+    }
+
+
+    .voog-reference {
+      padding-right: 20px;
+    }
+  }
+}
+
+.sections {
+  position: relative;
+  @extend %clearfix;
+  @include flexbox;
+  @include flex-wrap(wrap);
+
+  .no-flexbox & {
+    display: table-footer-group;
+  }
+}
+
+.feature-section {
+  position: relative;
+  transition: $transition-std;
+  @extend %clearfix;
+  min-width: 200px;
+  width: 25%;
+  float: left;
+  min-height: 285px;
+  box-sizing: border-box;
+
+  &.section-wide {
+    @include rem-fallback(padding, 50px);
+    @include flexbox;
+    @include align-items(center);
+    transition: $transition-std;
+  }
+
+  @include query($desktop-1) {
+
+    &.section-wide {
+      @include rem-fallback(padding, 35px);
+    }
+  }
+
+  @include queryminmax($tablet-2, $desktop-1) {
+    min-height: 235px;
+  }
+
+  @include queryminmax($tablet-5, $tablet-2) {
+
+    .public .voog-reference-enabled & {
+
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  @include query($tablet-2) {
+    width: 50%;
+
+    .public & {
+      @include flex(1 0 50%);
+    }
+
+    &.section-wide {
+      padding: 20px;
+      transition: $transition-std;
+    }
+
+    &.transparent-dark-background {
+      background: $black;
+    }
+
+    &.transparent-light-background {
+      background: $white;
+    }
+
+    .public .voog-reference-enabled & {
+
+      &:last-child {
+        padding-bottom: 35px;
+      }
+    }
+  }
+
+  @include query($tablet-5) {
+    width: 100%;
+
+    .public & {
+      @include flex(1 0 100%);
+    }
+  }
+}
