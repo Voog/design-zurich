@@ -27,7 +27,19 @@
       top: -1px;
 
       &.inline {
-        display: block;
+        @include flexbox;
+
+        &::-moz-placeholder {
+          line-height: 14px;
+        }
+
+        &:-ms-input-placeholder {
+          line-height: 14px;
+        }
+
+        .search-form {
+          height: 30px;
+        }
       }
     }
   }
@@ -142,7 +154,9 @@
   @include querymin($tablet-2) {
 
     .front-page & {
-      padding: 6px 30px 5px 12px;
+      padding: 8px 30px 10px 12px;
+      height: 30px;
+      font-size: 12px;
     }
   }
 
