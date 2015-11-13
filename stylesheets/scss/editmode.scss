@@ -128,3 +128,35 @@
     }
   }
 }
+
+.menu-lang-popover {
+  &.expanded {
+    padding-bottom: 0;
+  }
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.blog-page {
+
+  .edy-site-menu-add {
+    margin-left: 10px;
+  }
+
+  @include query($tablet-2) {
+
+    .edy-site-menu-add {
+      margin-left: 0;
+    }
+  }
+
+  .post {
+
+    &:first-child,
+    .editmode &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}

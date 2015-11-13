@@ -107,3 +107,23 @@
 .feature-section:not(.section-wide) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
 }
+
+.menu-lang-popover.expanded {
+  padding-bottom: 0;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.blog-page .edy-site-menu-add {
+  margin-left: 10px;
+}
+@media screen and (max-width: 960px) {
+  .blog-page .edy-site-menu-add {
+    margin-left: 0;
+  }
+}
+.blog-page .post:first-child, .editmode .blog-page .post:nth-child(2) {
+  margin-top: 0;
+}
