@@ -14,7 +14,7 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      <div class="main-feature js-prevent-sideclick js-bg-picker-area" data-section-name="main_feature" data-bg-global="main_bg" data-bg-global-master="true">
+      <div class="main-feature js-bg-picker-area" data-section-name="main_feature" data-bg-global="main_bg" data-bg-global-master="true">
         <div class="background-image js-background-image"></div>
         <div class="background-color js-background-color"></div>
         {% if editmode %}
