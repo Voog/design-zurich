@@ -1727,17 +1727,6 @@ body.search-open {
 .front-page .voog-reference .dark-background svg {
   fill: white;
 }
-.editmode .front-page {
-  margin-bottom: 40px;
-}
-.front-page.edy-bar-open {
-  margin-bottom: 150px;
-}
-@media screen and (max-width: 600px) {
-  .front-page.edy-bar-open {
-    margin-bottom: 125px;
-  }
-}
 @media screen and (max-width: 1366px) {
   .front-page .voog-reference {
     padding-right: 35px;
@@ -1828,7 +1817,6 @@ body.search-open {
 
 .feature-section {
   position: relative;
-  transition: 500ms;
   min-width: 200px;
   width: 25%;
   float: left;
@@ -1848,7 +1836,6 @@ body.search-open {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  transition: 500ms;
 }
 @media screen and (max-width: 1366px) {
   .feature-section.section-wide {

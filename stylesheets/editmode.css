@@ -86,6 +86,24 @@
   border: none;
 }
 
+.front-page {
+  margin-bottom: 40px;
+}
+.front-page.edy-bar-open {
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 600px) {
+  .front-page.edy-bar-open {
+    margin-bottom: 125px;
+  }
+}
+
+.feature-section {
+  transition: padding 500ms;
+}
+.feature-section.section-wide {
+  transition: padding 500ms;
+}
 .feature-section:not(.section-wide) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
 }

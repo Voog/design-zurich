@@ -102,9 +102,29 @@
   border-radius: 100%;
 }
 
-.feature-section:not(.section-wide) {
-  
-  .edy-fef-bottom .edy-fef-add {
-    margin-left: 0;
+.front-page {
+  margin-bottom: 40px;
+
+  &.edy-bar-open {
+    margin-bottom: 150px;
+
+    @include query($tablet-5) {
+      margin-bottom: 125px;
+    }
+  }
+}
+
+.feature-section {
+  transition: padding $transition-std;
+
+  &.section-wide {
+    transition: padding $transition-std;
+  }
+
+  &:not(.section-wide) {
+
+    .edy-fef-bottom .edy-fef-add {
+      margin-left: 0;
+    }
   }
 }

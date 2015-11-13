@@ -232,19 +232,6 @@
     }
   }
 
-  .editmode & {
-    margin-bottom: 40px;
-  }
-
-
-  &.edy-bar-open {
-    margin-bottom: 150px;
-
-    @include query($tablet-5) {
-      margin-bottom: 125px;
-    }
-  }
-
   @include query($desktop-1) {
 
     .voog-reference {
@@ -321,7 +308,6 @@
       padding-top: 80px;
     }
 
-
     .voog-reference {
       padding-right: 20px;
     }
@@ -341,7 +327,6 @@
 
 .feature-section {
   position: relative;
-  transition: $transition-std;
   @extend %clearfix;
   min-width: 200px;
   width: 25%;
@@ -353,7 +338,6 @@
     @include rem-fallback(padding, 50px);
     @include flexbox;
     @include align-items(center);
-    transition: $transition-std;
   }
 
   @include query($desktop-1) {
