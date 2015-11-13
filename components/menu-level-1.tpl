@@ -24,7 +24,7 @@
   {% if front_page %}
 
     {% if site.search.enabled %}
-      <li class="menu-item">
+      <li class="menu-item menu-item-search-inline">
         <div class="search inline js-search js-popover js-prevent-sideclick">
           <form id="search-inline" class="search-form js-search-form" method="get" action="#">
             <input id="onpage_search_inline" class="search-input js-search-input" type="text" name="" placeholder="{{ 'search_this_site' | lc }}">
@@ -43,7 +43,7 @@
     {% endif %}
 
     {% if editmode or site.has_many_languages? %}
-      <li class="menu-item">
+      <li class="menu-item menu-item-lang-inline">
         <nav class="menu-lang inline js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
           <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}">
             {% if editmode or flags_state == false %}

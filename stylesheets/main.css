@@ -661,6 +661,9 @@ body.search-open {
     border-bottom: 1px solid rgba(27, 33, 36, 0.2);
     background-color: white;
   }
+  .menu-main .menu .menu-item.menu-item-search-inline, .menu-main .menu .menu-item.menu-item-lang-inline {
+    display: none;
+  }
   .menu-main .menu .menu-item .menu-link {
     display: block;
     padding: 5px 25px 3px;
@@ -726,7 +729,7 @@ body.search-open {
     border-top: none;
   }
   .menu-main .menu-lang .menu .menu-item .menu-link {
-    padding: 5px 30px 3px 53px;
+    padding: 11px 30px 6px 53px;
     font-weight: 400;
     font-size: 14px;
   }
@@ -969,11 +972,11 @@ body.search-open {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   z-index: 10001;
 }
-.front-page .menu-lang-popover.expanded {
+.front-page .flags-enabled .menu-lang-popover.expanded {
   top: 37px;
 }
-.editmode .menu-lang-popover.expanded {
-  padding-bottom: 0;
+.front-page .menu-lang-popover.expanded {
+  top: 40px;
 }
 .flags-disabled .menu-lang-popover.expanded {
   min-width: 123px;
@@ -1263,10 +1266,6 @@ body.search-open {
 .option-btn .disable-text:first-letter,
 .option-btn .enable-text:first-letter {
   text-transform: capitalize;
-}
-
-.editmode .tags {
-  margin-top: 20px;
 }
 
 .tags-title {

@@ -189,6 +189,11 @@
         @include border(bottom, 1px, solid, $secondary-color, 0.2);
         @include bg($white);
 
+        &.menu-item-search-inline,
+        &.menu-item-lang-inline {
+          display: none;
+        }
+
         .menu-link {
           display: block;
           padding: 5px 25px 3px;
@@ -273,7 +278,7 @@
           }
 
           .menu-link {
-            padding: 5px 30px 3px 53px;
+            padding: 11px 30px 6px 53px;
             font-weight: 400;
             font-size: 14px;
 
@@ -610,12 +615,12 @@
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     z-index: 10001;
 
-    .front-page & {
+    .front-page .flags-enabled & {
       top: 37px;
     }
 
-    .editmode & {
-      padding-bottom: 0;
+    .front-page & {
+      top: 40px;
     }
 
     .flags-disabled & {
@@ -884,13 +889,6 @@ $flags:
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
-.tags {
-
-  .editmode & {
-    margin-top: 20px;
-  }
-}
-
 .tags-title {
   display: inline-block;
   font-size: 14px;
