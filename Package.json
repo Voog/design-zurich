@@ -1,9 +1,9 @@
 {
-  "name": "voog-design-bern",
-  "description": "The Bern design template for Voog",
+  "name": "voog-design-zurich",
+  "description": "The Zürich design template for Voog",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Voog/design-bern.git"
+    "url": "git://github.com/Voog/design-zurich.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
