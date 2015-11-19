@@ -2058,6 +2058,9 @@ body.search-open {
     top: 24px;
     right: 60px;
   }
+  .no-lang-menu .search {
+    right: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .search {

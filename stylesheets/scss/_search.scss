@@ -49,6 +49,10 @@
     margin-left: 0;
     top: 24px;
     right: 60px;
+
+    .no-lang-menu & {
+      right: 20px;
+    }
   }
 
   @include query($mobile-1) {
