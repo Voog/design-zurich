@@ -160,3 +160,9 @@
     }
   }
 }
+
+// Top and bottom margin for the elements that doesn't have the default margin.
+.editmode table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

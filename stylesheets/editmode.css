@@ -127,3 +127,8 @@
 .blog-page .post:first-child, .editmode .blog-page .post:nth-child(2) {
   margin-top: 0;
 }
+
+.editmode table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -1346,7 +1346,7 @@ body.search-open {
 /* HEADER */
 .header-container {
   position: relative;
-  z-index: 30002;
+  z-index: 30000;
   padding-top: 23px;
   padding-bottom: 23px;
 }
