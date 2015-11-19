@@ -19,7 +19,7 @@
   // };
 
   var bindSideClicks = function() {
-    $('.content').on('mousedown', function(event) {
+    $('.content, .sections').on('mousedown', function(event) {
       if (!$(event.target).closest('.js-prevent-sideclick').length) {
         $('.js-popover').removeClass('expanded');
 
