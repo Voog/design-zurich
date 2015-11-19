@@ -3,6 +3,8 @@
 
   form {
     max-width: 100%;
+    clear: both;
+    @extend %clearfix;
   }
 
   select::-ms-expand {

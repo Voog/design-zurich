@@ -82,7 +82,7 @@ body.search-open {
 }
 
 .content-formatted:after, .header-container:after, .content:after, .content.two-columns:after, .sections:after, .feature-section:after, .search:after,
-.search-form:after {
+.search-form:after, .content-formatted form:after {
   content: "";
   display: table;
   clear: both;
@@ -2407,6 +2407,7 @@ body.search-open {
 /* FORMS */
 .content-formatted form {
   max-width: 100%;
+  clear: both;
 }
 .content-formatted select::-ms-expand {
   display: none;
