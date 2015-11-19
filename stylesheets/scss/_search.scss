@@ -225,6 +225,10 @@
     position: absolute;
     right: 40px;
     z-index: 40;
+
+    .no-lang-menu & {
+      right: 0;
+    }
   }
 }
 
@@ -257,6 +261,11 @@
 
   &.inline {
     top: 40px;
+  }
+
+  .no-lang-menu & {
+    left: -258px;
+    right: 0;
   }
 
   @include query($tablet-1) {

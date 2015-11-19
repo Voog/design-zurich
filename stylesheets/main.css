@@ -2225,6 +2225,10 @@ body.search-open {
     right: 40px;
     z-index: 40;
   }
+  .no-lang-menu .search-open-btn, .no-lang-menu
+  .search-close-btn {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2254,6 +2258,10 @@ body.search-open {
 }
 .voog-search-modal.inline {
   top: 40px;
+}
+.no-lang-menu .voog-search-modal {
+  left: -258px;
+  right: 0;
 }
 @media screen and (max-width: 1020px) {
   .voog-search-modal {
