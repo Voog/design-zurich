@@ -2036,7 +2036,6 @@ body.search-open {
   margin-left: 15px;
   height: 30px;
   line-height: 1;
-  background-color: white;
 }
 .search.inline {
   display: none;
@@ -2149,7 +2148,6 @@ body.search-open {
   padding: 0 30px 0 12px;
   font-family: inherit;
   font-size: 12px;
-  line-height: 30px;
   color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
   background-color: white;
