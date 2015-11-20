@@ -319,6 +319,7 @@
   @extend %clearfix;
   @include flexbox;
   @include flex-wrap(wrap);
+  height: 100%;
 
   .no-flexbox & {
     display: table-footer-group;

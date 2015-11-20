@@ -95,7 +95,6 @@ body {
 
 .container {
   position: relative;
-  max-width: 940px;
   margin: 0 auto;
 
   .front-page & {
@@ -103,7 +102,6 @@ body {
     @include flex(1);
     @include flex-direction(column);
     @include justify-content(space-between);
-    max-width: $site-width-wide;
     min-height: 100vh;
   }
 
@@ -117,6 +115,18 @@ body {
     img {
       border: none;
     }
+  }
+
+  @include querymin($tablet-2) {
+    max-width: 940px;
+
+    .front-page & {
+      max-width: $site-width-wide;
+    }
+  }
+
+  @include query($tablet-2) {
+    max-width: 100vw;
   }
 }
 
