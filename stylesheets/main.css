@@ -167,6 +167,7 @@ body.search-open {
   -moz-justify-content: space-between;
   justify-content: space-between;
   min-height: 100vh;
+  min-width: 1px;
 }
 .no-flexbox .front-page .container {
   display: table;
@@ -2145,10 +2146,10 @@ body.search-open {
   width: 140px;
   height: 30px;
   margin: 0;
-  padding: 8px 30px 10px 12px;
+  padding: 0 30px 0 12px;
   font-family: inherit;
   font-size: 12px;
-  line-height: 1;
+  line-height: 30px;
   color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
   background-color: white;
@@ -2160,8 +2161,6 @@ body.search-open {
   display: none;
 }
 .search-input::-webkit-input-placeholder {
-  padding: 3px 0 4px 0;
-  line-height: 1;
   text-overflow: ellipsis;
 }
 .search-input:-ms-input-placeholder {
