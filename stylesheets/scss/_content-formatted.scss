@@ -68,7 +68,7 @@
   h1 {
     text-align: center;
     font-size: 36px;
-    line-height: 1.05;
+    line-height: 1.1;
 
     @include query($mobile-1) {
       font-size: 32px;
@@ -105,7 +105,7 @@
 
   // Sets the dynamic line-height for the text with custom font-size.
   span[style*="font-size"] {
-    line-height: 1.05;
+    line-height: 1.1;
   }
 
   // Disables hyphenation for the elements that shouldn't hyphenate.
