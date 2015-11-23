@@ -112,6 +112,16 @@
       margin-bottom: 125px;
     }
   }
+
+  @include query($tablet-2) {
+
+    .main-feature {
+
+      .voog-bg-picker-btn {
+        top: 80px;
+      }
+    }
+  }
 }
 
 .feature-section {

@@ -97,6 +97,11 @@
     margin-bottom: 125px;
   }
 }
+@media screen and (max-width: 960px) {
+  .front-page .main-feature .voog-bg-picker-btn {
+    top: 80px;
+  }
+}
 
 .feature-section {
   transition: padding 500ms;
