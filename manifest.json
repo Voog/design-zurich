@@ -149,57 +149,51 @@
   "assets": [
     {
       "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/278902_0_0.eot",
+      "file": "assets/2FC187_0_0.eot",
       "kind": "assets",
-      "filename": "278902_0_0.eot"
+      "filename": "2FC187_0_0.eot"
     },
     {
       "content_type": "application/x-font-truetype",
-      "file": "assets/278902_0_0.ttf",
+      "file": "assets/2FC187_0_0.ttf",
       "kind": "assets",
-      "filename": "278902_0_0.ttf"
+      "filename": "2FC187_0_0.ttf"
     },
     {
       "content_type": "application/font-woff",
-      "file": "assets/278902_0_0.woff",
+      "file": "assets/2FC187_0_0.woff",
       "kind": "assets",
-      "filename": "278902_0_0.woff"
+      "filename": "2FC187_0_0.woff"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/2FC187_0_0.woff2",
+      "kind": "assets",
+      "filename": "2FC187_0_0.woff2"
     },
     {
       "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/278902_1_0.eot",
+      "file": "assets/2FC187_1_0.eot",
       "kind": "assets",
-      "filename": "278902_1_0.eot"
+      "filename": "2FC187_1_0.eot"
     },
     {
       "content_type": "application/x-font-truetype",
-      "file": "assets/278902_1_0.ttf",
+      "file": "assets/2FC187_1_0.ttf",
       "kind": "assets",
-      "filename": "278902_1_0.ttf"
+      "filename": "2FC187_1_0.ttf"
     },
     {
       "content_type": "application/font-woff",
-      "file": "assets/278902_1_0.woff",
+      "file": "assets/2FC187_1_0.woff",
       "kind": "assets",
-      "filename": "278902_1_0.woff"
+      "filename": "2FC187_1_0.woff"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/278902_2_0.eot",
+      "content_type": "text/unknown",
+      "file": "assets/2FC187_1_0.woff2",
       "kind": "assets",
-      "filename": "278902_2_0.eot"
-    },
-    {
-      "content_type": "application/x-font-truetype",
-      "file": "assets/278902_2_0.ttf",
-      "kind": "assets",
-      "filename": "278902_2_0.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/278902_2_0.woff",
-      "kind": "assets",
-      "filename": "278902_2_0.woff"
+      "filename": "2FC187_1_0.woff2"
     },
     {
       "content_type": "image/svg+xml",

@@ -24,26 +24,21 @@ $grey-4: #eee;
 $grey-5: #FAFAFA;
 
 // Font type
-$font-main: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-main: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-serif: Georgia, "Times New Roman", serif;
 
 // Font sizes
 $font-size-xs: 12px;
 $font-size-base: 16px;
 $font-size-large: 24px;
-$font-size-xl: 36px;
-$font-size-header: 50px;
 
 // Font weights
 $font-weight-thin: 100;
-$font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-semibold: 600;
-$font-weight-bold: 700;
 
 // Line heights
 $line-height-base: 1.05;
-$line-height-normal: 1.15;
 $line-height-medium: 1.3;
 
 // Media queries
