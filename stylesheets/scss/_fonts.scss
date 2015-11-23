@@ -1,18 +1,32 @@
 /* FONTS */
 // Custom fonts declarations.
 
-// NB! Custom fonts are not the part of the current template by default, but they can be easily included:
-// 1. Add webfonts to the /assets/ folder.
-// 2. Replace the "Custom Font Name" with the desired font-family name.
-// 3. Replace the "custom-font-file-name" with the fonts file names (without the file extension).
-// 4. Add more fonts with the same pattern if needed.
-// 5. Uncomment the "_fonts.scss" partial in the "main.scss" file.
+@font-face {
+  font-family: Avenir;
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/278902_1_0.eot');
+  src: url('/assets/278902_1_0.eot?#iefix') format("embedded-opentype"),
+  	   url('/assets/278902_1_0.woff') format("woff"),
+  	   url('/assets/278902_1_0.ttf') format("truetype");
+}
 
-@include font-face('Roboto', '../assets/roboto-light', 300);
-@include font-face('Roboto', '../assets/roboto-light-italic', 300, italic);
-@include font-face('Roboto', '../assets/roboto-regular', 400);
-@include font-face('Roboto', '../assets/roboto-italic', 400, italic);
-@include font-face('Roboto', '../assets/roboto-medium', 500);
-@include font-face('Roboto', '../assets/roboto-medium-italic', 500, italic);
-@include font-face('Roboto', '../assets/roboto-bold', 700);
-@include font-face('Roboto', '../assets/roboto-bold-italic', 700, italic);
+@font-face {
+  font-family: Avenir;
+  font-weight: bold;
+  font-style: normal;
+  src: url('/assets/278902_0_0.eot');
+  src: url('/assets/278902_0_0.eot?#iefix') format("embedded-opentype"),
+       url('/assets/278902_0_0.woff') format("woff"),
+       url('/assets/278902_0_0.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  font-style: normal;
+  src: url('/assets/278902_2_0.eot');
+  src: url('/assets/278902_2_0.eot?#iefix') format("embedded-opentype"),
+       url('/assets/278902_2_0.woff') format("woff"),
+       url('/assets/278902_2_0.ttf') format("truetype");
+}
