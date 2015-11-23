@@ -136,24 +136,22 @@
     });
   };
 
-  // Adds/removes padding class to front page content areas when toggled.
+  // Adds and removes padding to front page content areas when toggled.
   var togglePadding = function() {
     $('.voog-padding-switcher').on('click', function(event) {
       event.stopPropagation();
       var sectionTarget = $(this).closest('.feature-section');
       var sectionId = sectionTarget.attr('data-section-name');
 
-      $(sectionTarget).toggleClass('section-wide');
+      $(sectionTarget).toggleClass('section-with-padding');
 
-      if ($(this).closest(sectionTarget).hasClass('section-wide')) {
-        var sectionWideBool = true;
-      } else {
+      if ($(this).closest(sectionTarget).hasClass('section-with-padding')) {
         var sectionWideBool = false;
+      } else {
+        var sectionWideBool = true;
       }
 
-      pageData.set(sectionId, sectionWideBool);
-
-      $(this).toggleClass('js-section-wide');
+      pageData.set(sectionId + '_is_wide', sectionWideBool);
     });
   };
 

@@ -1808,7 +1808,7 @@ body.search-open {
   min-height: 285px;
   box-sizing: border-box;
 }
-.feature-section.section-wide {
+.feature-section.section-with-padding {
   padding: 50px;
   padding: 3.125rem;
   display: -webkit-box;
@@ -1823,7 +1823,7 @@ body.search-open {
   align-items: center;
 }
 @media screen and (max-width: 1366px) {
-  .feature-section.section-wide {
+  .feature-section.section-with-padding {
     padding: 35px;
     padding: 2.1875rem;
   }
@@ -1850,7 +1850,7 @@ body.search-open {
     -ms-flex: 1 0 50%;
     flex: 1 0 50%;
   }
-  .feature-section.section-wide {
+  .feature-section.section-with-padding {
     padding: 20px;
   }
   .feature-section.transparent-dark-background {
@@ -2481,15 +2481,15 @@ body.search-open {
 .content-formatted .form_submit input {
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
 }
-.feature-section:not(.section-wide) .content-formatted .form_field_textfield, .feature-section:not(.section-wide)
-.content-formatted .form_field_textarea, .feature-section:not(.section-wide)
-.content-formatted .form_field_select, .feature-section:not(.section-wide)
+.feature-section:not(.section-with-padding) .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding)
+.content-formatted .form_field_textarea, .feature-section:not(.section-with-padding)
+.content-formatted .form_field_select, .feature-section:not(.section-with-padding)
 .content-formatted .form_submit input {
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1) ;
 }
-.feature-section:not(.section-wide) .light-background .content-formatted .form_field_textfield, .feature-section:not(.section-wide) .light-background
-.content-formatted .form_field_textarea, .feature-section:not(.section-wide) .light-background
-.content-formatted .form_field_select, .feature-section:not(.section-wide) .light-background
+.feature-section:not(.section-with-padding) .light-background .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding) .light-background
+.content-formatted .form_field_textarea, .feature-section:not(.section-with-padding) .light-background
+.content-formatted .form_field_select, .feature-section:not(.section-with-padding) .light-background
 .content-formatted .form_submit input {
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2) ;
 }

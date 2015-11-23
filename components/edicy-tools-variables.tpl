@@ -7,35 +7,35 @@
   {% endif %}
 
   {% comment %}ASSIGN FEATURE 1 SECTION WIDTH{% endcomment %}
-  {% assign feature_1 = page.data.feature_1 %}
-  {% if feature_1 == false %}
-    {% assign feature_1_wide = "" %}
+  {% assign feature_1_is_wide = page.data.feature_1_is_wide %}
+  {% if feature_1_is_wide == true %}
+    {% assign feature_1_section_width = "" %}
   {% else %}
-    {% assign feature_1_wide = "section-wide" %}
+    {% assign feature_1_section_width = "section-with-padding" %}
   {% endif %}
 
   {% comment %}ASSIGN FEATURE 2 SECTION WIDTH{% endcomment %}
-  {% assign feature_2 = page.data.feature_2 %}
-  {% if feature_2 == false %}
-    {% assign feature_2_wide = "" %}
+  {% assign feature_2_is_wide = page.data.feature_2_is_wide %}
+  {% if feature_2_is_wide == true %}
+    {% assign feature_2_section_width = "" %}
   {% else %}
-    {% assign feature_2_wide = "section-wide" %}
+    {% assign feature_2_section_width = "section-with-padding" %}
   {% endif %}
 
   {% comment %}ASSIGN FEATURE 3 SECTION WIDTH{% endcomment %}
-  {% assign feature_3 = page.data.feature_3 %}
-  {% if feature_3 == false %}
-    {% assign feature_3_wide = "" %}
+  {% assign feature_3_is_wide = page.data.feature_3_is_wide %}
+  {% if feature_3_is_wide == true %}
+    {% assign feature_3_section_width = "" %}
   {% else %}
-    {% assign feature_3_wide = "section-wide" %}
+    {% assign feature_3_section_width = "section-with-padding" %}
   {% endif %}
 
   {% comment %}ASSIGN FEATURE 4 SECTION WIDTH{% endcomment %}
-  {% assign feature_4 = page.data.feature_4 %}
-  {% if feature_4 == false %}
-    {% assign feature_4_wide = "" %}
+  {% assign feature_4_is_wide = page.data.feature_4_is_wide %}
+  {% if feature_4_is_wide == true %}
+    {% assign feature_4_section_width = "" %}
   {% else %}
-    {% assign feature_4_wide = "section-wide" %}
+    {% assign feature_4_section_width = "section-with-padding" %}
   {% endif %}
 
   {% comment %}SITE MAIN SECTION RELATED VARIABLES.{% endcomment %}
@@ -432,6 +432,7 @@
     {% endif %}
   {% endif %}
 
+  {% comment %}Assign Voog reference bg lightness, based on current visible parent bg.{% endcomment %}
   {% unless feature_4_visible %}
     {% assign voog_reference_bg_transparent = content_bg_transparent %}
   {% endunless %}

@@ -335,7 +335,7 @@
   min-height: 285px;
   box-sizing: border-box;
 
-  &.section-wide {
+  &.section-with-padding {
     @include rem-fallback(padding, 50px);
     @include flexbox;
     @include align-items(center);
@@ -343,7 +343,7 @@
 
   @include query($desktop-1) {
 
-    &.section-wide {
+    &.section-with-padding {
       @include rem-fallback(padding, 35px);
     }
   }
@@ -369,7 +369,7 @@
       @include flex(1 0 50%);
     }
 
-    &.section-wide {
+    &.section-with-padding {
       padding: 20px;
     }
 

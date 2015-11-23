@@ -106,10 +106,10 @@
 .feature-section {
   transition: padding 500ms;
 }
-.feature-section.section-wide {
+.feature-section.section-with-padding {
   transition: padding 500ms;
 }
-.feature-section:not(.section-wide) .edy-fef-bottom .edy-fef-add {
+.feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
 }
 

@@ -105,11 +105,11 @@
       @include box-shadow(4px, 4px, 0, rgba($black, .2));
     }
 
-    .feature-section:not(.section-wide) & {
+    .feature-section:not(.section-with-padding) & {
       @include box-shadow(0, 4px, 0, rgba($black, .1));
     }
 
-    .feature-section:not(.section-wide) .light-background & {
+    .feature-section:not(.section-with-padding) .light-background & {
       @include box-shadow(0, 4px, 0, rgba($black, .2));
     }
   }

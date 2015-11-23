@@ -127,11 +127,11 @@
 .feature-section {
   transition: padding $transition-std;
 
-  &.section-wide {
+  &.section-with-padding {
     transition: padding $transition-std;
   }
 
-  &:not(.section-wide) {
+  &:not(.section-with-padding) {
 
     .edy-fef-bottom .edy-fef-add {
       margin-left: 0;
