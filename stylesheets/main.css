@@ -187,6 +187,10 @@ body.search-open {
   width: 100%;
 }
 
+.pswp.pswp--open {
+  z-index: 30001;
+}
+
 .content-formatted {
   word-break: break-word;
   word-wrap: break-word;
