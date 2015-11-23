@@ -278,7 +278,7 @@
         bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
         bgPickerImageColorData = bgPickerImageColorDataInternal;
       } else {
-        colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/[photos|voogstock]/g,'/photos'));
+        colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/(photos|voogstock)/g,'/photos'));
         colorExtractImage.load(function() {
           ColorExtract.extract(colorExtractImage[0], colorExtractCanvas[0], function(data) {
             bgPicker.bgPickerImageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
