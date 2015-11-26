@@ -3,7 +3,6 @@
 .header-container {
   @extend %clearfix;
   position: relative;
-  z-index: 30000;
   padding-top: 23px;
   padding-bottom: 23px;
 
@@ -14,6 +13,7 @@
   }
 
   .front-page & {
+    z-index: 30000;
     padding-right: 20px;
     padding-left: 20px;
     max-width: $site-width-wide;

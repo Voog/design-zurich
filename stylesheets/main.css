@@ -1351,7 +1351,6 @@ body.search-open {
 /* HEADER */
 .header-container {
   position: relative;
-  z-index: 30000;
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -1374,6 +1373,7 @@ body.search-open {
   justify-content: flex-end;
 }
 .front-page .header-container {
+  z-index: 30000;
   padding-right: 20px;
   padding-left: 20px;
   max-width: 1920px;
