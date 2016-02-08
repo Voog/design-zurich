@@ -5,6 +5,7 @@
     "type": "git",
     "url": "git://github.com/Voog/design-zurich.git"
   },
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.2.3",
     "grunt": "^0.4.5",
