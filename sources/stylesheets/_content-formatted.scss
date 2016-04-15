@@ -47,11 +47,11 @@
   table {
 
     .light-background & {
-      @include color($black);
+      @include color($color-black);
     }
 
     .dark-background & {
-      @include color($white);
+      @include color($color-white);
     }
   }
 
@@ -138,7 +138,7 @@
     line-height: 1.2;
 
     .front-page & {
-      @include color($black);
+      @include color($color-black);
     }
   }
 
@@ -221,7 +221,7 @@
 
   .custom-btn {
     display: inline-block;
-    @include bg($black, .0);
+    @include bg($color-black, .0);
     box-sizing: border-box;
     padding: 9px 21px 9px;
     text-transform: uppercase;
@@ -239,30 +239,30 @@
     }
 
     .dark-background & {
-      border: 2px solid $white;
-      @include color($white, 1);
+      border: 2px solid $color-white;
+      @include color($color-white, 1);
     }
 
     &,
     .light-background & {
-      border: 2px solid $black;
-      @include color($black, 1);
+      border: 2px solid $color-black;
+      @include color($color-black, 1);
     }
 
     &:hover {
       @include transition($transition-std);
 
       .dark-background & {
-        border: 2px solid $white;
-        @include bg($white, 1);
-        @include color($black, .71);
+        border: 2px solid $color-white;
+        @include bg($color-white, 1);
+        @include color($color-black, .71);
       }
 
       &,
       .light-background & {
-        border: 2px solid $black;
-        @include bg($black);
-        @include color($white, 1);
+        border: 2px solid $color-black;
+        @include bg($color-black);
+        @include color($color-white, 1);
       }
     }
   }

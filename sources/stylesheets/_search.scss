@@ -72,11 +72,11 @@
 .search-form {
   position: relative;
   z-index: 1001;
-  @include bg($white);
-  @include border(all, 1px, solid, $black, 0.1);
+  @include bg($color-white);
+  @include border(all, 1px, solid, $color-black, 0.1);
 
   &.active {
-    @include border(all, 1px, solid, $black, 0.3);
+    @include border(all, 1px, solid, $color-black, 0.3);
   }
 
   @include query($mobile-1) {
@@ -130,7 +130,7 @@
   font-family: inherit;
   font-size: 12px;
   @include color($secondary-color, 0.67);
-  @include bg($white);
+  @include bg($color-white);
   box-sizing: border-box;
   border: none;
   text-overflow: ellipsis;
@@ -157,7 +157,7 @@
     height: $search-height-2;
     font-size: 20px;
     padding: 0 62px 0 20px;
-    @include bg($black, 0.1);
+    @include bg($color-black, 0.1);
   }
 }
 
@@ -266,7 +266,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    @include bg($white);
+    @include bg($color-white);
 
     .no-lang-menu & {
       left: 0;
@@ -281,8 +281,8 @@
   text-align: left;
   font-size: 14px;
   line-height: 1.5;
-  @include bg($white);
-  @include box-shadow(0, 0, 30px, rgba($black, 0.3));
+  @include bg($color-white);
+  @include box-shadow(0, 0, 30px, rgba($color-black, 0.3));
   overflow-x: hidden;
   overflow-y: auto;
 
@@ -392,19 +392,19 @@ body.search-open {
   @include query($mobile-1) {
 
     .header {
-      @include bg($white, 1);
+      @include bg($color-white, 1);
       z-index: 1;
 
       .menu-btn {
 
         .menu-stripe {
-          @include bg($black, 1);
+          @include bg($color-black, 1);
         }
 
         &:hover {
 
           .menu-stripe {
-            @include bg($black, .8);
+            @include bg($color-black, .8);
           }
         }
       }
@@ -412,7 +412,7 @@ body.search-open {
       .search-btn {
 
         svg {
-          @include fill($black, 1);
+          @include fill($color-black, 1);
         }
       }
     }

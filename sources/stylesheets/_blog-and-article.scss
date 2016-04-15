@@ -6,7 +6,7 @@
     padding: 6px 10px;
     font-size: 14px;
     line-height: 1;
-    @include color($white);
+    @include color($color-white);
     @include bg($secondary-color, 0.5);
 
     &:hover {

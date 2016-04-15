@@ -41,7 +41,7 @@
     @include color($secondary-color);
 
     .dark-background & {
-      @include color($white);
+      @include color($color-white);
     }
   }
 
@@ -70,7 +70,7 @@
       font-weight: $font-weight-semibold;
 
       .dark-background & {
-        @include color($white, 1);
+        @include color($color-white, 1);
       }
     }
   }
@@ -84,7 +84,7 @@
     @include inputiosreset;
 
     .light-background & {
-      @include color($white, 1);
+      @include color($color-white, 1);
     }
   }
 
@@ -99,18 +99,18 @@
   .form_field_textarea,
   .form_field_select,
   .form_submit input, {
-    @include box-shadow(4px, 4px, 0, rgba($black, .1));
+    @include box-shadow(4px, 4px, 0, rgba($color-black, .1));
 
     .light-background & {
-      @include box-shadow(4px, 4px, 0, rgba($black, .2));
+      @include box-shadow(4px, 4px, 0, rgba($color-black, .2));
     }
 
     .feature-section:not(.section-with-padding) & {
-      @include box-shadow(0, 4px, 0, rgba($black, .1));
+      @include box-shadow(0, 4px, 0, rgba($color-black, .1));
     }
 
     .feature-section:not(.section-with-padding) .light-background & {
-      @include box-shadow(0, 4px, 0, rgba($black, .2));
+      @include box-shadow(0, 4px, 0, rgba($color-black, .2));
     }
   }
 
@@ -123,7 +123,7 @@
     }
     margin: 0;
     padding: 8px 8px 5px;
-    @include bg($white);
+    @include bg($color-white);
     border: none;
     box-sizing: border-box;
 
@@ -136,7 +136,7 @@
     }
 
     .footer & {
-      @include bg($black, .1);
+      @include bg($color-black, .1);
     }
   }
 
@@ -174,11 +174,11 @@
       display: block;
       width: 15px;
       height: 15px;
-      @include bg($white);
-      @include box-shadow(2px, 2px, 0, rgba($black, .1));
+      @include bg($color-white);
+      @include box-shadow(2px, 2px, 0, rgba($color-black, .1));
 
       .light-background & {
-        @include bg($black);
+        @include bg($color-black);
       }
     }
   }
@@ -234,10 +234,10 @@
         width: 9px;
         height: 9px;
         content: '';
-        @include bg($black);
+        @include bg($color-black);
 
         .light-background & {
-          @include bg($white);
+          @include bg($color-white);
         }
       }
     }
@@ -262,7 +262,7 @@
       margin: 18px 0 0;
       padding: 8px 11px;
       font-size: 14px;
-      @include color($white);
+      @include color($color-white);
       line-height: 1;
       @include bg($blue-1);
       border: none;
@@ -308,9 +308,9 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 0 18px;
-    @include color($white);
+    @include color($color-white);
     line-height: 1;
-    @include box-shadow(4px, 4px, 0, rgba($black, .1));
+    @include box-shadow(4px, 4px, 0, rgba($color-black, .1));
   }
 
   .feedback-error,
@@ -369,7 +369,7 @@
     }
 
     50% {
-      background: $white;
+      background: $color-white;
     }
 
     100% {
@@ -393,7 +393,7 @@
     height: 20px;
     margin: 2px 0 5px 9px;
     padding: 0;
-    @include border(all, 1px, solid, $white, .3);
+    @include border(all, 1px, solid, $color-white, .3);
     border-radius: 100%;
     cursor: pointer;
 

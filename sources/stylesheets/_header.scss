@@ -154,7 +154,7 @@
 
   .dark-background {
     .header-link {
-      @include color($white);
+      @include color($color-white);
     }
   }
 

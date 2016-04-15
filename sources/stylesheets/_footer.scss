@@ -24,12 +24,12 @@
       font-size: 10px;
       line-height: 1;
       @include color($secondary-color, .75);
-      @include bg($white, 1);
-      @include border(all,1px,solid,$black, .1);
+      @include bg($color-white, 1);
+      @include border(all,1px,solid,$color-black, .1);
 
       &:hover {
         @include color($secondary-color, 0.75);
-        @include border(all,1px,solid,$black, .75);
+        @include border(all,1px,solid,$color-black, .75);
       }
     }
   }

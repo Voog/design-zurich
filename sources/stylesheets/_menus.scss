@@ -59,20 +59,20 @@
     .menu-btn {
 
       .menu-stripe {
-        @include bg($white, 1);
+        @include bg($color-white, 1);
       }
 
       &.open,
       &:hover {
 
         .menu-stripe {
-          @include bg($white, .9);
+          @include bg($color-white, .9);
         }
       }
     }
 
     svg {
-      @include fill($white);
+      @include fill($color-white);
     }
   }
 
@@ -81,20 +81,20 @@
     .menu-btn {
 
       .menu-stripe {
-        @include bg($black, 1);
+        @include bg($color-black, 1);
       }
 
       &.open,
       &:hover {
 
         .menu-stripe {
-          @include bg($black, .9);
+          @include bg($color-black, .9);
         }
       }
     }
 
     svg {
-      @include fill($black);
+      @include fill($color-black);
     }
   }
 }
@@ -110,6 +110,10 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
+
+    .menu-link {
+      @include transition($transition-std);
+    }
   }
 }
 
@@ -132,8 +136,8 @@
       min-width: 350px;
       margin-bottom: 60px;
       text-align: left;
-      @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
-      @include bg($white);
+      @include box-shadow(0, 5px, 25px, rgba($color-black, 0.3));
+      @include bg($color-white);
 
       > .menu {
         @include border(top, 1px, solid, $primary-color, 0.2);
@@ -187,7 +191,7 @@
         margin: 0;
         font-size: 20px;
         @include border(bottom, 1px, solid, $secondary-color, 0.2);
-        @include bg($white);
+        @include bg($color-white);
 
         &.menu-item-search-inline,
         &.menu-item-lang-inline {
@@ -238,7 +242,7 @@
         display: block;
         margin-left: 0;
         padding: 1px 25px 6px;
-        @include bg($white);
+        @include bg($color-white);
         @include border(bottom,1px,solid,$primary-color, 0.2);
 
         .edy-menu-menuadd {
@@ -343,10 +347,6 @@
             line-height: 1;
             border: 2px solid transparent;
 
-            &:hover {
-              @include transition($transition-std);
-            }
-
             &.untranslated {
               opacity: .5;
             }
@@ -379,7 +379,7 @@
         @include transition($transition-std);
 
         &:hover {
-          border: 2px solid $white;
+          border: 2px solid $color-white;
           opacity: 1;
           @include transition($transition-std);
         }
@@ -399,16 +399,16 @@
           > .menu-item {
 
             > .menu-link {
-              @include color($white, 1);
+              @include color($color-white, 1);
 
               &.active {
-                border: 2px solid $white;
+                border: 2px solid $color-white;
               }
 
               &:hover {
-                border: 2px solid $white;
-                @include bg($white, 1);
-                @include color($black, 1);
+                border: 2px solid $color-white;
+                @include bg($color-white, 1);
+                @include color($color-black, 1);
               }
             }
           }
@@ -418,12 +418,12 @@
       .flags-disabled {
 
         .menu-lang-btn {
-          @include color($white, 1);
+          @include color($color-white, 1);
 
           &:hover {
-            border: 2px solid $white;
-            @include bg($white, 1);
-            @include color($black, 1);
+            border: 2px solid $color-white;
+            @include bg($color-white, 1);
+            @include color($color-black, 1);
           }
         }
       }
@@ -438,16 +438,16 @@
           > .menu-item {
 
             > .menu-link {
-              @include color($black, 1);
+              @include color($color-black, 1);
 
               &.active {
-                border: 2px solid $black;
+                border: 2px solid $color-black;
               }
 
               &:hover {
-                border: 2px solid $black;
-                @include bg($black, 1);
-                @include color($white, 1);
+                border: 2px solid $color-black;
+                @include bg($color-black, 1);
+                @include color($color-white, 1);
               }
             }
           }
@@ -457,12 +457,12 @@
       .flags-disabled {
 
         .menu-lang-btn {
-          @include color($black, 1);
+          @include color($color-black, 1);
 
           &:hover {
-            border: 2px solid $black;
-            @include bg($black, 1);
-            @include color($white, 1);
+            border: 2px solid $color-black;
+            @include bg($color-black, 1);
+            @include color($color-white, 1);
           }
         }
       }
@@ -574,7 +574,7 @@
   }
 
   &:before {
-    @include bg($black);
+    @include bg($color-black);
   }
 
   &:after {
@@ -612,7 +612,7 @@
     padding: 6px 0;
     min-width: 131px;
     background: #fff;
-    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+    @include box-shadow(0, 5px, 25px, rgba($color-black, 0.3));
     z-index: 10001;
 
     .front-page .flags-enabled & {

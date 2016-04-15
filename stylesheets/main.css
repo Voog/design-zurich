@@ -580,6 +580,9 @@ body.search-open {
   vertical-align: middle;
   font-size: 14px;
 }
+.menu .menu-item .menu-link {
+  transition: 500ms;
+}
 
 .menu-main {
   position: relative;
@@ -771,9 +774,6 @@ body.search-open {
     font-weight: 400;
     line-height: 1;
     border: 2px solid transparent;
-  }
-  .front-page .menu-main > .top-level > .menu-item > .menu-link:hover {
-    transition: 500ms;
   }
   .front-page .menu-main > .top-level > .menu-item > .menu-link.untranslated {
     opacity: .5;

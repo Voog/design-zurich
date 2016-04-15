@@ -212,22 +212,22 @@
     .light-background {
 
       a {
-        @include color($black, 1);
+        @include color($color-black, 1);
       }
 
       svg {
-        @include fill($black, 1);
+        @include fill($color-black, 1);
       }
     }
 
     .dark-background {
 
       a {
-        @include color($white, 1);
+        @include color($color-white, 1);
       }
 
       svg {
-        @include fill($white, 1);
+        @include fill($color-white, 1);
       }
     }
   }
@@ -260,22 +260,22 @@
         &.transparent-light-background {
 
           a {
-            @include color($black, 1);
+            @include color($color-black, 1);
           }
 
           svg {
-            @include fill($black, 1);
+            @include fill($color-black, 1);
           }
         }
 
         &.transparent-dark-background {
 
           a {
-            @include color($white, 1);
+            @include color($color-white, 1);
           }
 
           svg {
-            @include fill($white, 1);
+            @include fill($color-white, 1);
           }
         }
       }
@@ -374,11 +374,11 @@
     }
 
     &.transparent-dark-background {
-      background: $black;
+      background: $color-black;
     }
 
     &.transparent-light-background {
-      background: $white;
+      background: $color-white;
     }
 
     .public .voog-reference-enabled & {
