@@ -71,7 +71,7 @@
 
 .search-form {
   position: relative;
-  z-index: 1001;
+  z-index: 60;
   @include bg($color-white);
   @include border(all, 1px, solid, $color-black, 0.1);
 
@@ -245,7 +245,7 @@
   top: 40px;
   left: -200px;
   right: -58px;
-  z-index: 999;
+  z-index: 50;
 
   &.inline {
     top: 40px;

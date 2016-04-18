@@ -47,7 +47,7 @@
 
 .voog-bg-picker-btn,
 .voog-padding-switcher {
-  z-index: 99!important;
+  z-index: 70!important;
 }
 
 .feature-section {
@@ -92,7 +92,7 @@
 
 // Button switch to toggle content area padding.
 .voog-padding-switcher {
-  @include button;
+  @include reset-button;
   position: absolute;
   margin: 10px 10px 0 0;
   width: 45px;
@@ -139,6 +139,54 @@
   }
 }
 
+.option-btn {
+  @include reset-button;
+  font-family: inherit;
+  font-size: inherit;
+  color: $blue-1;
+
+  &:hover {
+    color: rgba($blue-1, .8);
+  }
+
+  .flags-disabled & {
+
+    .disable-text {
+
+      display: none;
+    }
+  }
+
+  .flags-enabled & {
+
+    .enable-text {
+
+      display: none;
+    }
+  }
+
+  .disable-text,
+  .enable-text {
+
+    &:first-letter {
+
+      text-transform: capitalize;
+    }
+  }
+}
+
+.menu-lang {
+
+  .edit-btn {
+    display: block;
+
+    .edy-menu-langadd {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+}
+
 .menu-lang-popover {
   &.expanded {
     padding-bottom: 0;
@@ -175,4 +223,67 @@
 .editmode table {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.menu-main {
+
+  .edit-btn {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+
+    @include query($tablet-2) {
+      position: static;
+      text-align: left;
+      display: block;
+      margin-left: 0;
+      padding: 1px 25px 6px;
+      background: $color-white;
+      border-bottom: 1px solid rgba($primary-color, .2);
+
+      .edy-menu-menuadd {
+        display: inline-block;
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.menu-lang {
+
+  .edit-btn {
+    padding: 5px 10px 4px 0;
+    text-align: right;
+
+    .edy-menu-langadd {
+      margin: 7px 20px;
+
+      @include query($tablet-2) {
+        margin: 0;
+      }
+    }
+
+    .front-page & {
+      top: 3px;
+      display: block;
+    }
+  }
+}
+
+.menu-sub {
+
+  .edit-btn {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+.menu {
+
+  .menu-link.untranslated {
+    color: rgba($red, .5)
+  }
 }

@@ -30,7 +30,7 @@
 
 .voog-bg-picker-btn,
 .voog-padding-switcher {
-  z-index: 99 !important;
+  z-index: 70 !important;
 }
 
 .feature-section .voog-bg-picker-btn,
@@ -113,6 +113,45 @@
   margin-left: 0;
 }
 
+.option-btn {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: #0066bb;
+}
+.option-btn:focus {
+  outline: none;
+}
+.option-btn::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.option-btn:hover {
+  color: rgba(0, 102, 187, 0.8);
+}
+.flags-disabled .option-btn .disable-text {
+  display: none;
+}
+.flags-enabled .option-btn .enable-text {
+  display: none;
+}
+.option-btn .disable-text:first-letter,
+.option-btn .enable-text:first-letter {
+  text-transform: capitalize;
+}
+
+.menu-lang .edit-btn {
+  display: block;
+}
+.menu-lang .edit-btn .edy-menu-langadd {
+  display: inline-block;
+  padding: 0;
+}
+
 .menu-lang-popover.expanded {
   padding-bottom: 0;
 }
@@ -136,4 +175,53 @@
 .editmode table {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.menu-main .edit-btn {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+@media screen and (max-width: 960px) {
+  .menu-main .edit-btn {
+    position: static;
+    text-align: left;
+    display: block;
+    margin-left: 0;
+    padding: 1px 25px 6px;
+    background: #fff;
+    border-bottom: 1px solid rgba(105, 107, 108, 0.2);
+  }
+  .menu-main .edit-btn .edy-menu-menuadd {
+    display: inline-block;
+  }
+  .menu-main .edit-btn .edy-menu-menuadd:hover {
+    background: none;
+  }
+}
+
+.menu-lang .edit-btn {
+  padding: 5px 10px 4px 0;
+  text-align: right;
+}
+.menu-lang .edit-btn .edy-menu-langadd {
+  margin: 7px 20px;
+}
+@media screen and (max-width: 960px) {
+  .menu-lang .edit-btn .edy-menu-langadd {
+    margin: 0;
+  }
+}
+.front-page .menu-lang .edit-btn {
+  top: 3px;
+  display: block;
+}
+
+.menu-sub .edit-btn {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.menu .menu-link.untranslated {
+  color: rgba(204, 0, 0, 0.5);
 }
