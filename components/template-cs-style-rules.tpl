@@ -1,21 +1,19 @@
 .container {
+  max-width: var(--global-container-max-width) !important;
   font-family: var(--global-main-font-family);
 }
+.container .header .header-container {
+  background-color: var(--global-header-bg-color);
+  justify-content: var(--global-header-alignment);
+  padding: var(--global-header-padding);
+}
+.container .content-inner {
+  width: var(--global-content-max-width);
+}
+.container .content-formatted {
+  padding: var(--global-content-padding);
+}
 
-.front-page .header .header-container {
-  background-color: var(--global-fp-header-bg-color);
-  justify-content: var(--global-fp-header-alignment);
-  padding: var(--global-fp-header-padding);
-}
-.front-page .container {
-  max-width: var(--global-front-container-max-width);
-}
-.front-page .content .content-inner {
-  width: var(--global-front-page-content);
-}
-.front-page .content .content-inner .content-formatted {
-  padding: var(--global-front-page-content-padding);
-}
 .feature-section {
   min-height: var(--global-feature-section-min-height);
 }
@@ -29,58 +27,59 @@
   }
 }
 
-body.front-page .js-header-right .menu-main > .top-level > .menu-item {
-  margin-left: var(--global-menu-main-margin);
-}
+@media screen and (min-width: 961px) {
+  .menu-main .top-level .menu-item {
+    margin-left: var(--global-menu-main-margin);
+  }
 
-body.front-page .js-header-right .menu-main > .top-level > .menu-item > .menu-link {
-  padding-left: var(--global-menu-main-padding-lr);
-  padding-right: var(--global-menu-main-padding-lr);
-  padding-top: var(--global-menu-main-padding-tb);
-  padding-bottom: var(--global-menu-main-padding-tb);
-  opacity: var(--global-menu-main-opacity);
-  text-decoration: var(--global-menu-main-text-decoration);
-  letter-spacing: var(--global-menu-main-letter-spacing);
-  text-transform: var(--global-menu-main-text-transform);
-  color: var(--global-menu-main-color);
-  border-width: var(--global-menu-main-border-width);
-  border-style: var(--global-menu-main-border-style);
-  border-color: var(--global-menu-main-border-color);
-  background-color: var(--global-menu-main-bg-color);
-  font-family: var(--global-menu-main-font-family);
-  font-size: var(--global-menu-main-font-size);
-  font-weight: var(--global-menu-main-font-weight);
-  font-style: var(--global-menu-main-font-style);
+  .menu-main .top-level .menu-item .menu-link {
+    padding-left: var(--global-menu-main-padding-lr);
+    padding-right: var(--global-menu-main-padding-lr);
+    padding-top: var(--global-menu-main-padding-tb);
+    padding-bottom: var(--global-menu-main-padding-tb);
+    opacity: var(--global-menu-main-opacity);
+    text-decoration: var(--global-menu-main-text-decoration);
+    letter-spacing: var(--global-menu-main-letter-spacing);
+    text-transform: var(--global-menu-main-text-transform);
+    color: var(--global-menu-main-color);
+    border-width: var(--global-menu-main-border-width);
+    border-style: var(--global-menu-main-border-style);
+    border-color: var(--global-menu-main-border-color);
+    background-color: var(--global-menu-main-bg-color);
+    font-family: var(--global-menu-main-font-family);
+    font-size: var(--global-menu-main-font-size);
+    font-weight: var(--global-menu-main-font-weight);
+    font-style: var(--global-menu-main-font-style);
+  }
+  .menu-main .top-level .menu-item .menu-link.active {
+    opacity: var(--global-menu-main-opacity-active);
+    text-decoration: var(--global-menu-main-text-decoration-active);
+    letter-spacing: var(--global-menu-main-letter-spacing-active);
+    text-transform: var(--global-menu-main-text-transform-active);
+    color: var(--global-menu-main-color-active);
+    border-width: var(--global-menu-main-border-width-active);
+    border-style: var(--global-menu-main-border-style-active);
+    border-color: var(--global-menu-main-border-color-active);
+    background-color: var(--global-menu-main-bg-color-active);
+    font-size: var(--global-menu-main-font-size-active);
+    font-weight: var(--global-menu-main-font-weight-active);
+    font-style: var(--global-menu-main-font-style-active);
+  }
+  .menu-main .top-level .menu-item .menu-link:hover {
+    opacity: var(--global-menu-main-opacity-hover);
+    text-decoration: var(--global-menu-main-text-decoration-hover);
+    letter-spacing: var(--global-menu-main-letter-spacing-hover);
+    text-transform: var(--global-menu-main-text-transform-hover);
+    color: var(--global-menu-main-color-hover);
+    border-width: var(--global-menu-main-border-width-hover);
+    border-style: var(--global-menu-main-border-style-hover);
+    border-color: var(--global-menu-main-border-color-hover);
+    background-color: var(--global-menu-main-bg-color-hover);
+    font-size: var(--global-menu-main-font-size-hover);
+    font-weight: var(--global-menu-main-font-weight-hover);
+    font-style: var(--global-menu-main-font-style-hover);
+  }
 }
-body.front-page .js-header-right .menu-main > .top-level > .menu-item > .menu-link.active {
-  opacity: var(--global-menu-main-opacity-active);
-  text-decoration: var(--global-menu-main-text-decoration-active);
-  letter-spacing: var(--global-menu-main-letter-spacing-active);
-  text-transform: var(--global-menu-main-text-transform-active);
-  color: var(--global-menu-main-color-active);
-  border-width: var(--global-menu-main-border-width-active);
-  border-style: var(--global-menu-main-border-style-active);
-  border-color: var(--global-menu-main-border-color-active);
-  background-color: var(--global-menu-main-bg-color-active);
-  font-size: var(--global-menu-main-font-size-active);
-  font-weight: var(--global-menu-main-font-weight-active);
-  font-style: var(--global-menu-main-font-style-active);
-}
-body.front-page .js-header-right .menu-main > .top-level > .menu-item > .menu-link:hover {
-  opacity: var(--global-menu-main-opacity-hover);
-  text-decoration: var(--global-menu-main-text-decoration-hover);
-  letter-spacing: var(--global-menu-main-letter-spacing-hover);
-  text-transform: var(--global-menu-main-text-transform-hover);
-  color: var(--global-menu-main-color-hover);
-  border-width: var(--global-menu-main-border-width-hover);
-  border-style: var(--global-menu-main-border-style-hover);
-  border-color: var(--global-menu-main-border-color-hover);
-  background-color: var(--global-menu-main-bg-color-hover);
-  font-size: var(--global-menu-main-font-size-hover);
-  font-weight: var(--global-menu-main-font-weight-hover);
-  font-style: var(--global-menu-main-font-style-hover);
-}
-
 .content-formatted {
   color: var(--global-main-color);
 }

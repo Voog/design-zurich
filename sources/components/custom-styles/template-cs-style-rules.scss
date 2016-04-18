@@ -16,54 +16,48 @@
 // =============================================================================
 // Default stylesheet override styles.
 // =============================================================================
-// Basics.
+
 .container {
+  max-width: var(--global-container-max-width)!important;
   font-family: var(--global-main-font-family);
-}
 
-// =============================================================================
-// FRONT PAGE
-// =============================================================================
+  .header {
 
-.front-page {
-
-  .header .header-container {
-    background-color: var(--global-fp-header-bg-color);
-    justify-content: var(--global-fp-header-alignment);
-    padding: var(--global-fp-header-padding);
-  }
-
-  .container {
-    max-width: var(--global-front-container-max-width);
-  }
-
-  .content .content-inner {
-    width: var(--global-front-page-content);
-
-    .content-formatted {
-      padding: var(--global-front-page-content-padding);
+    .header-container {
+      background-color: var(--global-header-bg-color);
+      justify-content: var(--global-header-alignment);
+      padding: var(--global-header-padding);
     }
   }
 
-  @at-root .feature-section {
-    min-height: var(--global-feature-section-min-height);
+  .content-inner {
+    width: var(--global-content-max-width);
+  }
 
-    @media screen and (min-width: $tablet-2) {
-      width: var(--global-feature-section-width);
+  .content-formatted {
+    padding: var(--global-content-padding);
+  }
+}
 
-      &.section-with-padding {
-        padding: var(--global-feature-section-padding);
-        align-items: var(--global-feature-section-alignment-vertical);
-      }
+.feature-section {
+  min-height: var(--global-feature-section-min-height);
+
+  @media screen and (min-width: $tablet-2) {
+    width: var(--global-feature-section-width);
+
+    &.section-with-padding {
+      padding: var(--global-feature-section-padding);
+      align-items: var(--global-feature-section-alignment-vertical);
     }
   }
 }
 
-body.front-page .js-header-right .menu-main>.top-level>.menu-item {
+@media screen and (min-width: 961px) {
+.menu-main .top-level .menu-item {
   margin-left: var(--global-menu-main-margin);
 }
 
-body.front-page .js-header-right .menu-main>.top-level>.menu-item>.menu-link {
+.menu-main .top-level .menu-item .menu-link {
   padding-left: var(--global-menu-main-padding-lr);
   padding-right: var(--global-menu-main-padding-lr);
   padding-top: var(--global-menu-main-padding-tb);
@@ -123,6 +117,7 @@ body.front-page .js-header-right .menu-main>.top-level>.menu-item>.menu-link {
     font-weight: var(--global-menu-main-font-weight-hover);
     font-style: var(--global-menu-main-font-style-hover);
   }
+}
 }
 
 .voog-editor-fp-color-primary .content-formatted,
