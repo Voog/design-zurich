@@ -26,7 +26,10 @@
     .header-container {
       background-color: var(--global-header-bg-color);
       justify-content: var(--global-header-alignment);
-      padding: var(--global-header-padding);
+      padding-top: var(--global-header-padding-tb);
+      padding-bottom: var(--global-header-padding-tb);
+      padding-left: var(--global-header-padding-lr);
+      padding-right: var(--global-header-padding-lr);
     }
   }
 
@@ -120,24 +123,12 @@
 }
 }
 
-.voog-editor-fp-color-primary .content-formatted,
-.voog-editor-fp-color-primary .content-formatted h1,
-.voog-editor-fp-color-primary .content-formatted h2,
-.voog-editor-fp-color-primary .content-formatted h3,
-.voog-editor-fp-color-primary .content-formatted h4,
-.voog-editor-fp-color-primary .content-formatted h5,
-.voog-editor-fp-color-primary .content-formatted h6,
-.voog-editor-fp-color-primary .content-formatted ol,
-.voog-editor-fp-color-primary .content-formatted p,
-.voog-editor-fp-color-primary .content-formatted table,
-.voog-editor-fp-color-primary .content-formatted ul {
-
-}
-
 // =============================================================================
 // Text type content area.
 // =============================================================================
-.content-formatted {
+.content-formatted,
+.dark-background .content-formatted,
+.light-background .content-formatted {
   color: var(--global-main-color);
 
   .site-header & {
@@ -190,7 +181,7 @@
     letter-spacing: var(--global-headings-title-letter-spacing);
     text-transform: var(--global-headings-title-text-transform);
 
-    color: var(--global-headings-title-color);
+    color: var(--global-headings-title-color)!important;
 
     font-family: var(--global-headings-title-font-family);
     font-size: var(--global-headings-title-font-size);

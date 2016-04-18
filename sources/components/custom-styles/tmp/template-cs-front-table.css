@@ -20,17 +20,6 @@
   --global-table-font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.table"],
-    "titleI18n": "custom_styles.letter_spacing",
-    "editor": "rangePicker",
-    "min": 0,
-    "max": 5,
-    "step": 0.1,
-    "unit": "em",
-    "scope": "global"
-  */
-  --global-table-letter-spacing: 0;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.table"],
     "titleI18n": "custom_styles.line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -68,7 +57,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-table-border-color: black;
+  --global-table-border-color: white;
   /* VoogStyle
     "pathI18n": ["custom_styles.table"],
     "titleI18n": "custom_styles.size",
@@ -139,5 +128,5 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --global-table-color: rgba(0, 0, 0, 0.8);
+  --global-table-color: #838586;
 }

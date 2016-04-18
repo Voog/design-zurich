@@ -3,13 +3,13 @@
     "pathI18n": ["custom_styles.content"],
     "titleI18n": "custom_styles.maximum_width",
     "editor": "rangePicker",
-    "min": 100,
-    "max": 2000,
+    "min": 33,
+    "max": 100,
     "step": 1,
-    "unit": "px",
+    "unit": "%",
     "scope": "global"
   */
-  --global-content-max-width: 700px;
+  --global-content-max-width: 100%;
   /* VoogStyle
     "pathI18n": ["custom_styles.content"],
     "titleI18n": "custom_styles.padding",

@@ -16,6 +16,7 @@
 .content {
   @extend %clearfix;
   display: block;
+  @include bg($grey-4);
 
   &.two-columns {
     @extend %clearfix;
@@ -30,7 +31,8 @@
 
   .content-inner {
     padding: 33px 50px;
-    @include bg($grey-4);
+    margin: 0 auto;
+    box-sizing: border-box;
 
     @include query($tablet-2) {
       padding: 33px 20px;

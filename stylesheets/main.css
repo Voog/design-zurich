@@ -1403,6 +1403,7 @@ body.search-open {
 
 .content {
   display: block;
+  background-color: #eeeeee;
 }
 .content.two-columns {
   background-color: #eeeeee;
@@ -1412,7 +1413,8 @@ body.search-open {
 }
 .content .content-inner {
   padding: 33px 50px;
-  background-color: #eeeeee;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 960px) {
   .content .content-inner {

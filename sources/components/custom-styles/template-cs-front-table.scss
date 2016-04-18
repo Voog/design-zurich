@@ -42,18 +42,6 @@
 
   /* VoogStyle
     "pathI18n": ["custom_styles.table"],
-    "titleI18n": "custom_styles.letter_spacing",
-    "editor": "rangePicker",
-    "min": 0,
-    "max": 5,
-    "step": 0.1,
-    "unit": "em",
-    "scope": "global"
-  */
-  --global-table-letter-spacing: 0;
-
-  /* VoogStyle
-    "pathI18n": ["custom_styles.table"],
     "titleI18n": "custom_styles.line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -94,7 +82,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-table-border-color: rgba(#000, 1);
+  --global-table-border-color: rgba($color-white, 1);
 
   /* VoogStyle
     "pathI18n": ["custom_styles.table"],
@@ -171,7 +159,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --global-table-color: rgba($color-black, .8);
+  --global-table-color: $grey-1;
 
   // scss-lint:enable Comment, Indentation
 }
