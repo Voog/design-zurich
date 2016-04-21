@@ -497,12 +497,9 @@
     "type": "button",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global",
-    "boundVariables": [
-      "--global-content-link-hover-color"
-    ]
+    "scope": "global"
   */
-  --global-content-link-color: rgba($color-black, 1);
+  --global-content-link-color: rgba($blue-1, 1);
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -511,7 +508,12 @@
         "editor": "colorPicker",
         "scope": "global"
       */
-      --global-content-link-hover-color: rgba($color-black, .8);
+      --global-content-link-hover-color: rgba($blue-1, .8);
+
+
+
+
+
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.button", "custom_styles.normal"],

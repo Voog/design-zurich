@@ -104,6 +104,20 @@ body {
 .dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
   color: var(--global-main-color-front);
 }
+.content-formatted a {
+  font-weight: var(--global-content-link-font-weight);
+  font-style: var(--global-content-link-font-style);
+  text-decoration: var(--global-content-link-text-decoration);
+  text-transform: var(--global-content-link-text-transform);
+  color: var(--global-content-link-color);
+}
+.content-formatted a:hover {
+  font-weight: var(--global-content-link-hover-font-weight);
+  font-style: var(--global-content-link-hover-font-style);
+  text-decoration: var(--global-content-link-hover-text-decoration);
+  text-transform: var(--global-content-link-hover-text-transform);
+  color: var(--global-content-link-hover-color);
+}
 .front-page .content-formatted pre, .front-page
 .content-formatted code {
   color: var(--global-secondary-color-front);

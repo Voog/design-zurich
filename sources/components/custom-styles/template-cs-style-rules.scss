@@ -187,6 +187,23 @@ body {
     }
   }
 
+  // Editable content area links.
+  a {
+    font-weight: var(--global-content-link-font-weight);
+    font-style: var(--global-content-link-font-style);
+    text-decoration: var(--global-content-link-text-decoration);
+    text-transform: var(--global-content-link-text-transform);
+    color: var(--global-content-link-color);
+
+    &:hover {
+      font-weight: var(--global-content-link-hover-font-weight);
+      font-style: var(--global-content-link-hover-font-style);
+      text-decoration: var(--global-content-link-hover-text-decoration);
+      text-transform: var(--global-content-link-hover-text-transform);
+      color: var(--global-content-link-hover-color);
+    }
+  }
+
   // Code blocks and preformatted content.
   pre,
   code {
