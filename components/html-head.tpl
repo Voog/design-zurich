@@ -23,6 +23,25 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Lato:400,400italic,700,700italic|Montserrat:400,700|Open+Sans:400,400italic,700,700italic|Roboto:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,700,700italic|Ubuntu:400,400italic,700,700italic|Arvo|Crimson+Text:400,400italic,700,700italic|Lora:400,400italic,700,700italic|Noto+Serif|Playfair+Display:400,400italic,700italic,700|PT+Serif:400,400italic,700,700italic|Roboto+Slab:400,700|Anonymous+Pro:400,400italic,700,700italic|Cousine:400,400italic,700,700italic|Roboto+Mono:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic&subset=latin,greek,cyrillic-ext,latin-ext,cyrillic,greek-ext,vietnamese,hebrew">
 
 {% customstyle %}
+  {% include "template-cs-main-styles" %}
+  {% include "template-cs-header" %}
+
+  {% comment %}
+  {% include "template-cs-headings" %}
+  {% if template-head == "blog_listing_page" %}
+    {% include "template-cs-blog-list" %}
+  {% endif %}
+  {% include "template-cs-content" %}
+  {% include "template-cs-list" %}
+  {% include "template-cs-table" %}
+  {% include "template-cs-form" %}
+  {% include "template-cs-footer" %}
+  {% endcomment %}
+
+  {% include "template-cs-style-rules" %}
+{% endcustomstyle %}
+
+{% comment %}{% customstyle %}
   {% if html-head == "front_page" %}
     {% include "template-cs-front-main-styles" %}
     {% include "template-cs-front-header" %}
@@ -30,7 +49,7 @@
     {% include "template-cs-front-content" %}
     {% include "template-cs-front-list" %}
     {% include "template-cs-front-table" %}
-    {% comment %}{% include "template-cs-front-form" %}{% endcomment %}
+    {% include "template-cs-front-form" %}
     {% include "template-cs-front-footer" %}
   {% else %}
     {% include "template-cs-main-styles" %}
@@ -42,12 +61,12 @@
     {% include "template-cs-content" %}
     {% include "template-cs-list" %}
     {% include "template-cs-table" %}
-    {% comment %}{% include "template-cs-form" %}{% endcomment %}
+    {% include "template-cs-form" %}
     {% include "template-cs-footer" %}
   {% endif %}
 
   {% include "template-cs-style-rules" %}
-{% endcustomstyle %}
+{% endcustomstyle %}{% endcomment %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
 <script src="{{ javascripts_path }}/modernizr-custom.min.js"></script>
