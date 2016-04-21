@@ -632,14 +632,15 @@ body.search-open {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  color: rgba(27, 33, 36, 0.7);
+  color: #1b2124;
+  opacity: .7;
   font-weight: 600;
 }
 .menu-main .menu-link.active {
-  color: rgba(131, 133, 134, 0.7);
+  opacity: 1;
 }
 .menu-main .menu-link.active:hover, .menu-main .menu-link:hover {
-  color: rgba(131, 133, 134, 0.4);
+  opacity: .5;
 }
 @media screen and (max-width: 960px) {
   .menu-main .menu-link {
@@ -746,10 +747,11 @@ body.search-open {
   margin-right: 0;
 }
 .menu-sub .menu-link {
-  color: #9C9E9E;
+  color: #1b2124;
+  opacity: .4;
 }
 .menu-sub .menu-link.active, .menu-sub .menu-link:hover {
-  color: #1B2124;
+  opacity: 1;
 }
 
 .menu-lang-btn {
@@ -1373,8 +1375,7 @@ body.search-open {
   max-width: 100%;
 }
 .header-title .header-link:hover {
-  color: #1B2124;
-  color: rgba(27, 33, 36, 0.8);
+  opacity: .8;
 }
 .header-title h1 {
   text-align: left;

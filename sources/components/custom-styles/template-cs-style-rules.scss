@@ -56,8 +56,33 @@
 }
 
 // =============================================================================
+// SITE HEADER
+// =============================================================================
+.header-title {
+  &, a {
+    font-size: var(--global-header-body-font-size);
+    font-style: var(--global-header-body-font-style);
+    font-weight: var(--global-header-body-font-weight);
+    color: var(--global-header-body-text-color);
+    text-decoration: var(--global-header-body-text-decoration);
+    text-transform: var(--global-header-body-text-transform);
+  }
+
+  .header-link {
+    &:hover {
+      color: var(--global-header-body-text-color);
+    }
+  }
+}
+
+// =============================================================================
 // SITE SEARCH
 // =============================================================================
+
+// =============================================================================
+// SITE'S MAIN MENU
+// =============================================================================
+
 
 // =============================================================================
 // SITE'S SUB MENU

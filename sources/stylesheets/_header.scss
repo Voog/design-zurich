@@ -140,7 +140,7 @@
     max-width: 100%;
 
     &:hover {
-      @include color($secondary-color,.8);
+      opacity: .8;
     }
 
   }

@@ -139,16 +139,17 @@
 
   .menu-link {
     @include hyphenate(true);
-    color: rgba($secondary-color, .7);
+    color: rgba($secondary-color, 1);
+    opacity: .7;
     font-weight: $font-weight-semibold;
 
     &.active {
-      color: rgba($grey-1, .7);
+      opacity: 1;
     }
 
     &.active:hover,
     &:hover {
-      color: rgba($grey-1, .4);
+      opacity: .5;
     }
 
     @include query($tablet-2) {
@@ -288,11 +289,12 @@
   }
 
   .menu-link {
-    color: $third-color;
+    color: rgba($secondary-color, 1);
+    opacity: .4;
 
     &.active,
     &:hover {
-      color: $secondary-color;
+      opacity: 1;
     }
   }
 }

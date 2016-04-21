@@ -6,13 +6,16 @@
     "featured": true,
     "scope": "global"
   */
-  --global-main-color-front: rgba(0, 0, 0, 0.8);
+  --global-main-color-content: #696b6c;
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.secondary_color",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--global-header-body-text-color"
+    ]
   */
-  --global-secondary-color-front: black;
+  --global-secondary-color-content: #1b2124;
 }

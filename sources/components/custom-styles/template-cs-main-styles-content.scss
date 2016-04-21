@@ -26,16 +26,19 @@
     "featured": true,
     "scope": "global"
   */
-  --global-main-color-front: rgba($color-black, .8);
+  --global-main-color-content: rgba($primary-color, 1);
 
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.secondary_color",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--global-header-body-text-color"
+    ]
   */
-  --global-secondary-color-front: rgba($color-black, 1);
+  --global-secondary-color-content: rgba($secondary-color, 1);
 
   // scss-lint:enable Comment, Indentation
 }
