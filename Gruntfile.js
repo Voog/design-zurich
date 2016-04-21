@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 
     // Compiles the stylesheet files.
     sass: {
-      build: {
+      build_main: {
         options: {
           style: 'expanded',
           sourcemap: 'none'
@@ -90,10 +90,15 @@ module.exports = function(grunt) {
           require('autoprefixer')({browsers: 'last 4 versions'})
         ]
       },
-      dist: {
+      main_styles: {
         src: [
           'stylesheets/*.css',
           'stylesheets/!*.min.css'
+        ]
+      },
+      custom_styles: {
+        src: [
+          'sources/components/custom-styles/tmp/*.css'
         ]
       }
     },
@@ -132,6 +137,28 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    // =========================================================================
+    // If custom styles can be concatenated to one component, then this
+    // block here will replace the placeholder strings with proper <style> tag
+    // beginning and ending.
+    // =========================================================================
+    // replace: {
+    //   custom_styles: {
+    //     src: ['sources/components/custom-styles/tmp/*.css'],
+    //     overwrite: true,
+    //     replacements: [
+    //       {
+    //         from: '/* GRUNT-REPLACE: CUSTOM-STYLES-PREPEND */',
+    //         to: '{% comment %}Template custom styles definitions.{% endcomment %}\n<style data-voog-style>'
+    //       },
+    //       {
+    //         from: '/* GRUNT-REPLACE: CUSTOM-STYLES-APPEND */',
+    //         to: '</style>'
+    //       }
+    //     ]
+    //   }
+    // },
 
     // Copys the files from the source folders to the layout folders.
     copy: {
@@ -219,16 +246,16 @@ module.exports = function(grunt) {
         tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest']
       },
 
-      css: {
+      css_main: {
         files: [
           'sources/stylesheets/*.scss',
-          'sources/stylesheets/*/*.scss'
+          'sources/stylesheets/*/*.scss',
         ],
-        tasks: ['sass:build', 'postcss', 'cssmin:build', 'exec:kitmanifest']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest']
       },
 
       custom_styles: {
-        files: 'sources/components/custom-styles/**/*.scss',
+        files: 'sources/components/custom-styles/*.scss',
         tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
       },
 
@@ -275,7 +302,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin', 'copy', 'clean:remove']);
+  // Default task with text replacement (for automatic <style> tag wrapping).
+  // grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin', 'replace', 'copy', 'clean:remove']);
+
+  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
