@@ -6,7 +6,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-main-color: rgba(0, 0, 0, 0.8);
+  --global-main-color-front: rgba(0, 0, 0, 0.8);
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.secondary_color",
@@ -14,5 +14,5 @@
     "featured": true,
     "scope": "global"
   */
-  --global-secondary-color: black;
+  --global-secondary-color-front: black;
 }

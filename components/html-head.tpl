@@ -28,7 +28,7 @@
     {% include "template-cs-main-styles-front" %}
   {% endif %}
   {% if content_page %}
-    {% include "template-cs-main-content" %}
+    {% include "template-cs-main-styles-content" %}
   {% endif %}
 
   {% comment %}

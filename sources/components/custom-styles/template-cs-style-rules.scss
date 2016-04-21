@@ -25,30 +25,30 @@
   .menu-front {
     .menu-link {
       .dark-background & {
-        color: var(--global-main-color);
+        color: var(--global-main-color-front);
 
         &.active {
-          border-color: var(--global-main-color);
+          border-color: var(--global-main-color-front);
         }
 
         &:hover {
-          border-color: var(--global-main-color);
-          background: var(--global-main-color);
-          color: var(--global-secondary-color);
+          border-color: var(--global-main-color-front);
+          background: var(--global-main-color-front);
+          color: var(--global-secondary-color-front);
         }
       }
 
       .light-background & {
-        color: var(--global-secondary-color);
+        color: var(--global-secondary-color-front);
 
         &.active {
-          border-color: var(--global-secondary-color);
+          border-color: var(--global-secondary-color-front);
         }
 
         &:hover {
-          border-color: var(--global-secondary-color);
-          background: var(--global-secondary-color);
-          color: var(--global-main-color);
+          border-color: var(--global-secondary-color-front);
+          background: var(--global-secondary-color-front);
+          color: var(--global-main-color-front);
         }
       }
     }
@@ -82,11 +82,11 @@
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {
-      color: var(--global-secondary-color);
+      color: var(--global-secondary-color-front);
     }
 
     .dark-background & {
-      color: var(--global-main-color);
+      color: var(--global-main-color-front);
     }
   }
 
@@ -94,34 +94,34 @@
   pre,
   code {
     .front-page & {
-      color: var(--global-secondary-color);
+      color: var(--global-secondary-color-front);
     }
   }
 
   .custom-btn {
     .dark-background & {
-      border-color: var(--global-main-color);
-      color: var(--global-main-color);
+      border-color: var(--global-main-color-front);
+      color: var(--global-main-color-front);
     }
 
     &,
     .light-background & {
-      border-color: var(--global-secondary-color);
-      color: var(--global-secondary-color);
+      border-color: var(--global-secondary-color-front);
+      color: var(--global-secondary-color-front);
     }
 
     &:hover {
       .dark-background & {
-        color: var(--global-secondary-color);
-        border-color: var(--global-main-color);
-        background-color: var(--global-main-color);
+        color: var(--global-secondary-color-front);
+        border-color: var(--global-main-color-front);
+        background-color: var(--global-main-color-front);
       }
 
       &,
       .light-background & {
-        color: var(--global-main-color);
-        border-color: var(--global-secondary-color);
-        background-color: var(--global-secondary-color);
+        color: var(--global-main-color-front);
+        border-color: var(--global-secondary-color-front);
+        background-color: var(--global-secondary-color-front);
       }
     }
   }

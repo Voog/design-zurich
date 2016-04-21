@@ -26,7 +26,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-main-color: rgba($color-black, .8);
+  --global-main-color-front: rgba($color-black, .8);
 
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
@@ -35,7 +35,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-secondary-color: rgba($color-black, 1);
+  --global-secondary-color-front: rgba($color-black, 1);
 
   // scss-lint:enable Comment, Indentation
 }
