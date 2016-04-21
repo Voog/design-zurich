@@ -34,6 +34,29 @@
   color: var(--global-header-body-text-color);
 }
 
+.menu-main .menu-link {
+  font-size: var(--global-menu-main-font-size);
+  font-style: var(--global-menu-main-font-style);
+  font-weight: var(--global-menu-main-font-weight);
+  color: var(--global-menu-main-color);
+  text-decoration: var(--global-menu-main-text-decoration);
+  text-transform: var(--global-menu-main-text-transform);
+}
+.menu-main .menu-link.active {
+  font-style: var(--global-menu-main-active-font-style);
+  font-weight: var(--global-menu-main-active-font-weight);
+  color: var(--global-menu-main-active-color);
+  text-decoration: var(--global-menu-main-active-text-decoration);
+  text-transform: var(--global-menu-main-active-text-transform);
+}
+.menu-main .menu-link:hover {
+  font-style: var(--global-menu-main-hover-font-style);
+  font-weight: var(--global-menu-main-hover-font-weight);
+  color: var(--global-menu-main-hover-color);
+  text-decoration: var(--global-menu-main-hover-text-decoration);
+  text-transform: var(--global-menu-main-hover-text-transform);
+}
+
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
   color: var(--global-secondary-color-front);
 }

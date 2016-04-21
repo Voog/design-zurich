@@ -82,7 +82,32 @@
 // =============================================================================
 // SITE'S MAIN MENU
 // =============================================================================
+.menu-main {
+  .menu-link {
+    font-size: var(--global-menu-main-font-size);
+    font-style: var(--global-menu-main-font-style);
+    font-weight: var(--global-menu-main-font-weight);
+    color: var(--global-menu-main-color);
+    text-decoration: var(--global-menu-main-text-decoration);
+    text-transform: var(--global-menu-main-text-transform);
 
+    &.active {
+      font-style: var(--global-menu-main-active-font-style);
+      font-weight: var(--global-menu-main-active-font-weight);
+      color: var(--global-menu-main-active-color);
+      text-decoration: var(--global-menu-main-active-text-decoration);
+      text-transform: var(--global-menu-main-active-text-transform);
+    }
+
+    &:hover {
+      font-style: var(--global-menu-main-hover-font-style);
+      font-weight: var(--global-menu-main-hover-font-weight);
+      color: var(--global-menu-main-hover-color);
+      text-decoration: var(--global-menu-main-hover-text-decoration);
+      text-transform: var(--global-menu-main-hover-text-transform);
+    }
+  }
+}
 
 // =============================================================================
 // SITE'S SUB MENU
