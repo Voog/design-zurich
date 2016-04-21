@@ -34,6 +34,12 @@
   color: var(--global-header-body-text-color);
 }
 
+.content-topbar,
+.content,
+.content.two-columns {
+  background-color: var(--global-content-background-color);
+}
+
 .menu-main .menu-link {
   font-size: var(--global-menu-main-font-size);
   font-style: var(--global-menu-main-font-style);
@@ -55,6 +61,29 @@
   color: var(--global-menu-main-hover-color);
   text-decoration: var(--global-menu-main-hover-text-decoration);
   text-transform: var(--global-menu-main-hover-text-transform);
+}
+
+.menu-sub .menu-link {
+  font-size: var(--global-menu-sub-font-size);
+  font-style: var(--global-menu-sub-font-style);
+  font-weight: var(--global-menu-sub-font-weight);
+  color: var(--global-menu-sub-color);
+  text-decoration: var(--global-menu-sub-text-decoration);
+  text-transform: var(--global-menu-sub-text-transform);
+}
+.menu-sub .menu-link.active {
+  font-style: var(--global-menu-sub-active-font-style);
+  font-weight: var(--global-menu-sub-active-font-weight);
+  color: var(--global-menu-sub-active-color);
+  text-decoration: var(--global-menu-sub-active-text-decoration);
+  text-transform: var(--global-menu-sub-active-text-transform);
+}
+.menu-sub .menu-link:hover {
+  font-style: var(--global-menu-sub-hover-font-style);
+  font-weight: var(--global-menu-sub-hover-font-weight);
+  color: var(--global-menu-sub-hover-color);
+  text-decoration: var(--global-menu-sub-hover-text-decoration);
+  text-transform: var(--global-menu-sub-hover-text-transform);
 }
 
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {

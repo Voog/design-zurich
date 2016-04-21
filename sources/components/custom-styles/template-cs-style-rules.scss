@@ -76,6 +76,15 @@
 }
 
 // =============================================================================
+// CONTENT
+// =============================================================================
+.content-topbar,
+.content,
+.content.two-columns {
+  background-color: var(--global-content-background-color);
+}
+
+// =============================================================================
 // SITE SEARCH
 // =============================================================================
 
@@ -112,6 +121,32 @@
 // =============================================================================
 // SITE'S SUB MENU
 // =============================================================================
+.menu-sub {
+  .menu-link {
+    font-size: var(--global-menu-sub-font-size);
+    font-style: var(--global-menu-sub-font-style);
+    font-weight: var(--global-menu-sub-font-weight);
+    color: var(--global-menu-sub-color);
+    text-decoration: var(--global-menu-sub-text-decoration);
+    text-transform: var(--global-menu-sub-text-transform);
+
+    &.active {
+      font-style: var(--global-menu-sub-active-font-style);
+      font-weight: var(--global-menu-sub-active-font-weight);
+      color: var(--global-menu-sub-active-color);
+      text-decoration: var(--global-menu-sub-active-text-decoration);
+      text-transform: var(--global-menu-sub-active-text-transform);
+    }
+
+    &:hover {
+      font-style: var(--global-menu-sub-hover-font-style);
+      font-weight: var(--global-menu-sub-hover-font-weight);
+      color: var(--global-menu-sub-hover-color);
+      text-decoration: var(--global-menu-sub-hover-text-decoration);
+      text-transform: var(--global-menu-sub-hover-text-transform);
+    }
+  }
+}
 
 // =============================================================================
 // LANGUAGE MENU STYLES
