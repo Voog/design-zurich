@@ -1,3 +1,7 @@
+body {
+  color: var(--global-content-body-text-color);
+}
+
 @media screen and (min-width: 961px) {
   .dark-background .menu-front .menu-link {
     color: var(--global-main-color-front);
@@ -86,6 +90,14 @@
   text-transform: var(--global-menu-sub-hover-text-transform);
 }
 
+.content .content-formatted {
+  font-size: var(--global-content-body-font-size);
+  font-style: var(--global-content-body-font-style);
+  font-weight: var(--global-content-body-font-weight);
+  line-height: var(--global-content-body-line-height);
+  text-decoration: var(--global-content-body-text-decoration);
+  text-transform: var(--global-content-body-text-transform);
+}
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
   color: var(--global-secondary-color-front);
 }

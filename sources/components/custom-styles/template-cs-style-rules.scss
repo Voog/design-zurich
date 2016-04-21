@@ -17,6 +17,9 @@
 // =============================================================================
 // DEFAULT STYLESHEET OVERRIDE STYLES
 // =============================================================================
+body {
+  color: var(--global-content-body-text-color);
+}
 
 // =============================================================================
 // NAVIGATION MENUS
@@ -164,6 +167,15 @@
 // TEXT TYPE CONTENT AREA
 // =============================================================================
 .content-formatted {
+  .content & {
+    font-size: var(--global-content-body-font-size);
+    font-style: var(--global-content-body-font-style);
+    font-weight: var(--global-content-body-font-weight);
+    line-height: var(--global-content-body-line-height);
+    text-decoration: var(--global-content-body-text-decoration);
+    text-transform: var(--global-content-body-text-transform);
+  }
+
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {

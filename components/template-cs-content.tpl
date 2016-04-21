@@ -247,19 +247,18 @@
     "unit": "",
     "scope": "global"
   */
-  --global-content-body-line-height: 1.3;
+  --global-content-body-line-height: 1.4;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.text"],
     "titleI18n": "custom_styles.size",
-    "type": "button",
     "editor": "rangePicker",
     "min": 8,
-    "max": 80,
+    "max": 100,
     "unit": "px",
     "featured": true,
     "scope": "global"
   */
-  --global-content-body-font-size: 16px;
+  --global-content-body-font-size: 24px;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.text"],
     "titleI18n": "custom_styles.font_size",
@@ -320,7 +319,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-content-body-color: rgba(0, 0, 0, 0.8);
+  --global-content-body-text-color: #696b6c;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
     "titleI18n": "custom_styles.font_size",

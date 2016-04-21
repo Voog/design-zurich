@@ -4,7 +4,10 @@
     "titleI18n": "custom_styles.primary_color",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--global-content-body-text-color"
+    ]
   */
   --global-main-color-content: #696b6c;
   /* VoogStyle
