@@ -169,11 +169,7 @@ body {
 .content-formatted {
   .content & {
     font-size: var(--global-content-body-font-size);
-    font-style: var(--global-content-body-font-style);
-    font-weight: var(--global-content-body-font-weight);
     line-height: var(--global-content-body-line-height);
-    text-decoration: var(--global-content-body-text-decoration);
-    text-transform: var(--global-content-body-text-transform);
   }
 
   // Colors for editable content area elements with editable background.
@@ -213,6 +209,24 @@ body {
   }
 
   .custom-btn {
+    padding: calc(var(--global-content-button-padding) - 12px) var(--global-content-button-padding);
+    font-size: var(--global-content-button-font-size);
+    font-style: var(--global-content-button-font-style);
+    font-weight: var(--global-content-button-font-weight);
+    color: var(--global-content-button-color);
+    text-decoration: var(--global-content-button-text-decoration);
+    text-transform: var(--global-content-button-text-transform);
+    background-color: var(--global-content-button-background-color);
+
+    &:hover {
+      font-style: var(--global-content-button-hover-font-style);
+      font-weight: var(--global-content-button-hover-font-weight);
+      color: var(--global-content-button-hover-color);
+      text-decoration: var(--global-content-button-hover-text-decoration);
+      text-transform: var(--global-content-button-hover-text-transform);
+      background-color: var(--global-content-button-hover-background-color);
+    }
+
     .dark-background & {
       border-color: var(--global-main-color-front);
       color: var(--global-main-color-front);
@@ -224,18 +238,20 @@ body {
       color: var(--global-secondary-color-front);
     }
 
-    &:hover {
-      .dark-background & {
-        color: var(--global-secondary-color-front);
-        border-color: var(--global-main-color-front);
-        background-color: var(--global-main-color-front);
-      }
+    .front-page & {
+      &:hover {
+        .dark-background & {
+          color: var(--global-secondary-color-front);
+          border-color: var(--global-main-color-front);
+          background-color: var(--global-main-color-front);
+        }
 
-      &,
-      .light-background & {
-        color: var(--global-main-color-front);
-        border-color: var(--global-secondary-color-front);
-        background-color: var(--global-secondary-color-front);
+        &,
+        .light-background & {
+          color: var(--global-main-color-front);
+          border-color: var(--global-secondary-color-front);
+          background-color: var(--global-secondary-color-front);
+        }
       }
     }
   }

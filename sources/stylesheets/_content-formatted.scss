@@ -222,7 +222,7 @@
     display: inline-block;
     @include bg($color-black, .0);
     box-sizing: border-box;
-    padding: 9px 21px 9px;
+    padding: 9px 21px;
     text-transform: uppercase;
     @include rem-fallback(font-size, $font-size-base - 1px);
     font-weight: $font-weight-normal;

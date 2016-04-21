@@ -92,11 +92,7 @@ body {
 
 .content .content-formatted {
   font-size: var(--global-content-body-font-size);
-  font-style: var(--global-content-body-font-style);
-  font-weight: var(--global-content-body-font-weight);
   line-height: var(--global-content-body-line-height);
-  text-decoration: var(--global-content-body-text-decoration);
-  text-transform: var(--global-content-body-text-transform);
 }
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
   color: var(--global-secondary-color-front);
@@ -122,6 +118,24 @@ body {
 .content-formatted code {
   color: var(--global-secondary-color-front);
 }
+.content-formatted .custom-btn {
+  padding: calc(var(--global-content-button-padding) - 12px) var(--global-content-button-padding);
+  font-size: var(--global-content-button-font-size);
+  font-style: var(--global-content-button-font-style);
+  font-weight: var(--global-content-button-font-weight);
+  color: var(--global-content-button-color);
+  text-decoration: var(--global-content-button-text-decoration);
+  text-transform: var(--global-content-button-text-transform);
+  background-color: var(--global-content-button-background-color);
+}
+.content-formatted .custom-btn:hover {
+  font-style: var(--global-content-button-hover-font-style);
+  font-weight: var(--global-content-button-hover-font-weight);
+  color: var(--global-content-button-hover-color);
+  text-decoration: var(--global-content-button-hover-text-decoration);
+  text-transform: var(--global-content-button-hover-text-transform);
+  background-color: var(--global-content-button-hover-background-color);
+}
 .dark-background .content-formatted .custom-btn {
   border-color: var(--global-main-color-front);
   color: var(--global-main-color-front);
@@ -130,12 +144,12 @@ body {
   border-color: var(--global-secondary-color-front);
   color: var(--global-secondary-color-front);
 }
-.dark-background .content-formatted .custom-btn:hover {
+.dark-background .front-page .content-formatted .custom-btn:hover {
   color: var(--global-secondary-color-front);
   border-color: var(--global-main-color-front);
   background-color: var(--global-main-color-front);
 }
-.content-formatted .custom-btn:hover, .light-background .content-formatted .custom-btn:hover {
+.front-page .content-formatted .custom-btn:hover, .light-background .front-page .content-formatted .custom-btn:hover {
   color: var(--global-main-color-front);
   border-color: var(--global-secondary-color-front);
   background-color: var(--global-secondary-color-front);
