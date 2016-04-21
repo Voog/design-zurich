@@ -6,16 +6,6 @@
     max-width: var(--container-max-width);
   }
 }
-.container .header .header-container {
-  background-color: var(--header-bg-color);
-  -webkit-justify-content: var(--header-alignment);
-      -ms-flex-pack: var(--header-alignment);
-          justify-content: var(--header-alignment);
-  padding-top: var(--header-padding-tb);
-  padding-bottom: var(--header-padding-tb);
-  padding-left: var(--header-padding-lr);
-  padding-right: var(--header-padding-lr);
-}
 .container .content-inner {
   width: var(--content-max-width);
 }

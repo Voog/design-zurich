@@ -13,7 +13,7 @@
       "--content-body-font-family"
     ]
   */
-  --main-font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --main-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles"],
     "titleI18n": "custom_styles.maximum_width",
