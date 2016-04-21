@@ -1,0 +1,132 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/modules/mixins';
+@import '../../stylesheets/modules/variables';
+
+// =============================================================================
+// DEFAULT STYLESHEET OVERRIDE STYLES
+// =============================================================================
+
+// =============================================================================
+// NAVIGATION MENUS
+// =============================================================================
+@include querymin($tablet-2) {
+  .menu-front {
+    .menu-link {
+      .dark-background & {
+        color: var(--global-main-color);
+
+        &.active {
+          border-color: var(--global-main-color);
+        }
+
+        &:hover {
+          border-color: var(--global-main-color);
+          background: var(--global-main-color);
+          color: var(--global-secondary-color);
+        }
+      }
+
+      .light-background & {
+        color: var(--global-secondary-color);
+
+        &.active {
+          border-color: var(--global-secondary-color);
+        }
+
+        &:hover {
+          border-color: var(--global-secondary-color);
+          background: var(--global-secondary-color);
+          color: var(--global-main-color);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// SITE SEARCH
+// =============================================================================
+
+// =============================================================================
+// SITE'S SUB MENU
+// =============================================================================
+
+// =============================================================================
+// LANGUAGE MENU STYLES
+// =============================================================================
+
+// =============================================================================
+// SITE FOOTER
+// =============================================================================
+
+// =============================================================================
+// BLOG ARTICLE
+// =============================================================================
+
+// =============================================================================
+// TEXT TYPE CONTENT AREA
+// =============================================================================
+.content-formatted {
+  // Colors for editable content area elements with editable background.
+  &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+    .light-background & {
+      color: var(--global-secondary-color);
+    }
+
+    .dark-background & {
+      color: var(--global-main-color);
+    }
+  }
+
+  // Code blocks and preformatted content.
+  pre,
+  code {
+    .front-page & {
+      color: var(--global-secondary-color);
+    }
+  }
+
+  .custom-btn {
+    .dark-background & {
+      border-color: var(--global-main-color);
+      color: var(--global-main-color);
+    }
+
+    &,
+    .light-background & {
+      border-color: var(--global-secondary-color);
+      color: var(--global-secondary-color);
+    }
+
+    &:hover {
+      .dark-background & {
+        color: var(--global-secondary-color);
+        border-color: var(--global-main-color);
+        background-color: var(--global-main-color);
+      }
+
+      &,
+      .light-background & {
+        color: var(--global-main-color);
+        border-color: var(--global-secondary-color);
+        background-color: var(--global-secondary-color);
+      }
+    }
+  }
+}
+
+//==============================================================================
+// "FORM" TYPE CONTENT AREA
+//==============================================================================
