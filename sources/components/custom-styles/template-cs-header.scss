@@ -29,7 +29,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --global-header-padding-tb: 23px;
+  --header-padding-tb: 23px;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.header"],
@@ -41,7 +41,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --global-header-padding-lr: 0;
+  --header-padding-lr: 0;
 
   @import '_partials/template-cs-main-menu';
   @include front-page-main-menu;
