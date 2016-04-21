@@ -30,15 +30,6 @@
   --content-background-color: transparent;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.text"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "featured": true,
-    "scope": "global"
-  */
-  --content-body-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.content", "custom_styles.text"],
     "titleI18n": "custom_styles.letter_spacing",
     "editor": "rangePicker",
     "min": 0,
@@ -143,15 +134,6 @@
     "scope": "global"
   */
   --content-link-padding: 0;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "featured": true,
-    "scope": "global"
-  */
-  --content-link-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
     "titleI18n": "custom_styles.letter_spacing",
@@ -364,15 +346,6 @@
     "scope": "global"
   */
   --content-button-padding: 20;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.content", "custom_styles.button", "custom_styles.normal"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "featured": true,
-    "scope": "global"
-  */
-  --content-button-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.button", "custom_styles.normal"],
     "titleI18n": "custom_styles.letter_spacing",

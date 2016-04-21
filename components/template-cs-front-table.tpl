@@ -12,14 +12,6 @@
   --table-padding: 10px;
   /* VoogStyle
     "pathI18n": ["custom_styles.table"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "scope": "global"
-  */
-  --table-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.table"],
     "titleI18n": "custom_styles.line_height",
     "editor": "rangePicker",
     "min": 1,

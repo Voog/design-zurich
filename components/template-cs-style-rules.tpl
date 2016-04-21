@@ -46,9 +46,7 @@
     color: var(--menu-main-color);
     border-width: var(--menu-main-border-width);
     border-style: var(--menu-main-border-style);
-    border-color: var(--menu-main-border-color);
     background-color: var(--menu-main-bg-color);
-    font-family: var(--menu-main-font-family);
     font-size: var(--menu-main-font-size);
     font-weight: var(--menu-main-font-weight);
     font-style: var(--menu-main-font-style);
@@ -61,7 +59,6 @@
     color: var(--menu-main-color-active);
     border-width: var(--menu-main-border-width-active);
     border-style: var(--menu-main-border-style-active);
-    border-color: var(--menu-main-border-color-active);
     background-color: var(--menu-main-bg-color-active);
     font-size: var(--menu-main-font-size-active);
     font-weight: var(--menu-main-font-weight-active);
@@ -75,7 +72,6 @@
     color: var(--menu-main-color-hover);
     border-width: var(--menu-main-border-width-hover);
     border-style: var(--menu-main-border-style-hover);
-    border-color: var(--menu-main-border-color-hover);
     background-color: var(--menu-main-bg-color-hover);
     font-size: var(--menu-main-font-size-hover);
     font-weight: var(--menu-main-font-weight-hover);
@@ -94,7 +90,6 @@
   letter-spacing: var(--header-body-letter-spacing);
   text-transform: var(--header-body-text-transform);
   color: var(--header-body-color);
-  font-family: var(--header-body-font-family);
   font-size: var(--header-body-font-size);
   font-weight: var(--header-body-font-weight);
   font-style: var(--header-body-font-style);
@@ -108,7 +103,6 @@
   letter-spacing: var(--content-body-letter-spacing);
   text-transform: var(--content-body-text-transform);
   color: var(--content-body-color);
-  font-family: var(--content-body-font-family);
   font-size: var(--content-body-font-size);
   font-weight: var(--content-body-font-weight);
   font-style: var(--content-body-font-style);
@@ -122,7 +116,6 @@
   letter-spacing: var(--footer-body-letter-spacing);
   text-transform: var(--footer-body-text-transform);
   color: var(--footer-body-color);
-  font-family: var(--footer-body-font-family);
   font-size: var(--footer-body-font-size);
   font-weight: var(--footer-body-font-weight);
   font-style: var(--footer-body-font-style);
@@ -136,7 +129,6 @@
   letter-spacing: var(--headings-title-letter-spacing);
   text-transform: var(--headings-title-text-transform);
   color: var(--headings-title-color) !important;
-  font-family: var(--headings-title-font-family);
   font-size: var(--headings-title-font-size);
   font-weight: var(--headings-title-font-weight);
   font-style: var(--headings-title-font-style);
@@ -150,7 +142,6 @@
   letter-spacing: var(--headings-heading-letter-spacing);
   text-transform: var(--headings-heading-text-transform);
   color: var(--headings-heading-color);
-  font-family: var(--headings-heading-font-family);
   font-size: var(--headings-heading-font-size);
   font-weight: var(--headings-heading-font-weight);
   font-style: var(--headings-heading-font-style);
@@ -173,7 +164,6 @@
   letter-spacing: var(--headings-subheading-letter-spacing);
   text-transform: var(--headings-subheading-text-transform);
   color: var(--headings-subheading-color);
-  font-family: var(--headings-subheading-font-family);
   font-size: var(--headings-subheading-font-size);
   font-weight: var(--headings-subheading-font-weight);
   font-style: var(--headings-subheading-font-style);
@@ -207,7 +197,6 @@
   text-transform: var(--content-link-text-transform);
   color: var(--content-link-color);
   background-color: var(--content-link-background-color);
-  font-family: var(--content-link-font-family);
   font-weight: var(--content-link-font-weight);
   font-style: var(--content-link-font-style);
   line-height: var(--content-link-line-height);
@@ -247,7 +236,6 @@
   letter-spacing: var(--list-letter-spacing);
   text-transform: var(--list-text-transform);
   color: var(--list-color);
-  font-family: var(--list-font-family);
   font-size: var(--list-font-size);
   font-weight: var(--list-font-weight);
   font-style: var(--list-font-style);
@@ -263,7 +251,6 @@
   text-transform: var(--content-button-text-transform);
   color: var(--content-button-color);
   background-color: var(--content-button-background-color);
-  font-family: var(--content-button-font-family);
   font-size: var(--content-button-font-size);
   font-weight: var(--content-button-font-weight);
   font-style: var(--content-button-font-style);
@@ -294,7 +281,6 @@
   border-width: var(--table-border-width);
   border-style: var(--table-border-style);
   border-color: var(--table-border-color);
-  font-family: var(--table-font-family);
   font-size: var(--table-font-size);
   font-weight: var(--table-font-weight);
   font-style: var(--table-font-style);

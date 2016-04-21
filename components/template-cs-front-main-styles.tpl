@@ -5,13 +5,7 @@
     "editor": "listPicker",
     "list": {{ base_font_set }},
     "featured": true,
-    "scope": "global",
-    "boundVariables": [
-      "--headings-title-font-family",
-      "--headings-heading-font-family",
-      "--headings-subheading-font-family",
-      "--content-body-font-family"
-    ]
+    "scope": "global"
   */
   --main-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
@@ -31,8 +25,7 @@
       "--footer-body-color",
       "--headings-title-color",
       "--headings-heading-color",
-      "--headings-subheading-color",
-      "--menu-main-border-color-active"
+      "--headings-subheading-color"
     ]
   */
   --main-color: #fff;

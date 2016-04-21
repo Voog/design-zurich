@@ -1,14 +1,6 @@
 :root {
   /* VoogStyle
     "pathI18n": ["custom_styles.headings", "custom_styles.title"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "scope": "global"
-  */
-  --headings-title-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.title"],
     "titleI18n": "custom_styles.alignment",
     "editor": "listPicker",
     "list": {{ base_alignment_set }},
@@ -99,14 +91,6 @@
   --headings-title-color: #fff;
   /* VoogStyle
     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "scope": "global"
-  */
-  --headings-heading-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
     "titleI18n": "custom_styles.alignment",
     "editor": "listPicker",
     "list": {{ base_alignment_set }},
@@ -195,14 +179,6 @@
     "scope": "global"
   */
   --headings-heading-color: black;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
-    "titleI18n": "custom_styles.font",
-    "editor": "listPicker",
-    "list": {{ base_font_set }},
-    "scope": "global"
-  */
-  --headings-subheading-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.alignment",
