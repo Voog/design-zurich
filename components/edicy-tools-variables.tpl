@@ -466,7 +466,7 @@
         "list": [
           {
             "title": "Avenir Next",
-            "value": "\"Avenir Next\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
+            "value": "\"Avenir Next\", \"Avenir\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
           },
           {
             "title": "Fira Sans",

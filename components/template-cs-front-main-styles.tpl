@@ -1,16 +1,19 @@
 :root {
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles"],
-    "titleI18n": "custom_styles.maximum_width",
-    "editor": "rangePicker",
-    "min": 1024,
-    "max": 2560,
-    "step": 1,
-    "unit": "px",
+    "titleI18n": "custom_styles.font",
+    "editor": "listPicker",
+    "list": {{ base_font_set }},
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--headings-title-font-family",
+      "--headings-heading-font-family",
+      "--headings-subheading-font-family",
+      "--content-body-font-family"
+    ]
   */
-  --container-max-width: 1920px;
+  --main-font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.primary_color",
