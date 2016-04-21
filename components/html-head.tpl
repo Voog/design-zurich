@@ -42,7 +42,7 @@
     {% include "template-cs-content" %}
     {% include "template-cs-list" %}
     {% include "template-cs-table" %}
-    {% include "template-cs-form" %}
+    {% comment %}{% include "template-cs-form" %}{% endcomment %}
     {% include "template-cs-footer" %}
   {% endif %}
 
@@ -50,7 +50,7 @@
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr.min.js"></script>
+<script src="{{ javascripts_path }}/modernizr-custom.min.js"></script>
 
 {% comment %}SITE TITLE{% endcomment %}
 {% capture page_title %}{% if article %}{{ article.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% else %}{% if site.root_item.selected? and page.site_title != "" %}{{ page.site_title }}{% else %}{{ page.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% endif %}{% endif %}{% endcapture %}
