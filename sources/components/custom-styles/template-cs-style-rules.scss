@@ -208,6 +208,16 @@ body {
     }
   }
 
+  table {
+    th,
+    td {
+      padding: var(--table-padding);
+      font-size: var(--table-font-size);
+      border-top-style: var(--table-border-style);
+      border-bottom-style: var(--table-border-style);
+    }
+  }
+
   .custom-btn {
     padding: calc(var(--global-content-button-padding) - 12px) var(--global-content-button-padding);
     font-size: var(--global-content-button-font-size);
@@ -217,6 +227,7 @@ body {
     text-decoration: var(--global-content-button-text-decoration);
     text-transform: var(--global-content-button-text-transform);
     background-color: var(--global-content-button-background-color);
+    border-color: var(--global-content-button-color);
 
     &:hover {
       font-style: var(--global-content-button-hover-font-style);
@@ -225,6 +236,7 @@ body {
       text-decoration: var(--global-content-button-hover-text-decoration);
       text-transform: var(--global-content-button-hover-text-transform);
       background-color: var(--global-content-button-hover-background-color);
+      border-color: var(--global-content-button-hover-color);
     }
 
     .dark-background & {
@@ -232,7 +244,6 @@ body {
       color: var(--global-main-color-front);
     }
 
-    &,
     .light-background & {
       border-color: var(--global-secondary-color-front);
       color: var(--global-secondary-color-front);
@@ -246,7 +257,6 @@ body {
           background-color: var(--global-main-color-front);
         }
 
-        &,
         .light-background & {
           color: var(--global-main-color-front);
           border-color: var(--global-secondary-color-front);

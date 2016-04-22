@@ -33,8 +33,9 @@
   {% endif %}
 
   {% include "template-cs-header" %}
-
   {% include "template-cs-content" %}
+  {% include "template-cs-button" %}
+  {% include "template-cs-table" %}
 
   {% comment %}
   {% include "template-cs-headings" %}

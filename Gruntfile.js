@@ -307,6 +307,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
 
+  // TODO: Enable after building the design editor or if you find out a way to push only modified CSS files.
   // grunt.event.on('watch', function(action, filepath, target) {
   //   if (target == 'voog') {
   //     if (action == 'added' || action == 'deleted') {

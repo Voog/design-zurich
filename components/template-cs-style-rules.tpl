@@ -118,6 +118,13 @@ body {
 .content-formatted code {
   color: var(--global-secondary-color-front);
 }
+.content-formatted table th,
+.content-formatted table td {
+  padding: var(--table-padding);
+  font-size: var(--table-font-size);
+  border-top-style: var(--table-border-style);
+  border-bottom-style: var(--table-border-style);
+}
 .content-formatted .custom-btn {
   padding: calc(var(--global-content-button-padding) - 12px) var(--global-content-button-padding);
   font-size: var(--global-content-button-font-size);
@@ -127,6 +134,7 @@ body {
   text-decoration: var(--global-content-button-text-decoration);
   text-transform: var(--global-content-button-text-transform);
   background-color: var(--global-content-button-background-color);
+  border-color: var(--global-content-button-color);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--global-content-button-hover-font-style);
@@ -135,12 +143,13 @@ body {
   text-decoration: var(--global-content-button-hover-text-decoration);
   text-transform: var(--global-content-button-hover-text-transform);
   background-color: var(--global-content-button-hover-background-color);
+  border-color: var(--global-content-button-hover-color);
 }
 .dark-background .content-formatted .custom-btn {
   border-color: var(--global-main-color-front);
   color: var(--global-main-color-front);
 }
-.content-formatted .custom-btn, .light-background .content-formatted .custom-btn {
+.light-background .content-formatted .custom-btn {
   border-color: var(--global-secondary-color-front);
   color: var(--global-secondary-color-front);
 }
@@ -149,7 +158,7 @@ body {
   border-color: var(--global-main-color-front);
   background-color: var(--global-main-color-front);
 }
-.front-page .content-formatted .custom-btn:hover, .light-background .front-page .content-formatted .custom-btn:hover {
+.light-background .front-page .content-formatted .custom-btn:hover {
   color: var(--global-main-color-front);
   border-color: var(--global-secondary-color-front);
   background-color: var(--global-secondary-color-front);
