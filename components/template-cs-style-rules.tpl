@@ -94,6 +94,14 @@ body {
   font-size: var(--global-content-body-font-size);
   line-height: var(--global-content-body-line-height);
 }
+.footer .content-formatted {
+  font-size: var(--global-footer-body-font-size);
+  font-style: var(--global-footer-body-font-style);
+  font-weight: var(--global-footer-body-font-weight);
+  color: var(--global-footer-body-color);
+  text-decoration: var(--global-footer-body-text-decoration);
+  text-transform: var(--global-footer-body-text-transform);
+}
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
   color: var(--global-secondary-color-front);
 }

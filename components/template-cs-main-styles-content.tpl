@@ -9,7 +9,8 @@
       "--global-headings-title-color",
       "--global-headings-heading-color",
       "--global-headings-subheading-color",
-      "--global-content-body-text-color"
+      "--global-content-body-text-color",
+      "--global-footer-body-color"
     ]
   */
   --global-main-color-content: #696b6c;

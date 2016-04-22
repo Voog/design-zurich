@@ -156,6 +156,15 @@ body {
     line-height: var(--global-content-body-line-height);
   }
 
+  .footer & {
+    font-size: var(--global-footer-body-font-size);
+    font-style: var(--global-footer-body-font-style);
+    font-weight: var(--global-footer-body-font-weight);
+    color: var(--global-footer-body-color);
+    text-decoration: var(--global-footer-body-text-decoration);
+    text-transform: var(--global-footer-body-text-transform);
+  }
+
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {

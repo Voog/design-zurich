@@ -38,40 +38,10 @@
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
-
-  {% comment %}
   {% include "template-cs-footer" %}
-  {% endcomment %}
 
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}
-
-{% comment %}{% customstyle %}
-  {% if html-head == "front_page" %}
-    {% include "template-cs-front-main-styles" %}
-    {% include "template-cs-front-header" %}
-    {% include "template-cs-front-headings" %}
-    {% include "template-cs-front-content" %}
-    {% include "template-cs-front-list" %}
-    {% include "template-cs-front-table" %}
-    {% include "template-cs-front-form" %}
-    {% include "template-cs-front-footer" %}
-  {% else %}
-    {% include "template-cs-main-styles" %}
-    {% include "template-cs-header" %}
-    {% include "template-cs-headings" %}
-    {% if template-head == "blog_listing_page" %}
-      {% include "template-cs-blog-list" %}
-    {% endif %}
-    {% include "template-cs-content" %}
-    {% include "template-cs-list" %}
-    {% include "template-cs-table" %}
-    {% include "template-cs-form" %}
-    {% include "template-cs-footer" %}
-  {% endif %}
-
-  {% include "template-cs-style-rules" %}
-{% endcustomstyle %}{% endcomment %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
 <script src="{{ javascripts_path }}/modernizr-custom.min.js"></script>
