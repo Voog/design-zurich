@@ -334,6 +334,14 @@ body {
     color: var(--global-form-field-color);
     border-color: var(--global-form-field-color);
     border-width: var(--global-form-field-border-width);
+
+    .dark-background & {
+      border-color: var(--global-main-color-front);
+    }
+
+    .light-background & {
+      border-color: var(--global-secondary-color-front);
+    }
   }
 
   .form_submit {

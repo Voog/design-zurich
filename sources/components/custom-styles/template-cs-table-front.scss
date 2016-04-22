@@ -20,32 +20,37 @@
   // scss-lint:disable Comment, Indentation
 
   /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles"],
-    "titleI18n": "custom_styles.font",
+    "pathI18n": ["custom_styles.table"],
+    "titleI18n": "custom_styles.padding",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 200,
+    "step": 1,
+    "unit": "px",
+    "scope": "global"
+  */
+  --table-padding: 10px;
+
+  /* VoogStyle
+    "pathI18n": ["custom_styles.table"],
+    "titleI18n": "custom_styles.size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global"
+  */
+  --table-font-size: 16px;
+
+  /* VoogStyle
+    "pathI18n": ["custom_styles.table"],
+    "titleI18n": "custom_styles.border_style",
     "editor": "listPicker",
-    "list": {{ base_font_set }},
+    "list": {{ base_border_style_set }},
     "featured": true,
     "scope": "global"
   */
-  --global-main-font-family: $base-font-family;
-
-  /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-    "titleI18n": "custom_styles.primary_color",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --global-main-color-front: rgba($color-white, 1);
-
-  /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-    "titleI18n": "custom_styles.secondary_color",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --global-secondary-color-front: rgba($color-black, 1);
+  --table-border-style: solid;
 
   // scss-lint:enable Comment, Indentation
 }

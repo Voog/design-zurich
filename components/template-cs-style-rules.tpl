@@ -234,6 +234,16 @@ body {
   border-color: var(--global-form-field-color);
   border-width: var(--global-form-field-border-width);
 }
+.dark-background .content-formatted .form_field_textfield, .dark-background
+.content-formatted .form_field_textarea, .dark-background
+.content-formatted .form_field_select {
+  border-color: var(--global-main-color-front);
+}
+.light-background .content-formatted .form_field_textfield, .light-background
+.content-formatted .form_field_textarea, .light-background
+.content-formatted .form_field_select {
+  border-color: var(--global-secondary-color-front);
+}
 .content-formatted .form_submit input {
   padding: calc(var(--global-form-button-padding) - 3px) var(--global-form-button-padding);
   color: var(--global-form-button-color);
