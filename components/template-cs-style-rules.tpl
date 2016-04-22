@@ -100,6 +100,60 @@ body {
 .dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
   color: var(--global-main-color-front);
 }
+.content-formatted h1 {
+  color: var(--global-headings-title-color);
+}
+.content-formatted h1,
+.content-formatted h1 a,
+.content-formatted h1 a:hover {
+  font-size: var(--global-headings-title-font-size);
+  font-style: var(--global-headings-title-font-style);
+  font-weight: var(--global-headings-title-font-weight);
+  line-height: var(--global-headings-title-line-height);
+  text-align: var(--global-headings-title-text-alignment);
+  text-decoration: var(--global-headings-title-text-decoration);
+  text-transform: var(--global-headings-title-text-transform);
+}
+.content-formatted h2:not(.comments-title) {
+  color: var(--global-headings-heading-color);
+}
+.content-formatted h2:not(.comments-title),
+.content-formatted h2:not(.comments-title) a,
+.content-formatted h2:not(.comments-title) a:hover {
+  font-size: var(--global-headings-heading-font-size);
+  font-style: var(--global-headings-heading-font-style);
+  font-weight: var(--global-headings-heading-font-weight);
+  line-height: var(--global-headings-heading-line-height);
+  text-align: var(--global-headings-heading-text-alignment);
+  text-decoration: var(--global-headings-heading-text-decoration);
+  text-transform: var(--global-headings-heading-text-transform);
+}
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
+  color: var(--global-headings-subheading-color);
+}
+.content-formatted h3,
+.content-formatted h3 a,
+.content-formatted h3 a:hover,
+.content-formatted h4,
+.content-formatted h4 a,
+.content-formatted h4 a:hover,
+.content-formatted h5,
+.content-formatted h5 a,
+.content-formatted h5 a:hover,
+.content-formatted h6,
+.content-formatted h6 a,
+.content-formatted h6 a:hover {
+  font-size: var(--global-headings-subheading-font-size);
+  font-style: var(--global-headings-subheading-font-style);
+  font-weight: var(--global-headings-subheading-font-weight);
+  line-height: var(--global-headings-subheading-line-height);
+  text-align: var(--global-headings-subheading-text-alignment);
+  text-decoration: var(--global-headings-subheading-text-decoration);
+  text-transform: var(--global-headings-subheading-text-transform);
+}
 .content-formatted a {
   font-weight: var(--global-content-link-font-weight);
   font-style: var(--global-content-link-font-style);

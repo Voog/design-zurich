@@ -6,6 +6,9 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
+      "--global-headings-title-color",
+      "--global-headings-heading-color",
+      "--global-headings-subheading-color",
       "--global-content-body-text-color"
     ]
   */
