@@ -2362,10 +2362,12 @@ body.search-open {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select {
   width: 280px;
+  border-width: 0;
+  border-style: solid;
+  border-color: #1b2124;
   margin: 0;
   padding: 8px 8px 5px;
   background-color: white;
-  border: none;
   box-sizing: border-box;
 }
 @media screen and (max-width: 420px) {
@@ -2492,8 +2494,7 @@ body.search-open {
   border-radius: 0;
 }
 .content-formatted .form_submit input:hover {
-  background-color: #0066bb;
-  background-color: rgba(0, 102, 187, 0.8);
+  opacity: .8;
 }
 @media screen and (max-width: 420px) {
   .content-formatted .form_submit input {

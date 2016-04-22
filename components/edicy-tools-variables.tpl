@@ -646,4 +646,17 @@
     ]
   {% endcapture %}
 
+  {% capture base_toggle %}
+    [
+      {
+        "title": "Off",
+        "value": "0px"
+      },
+      {
+        "title": "On",
+        "value": "1px"
+      }
+    ]
+  {% endcapture %}
+
 {% endcapture %}

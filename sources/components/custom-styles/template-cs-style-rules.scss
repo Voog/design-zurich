@@ -152,18 +152,6 @@ body {
 }
 
 // =============================================================================
-// LANGUAGE MENU STYLES
-// =============================================================================
-
-// =============================================================================
-// SITE FOOTER
-// =============================================================================
-
-// =============================================================================
-// BLOG ARTICLE
-// =============================================================================
-
-// =============================================================================
 // TEXT TYPE CONTENT AREA
 // =============================================================================
 .content-formatted {
@@ -270,3 +258,21 @@ body {
 //==============================================================================
 // "FORM" TYPE CONTENT AREA
 //==============================================================================
+.content-formatted {
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select {
+    font-size: var(--global-form-field-font-size);
+    color: var(--global-form-field-color);
+    border-color: var(--global-form-field-color);
+    border-width: var(--global-form-field-border-width);
+  }
+
+  .form_submit {
+    input {
+      padding: calc(var(--global-form-button-padding) - 3px) var(--global-form-button-padding);
+      color: var(--global-form-button-color);
+      background-color: var(--global-form-button-background-color);
+    }
+  }
+}

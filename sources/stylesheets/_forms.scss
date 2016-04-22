@@ -118,13 +118,17 @@
   .form_field_textarea,
   .form_field_select {
     width: 280px;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgba($secondary-color, 1);
+
     @include query($mobile-2) {
       width: 100%;
     }
+
     margin: 0;
     padding: 8px 8px 5px;
     @include bg($color-white);
-    border: none;
     box-sizing: border-box;
 
     &:focus {
@@ -270,7 +274,7 @@
       @include inputiosreset;
 
       &:hover {
-        @include bg($blue-1, .8);
+        opacity: .8;
       }
 
       @include query($mobile-2) {

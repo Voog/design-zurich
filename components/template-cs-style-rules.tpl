@@ -163,3 +163,17 @@ body {
   border-color: var(--global-secondary-color-front);
   background-color: var(--global-secondary-color-front);
 }
+
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select {
+  font-size: var(--global-form-field-font-size);
+  color: var(--global-form-field-color);
+  border-color: var(--global-form-field-color);
+  border-width: var(--global-form-field-border-width);
+}
+.content-formatted .form_submit input {
+  padding: calc(var(--global-form-button-padding) - 3px) var(--global-form-button-padding);
+  color: var(--global-form-button-color);
+  background-color: var(--global-form-button-background-color);
+}
