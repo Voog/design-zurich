@@ -1,4 +1,5 @@
 body {
+  font-family: var(--global-main-font-family);
   color: var(--global-content-body-text-color);
 }
 
