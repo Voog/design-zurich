@@ -1771,8 +1771,7 @@ body.search-open {
   color: #1b2124;
 }
 .post .post-title a:hover {
-  color: #1B2124;
-  color: rgba(27, 33, 36, 0.8);
+  opacity: .8;
 }
 .post .post-excerpt,
 .post .post-body {
@@ -1838,8 +1837,8 @@ body.search-open {
 }
 .blog-page .post-date {
   font-size: 14px;
-  color: #1B2124;
-  color: rgba(27, 33, 36, 0.5);
+  color: #1b2124;
+  opacity: .5;
 }
 
 .post-page .post .post-header {

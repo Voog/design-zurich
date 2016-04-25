@@ -26,7 +26,7 @@
     "scope": "global",
     "featured": true
   */
-  --global-form-field-color: black;
+  --global-form-field-color: #1b2124;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
     "titleI18n": "custom_styles.button_padding",

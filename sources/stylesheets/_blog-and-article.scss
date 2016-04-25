@@ -24,7 +24,7 @@
       @include color($secondary-color);
 
       &:hover {
-        @include color($secondary-color, 0.8);
+        opacity: .8;
       }
     }
   }
@@ -98,7 +98,8 @@
 
   .post-date {
     font-size: 14px;
-    @include color($secondary-color, 0.5);
+    @include color($secondary-color, 1);
+    opacity: .5;
   }
 }
 

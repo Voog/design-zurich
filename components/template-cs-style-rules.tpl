@@ -91,6 +91,14 @@ body {
   text-transform: var(--global-menu-sub-hover-text-transform);
 }
 
+.post-page .post post-title,
+.post .post-title a,
+.blog-pate .post-date,
+.post-page .post .post-header-inner,
+.comments .comments-title {
+  color: var(--global-secondary-color-content);
+}
+
 .content .content-formatted {
   font-size: var(--global-content-body-font-size);
   line-height: var(--global-content-body-line-height);
@@ -244,6 +252,10 @@ body {
 .content-formatted .form_field_textarea, .light-background
 .content-formatted .form_field_select {
   border-color: var(--global-secondary-color-front);
+}
+.content-formatted .form_field,
+.content-formatted .edy-fe-label {
+  color: var(--global-form-field-color);
 }
 .content-formatted .form_submit input {
   padding: calc(var(--global-form-button-padding) - 3px) var(--global-form-button-padding);

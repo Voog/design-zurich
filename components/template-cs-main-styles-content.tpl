@@ -32,7 +32,8 @@
     "boundVariables": [
       "--global-header-body-text-color",
       "--global-menu-main-color",
-      "--global-menu-sub-color"
+      "--global-menu-sub-color",
+      "--global-form-field-color"
     ]
   */
   --global-secondary-color-content: #1b2124;

@@ -155,6 +155,17 @@ body {
 }
 
 // =============================================================================
+// BLOG LISTING AND ARTICLE
+// =============================================================================
+.post-page .post post-title,
+.post .post-title a,
+.blog-pate .post-date,
+.post-page .post .post-header-inner,
+.comments .comments-title {
+  color: var(--global-secondary-color-content);
+}
+
+// =============================================================================
 // TEXT TYPE CONTENT AREA
 // =============================================================================
 .content-formatted {
@@ -349,6 +360,11 @@ body {
     .light-background & {
       border-color: var(--global-secondary-color-front);
     }
+  }
+
+  .form_field,
+  .edy-fe-label {
+    color: var(--global-form-field-color);
   }
 
   .form_submit {
