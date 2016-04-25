@@ -69,7 +69,7 @@ body {
 // SITE HEADER
 // =============================================================================
 .header-title {
-  &, a {
+  &, & .header-link {
     font-size: var(--global-header-body-font-size);
     font-style: var(--global-header-body-font-style);
     font-weight: var(--global-header-body-font-weight);

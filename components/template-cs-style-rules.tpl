@@ -27,7 +27,7 @@ body {
     color: var(--global-main-color-front);
   }
 }
-.header-title, .header-title a {
+.header-title, .header-title .header-link {
   font-size: var(--global-header-body-font-size);
   font-style: var(--global-header-body-font-style);
   font-weight: var(--global-header-body-font-weight);
