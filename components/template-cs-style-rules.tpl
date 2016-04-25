@@ -4,7 +4,7 @@ body {
 }
 
 @media screen and (min-width: 961px) {
-  .dark-background .menu-front .menu-link {
+  .dark-background .menu-front .menu-link, .dark-background .menu-front .menu-link.active {
     color: var(--global-main-color-front);
   }
   .dark-background .menu-front .menu-link.active {
@@ -15,7 +15,7 @@ body {
     background: var(--global-main-color-front);
     color: var(--global-secondary-color-front);
   }
-  .light-background .menu-front .menu-link {
+  .light-background .menu-front .menu-link, .light-background .menu-front .menu-link.active {
     color: var(--global-secondary-color-front);
   }
   .light-background .menu-front .menu-link.active {
