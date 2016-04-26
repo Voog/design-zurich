@@ -1,7 +1,7 @@
 :root {
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.field_border",
+    "pathI18n": ["form"],
+    "titleI18n": "field_border",
     "editor": "listPicker",
     "list": {{ base_toggle_set }},
     "featured": true,
@@ -9,8 +9,8 @@
   */
   --form-field-border-width: 0px;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.field_size",
+    "pathI18n": ["form"],
+    "titleI18n": "field_size",
     "editor": "rangePicker",
     "min": 8,
     "max": 100,
@@ -20,16 +20,16 @@
   */
   --form-field-font-size: 14px;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.field_color",
+    "pathI18n": ["form"],
+    "titleI18n": "field_color",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
   --form-field-color: #1b2124;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.button_padding",
+    "pathI18n": ["form"],
+    "titleI18n": "button_padding",
     "editor": "rangePicker",
     "min": 0,
     "max": 50,
@@ -39,16 +39,16 @@
   */
   --form-button-padding: 11px;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.button_color",
+    "pathI18n": ["form"],
+    "titleI18n": "button_color",
     "editor": "colorPicker",
     "featured": true,
     "scope": "global"
   */
   --form-button-color: white;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.button_bg_color",
+    "pathI18n": ["form"],
+    "titleI18n": "button_bg_color",
     "editor": "colorPicker",
     "scope": "global"
   */

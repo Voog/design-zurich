@@ -20,8 +20,8 @@
   // scss-lint:disable Comment, Indentation
 
   /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles"],
-    "titleI18n": "custom_styles.font",
+    "pathI18n": ["main_styles"],
+    "titleI18n": "font",
     "editor": "listPicker",
     "list": {{ base_font_set }},
     "featured": true,
@@ -30,8 +30,8 @@
   --main-font-family: $base-font-family;
 
   /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-    "titleI18n": "custom_styles.primary_color",
+    "pathI18n": ["main_styles", "colors"],
+    "titleI18n": "primary_color",
     "editor": "colorPicker",
     "featured": true,
     "scope": "global",
@@ -46,8 +46,8 @@
   --main-color-content: rgba($primary-color, 1);
 
   /* VoogStyle
-    "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-    "titleI18n": "custom_styles.secondary_color",
+    "pathI18n": ["main_styles", "colors"],
+    "titleI18n": "secondary_color",
     "editor": "colorPicker",
     "featured": true,
     "scope": "global",
