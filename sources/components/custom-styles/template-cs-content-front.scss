@@ -29,7 +29,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-content-body-font-size: 36px;
+  --content-body-font-size: 36px;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.text"],
@@ -41,7 +41,7 @@
     "unit": "",
     "scope": "global"
   */
-  --global-content-body-line-height: 1.3;
+  --content-body-line-height: 1.3;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
@@ -55,10 +55,10 @@
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--global-content-link-hover-font-weight"
+      "--content-link-hover-font-weight"
     ]
   */
-  --global-content-link-font-weight: 400;
+  --content-link-font-weight: 400;
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -72,7 +72,7 @@
         "icon": "bold",
         "scope": "global"
       */
-      --global-content-link-hover-font-weight: 400;
+      --content-link-hover-font-weight: 400;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
@@ -86,10 +86,10 @@
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--global-content-link-hover-font-style"
+      "--content-link-hover-font-style"
     ]
   */
-  --global-content-link-font-style: normal;
+  --content-link-font-style: normal;
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -103,7 +103,7 @@
         "icon": "italic",
         "scope": "global"
       */
-      --global-content-link-hover-font-style: normal;
+      --content-link-hover-font-style: normal;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
@@ -117,10 +117,10 @@
     "icon": "underline",
     "scope": "global",
     "boundVariables": [
-      "--global-content-link-hover-text-decoration"
+      "--content-link-hover-text-decoration"
     ]
   */
-  --global-content-link-text-decoration: none;
+  --content-link-text-decoration: none;
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -134,7 +134,7 @@
         "icon": "underline",
         "scope": "global"
       */
-      --global-content-link-hover-text-decoration: none;
+      --content-link-hover-text-decoration: none;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
@@ -148,10 +148,10 @@
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--global-content-link-hover-text-transform"
+      "--content-link-hover-text-transform"
     ]
   */
-  --global-content-link-text-transform: none;
+  --content-link-text-transform: none;
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -165,7 +165,7 @@
         "icon": "uppercase",
         "scope": "global"
       */
-      --global-content-link-hover-text-transform: none;
+      --content-link-hover-text-transform: none;
 
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
@@ -175,7 +175,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-content-link-color: rgba($blue-1, 1);
+  --content-link-color: rgba($blue-1, 1);
 
       /* VoogStyle
         "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.hover"],
@@ -184,7 +184,7 @@
         "editor": "colorPicker",
         "scope": "global"
       */
-      --global-content-link-hover-color: rgba($blue-1, .8);
+      --content-link-hover-color: rgba($blue-1, .8);
 
   // scss-lint:enable Comment, Indentation
 }
