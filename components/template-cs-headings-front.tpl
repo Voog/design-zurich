@@ -3,7 +3,7 @@
     "pathI18n": ["custom_styles.headings", "custom_styles.title"],
     "titleI18n": "custom_styles.alignment",
     "editor": "listPicker",
-    "list": {{ base_alignment_set }},
+    "list": {{ base_alignment }},
     "scope": "global"
   */
   --global-headings-title-text-alignment: center;
@@ -85,7 +85,7 @@
     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
     "titleI18n": "custom_styles.alignment",
     "editor": "listPicker",
-    "list": {{ base_alignment_set }},
+    "list": {{ base_alignment }},
     "scope": "global"
   */
   --global-headings-heading-text-alignment: left;
@@ -167,7 +167,7 @@
     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.alignment",
     "editor": "listPicker",
-    "list": {{ base_alignment_set }},
+    "list": {{ base_alignment }},
     "scope": "global"
   */
   --global-headings-subheading-text-alignment: left;

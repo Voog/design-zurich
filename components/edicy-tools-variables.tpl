@@ -557,19 +557,32 @@
     ]
   {% endcapture %}
 
-  {% capture base_alignment_set %}
+  {% capture base_alignment %}
     [
       {
-        "title": "Left",
-        "value": "left"
+        "titleI18n": "custom_styles.left",
+        "value": "flex-start"
       },
       {
-        "title": "Center",
+        "titleI18n": "custom_styles.center",
         "value": "center"
       },
       {
-        "title": "Right",
-        "value": "right"
+        "titleI18n": "custom_styles.right",
+        "value": "flex-end"
+      }
+    ]
+  {% endcapture %}
+
+  {% capture base_toggle %}
+    [
+      {
+        "titleI18n": "custom_styles.off",
+        "value": "0px"
+      },
+      {
+        "titleI18n": "custom_styles.on",
+        "value": "1px"
       }
     ]
   {% endcapture %}
@@ -594,69 +607,21 @@
   {% capture base_border_style_set %}
     [
       {
-        "title": "Solid",
+        "titleI18n": "custom_styles.solid",
         "value": "solid"
       },
       {
-        "title": "Dotted",
+        "titleI18n": "custom_styles.dotted",
         "value": "dotted"
       },
       {
-        "title": "Dashed",
+        "titleI18n": "custom_styles.dashed",
         "value": "dashed"
       },
       {
-        "title": "None",
+        "titleI18n": "custom_styles.none",
         "value": "hidden"
       }
     ]
   {% endcapture %}
-
-  {% capture alignment_vertical %}
-    [
-      {
-        "title": "Top",
-        "value": "flex-start"
-      },
-      {
-        "title": "Center",
-        "value": "center"
-      },
-      {
-        "title": "Bottom",
-        "value": "flex-end"
-      }
-    ]
-  {% endcapture %}
-
-  {% capture alignment_horizontal %}
-    [
-      {
-        "title": "Left",
-        "value": "flex-start"
-      },
-      {
-        "title": "Center",
-        "value": "center"
-      },
-      {
-        "title": "Right",
-        "value": "flex-end"
-      }
-    ]
-  {% endcapture %}
-
-  {% capture base_toggle %}
-    [
-      {
-        "title": "Off",
-        "value": "0px"
-      },
-      {
-        "title": "On",
-        "value": "1px"
-      }
-    ]
-  {% endcapture %}
-
 {% endcapture %}
