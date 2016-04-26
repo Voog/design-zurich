@@ -7,7 +7,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-form-field-border-width: 0px;
+  --form-field-border-width: 0px;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
     "titleI18n": "custom_styles.field_size",
@@ -18,7 +18,7 @@
     "scope": "global",
     "featured": true
   */
-  --global-form-field-font-size: 14px;
+  --form-field-font-size: 14px;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
     "titleI18n": "custom_styles.button_padding",
@@ -29,5 +29,5 @@
     "unit": "px",
     "scope": "global"
   */
-  --global-form-button-padding: 11px;
+  --form-button-padding: 11px;
 }

@@ -7,7 +7,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-main-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
+  --main-font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.primary_color",
@@ -15,14 +15,14 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--global-headings-title-color",
-      "--global-headings-heading-color",
-      "--global-headings-subheading-color",
-      "--global-content-body-text-color",
-      "--global-footer-body-color"
+      "--headings-title-color",
+      "--headings-heading-color",
+      "--headings-subheading-color",
+      "--content-body-text-color",
+      "--footer-body-color"
     ]
   */
-  --global-main-color-content: #696b6c;
+  --main-color-content: #696b6c;
   /* VoogStyle
     "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
     "titleI18n": "custom_styles.secondary_color",
@@ -30,11 +30,11 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--global-header-body-text-color",
-      "--global-menu-main-color",
-      "--global-menu-sub-color",
-      "--global-form-field-color"
+      "--header-body-text-color",
+      "--menu-main-color",
+      "--menu-sub-color",
+      "--form-field-color"
     ]
   */
-  --global-secondary-color-content: #1b2124;
+  --secondary-color-content: #1b2124;
 }
