@@ -235,6 +235,29 @@ body {
   background-color: var(--global-secondary-color-front);
 }
 
+.front-page .content .content-inner .content-formatted {
+  font-size: var(--global-focus-area-body-font-size);
+  line-height: var(--global-focus-area-body-line-height);
+  font-weight: var(--global-focus-area-body-font-weight);
+  font-style: var(--global-focus-area-body-font-style);
+  text-decoration: var(--global-focus-area-body-text-decoration);
+  text-transform: var(--global-focus-area-body-text-transform);
+}
+.front-page .content .content-inner .content-formatted h1 {
+  font-size: var(--global-focus-area-title-font-size);
+  line-height: var(--global-focus-area-title-line-height);
+  font-weight: var(--global-focus-area-title-font-weight);
+  font-style: var(--global-focus-area-title-font-style);
+  text-decoration: var(--global-focus-area-title-text-decoration);
+  text-transform: var(--global-focus-area-title-text-transform);
+}
+.front-page .feature-section .content-formatted {
+  font-size: var(--global-content-body-font-size);
+}
+.front-page .feature-section .content-formatted {
+  line-height: var(--global-content-body-line-height);
+}
+
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select {

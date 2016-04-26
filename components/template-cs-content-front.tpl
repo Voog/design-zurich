@@ -9,7 +9,7 @@
     "featured": true,
     "scope": "global"
   */
-  --global-content-body-font-size: 24px;
+  --global-content-body-font-size: 36px;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.text"],
     "titleI18n": "custom_styles.line_height",
@@ -20,7 +20,7 @@
     "unit": "",
     "scope": "global"
   */
-  --global-content-body-line-height: 1.4;
+  --global-content-body-line-height: 1.3;
   /* VoogStyle
     "pathI18n": ["custom_styles.content", "custom_styles.link", "custom_styles.normal"],
     "titleI18n": "custom_styles.font_size",

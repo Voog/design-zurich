@@ -26,6 +26,7 @@
   {% if front_page %}
     {% include "template-cs-main-styles-front" %}
     {% include "template-cs-header-front" %}
+    {% include "template-cs-focus-area-front" %}
     {% include "template-cs-headings-front" %}
     {% include "template-cs-content-front" %}
     {% include "template-cs-button-front" %}
