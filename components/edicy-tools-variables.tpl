@@ -557,7 +557,7 @@
     ]
   {% endcapture %}
 
-  {% capture base_alignment %}
+  {% capture base_alignment_set %}
     [
       {
         "titleI18n": "custom_styles.left",
@@ -574,7 +574,7 @@
     ]
   {% endcapture %}
 
-  {% capture base_toggle %}
+  {% capture base_toggle_set %}
     [
       {
         "titleI18n": "custom_styles.off",

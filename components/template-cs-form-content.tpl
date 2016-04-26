@@ -3,7 +3,7 @@
     "pathI18n": ["custom_styles.form"],
     "titleI18n": "custom_styles.field_border",
     "editor": "listPicker",
-    "list": {{ base_toggle }},
+    "list": {{ base_toggle_set }},
     "featured": true,
     "scope": "global"
   */
