@@ -561,7 +561,7 @@
     [
       {
         "titleI18n": "custom_styles.left",
-        "value": "flex-start"
+        "value": "left"
       },
       {
         "titleI18n": "custom_styles.center",
@@ -569,7 +569,7 @@
       },
       {
         "titleI18n": "custom_styles.right",
-        "value": "flex-end"
+        "value": "right"
       }
     ]
   {% endcapture %}
