@@ -560,15 +560,15 @@
   {% capture base_alignment_set %}
     [
       {
-        "titleI18n": "custom_styles.left",
+        "titleI18n": "left",
         "value": "left"
       },
       {
-        "titleI18n": "custom_styles.center",
+        "titleI18n": "center",
         "value": "center"
       },
       {
-        "titleI18n": "custom_styles.right",
+        "titleI18n": "right",
         "value": "right"
       }
     ]
@@ -577,11 +577,11 @@
   {% capture base_toggle_set %}
     [
       {
-        "titleI18n": "custom_styles.off",
+        "titleI18n": "off",
         "value": "0px"
       },
       {
-        "titleI18n": "custom_styles.on",
+        "titleI18n": "on",
         "value": "1px"
       }
     ]
@@ -607,19 +607,19 @@
   {% capture base_border_style_set %}
     [
       {
-        "titleI18n": "custom_styles.solid",
+        "titleI18n": "solid",
         "value": "solid"
       },
       {
-        "titleI18n": "custom_styles.dotted",
+        "titleI18n": "dotted",
         "value": "dotted"
       },
       {
-        "titleI18n": "custom_styles.dashed",
+        "titleI18n": "dashed",
         "value": "dashed"
       },
       {
-        "titleI18n": "custom_styles.none",
+        "titleI18n": "none",
         "value": "hidden"
       }
     ]
