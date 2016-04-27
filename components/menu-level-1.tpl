@@ -8,7 +8,7 @@
   {% endunless %}
 
   {% for item in site.visible_menuitems %}
-    <li class="menu-item">
+    <li class="menu-item menu-main-item">
       <a class="menu-link{% if item.selected? %} active{% endif %}{% unless item.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ item.url }}">{{ item.title }}</a>
     </li>
   {% endfor %}
@@ -59,6 +59,5 @@
         </nav>
       </li>
     {% endif %}
-
   {% endif %}
 </ul>

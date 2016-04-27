@@ -4,24 +4,24 @@ body {
 }
 
 @media screen and (min-width: 961px) {
-  .dark-background .menu-front .menu-link, .dark-background .menu-front .menu-link.active {
+  .dark-background .menu-front .menu-main-item .menu-link, .dark-background .menu-front .menu-main-item .menu-link.active {
     color: var(--main-color-front);
   }
-  .dark-background .menu-front .menu-link.active {
+  .dark-background .menu-front .menu-main-item .menu-link.active {
     border-color: var(--main-color-front);
   }
-  .dark-background .menu-front .menu-link:hover {
+  .dark-background .menu-front .menu-main-item .menu-link:hover {
     border-color: var(--main-color-front);
     background: var(--main-color-front);
     color: var(--secondary-color-front);
   }
-  .light-background .menu-front .menu-link, .light-background .menu-front .menu-link.active {
+  .light-background .menu-front .menu-main-item .menu-link, .light-background .menu-front .menu-main-item .menu-link.active {
     color: var(--secondary-color-front);
   }
-  .light-background .menu-front .menu-link.active {
+  .light-background .menu-front .menu-main-item .menu-link.active {
     border-color: var(--secondary-color-front);
   }
-  .light-background .menu-front .menu-link:hover {
+  .light-background .menu-front .menu-main-item .menu-link:hover {
     border-color: var(--secondary-color-front);
     background: var(--secondary-color-front);
     color: var(--main-color-front);

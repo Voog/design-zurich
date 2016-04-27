@@ -27,38 +27,40 @@ body {
 // =============================================================================
 @include querymin($tablet-2) {
   .menu-front {
-    .menu-link {
-      .dark-background & {
-        &,
-        &.active {
-          color: var(--main-color-front);
+    .menu-main-item {
+      .menu-link {
+        .dark-background & {
+          &,
+          &.active {
+            color: var(--main-color-front);
+          }
+
+          &.active {
+            border-color: var(--main-color-front);
+          }
+
+          &:hover {
+            border-color: var(--main-color-front);
+            background: var(--main-color-front);
+            color: var(--secondary-color-front);
+          }
         }
 
-        &.active {
-          border-color: var(--main-color-front);
-        }
+        .light-background & {
+          &,
+          &.active {
+            color: var(--secondary-color-front);
+          }
 
-        &:hover {
-          border-color: var(--main-color-front);
-          background: var(--main-color-front);
-          color: var(--secondary-color-front);
-        }
-      }
+          &.active {
+            border-color: var(--secondary-color-front);
+          }
 
-      .light-background & {
-        &,
-        &.active {
-          color: var(--secondary-color-front);
-        }
-
-        &.active {
-          border-color: var(--secondary-color-front);
-        }
-
-        &:hover {
-          border-color: var(--secondary-color-front);
-          background: var(--secondary-color-front);
-          color: var(--main-color-front);
+          &:hover {
+            border-color: var(--secondary-color-front);
+            background: var(--secondary-color-front);
+            color: var(--main-color-front);
+          }
         }
       }
     }
