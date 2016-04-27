@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: $font-main;
+  font-family: $base-font-family;
   font-weight: $font-weight-normal;
   line-height: 1.4;
   @include color($primary-color);
@@ -140,6 +140,6 @@ body {
 .pswp {
 
   &.pswp--open {
-    z-index: 30001;
+    z-index: 95;
   }
 }

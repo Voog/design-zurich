@@ -1,7 +1,7 @@
 <header class="header {% if site.search.enabled %} search-enabled{% endif %}">
 
   <div class="header-container {% unless editmode %}{% if site.visible_menuitems.size == 0 %}no-menu{% endif %}{% endunless %} {% unless editmode or site.has_many_languages? %}{% if site.visible_menuitems.size == 0 %}no-lang-menu{% endif %}{% endunless %}" {% if front_page %}data-bg-global="main_bg"{% endif %}>
-    <div class="header-left js-header-left {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
+    <div class="header-left {% if front_page %}voog-editor-fp-color-primary{% endif %} js-header-left {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
       {% unless front_page %}
         <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
       {% endunless %}
@@ -30,11 +30,11 @@
     </div>
 
     <div class="{% unless front_page %}header-right{% endunless %} js-header-right {% if front_page %}js-background-type {{ main_bg_type }}{% endif %}">
-      <nav class="menu-main js-menu-main js-popover js-prevent-sideclick">
+      <nav class="menu-main {% if front_page %}menu-front{% endif %} js-menu-main js-popover js-prevent-sideclick">
         {% include "menu-level-1" %}
 
         {% if editmode or site.has_many_languages? %}
-          <div class="menu-lang js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+          <div class="menu-lang-mobile js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
             {% include "menu-lang" %}
           </div>
         {% endif %}
@@ -44,7 +44,7 @@
 
       {% unless front_page %}
         {% if editmode or site.has_many_languages? %}
-          <nav class="menu-lang js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+          <nav class="menu-lang inline js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
             <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}">
               {% if editmode or flags_state == false %}
                 <span class="lang-title">

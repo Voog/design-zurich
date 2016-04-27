@@ -19,8 +19,38 @@
 {% stylesheet_link "main.min.css" %}
 {% if editmode %}{% stylesheet_link "editmode.min.css" %}{% endif %}
 
+{% comment %}Custom fonts{% endcomment %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Lato:400,400italic,700,700italic|Montserrat:400,700|Open+Sans:400,400italic,700,700italic|Roboto:400,400italic,700,700italic|Source+Sans+Pro:400,400italic,700,700italic|Ubuntu:400,400italic,700,700italic|Arvo|Crimson+Text:400,400italic,700,700italic|Lora:400,400italic,700,700italic|Noto+Serif|Playfair+Display:400,400italic,700italic,700|PT+Serif:400,400italic,700,700italic|Roboto+Slab:400,700|Anonymous+Pro:400,400italic,700,700italic|Cousine:400,400italic,700,700italic|Roboto+Mono:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic&subset=latin,greek,cyrillic-ext,latin-ext,cyrillic,greek-ext,vietnamese,hebrew">
+
+{% customstyle %}
+  {% if front_page %}
+    {% include "template-cs-main-styles-front" %}
+    {% include "template-cs-header-front" %}
+    {% include "template-cs-focus-area-front" %}
+    {% include "template-cs-headings-front" %}
+    {% include "template-cs-content-front" %}
+    {% include "template-cs-button-front" %}
+    {% include "template-cs-table-front" %}
+    {% include "template-cs-form-front" %}
+  {% endif %}
+
+  {% if content_page %}
+    {% include "template-cs-main-styles-content" %}
+    {% include "template-cs-header-content" %}
+    {% include "template-cs-headings-content" %}
+    {% include "template-cs-content-content" %}
+    {% include "template-cs-button-content" %}
+    {% include "template-cs-table-content" %}
+    {% include "template-cs-form-content" %}
+    {% include "template-cs-footer-content" %}
+  {% endif %}
+
+
+  {% include "template-cs-style-rules" %}
+{% endcustomstyle %}
+
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
-<script src="{{ javascripts_path }}/modernizr.min.js"></script>
+<script src="{{ javascripts_path }}/modernizr-custom.min.js"></script>
 
 {% comment %}SITE TITLE{% endcomment %}
 {% capture page_title %}{% if article %}{{ article.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% else %}{% if site.root_item.selected? and page.site_title != "" %}{{ page.site_title }}{% else %}{{ page.title }}{% unless page.site_title == "" %} — {{ page.site_title }}{% endunless %}{% endif %}{% endif %}{% endcapture %}

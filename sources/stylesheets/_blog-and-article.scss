@@ -6,7 +6,7 @@
     padding: 6px 10px;
     font-size: 14px;
     line-height: 1;
-    @include color($white);
+    @include color($color-white);
     @include bg($secondary-color, 0.5);
 
     &:hover {
@@ -24,7 +24,7 @@
       @include color($secondary-color);
 
       &:hover {
-        @include color($secondary-color, 0.8);
+        opacity: .8;
       }
     }
   }
@@ -98,7 +98,8 @@
 
   .post-date {
     font-size: 14px;
-    @include color($secondary-color, 0.5);
+    @include color($secondary-color, 1);
+    opacity: .5;
   }
 }
 

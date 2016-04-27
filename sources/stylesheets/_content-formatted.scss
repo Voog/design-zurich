@@ -1,6 +1,6 @@
-// Styling rules for the site's editable content area and its elements.
-// NB! Each editable content-area - {% content %} - should be wrapped in the element that has the "content-formatted" class.
-// NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
+// =============================================================================
+// TEXT TYPE CONTENT AREA
+// =============================================================================
 .content-formatted {
   @extend %clearfix;
   @include hyphenate(true);
@@ -45,13 +45,12 @@
   ul,
   ol,
   table {
-
     .light-background & {
-      @include color($black);
+      @include color($color-black);
     }
 
     .dark-background & {
-      @include color($white);
+      @include color($color-white);
     }
   }
 
@@ -98,7 +97,7 @@
     @include color($blue-1, 1);
 
     &:hover {
-      @include color($blue-1, 0.8);
+      @include color($blue-1, .8);
     }
   }
 
@@ -138,7 +137,7 @@
     line-height: 1.2;
 
     .front-page & {
-      @include color($black);
+      @include color($color-black);
     }
   }
 
@@ -221,9 +220,9 @@
 
   .custom-btn {
     display: inline-block;
-    @include bg($black, .0);
+    @include bg($color-black, .0);
     box-sizing: border-box;
-    padding: 9px 21px 9px;
+    padding: 9px 21px;
     text-transform: uppercase;
     @include rem-fallback(font-size, $font-size-base - 1px);
     font-weight: $font-weight-normal;
@@ -239,30 +238,30 @@
     }
 
     .dark-background & {
-      border: 2px solid $white;
-      @include color($white, 1);
+      border: 2px solid $color-white;
+      @include color($color-white, 1);
     }
 
     &,
     .light-background & {
-      border: 2px solid $black;
-      @include color($black, 1);
+      border: 2px solid $color-black;
+      @include color($color-black, 1);
     }
 
     &:hover {
       @include transition($transition-std);
 
       .dark-background & {
-        border: 2px solid $white;
-        @include bg($white, 1);
-        @include color($black, .71);
+        border: 2px solid $color-white;
+        @include bg($color-white, 1);
+        @include color($color-black, .71);
       }
 
       &,
       .light-background & {
-        border: 2px solid $black;
-        @include bg($black);
-        @include color($white, 1);
+        border: 2px solid $color-black;
+        @include bg($color-black);
+        @include color($color-white, 1);
       }
     }
   }
