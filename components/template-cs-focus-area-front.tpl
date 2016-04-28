@@ -46,7 +46,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --focus-area-title-font-style: normal;
+  --focus-area-title-font-style: italic;
   /* VoogStyle
     "pathI18n": ["focus_area", "title"],
     "titleI18n": "text_decoration",
