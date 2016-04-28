@@ -105,7 +105,7 @@
       "--menu-main-active-font-weight"
     ]
   */
-  --menu-main-hover-font-weight: 600;
+  --menu-main-hover-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "active"],
     "titleI18n": "font_size",
@@ -118,7 +118,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --menu-main-active-font-weight: 600;
+  --menu-main-active-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "font_style",

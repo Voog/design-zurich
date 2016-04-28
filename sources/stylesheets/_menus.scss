@@ -139,28 +139,17 @@
 
   .menu-link {
     @include hyphenate(true);
+    color: rgba($secondary-color, 1);
     opacity: .7;
     font-weight: $font-weight-semibold;
 
     &.active {
       opacity: 1;
-
-      .front-page & {
-        color: #fff;
-      }
     }
 
     &.active:hover,
     &:hover {
       opacity: .5;
-    }
-
-    .front-page & {
-      &.active:hover,
-      &:hover {
-        font-weight: 400;
-        opacity: 1;
-      }
     }
 
     @include query($tablet-2) {
@@ -205,10 +194,25 @@
   }
 
   .menu-front {
+
     .menu-item {
       font-size: $font-size-xs;
       line-height: normal;
       margin-left: 9px;
+    }
+
+    .menu-main-item {
+      .menu-link {
+        .dark-background & {
+          color: $color-white;
+        }
+
+        &.active {
+          .dark-background & {
+            color: $color-white;
+          }
+        }
+      }
     }
 
     .menu-link {
@@ -220,10 +224,6 @@
       border: 2px solid transparent;
 
       .dark-background & {
-        .menu-main-item & {
-          color: $color-white;
-        }
-
         &.active {
           border: 2px solid $color-white;
         }
@@ -432,6 +432,7 @@
 .menu-lang-mobile {
 
   .menu-link {
+    color: rgba($color-black, 1);
 
     &.active,
     &.active:hover {

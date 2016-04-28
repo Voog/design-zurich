@@ -1,7 +1,7 @@
 <ul class="menu top-level">
   {% unless site.root_item.hidden? %}
     {% if site.visible_menuitems.size > 0 or editmode %}
-      <li class="menu-item">
+      <li class="menu-item menu-main-item">
         <a class="menu-link{% if site.root_item.selected? %} active{% endif %}" href="{{ site.root_item.url }}">{{ site.root_item.title }}</a>
       </li>
     {% endif %}
