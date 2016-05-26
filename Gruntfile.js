@@ -87,7 +87,9 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
-          require('autoprefixer')({browsers: 'last 4 versions'})
+          require('autoprefixer')({
+            browsers: 'last 4 versions'
+          })
         ]
       },
       main_styles: {
@@ -137,28 +139,6 @@ module.exports = function(grunt) {
         }]
       }
     },
-
-    // =========================================================================
-    // If custom styles can be concatenated to one component, then this
-    // block here will replace the placeholder strings with proper <style> tag
-    // beginning and ending.
-    // =========================================================================
-    // replace: {
-    //   custom_styles: {
-    //     src: ['sources/components/custom-styles/tmp/*.css'],
-    //     overwrite: true,
-    //     replacements: [
-    //       {
-    //         from: '/* GRUNT-REPLACE: CUSTOM-STYLES-PREPEND */',
-    //         to: '{% comment %}Template custom styles definitions.{% endcomment %}\n<style data-voog-style>'
-    //       },
-    //       {
-    //         from: '/* GRUNT-REPLACE: CUSTOM-STYLES-APPEND */',
-    //         to: '</style>'
-    //       }
-    //     ]
-    //   }
-    // },
 
     // Copys the files from the source folders to the layout folders.
     copy: {
@@ -290,25 +270,19 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-modernizr-builder');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  // Uncomment if custom styles can be concatenated to one component.
-  // grunt.loadNpmTasks('grunt-text-replace');
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
-
-  // Default task with text replacement (for automatic <style> tag wrapping).
-  // grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin', 'replace', 'copy', 'clean:remove']);
+  grunt.loadNpmTasks('grunt-modernizr-builder');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
 
-  // TODO: Enable after building the design editor or if you find out a way to push only modified CSS files.
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
       if (action == 'added' || action == 'deleted') {
