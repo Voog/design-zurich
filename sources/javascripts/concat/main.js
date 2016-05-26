@@ -96,7 +96,7 @@
     if (editmode === false) {
       $.each($('.content-formatted'), function() {
         if (!$(this).hasClass('js-custom-content-formatted')) {
-          $(this).find('table').wrap('<div class="table-container overthrow"></div>');
+          $(this).find('table').wrap('<div class="table-container"></div>');
         }
       });
     }
