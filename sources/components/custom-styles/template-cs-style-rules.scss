@@ -28,10 +28,13 @@ body {
 // HEADER BACKGROUND COLOR
 // =============================================================================
 @include querymin($tablet-2) {
-.front-page .header-container   {
+.front-page .header-container {
   background-color: var(--header-background-color);}
 }
 
+.flexbox .front-page .header-container {
+  max-width: var(--site-width);
+}
 
 
 // =============================================================================

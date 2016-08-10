@@ -8,6 +8,10 @@ body {
     background-color: var(--header-background-color);
   }
 }
+.flexbox .front-page .header-container {
+  max-width: var(--site-width);
+}
+
 @media screen and (min-width: 961px) {
   .dark-background .menu-front .menu-main-item .menu-link, .dark-background .menu-front .menu-main-item .menu-link.active {
     color: var(--main-color-front);
