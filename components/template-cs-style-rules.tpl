@@ -3,6 +3,10 @@ body {
   color: var(--content-body-text-color);
 }
 
+.front-page .header-container {
+  background-color: var(--header-background-color);
+}
+
 @media screen and (min-width: 961px) {
   .dark-background .menu-front .menu-main-item .menu-link, .dark-background .menu-front .menu-main-item .menu-link.active {
     color: var(--main-color-front);
