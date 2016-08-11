@@ -1,5 +1,30 @@
 :root {
   /* VoogStyle
+    "pathI18n": ["header"],
+    "titleI18n": "alignment",
+    "editor": "listPicker",
+    "list": [
+      {
+        "titleI18n": "left",
+        "value": "flex-start"
+      },
+      {
+        "titleI18n": "center",
+        "value": "center"
+      },
+      {
+        "titleI18n": "Separated",
+        "value": "space-between"
+      },
+      {
+        "titleI18n": "right",
+        "value": "flex-end"
+      }
+    ],
+    "scope": "global"
+  */
+  --header-alignment: center;
+  /* VoogStyle
    "pathI18n": ["header"],
    "titleI18n": "background_color",
    "editor": "colorPicker",

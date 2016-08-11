@@ -32,6 +32,10 @@ body {
   background-color: var(--header-background-color);}
 }
 
+@include querymin($tablet-2) {
+.front-page .flex-container {
+  justify-content: var(--header-alignment);}
+}
 
 
 // =============================================================================

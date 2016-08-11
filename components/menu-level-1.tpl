@@ -1,4 +1,4 @@
-<ul class="menu top-level">
+<ul class="menu top-level flex-item">
   {% unless site.root_item.hidden? %}
     {% if site.visible_menuitems.size > 0 or editmode %}
       <li class="menu-item menu-main-item">
@@ -20,7 +20,9 @@
 
     <li class="edit-btn">{% menuadd %}</li>
   {% endif %}
+</ul>
 
+<ul class="menu top-level flex-item">
   {% if front_page %}
 
     {% if site.search.enabled %}

@@ -9,6 +9,13 @@ body {
   }
 }
 @media screen and (min-width: 961px) {
+  .front-page .flex-container {
+    -webkit-justify-content: var(--header-alignment);
+        -ms-flex-pack: var(--header-alignment);
+            justify-content: var(--header-alignment);
+  }
+}
+@media screen and (min-width: 961px) {
   .dark-background .menu-front .menu-main-item .menu-link, .dark-background .menu-front .menu-main-item .menu-link.active {
     color: var(--main-color-front);
   }
