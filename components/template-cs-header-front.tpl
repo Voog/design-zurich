@@ -13,7 +13,7 @@
         "value": "center"
       },
       {
-        "titleI18n": "Separated",
+        "titleI18n": "separated",
         "value": "space-between"
       },
       {
