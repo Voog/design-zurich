@@ -194,7 +194,6 @@
   }
 
   .menu-front {
-
     .menu-item {
       font-size: $font-size-xs;
       line-height: normal;
@@ -271,6 +270,10 @@
           color: $color-white;
         }
       }
+    }
+
+    .edit-btn {
+      margin-right: 20px;
     }
   }
 }
