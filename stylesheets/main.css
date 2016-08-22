@@ -1500,6 +1500,10 @@ body.search-open {
     padding-right: 40px;
   }
 }
+.front-page .flex-item {
+  white-space: nowrap;
+}
+
 /* CONTENT */
 .content-topbar {
   min-height: 18px;
