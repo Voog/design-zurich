@@ -181,7 +181,6 @@
   position: relative;
   display: inline-block;
   margin-left: 20px;
-  margin-right: 20px;
 }
 @media screen and (max-width: 960px) {
   .menu-main .edit-btn {
@@ -225,4 +224,12 @@
 
 .menu .menu-link.untranslated {
   color: rgba(204, 0, 0, 0.5);
+}
+
+.front-page.edy-editmode .menu-main.menu-front .top-level .edit-btn {
+  margin-right: 20px;
+}
+
+.front-page .menu-lang .edit-btn {
+  margin-right: 0 !important;
 }
