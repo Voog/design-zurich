@@ -18,11 +18,11 @@
       <li class="edit-btn">{% menubtn site.hidden_menuitems %}</li>
     {% endif %}
 
-    <li class="edit-btn">{% menuadd %}</li>
+    <li class="edit-btn right-mainmenu">{% menuadd %}</li>
   {% endif %}
 </ul>
 
-<ul class="menu top-level flex-item">
+<ul class="menu top-level flex-item right-block">
   {% if front_page %}
 
     {% if site.search.enabled %}
