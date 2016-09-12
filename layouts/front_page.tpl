@@ -22,7 +22,7 @@
         {% endif %}
 
         <div class="content-inner js-background-type {{ main_bg_type }}">
-          <section class="content-body content-formatted" data-search-indexing-allowed="true">{% content %}</section>
+          <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
         </div>
       </div>
     </main>
