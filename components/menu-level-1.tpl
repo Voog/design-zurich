@@ -18,7 +18,7 @@
       <li class="edit-btn">{% menubtn site.hidden_menuitems %}</li>
     {% endif %}
 
-    <li class="edit-btn right-mainmenu">{% menuadd %}</li>
+    <li class="edit-btn right-mainmenu" {{ edy_intro_add_page }}>{% menuadd %}</li>
   {% endif %}
 </ul>
 
@@ -47,7 +47,7 @@
     {% if editmode or site.has_many_languages? %}
       <li class="menu-item menu-item-lang-inline">
         <nav class="menu-lang inline js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
-          <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_code }}">
+          <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_code }}" {{ edy_intro_add_lang }}>
             {% if editmode or flags_state == false %}
               <span class="lang-title">
                 {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
