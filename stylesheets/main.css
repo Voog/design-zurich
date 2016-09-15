@@ -1311,7 +1311,6 @@ body.search-open {
   padding-left: 20px;
   max-width: 1920px;
   margin: 0 auto;
-  text-align: center;
 }
 @media screen and (min-width: 961px) {
   .flexbox .front-page .header-container {
