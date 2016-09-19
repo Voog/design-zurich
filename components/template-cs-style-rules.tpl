@@ -58,12 +58,16 @@ body {
 }
 
 .menu-main .menu-link {
-  font-size: var(--menu-main-font-size);
   font-style: var(--menu-main-font-style);
   font-weight: var(--menu-main-font-weight);
   color: var(--menu-main-color);
   text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
+}
+@media screen and (min-width: 961px) {
+  .menu-main .menu-link {
+    font-size: var(--menu-main-font-size);
+  }
 }
 .menu-main .menu-link.active {
   font-style: var(--menu-main-active-font-style);
