@@ -626,24 +626,6 @@ $flags:
   }
 }
 
-.lang-options {
-  background-color: rgba($primary-color, .1);
-
-  .menu-item {
-    margin-top: 8px;
-    padding: 8px 10px;
-    font-size: 13px;
-    line-height: normal;
-    background-color: transparent;
-
-    @include query($tablet-2) {
-      margin-top: 0;
-      padding: 10px 25px 9px;
-      font-size: 15px;
-    }
-  }
-}
-
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .tags-title {
   display: inline-block;

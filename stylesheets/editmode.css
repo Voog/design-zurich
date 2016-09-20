@@ -113,37 +113,6 @@
   margin-left: 0;
 }
 
-.option-btn {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  color: #0066bb;
-}
-.option-btn:focus {
-  outline: none;
-}
-.option-btn::-moz-focus-inner {
-  padding: 0;
-  border: none;
-}
-.option-btn:hover {
-  color: rgba(0, 102, 187, 0.8);
-}
-.flags-disabled .option-btn .disable-text {
-  display: none;
-}
-.flags-enabled .option-btn .enable-text {
-  display: none;
-}
-.option-btn .disable-text:first-letter,
-.option-btn .enable-text:first-letter {
-  text-transform: capitalize;
-}
-
 .menu-lang .edit-btn {
   display: block;
 }

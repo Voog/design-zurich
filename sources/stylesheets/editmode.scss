@@ -139,42 +139,6 @@
   }
 }
 
-.option-btn {
-  @include reset-button;
-  font-family: inherit;
-  font-size: inherit;
-  color: $blue-1;
-
-  &:hover {
-    color: rgba($blue-1, .8);
-  }
-
-  .flags-disabled & {
-
-    .disable-text {
-
-      display: none;
-    }
-  }
-
-  .flags-enabled & {
-
-    .enable-text {
-
-      display: none;
-    }
-  }
-
-  .disable-text,
-  .enable-text {
-
-    &:first-letter {
-
-      text-transform: capitalize;
-    }
-  }
-}
-
 .menu-lang {
 
   .edit-btn {

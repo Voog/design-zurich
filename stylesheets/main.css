@@ -1190,24 +1190,6 @@ body.search-open {
   content: '';
 }
 
-.lang-options {
-  background-color: rgba(105, 107, 108, 0.1);
-}
-.lang-options .menu-item {
-  margin-top: 8px;
-  padding: 8px 10px;
-  font-size: 13px;
-  line-height: normal;
-  background-color: transparent;
-}
-@media screen and (max-width: 960px) {
-  .lang-options .menu-item {
-    margin-top: 0;
-    padding: 10px 25px 9px;
-    font-size: 15px;
-  }
-}
-
 .tags-title {
   display: inline-block;
   font-size: 14px;
