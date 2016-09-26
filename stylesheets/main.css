@@ -830,6 +830,10 @@ body.search-open {
   top: 6px;
   left: 5px;
 }
+.front-page .menu-lang-btn:before, .front-page .menu-lang-btn:after {
+  top: 3px;
+  left: 2px;
+}
 
 .language-menu-mode-popover .menu-lang-popover {
   display: none;

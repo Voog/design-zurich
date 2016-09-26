@@ -396,6 +396,11 @@
   &:after {
     top: 6px;
     left: 5px;
+
+    .front-page & {
+      top: 3px;
+      left: 2px;
+    }
   }
 }
 
