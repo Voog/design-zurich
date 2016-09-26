@@ -565,9 +565,23 @@
   }
 
   .menu-link {
-    padding: 9px 30px 9px 53px;
+    padding-right: 30px;
     font-weight: $font-weight-normal;
     font-size: 14px;
+
+    .language-names-enabled.language-flags-enabled & {
+      padding-left: 53px;
+    }
+
+    .language-names-enabled & {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    .language-names-disabled & {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     &:before,
     &:after {

@@ -1,22 +1,21 @@
 ;(function($) {
   var editmode = $('html').hasClass('editmode');
 
-  // Remove comments if debouncing is used.
   // Function to limit the rate at which a function can fire.
-  // var debounce = function(func, wait, immediate) {
-  //   var timeout;
-  //   return function() {
-  //     var context = this, args = arguments;
-  //     var later = function() {
-  //       timeout = null;
-  //       if (!immediate) func.apply(context, args);
-  //     };
-  //     var callNow = immediate && !timeout;
-  //     clearTimeout(timeout);
-  //     timeout = setTimeout(later, wait);
-  //     if (callNow) func.apply(context, args);
-  //   };
-  // };
+  var debounce = function(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
 
   var bindSideClicks = function() {
     $('.content, .sections, .footer').on('mousedown', function(event) {
@@ -208,7 +207,7 @@
           $html.addClass('language-names-enabled');
         }
 
-        // toggleLanguageSettingsLocation();
+        toggleLanguageSettingsLocation();
         this.setPosition();
       },
 
@@ -217,7 +216,20 @@
       }
     });
 
-    // toggleLanguageSettingsLocation();
+    toggleLanguageSettingsLocation();
+  };
+
+  var toggleLanguageSettingsLocation = function() {
+    var $html = $('html'),
+        $languageSettingsMenuElement = $('.js-menu-language-settings');
+
+    if ($(window).width() <= 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-mobile').length === 0) {
+      console.log(1);
+      $languageSettingsMenuElement.appendTo('.js-menu-lang-mobile');
+    } else if ($(window).width() > 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-desktop').length === 0) {
+      console.log(2);
+      $languageSettingsMenuElement.appendTo('.js-menu-lang-desktop');
+    }
   };
 
   // Adds and removes padding to front page content areas when toggled.
@@ -471,9 +483,9 @@
 
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
-    // Add functions that should be trgiggered while resizing the window here.
-    // Example:
-    // $(window).resize(debounce(yourFunctionName, 3000));
+    $(window).resize(debounce(function() {
+      toggleLanguageSettingsLocation();
+    }, 100));
   };
 
   // Initiations

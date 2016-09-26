@@ -37,7 +37,7 @@
 
         {% if editmode or site.has_many_languages? %}
           <div class="menu-lang-mobile js-menu-lang">
-            {% include "menu-lang" %}
+            {% include "menu-lang" menu_lang_mobile: true %}
           </div>
         {% endif %}
       </nav>
