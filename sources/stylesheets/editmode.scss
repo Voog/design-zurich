@@ -140,9 +140,14 @@
 }
 
 .menu-lang {
+  .menu-item-cms {
+    .language-menu-mode-popover & {
+      display: block;
+    }
 
-  .edit-btn {
-    display: block;
+    .language-menu-mode-list & {
+      display: inline-block;
+    }
 
     .edy-menu-langadd {
       display: inline-block;
@@ -191,7 +196,7 @@
 
 .menu-main {
 
-  .edit-btn {
+  .menu-item-cms {
     position: relative;
     display: inline-block;
     margin-left: 20px;
@@ -219,7 +224,7 @@
 
 .menu-lang {
 
-  .edit-btn {
+  .menu-item-cms {
     padding: 5px 10px 4px 0;
     text-align: right;
 
@@ -240,7 +245,7 @@
 
 .menu-sub {
 
-  .edit-btn {
+  .menu-item-cms {
     display: inline-block;
     margin-left: 0;
   }

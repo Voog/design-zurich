@@ -5,6 +5,19 @@
       type: 'site'
     });
 
+    //==========================================================================
+    // Initiates the language menu mode toggleing popover.
+    //==========================================================================
+    var valuesObj;
+
+    {% if site.data.settings_language_menu %}
+      valuesObj = {{ site.data.settings_language_menu | json }};
+    {% else %}
+      valuesObj = {};
+    {% endif %};
+
+    site.bindLanguageMenuSettings(valuesObj);
+
     {% if blog_article_page %}
       var pageType = 'articlePage';
       siteData = new Edicy.CustomData({
@@ -26,9 +39,6 @@
         id: '{{ page.id }}'
       });
     {% endif %}
-
-    // Initiates language flag toggling functionality.
-    site.toggleFlags();
 
     site.togglePadding();
 

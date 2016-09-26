@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
+{% assign front_page = true %}
+{% include "edicy-tools-variables" %}
+<html class="{% if editmode %}editmode{% else %}public{% endif %} {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% assign front_page = true %}
-  {% include "edicy-tools-variables" %}
   {% include "html-head" front_page: true %}
   {% include "edicy-tools-styles" %}
   {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}

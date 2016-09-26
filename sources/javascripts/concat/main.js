@@ -119,21 +119,103 @@
     });
   };
 
-  var toggleFlags = function() {
-    $('.js-option-toggle-flags').on('click', function(event) {
-      event.stopPropagation();
+  // ===========================================================================
+  // Toggles language menu mode.
+  // ===========================================================================
+  var bindLanguageMenuSettings = function(valuesObj) {
+    if (!('type' in valuesObj)) {
+      valuesObj.type = 'popover';
+    }
 
-      if ($(this).hasClass('js-flag-disable-btn')) {
-        var flagsState = false;
-      } else {
-        var flagsState = true;
+    if (!('item_state' in valuesObj)) {
+      valuesObj.item_state = 'flags_and_names';
+    }
+
+    var langSettingsEditor = new Edicy.SettingsEditor($('.js-menu-language-settings-toggle').get(0), {
+      menuItems: [
+        {
+          "titleI18n": "format_desktop_only",
+          "type": "radio",
+          "key": "type",
+          "list": [
+            {
+              "titleI18n": "dropdown_menu",
+              "value": "popover"
+            },
+            {
+              "titleI18n": "expanded_menu",
+              "value": "list"
+            },
+          ]
+        },
+        {
+          "titleI18n": "show",
+          "type": "radio",
+          "key": "item_state",
+          "list": [
+            {
+              "titleI18n": "flags_only",
+              "value": "flags_only"
+            },
+            {
+              "titleI18n": "names_only",
+              "value": "names_only"
+            },
+            {
+              "titleI18n": "flags_and_names",
+              "value": "flags_and_names"
+            }
+          ]
+        }
+      ],
+
+      values: valuesObj,
+
+      buttonTitleI18n: 'settings',
+
+      containerClass: ['js-menu-language-settings-popover', 'js-prevent-sideclick'],
+
+      preview: function(data) {
+        var $html = $('html'),
+            $languageSettingsMenuElement = $('.js-menu-language-settings');
+
+        if (data.type === 'list') {
+          $html.removeClass('language-menu-mode-popover');
+          $html.removeClass('menu-language-popover-open');
+          $html.addClass('language-menu-mode-list');
+        } else {
+          $html.removeClass('language-menu-mode-list');
+          $html.addClass('language-menu-mode-popover');
+          $html.addClass('menu-language-popover-open');
+        }
+
+        if (data.item_state === 'flags_only') {
+          $html.removeClass('language-flags-disabled');
+          $html.removeClass('language-names-enabled');
+          $html.addClass('language-flags-enabled');
+          $html.addClass('language-names-disabled');
+        } else if (data.item_state === 'names_only') {
+          $html.removeClass('language-flags-enabled');
+          $html.removeClass('language-names-disabled');
+          $html.addClass('language-flags-disabled');
+          $html.addClass('language-names-enabled');
+        } else if (data.item_state === 'flags_and_names') {
+          $html.removeClass('language-flags-disabled');
+          $html.removeClass('language-names-disabled');
+          $html.addClass('language-flags-enabled');
+          $html.addClass('language-names-enabled');
+        }
+
+        // toggleLanguageSettingsLocation();
+        this.setPosition();
+      },
+
+      commit: function(data) {
+        siteData.set('settings_language_menu', data);
       }
-
-      siteData.set("flags_state", flagsState);
-
-      $(this).toggleClass('js-flag-disable-btn');
-      $('.js-menu-lang').toggleClass('flags-enabled flags-disabled');
     });
+
+    // toggleLanguageSettingsLocation();
   };
 
   // Adds and removes padding to front page content areas when toggled.
@@ -445,7 +527,7 @@
     initBlogPage: initBlogPage,
     initArticlePage: initArticlePage,
     initCommonPage: initCommonPage,
-    toggleFlags: toggleFlags,
+    bindLanguageMenuSettings: bindLanguageMenuSettings,
     togglePadding: togglePadding,
     bgPickerPreview: bgPickerPreview,
     bgPickerCommit: bgPickerCommit,

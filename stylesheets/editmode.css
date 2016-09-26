@@ -113,10 +113,13 @@
   margin-left: 0;
 }
 
-.menu-lang .edit-btn {
+.language-menu-mode-popover .menu-lang .menu-item-cms {
   display: block;
 }
-.menu-lang .edit-btn .edy-menu-langadd {
+.language-menu-mode-list .menu-lang .menu-item-cms {
+  display: inline-block;
+}
+.menu-lang .menu-item-cms .edy-menu-langadd {
   display: inline-block;
   padding: 0;
 }
@@ -146,13 +149,13 @@
   margin-bottom: 20px;
 }
 
-.menu-main .edit-btn {
+.menu-main .menu-item-cms {
   position: relative;
   display: inline-block;
   margin-left: 20px;
 }
 @media screen and (max-width: 960px) {
-  .menu-main .edit-btn {
+  .menu-main .menu-item-cms {
     position: static;
     text-align: left;
     display: block;
@@ -162,32 +165,32 @@
     background: #fff;
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
   }
-  .menu-main .edit-btn .edy-menu-menuadd {
+  .menu-main .menu-item-cms .edy-menu-menuadd {
     display: inline-block;
   }
-  .menu-main .edit-btn .edy-menu-menuadd:hover {
+  .menu-main .menu-item-cms .edy-menu-menuadd:hover {
     background: none;
   }
 }
 
-.menu-lang .edit-btn {
+.menu-lang .menu-item-cms {
   padding: 5px 10px 4px 0;
   text-align: right;
 }
-.menu-lang .edit-btn .edy-menu-langadd {
+.menu-lang .menu-item-cms .edy-menu-langadd {
   margin: 7px 20px;
 }
 @media screen and (max-width: 960px) {
-  .menu-lang .edit-btn .edy-menu-langadd {
+  .menu-lang .menu-item-cms .edy-menu-langadd {
     margin: 0;
   }
 }
-.front-page .menu-lang .edit-btn {
+.front-page .menu-lang .menu-item-cms {
   top: 3px;
   display: block;
 }
 
-.menu-sub .edit-btn {
+.menu-sub .menu-item-cms {
   display: inline-block;
   margin-left: 0;
 }

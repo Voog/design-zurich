@@ -93,8 +93,9 @@
 }
 
 .header-right {
-  text-align: right;
+  margin-top: -3px;
   margin-left: 15px;
+  text-align: right;
 
   .no-flexbox & {
     float: right;
@@ -214,4 +215,4 @@
    .front-page .header-container { padding-left: 40px;padding-right: 40px;}
  }
 
- .front-page .flex-item.right-block { white-space: nowrap;}  
+ .front-page .flex-item.right-block { white-space: nowrap;}
