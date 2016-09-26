@@ -10839,9 +10839,9 @@ MMCQ = (function() {
     var $html = $('html'),
         $languageSettingsMenuElement = $('.js-menu-language-settings');
 
-    if ($(window).width() <= 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-mobile').length === 0) {
+    if ($(window).width() <= 960 && $languageSettingsMenuElement.closest('.js-menu-lang-mobile').length === 0) {
       $languageSettingsMenuElement.appendTo('.js-menu-lang-mobile');
-    } else if ($(window).width() > 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-desktop').length === 0) {
+    } else if ($(window).width() > 960 && $languageSettingsMenuElement.closest('.js-menu-lang-desktop').length === 0) {
       $languageSettingsMenuElement.appendTo('.js-menu-lang-desktop');
     }
   };
