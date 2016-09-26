@@ -702,23 +702,23 @@ body.search-open {
     border: 2px solid #000;
   }
   .light-background .menu-front .menu-link:not(.lang-flag):hover {
-    border: 2px solid #000;
     background: #000;
     color: #fff;
   }
-  .dark-background .menu-front .flags-disabled .menu-lang-btn {
+  .language-flags-disabled .menu-front .menu-lang-btn {
+    padding: 6px 12px;
+  }
+  .language-flags-disabled .dark-background .menu-front .menu-lang-btn {
     color: #fff;
   }
-  .dark-background .menu-front .flags-disabled .menu-lang-btn:hover {
-    border: 2px solid #fff;
+  .language-flags-disabled .dark-background .menu-front .menu-lang-btn:hover {
     background: #fff;
     color: #000;
   }
-  .light-background .menu-front .flags-disabled .menu-lang-btn {
+  .language-flags-disabled .light-background .menu-front .menu-lang-btn {
     color: #000;
   }
-  .light-background .menu-front .flags-disabled .menu-lang-btn:hover {
-    border: 2px solid #000;
+  .language-flags-disabled .light-background .menu-front .menu-lang-btn:hover {
     background: #000;
     color: #fff;
   }

@@ -240,32 +240,41 @@
         }
 
         &:hover {
-          border: 2px solid $color-black;
+          //border: 2px solid $color-black;
           background: $color-black;
           color: $color-white;
         }
       }
     }
 
-    .flags-disabled .menu-lang-btn {
+    .menu-lang-btn {
+      .language-flags-disabled & {
+        padding: 6px 12px;
+      }
 
       .dark-background & {
-        color: $color-white;
+        .language-flags-disabled & {
+          color: $color-white;
+        }
 
         &:hover {
-          border: 2px solid $color-white;
-          background: $color-white;
-          color: $color-black;
+          .language-flags-disabled & {
+            background: $color-white;
+            color: $color-black;
+          }
         }
       }
 
       .light-background & {
-        color: $color-black;
+        .language-flags-disabled & {
+          color: $color-black;
+        }
 
         &:hover {
-          border: 2px solid $color-black;
-          background: $color-black;
-          color: $color-white;
+          .language-flags-disabled & {
+            background: $color-black;
+            color: $color-white;
+          }
         }
       }
     }
