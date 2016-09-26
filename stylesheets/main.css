@@ -622,6 +622,9 @@ body.search-open {
     display: none;
   }
 }
+.menu-main .menu-main-item .menu-link {
+  transition: 500ms;
+}
 .menu-main .menu-link {
   word-break: break-word;
   word-wrap: break-word;
@@ -661,11 +664,10 @@ body.search-open {
     border: 2px solid transparent;
     font-weight: 600;
     font-size: 12px;
-    transition: 500ms;
+    transition: background-color 500ms;
   }
   .language-menu-mode-popover.language-flags-enabled .front-page .menu-lang-btn:hover {
-    border: 2px solid #fff;
-    opacity: 1;
+    opacity: .7;
   }
 
   .menu-front .menu-item {
@@ -765,6 +767,7 @@ body.search-open {
   margin-left: 2px;
   font-family: inherit;
   font-size: 14px;
+  transition: background-color 500ms;
 }
 .front-page .inline .menu-lang-btn {
   top: 0;

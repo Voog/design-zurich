@@ -137,6 +137,12 @@
     }
   }
 
+  .menu-main-item {
+    .menu-link {
+      transition: $transition-std;
+    }
+  }
+
   .menu-link {
     @include hyphenate(true);
     color: rgba($secondary-color, 1);
@@ -181,11 +187,10 @@
         border: 2px solid transparent;
         font-weight: $font-weight-semibold;
         font-size: 12px;
-        transition: $transition-std;
+        transition: background-color $transition-std;
 
         &:hover {
-          border: 2px solid $color-white;
-          opacity: 1;
+          opacity: .7;
         }
       }
     }
@@ -332,6 +337,7 @@
   margin-left: 2px;
   font-family: inherit;
   font-size: 14px;
+  transition: background-color $transition-std;
 
   .front-page .inline & {
     top: 0;
