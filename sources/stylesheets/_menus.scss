@@ -173,9 +173,7 @@
 
 @include querymin($tablet-2) {
   .front-page {
-
-    .language-flags-enabled & {
-
+    .language-menu-mode-popover.language-flags-enabled & {
       .menu-lang-btn {
         display: inline-block;
         padding: 6px 12px;
@@ -214,7 +212,7 @@
       }
     }
 
-    .menu-link {
+    .menu-link:not(.lang-flag) {
       display: inline-block;
       padding: 8px 12px;
       text-transform: uppercase;
@@ -640,7 +638,9 @@
   }
 
   .language-names-disabled & {
-    font-size: 0;
+    // scss-lint:disable ImportantRule
+    font-size: 0 !important;
+    // scss-lint:enable ImportantRule
   }
 }
 

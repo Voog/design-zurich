@@ -56,7 +56,7 @@
             {% endif %}
           </button>
           <div class="menu-lang-popover js-menu-lang-popover js-popover">
-            {% include "menu-lang" %}
+            {% include "menu-lang" lang_settings: true %}
           </div>
         </nav>
       </li>

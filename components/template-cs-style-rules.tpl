@@ -65,7 +65,7 @@ body {
   text-transform: var(--menu-main-text-transform);
 }
 @media screen and (min-width: 961px) {
-  .menu-main .menu-link {
+  .language-names-enabled .menu-main .menu-link {
     font-size: var(--menu-main-font-size);
   }
 }

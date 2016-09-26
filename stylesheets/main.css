@@ -654,7 +654,7 @@ body.search-open {
 }
 
 @media screen and (min-width: 961px) {
-  .language-flags-enabled .front-page .menu-lang-btn {
+  .language-menu-mode-popover.language-flags-enabled .front-page .menu-lang-btn {
     display: inline-block;
     padding: 6px 12px;
     text-transform: uppercase;
@@ -663,7 +663,7 @@ body.search-open {
     font-size: 12px;
     transition: 500ms;
   }
-  .language-flags-enabled .front-page .menu-lang-btn:hover {
+  .language-menu-mode-popover.language-flags-enabled .front-page .menu-lang-btn:hover {
     border: 2px solid #fff;
     opacity: 1;
   }
@@ -679,7 +679,7 @@ body.search-open {
   .dark-background .menu-front .menu-main-item .menu-link.active {
     color: #fff;
   }
-  .menu-front .menu-link {
+  .menu-front .menu-link:not(.lang-flag) {
     display: inline-block;
     padding: 8px 12px;
     text-transform: uppercase;
@@ -687,21 +687,21 @@ body.search-open {
     line-height: 1;
     border: 2px solid transparent;
   }
-  .dark-background .menu-front .menu-link.active {
+  .dark-background .menu-front .menu-link:not(.lang-flag).active {
     border: 2px solid #fff;
   }
-  .dark-background .menu-front .menu-link:hover {
+  .dark-background .menu-front .menu-link:not(.lang-flag):hover {
     border: 2px solid #fff;
     background: #fff;
     color: #000;
   }
-  .light-background .menu-front .menu-link {
+  .light-background .menu-front .menu-link:not(.lang-flag) {
     color: #000;
   }
-  .light-background .menu-front .menu-link.active {
+  .light-background .menu-front .menu-link:not(.lang-flag).active {
     border: 2px solid #000;
   }
-  .light-background .menu-front .menu-link:hover {
+  .light-background .menu-front .menu-link:not(.lang-flag):hover {
     border: 2px solid #000;
     background: #000;
     color: #fff;
@@ -1016,7 +1016,7 @@ body.search-open {
   display: none;
 }
 .language-names-disabled .lang-flag {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
 .lang-flag-sq:after {

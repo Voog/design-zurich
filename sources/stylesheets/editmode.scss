@@ -140,6 +140,10 @@
 }
 
 .menu-lang {
+  .front-page & {
+    line-height: 2;
+  }
+
   .menu-item-cms {
     .language-menu-mode-popover & {
       display: block;
@@ -223,7 +227,6 @@
 }
 
 .menu-lang {
-
   .menu-item-cms {
     padding: 5px 10px 4px 0;
     text-align: right;
@@ -237,8 +240,10 @@
     }
 
     .front-page & {
-      top: 3px;
-      display: block;
+      .language-menu-mode-popover & {
+        top: 3px;
+        display: block;
+      }
     }
   }
 }

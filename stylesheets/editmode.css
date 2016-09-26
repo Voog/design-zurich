@@ -113,6 +113,9 @@
   margin-left: 0;
 }
 
+.front-page .menu-lang {
+  line-height: 2;
+}
 .language-menu-mode-popover .menu-lang .menu-item-cms {
   display: block;
 }
@@ -185,7 +188,7 @@
     margin: 0;
   }
 }
-.front-page .menu-lang .menu-item-cms {
+.language-menu-mode-popover .front-page .menu-lang .menu-item-cms {
   top: 3px;
   display: block;
 }
