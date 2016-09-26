@@ -875,6 +875,12 @@ body.search-open {
 .menu-lang-mobile .menu-link.active,
 .menu-lang-mobile .menu-link.active:hover {
   opacity: .5;
+}
+.menu-lang .menu-link.active::before, .menu-lang .menu-link.active::after, .menu-lang .menu-link.active:hover::before, .menu-lang .menu-link.active:hover::after,
+.menu-lang-mobile .menu-link.active::before,
+.menu-lang-mobile .menu-link.active::after,
+.menu-lang-mobile .menu-link.active:hover::before,
+.menu-lang-mobile .menu-link.active:hover::after {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }

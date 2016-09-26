@@ -64,8 +64,14 @@ body {
   text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
 }
+.language-menu-mode-list .front-page .dark-background .menu-main .menu-link {
+  color: var(--main-color-front);
+}
+.language-menu-mode-list .front-page .light-background .menu-main .menu-link {
+  color: var(--secondary-color-front);
+}
 @media screen and (min-width: 961px) {
-  .language-names-enabled .menu-main .menu-link {
+  .menu-main .menu-link {
     font-size: var(--menu-main-font-size);
   }
 }

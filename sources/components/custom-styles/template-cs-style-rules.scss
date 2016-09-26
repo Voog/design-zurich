@@ -123,6 +123,22 @@ body {
     text-decoration: var(--menu-main-text-decoration);
     text-transform: var(--menu-main-text-transform);
 
+    .dark-background & {
+      .front-page & {
+        .language-menu-mode-list & {
+          color: var(--main-color-front);
+        }
+      }
+    }
+
+    .light-background & {
+      .front-page & {
+        .language-menu-mode-list & {
+          color: var(--secondary-color-front);
+        }
+      }
+    }
+
     @include querymin($tablet-2) {
       font-size: var(--menu-main-font-size);
     }

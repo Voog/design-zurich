@@ -464,7 +464,11 @@
     &.active,
     &.active:hover {
       opacity: .5;
-      filter: grayscale(100%);
+
+      &::before,
+      &::after {
+        filter: grayscale(100%);
+      }
     }
 
     &:hover {
