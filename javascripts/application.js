@@ -10803,6 +10803,8 @@ MMCQ = (function() {
           $html.removeClass('language-menu-mode-list');
           $html.addClass('language-menu-mode-popover');
           $html.addClass('menu-language-popover-open');
+
+          $('.js-menu-lang-popover').addClass('expanded');
         }
 
         if (data.item_state === 'flags_only') {
