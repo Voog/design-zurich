@@ -10617,6 +10617,7 @@ MMCQ = (function() {
 ;(function($) {
   var editmode = $('html').hasClass('editmode');
 
+  // Function to limit the rate at which a function can fire.
   var debounce = function(func, wait, immediate) {
     var timeout;
     return function() {
@@ -10839,10 +10840,8 @@ MMCQ = (function() {
         $languageSettingsMenuElement = $('.js-menu-language-settings');
 
     if ($(window).width() <= 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-mobile').length === 0) {
-      console.log(1);
       $languageSettingsMenuElement.appendTo('.js-menu-lang-mobile');
     } else if ($(window).width() > 1024 && $languageSettingsMenuElement.closest('.js-menu-lang-desktop').length === 0) {
-      console.log(2);
       $languageSettingsMenuElement.appendTo('.js-menu-lang-desktop');
     }
   };
