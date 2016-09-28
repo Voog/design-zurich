@@ -1476,9 +1476,10 @@ body.search-open {
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -ms-flex-item-align: auto;
     -webkit-align-self: auto;
-            align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+        align-self: auto;
   }
 
   .front-page .flex-item:nth-child(2) {
@@ -1488,9 +1489,10 @@ body.search-open {
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -ms-flex-item-align: auto;
     -webkit-align-self: auto;
-            align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+        align-self: auto;
   }
 
   .front-page .js-header-right {
