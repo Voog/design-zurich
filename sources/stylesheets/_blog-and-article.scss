@@ -107,9 +107,9 @@
         bottom: 0;
         left: 0;
         display: block;
+        border-bottom: 1px solid currentColor;
         content: '';
         opacity: .2;
-        border-bottom: 1px solid currentColor;
       }
     }
   }
