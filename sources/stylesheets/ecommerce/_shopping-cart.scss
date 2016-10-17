@@ -1,0 +1,68 @@
+.edy-ecommerce-shopping-cart-button {
+  .public & {
+    @include rem-fallback(font-size, 12px);
+    @include hyphenate(true);
+    right: 20px;
+    z-index: 1;
+    display: inline-block;
+    padding: 6px 6px 5px;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-medium;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba($color-black, .0);
+    box-sizing: border-box;
+
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  .front-page & {
+    color: rgba($color-white, 1);
+    border: 2px solid $color-white;
+
+    @include query($mobile-1) {
+      top: 52px;
+    }
+
+    @include querymin($mobile-1) {
+      top: 66px;
+    }
+  }
+
+  .common-page &,
+  .blog-page &,
+  .post-page & {
+    color: rgba($color-black, 1);
+    background-color: rgba($color-white, 1);
+    border: 2px solid $color-black;
+
+    @include query($mobile-1) {
+      top: 80px;
+    }
+
+    @include querymin($mobile-1) {
+      top: 96px;
+    }
+  }
+
+  &:hover {
+    .front-page & {
+      color: rgba($color-black, .71);
+      background-color: rgba($color-white, 1);
+      border: 2px solid $color-white;
+    }
+
+    .common-page &,
+    .blog-page &,
+    .post-page & {
+      color: rgba($color-white, 1);
+      background-color: $color-black;
+      border: 2px solid $color-black;
+    }
+  }
+}
