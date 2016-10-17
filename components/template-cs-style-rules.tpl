@@ -217,38 +217,48 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
-  color: var(--content-button-color);
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
+}
+.common-page .content-formatted .custom-btn, .blog-page .content-formatted .custom-btn, .post-page .content-formatted .custom-btn {
+  color: var(--content-button-color);
   background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
-  color: var(--content-button-hover-color);
   text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
+}
+.common-page .content-formatted .custom-btn:hover, .blog-page .content-formatted .custom-btn:hover, .post-page .content-formatted .custom-btn:hover {
+  color: var(--content-button-hover-color);
   background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
 }
-.dark-background .content-formatted .custom-btn {
-  border-color: var(--main-color-front);
+.front-page .dark-background .content-formatted .custom-btn {
   color: var(--main-color-front);
-}
-.light-background .content-formatted .custom-btn {
-  border-color: var(--secondary-color-front);
-  color: var(--secondary-color-front);
-}
-.dark-background .front-page .content-formatted .custom-btn:hover {
-  color: var(--secondary-color-front);
   border-color: var(--main-color-front);
+}
+.front-page .dark-background .content-formatted .custom-btn:hover {
+  color: var(--secondary-color-front);
   background-color: var(--main-color-front);
 }
-.light-background .front-page .content-formatted .custom-btn:hover {
+.common-page .dark-background .content-formatted .custom-btn, .blog-page .dark-background .content-formatted .custom-btn, .post-page .dark-background .content-formatted .custom-btn {
+  border-color: var(--main-color-front);
   color: var(--main-color-front);
+}
+.front-page .light-background .content-formatted .custom-btn {
+  color: var(--secondary-color-front);
   border-color: var(--secondary-color-front);
+}
+.front-page .light-background .content-formatted .custom-btn:hover {
+  color: var(--main-color-front);
   background-color: var(--secondary-color-front);
+}
+.common-page .light-background .content-formatted .custom-btn, .blog-page .light-background .content-formatted .custom-btn, .post-page .light-background .content-formatted .custom-btn {
+  border-color: var(--secondary-color-front);
+  color: var(--secondary-color-front);
 }
 
 .front-page .content .content-inner .content-formatted {
@@ -300,4 +310,27 @@ body {
   padding: calc(var(--form-button-padding) - 3px) var(--form-button-padding);
   color: var(--form-button-color);
   background-color: var(--form-button-background-color);
+}
+
+.public .edy-ecommerce-shopping-cart-button {
+  font-style: var(--content-button-font-style);
+  font-weight: var(--content-button-font-weight);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+}
+.public .edy-ecommerce-shopping-cart-button:hover {
+  font-style: var(--content-button-hover-font-style);
+  font-weight: var(--content-button-hover-font-weight);
+  text-decoration: var(--content-button-hover-text-decoration);
+  text-transform: var(--content-button-hover-text-transform);
+}
+.common-page .edy-ecommerce-shopping-cart-button, .blog-page .edy-ecommerce-shopping-cart-button, .post-page .edy-ecommerce-shopping-cart-button {
+  color: var(--content-button-color);
+  background-color: var(--content-button-background-color);
+  border-color: var(--content-button-color);
+}
+.common-page .edy-ecommerce-shopping-cart-button:hover, .blog-page .edy-ecommerce-shopping-cart-button:hover, .post-page .edy-ecommerce-shopping-cart-button:hover {
+  color: var(--content-button-hover-color);
+  background-color: var(--content-button-hover-background-color);
+  border-color: var(--content-button-hover-color);
 }
