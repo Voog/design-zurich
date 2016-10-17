@@ -232,6 +232,11 @@
     @include hyphenate(true);
     text-decoration: none;
 
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
     .site-header & {
       margin: 30px 0;
     }

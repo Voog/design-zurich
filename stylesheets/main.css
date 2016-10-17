@@ -420,6 +420,10 @@ body.search-open {
   hyphens: auto;
   text-decoration: none;
 }
+.content-formatted .custom-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 .site-header .content-formatted .custom-btn {
   margin: 30px 0;
 }
