@@ -191,8 +191,10 @@ body {
 // =============================================================================
 .content-formatted {
   .content & {
-    font-size: var(--content-body-font-size);
-    line-height: var(--content-body-line-height);
+    @include querymin($tablet-1) {
+      line-height: var(--content-body-line-height);
+      font-size: var(--content-body-font-size);
+    }
   }
 
   .footer & {
