@@ -456,36 +456,3 @@ body {
     }
   }
 }
-
-//==============================================================================
-// ECOMMERCE
-//==============================================================================
-.edy-ecommerce-shopping-cart-button {
-  .public & {
-    font-style: var(--content-button-font-style);
-    font-weight: var(--content-button-font-weight);
-    text-decoration: var(--content-button-text-decoration);
-    text-transform: var(--content-button-text-transform);
-
-    &:hover {
-      font-style: var(--content-button-hover-font-style);
-      font-weight: var(--content-button-hover-font-weight);
-      text-decoration: var(--content-button-hover-text-decoration);
-      text-transform: var(--content-button-hover-text-transform);
-    }
-  }
-
-  .common-page &,
-  .blog-page &,
-  .post-page & {
-    color: var(--content-button-color);
-    background-color: var(--content-button-background-color);
-    border-color: var(--content-button-color);
-
-    &:hover {
-      color: var(--content-button-hover-color);
-      background-color: var(--content-button-hover-background-color);
-      border-color: var(--content-button-hover-color);
-    }
-  }
-}

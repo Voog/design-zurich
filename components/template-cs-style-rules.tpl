@@ -313,26 +313,3 @@ body {
   color: var(--form-button-color);
   background-color: var(--form-button-background-color);
 }
-
-.public .edy-ecommerce-shopping-cart-button {
-  font-style: var(--content-button-font-style);
-  font-weight: var(--content-button-font-weight);
-  text-decoration: var(--content-button-text-decoration);
-  text-transform: var(--content-button-text-transform);
-}
-.public .edy-ecommerce-shopping-cart-button:hover {
-  font-style: var(--content-button-hover-font-style);
-  font-weight: var(--content-button-hover-font-weight);
-  text-decoration: var(--content-button-hover-text-decoration);
-  text-transform: var(--content-button-hover-text-transform);
-}
-.common-page .edy-ecommerce-shopping-cart-button, .blog-page .edy-ecommerce-shopping-cart-button, .post-page .edy-ecommerce-shopping-cart-button {
-  color: var(--content-button-color);
-  background-color: var(--content-button-background-color);
-  border-color: var(--content-button-color);
-}
-.common-page .edy-ecommerce-shopping-cart-button:hover, .blog-page .edy-ecommerce-shopping-cart-button:hover, .post-page .edy-ecommerce-shopping-cart-button:hover {
-  color: var(--content-button-hover-color);
-  background-color: var(--content-button-hover-background-color);
-  border-color: var(--content-button-hover-color);
-}
