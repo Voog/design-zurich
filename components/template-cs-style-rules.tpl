@@ -221,7 +221,7 @@ body {
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
 }
-.common-page .content-formatted .custom-btn, .blog-page .content-formatted .custom-btn, .post-page .content-formatted .custom-btn {
+.common-page .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .content-formatted .custom-btn:not(.custom-btn-disabled) {
   color: var(--content-button-color);
   background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
@@ -232,32 +232,32 @@ body {
   text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
 }
-.common-page .content-formatted .custom-btn:hover, .blog-page .content-formatted .custom-btn:hover, .post-page .content-formatted .custom-btn:hover {
+.common-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled), .blog-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled), .post-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled) {
   color: var(--content-button-hover-color);
   background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
 }
-.front-page .dark-background .content-formatted .custom-btn {
+.front-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
   color: var(--main-color-front);
   border-color: var(--main-color-front);
 }
-.front-page .dark-background .content-formatted .custom-btn:hover {
+.front-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
   color: var(--secondary-color-front);
   background-color: var(--main-color-front);
 }
-.common-page .dark-background .content-formatted .custom-btn, .blog-page .dark-background .content-formatted .custom-btn, .post-page .dark-background .content-formatted .custom-btn {
+.common-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
   border-color: var(--main-color-front);
   color: var(--main-color-front);
 }
-.front-page .light-background .content-formatted .custom-btn {
+.front-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
   color: var(--secondary-color-front);
   border-color: var(--secondary-color-front);
 }
-.front-page .light-background .content-formatted .custom-btn:hover {
+.front-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
   color: var(--main-color-front);
   background-color: var(--secondary-color-front);
 }
-.common-page .light-background .content-formatted .custom-btn, .blog-page .light-background .content-formatted .custom-btn, .post-page .light-background .content-formatted .custom-btn {
+.common-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
   border-color: var(--secondary-color-front);
   color: var(--secondary-color-front);
 }

@@ -237,13 +237,16 @@
     font-weight: $font-weight-normal;
     line-height: $line-height-medium;
     text-align: center;
-    cursor: pointer;
     @include hyphenate(true);
     text-decoration: none;
 
     &::-moz-focus-inner {
       padding: 0;
       border: 0;
+    }
+
+    .public & {
+      cursor: pointer;
     }
 
     .site-header & {
@@ -263,19 +266,16 @@
 
     &:hover {
       @include transition($transition-std);
+    }
 
-      .dark-background & {
-        border: 2px solid $color-white;
-        @include bg($color-white, 1);
-        @include color($color-black, .71);
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .public & {
+        cursor: default;
+        color: $disabled;
+        border-color: $disabled;
       }
-
-      &,
-      .light-background & {
-        border: 2px solid $color-black;
-        @include bg($color-black);
-        @include color($color-white, 1);
-      }
+      // scss-lint:enable NestingDepth
     }
   }
 }

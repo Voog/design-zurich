@@ -326,9 +326,11 @@ body {
     .common-page &,
     .blog-page &,
     .post-page & {
-      color: var(--content-button-color);
-      background-color: var(--content-button-background-color);
-      border-color: var(--content-button-color);
+      &:not(.custom-btn-disabled) {
+        color: var(--content-button-color);
+        background-color: var(--content-button-background-color);
+        border-color: var(--content-button-color);
+      }
     }
 
     &:hover {
@@ -340,18 +342,22 @@ body {
       .common-page &,
       .blog-page &,
       .post-page & {
-        color: var(--content-button-hover-color);
-        background-color: var(--content-button-hover-background-color);
-        border-color: var(--content-button-hover-color);
+        &:not(.custom-btn-disabled) {
+          color: var(--content-button-hover-color);
+          background-color: var(--content-button-hover-background-color);
+          border-color: var(--content-button-hover-color);
+        }
       }
     }
 
     .dark-background & {
       .front-page & {
-        color: var(--main-color-front);
-        border-color: var(--main-color-front);
+        &:not(.custom-btn-disabled):hover {
+          color: var(--main-color-front);
+          border-color: var(--main-color-front);
+        }
 
-        &:hover {
+        &:not(.custom-btn-disabled):hover {
           color: var(--secondary-color-front);
           background-color: var(--main-color-front);
         }
@@ -360,17 +366,21 @@ body {
       .common-page &,
       .blog-page &,
       .post-page & {
-        border-color: var(--main-color-front);
-        color: var(--main-color-front);
+        &:not(.custom-btn-disabled) {
+          border-color: var(--main-color-front);
+          color: var(--main-color-front);
+        }
       }
     }
 
     .light-background & {
       .front-page & {
-        color: var(--secondary-color-front);
-        border-color: var(--secondary-color-front);
+        &:not(.custom-btn-disabled) {
+          color: var(--secondary-color-front);
+          border-color: var(--secondary-color-front);
+        }
 
-        &:hover {
+        &:not(.custom-btn-disabled):hover {
           color: var(--main-color-front);
           background-color: var(--secondary-color-front);
         }
@@ -379,8 +389,10 @@ body {
       .common-page &,
       .blog-page &,
       .post-page & {
-        border-color: var(--secondary-color-front);
-        color: var(--secondary-color-front);
+        &:not(.custom-btn-disabled) {
+          border-color: var(--secondary-color-front);
+          color: var(--secondary-color-front);
+        }
       }
     }
   }

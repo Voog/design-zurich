@@ -424,7 +424,6 @@ body.search-open {
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
-  cursor: pointer;
   word-break: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -435,6 +434,9 @@ body.search-open {
 .content-formatted .custom-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+.public .content-formatted .custom-btn {
+  cursor: pointer;
 }
 .site-header .content-formatted .custom-btn {
   margin: 30px 0;
@@ -450,16 +452,10 @@ body.search-open {
 .content-formatted .custom-btn:hover {
   transition: 500ms;
 }
-.dark-background .content-formatted .custom-btn:hover {
-  border: 2px solid #fff;
-  background-color: white;
-  color: #000;
-  color: rgba(0, 0, 0, 0.71);
-}
-.content-formatted .custom-btn:hover, .light-background .content-formatted .custom-btn:hover {
-  border: 2px solid #000;
-  background-color: black;
-  color: white;
+.public .content-formatted .custom-btn-disabled {
+  cursor: default;
+  color: #999;
+  border-color: #999;
 }
 
 .front-page .main-feature .content-formatted h1 {
