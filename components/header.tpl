@@ -48,12 +48,10 @@
         {% if editmode or site.has_many_languages? %}
           <nav class="menu-lang inline js-menu-lang">
             <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_code }}" {{ edy_intro_add_lang }}>
-              {% if editmode or flags_state == false %}
-                <span class="lang-title">
-                  {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
-                  <span class="ico-popover-toggle">▼</span>
-                </span>
-              {% endif %}
+              <span class="lang-title">
+                {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
+                <span class="ico-popover-toggle">▼</span>
+              </span>
             </button>
             <div class="menu-lang-popover js-menu-lang-popover js-popover">
               {% include "menu-lang" lang_settings: true %}
