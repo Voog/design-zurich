@@ -5,6 +5,10 @@
   @extend %clearfix;
   @include hyphenate(true);
 
+  &:empty {
+    display: none;
+  }
+
   // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
   h2,
@@ -15,15 +19,21 @@
   p,
   ul,
   ol,
+  dl,
+  table,
   pre,
   code,
-  .edy-positionable-container-center,
+  iframe,
+  table,
+  form,
+  .table-container,
   .edy-positionable-container-left-block,
+  .edy-positionable-container-center-block,
   .edy-positionable-container-right-block,
-  .edy-texteditor-container-wrapper-center,
   .edy-texteditor-container-wrapper-left-block,
-  .edy-texteditor-container-wrapper-right-block {
-
+  .edy-texteditor-container-wrapper-center,
+  .edy-texteditor-container-wrapper-right-block,
+  .edy-positionable-container-maxwidth {
     &:first-child {
       margin-top: 0;
     }
@@ -227,10 +237,17 @@
     font-weight: $font-weight-normal;
     line-height: $line-height-medium;
     text-align: center;
-    margin: 31px 10px;
-    cursor: pointer;
     @include hyphenate(true);
     text-decoration: none;
+
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    .public & {
+      cursor: pointer;
+    }
 
     .site-header & {
       margin: 30px 0;
@@ -249,19 +266,16 @@
 
     &:hover {
       @include transition($transition-std);
+    }
 
-      .dark-background & {
-        border: 2px solid $color-white;
-        @include bg($color-white, 1);
-        @include color($color-black, .71);
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .public & {
+        cursor: default;
+        color: $disabled;
+        border-color: $disabled;
       }
-
-      &,
-      .light-background & {
-        border: 2px solid $color-black;
-        @include bg($color-black);
-        @include color($color-white, 1);
-      }
+      // scss-lint:enable NestingDepth
     }
   }
 }

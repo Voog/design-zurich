@@ -10,9 +10,8 @@ body {
 }
 @media screen and (min-width: 961px) {
   .front-page .flex-container {
-    -webkit-justify-content: var(--header-alignment);
-        -ms-flex-pack: var(--header-alignment);
-            justify-content: var(--header-alignment);
+    -ms-flex-pack: var(--header-alignment);
+        justify-content: var(--header-alignment);
   }
 }
 @media screen and (min-width: 961px) {
@@ -121,9 +120,11 @@ body {
   color: var(--secondary-color-content);
 }
 
-.content .content-formatted {
-  font-size: var(--content-body-font-size);
-  line-height: var(--content-body-line-height);
+@media screen and (min-width: 1021px) {
+  .content .content-formatted {
+    line-height: var(--content-body-line-height);
+    font-size: var(--content-body-font-size);
+  }
 }
 .footer .content-formatted {
   font-size: var(--footer-body-font-size);
@@ -223,38 +224,48 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
-  color: var(--content-button-color);
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
+}
+.common-page .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .content-formatted .custom-btn:not(.custom-btn-disabled) {
+  color: var(--content-button-color);
   background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
-  color: var(--content-button-hover-color);
   text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
+}
+.common-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled), .blog-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled), .post-page .content-formatted .custom-btn:hover:not(.custom-btn-disabled) {
+  color: var(--content-button-hover-color);
   background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
 }
-.dark-background .content-formatted .custom-btn {
-  border-color: var(--main-color-front);
+.front-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
   color: var(--main-color-front);
-}
-.light-background .content-formatted .custom-btn {
-  border-color: var(--secondary-color-front);
-  color: var(--secondary-color-front);
-}
-.dark-background .front-page .content-formatted .custom-btn:hover {
-  color: var(--secondary-color-front);
   border-color: var(--main-color-front);
+}
+.front-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
+  color: var(--secondary-color-front);
   background-color: var(--main-color-front);
 }
-.light-background .front-page .content-formatted .custom-btn:hover {
+.common-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
+  border-color: var(--main-color-front);
   color: var(--main-color-front);
+}
+.front-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
+  color: var(--secondary-color-front);
   border-color: var(--secondary-color-front);
+}
+.front-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled):hover {
+  color: var(--main-color-front);
   background-color: var(--secondary-color-front);
+}
+.common-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled), .blog-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled), .post-page .light-background .content-formatted .custom-btn:not(.custom-btn-disabled) {
+  border-color: var(--secondary-color-front);
+  color: var(--secondary-color-front);
 }
 
 .front-page .content .content-inner .content-formatted {
@@ -266,6 +277,7 @@ body {
   text-transform: var(--focus-area-body-text-transform);
 }
 .front-page .content .content-inner .content-formatted h1 {
+  font-family: var(--secondary-font-family);
   font-size: var(--focus-area-title-font-size);
   line-height: var(--focus-area-title-line-height);
   font-weight: var(--focus-area-title-font-weight);

@@ -207,8 +207,10 @@ body {
 // =============================================================================
 .content-formatted {
   .content & {
-    font-size: var(--content-body-font-size);
-    line-height: var(--content-body-line-height);
+    @include querymin($tablet-1) {
+      line-height: var(--content-body-line-height);
+      font-size: var(--content-body-font-size);
+    }
   }
 
   .footer & {
@@ -334,44 +336,78 @@ body {
     font-size: var(--content-button-font-size);
     font-style: var(--content-button-font-style);
     font-weight: var(--content-button-font-weight);
-    color: var(--content-button-color);
     text-decoration: var(--content-button-text-decoration);
     text-transform: var(--content-button-text-transform);
-    background-color: var(--content-button-background-color);
-    border-color: var(--content-button-color);
+
+    .common-page &,
+    .blog-page &,
+    .post-page & {
+      &:not(.custom-btn-disabled) {
+        color: var(--content-button-color);
+        background-color: var(--content-button-background-color);
+        border-color: var(--content-button-color);
+      }
+    }
 
     &:hover {
       font-style: var(--content-button-hover-font-style);
       font-weight: var(--content-button-hover-font-weight);
-      color: var(--content-button-hover-color);
       text-decoration: var(--content-button-hover-text-decoration);
       text-transform: var(--content-button-hover-text-transform);
-      background-color: var(--content-button-hover-background-color);
-      border-color: var(--content-button-hover-color);
+
+      .common-page &,
+      .blog-page &,
+      .post-page & {
+        &:not(.custom-btn-disabled) {
+          color: var(--content-button-hover-color);
+          background-color: var(--content-button-hover-background-color);
+          border-color: var(--content-button-hover-color);
+        }
+      }
     }
 
     .dark-background & {
-      border-color: var(--main-color-front);
-      color: var(--main-color-front);
+      .front-page & {
+        &:not(.custom-btn-disabled):hover {
+          color: var(--main-color-front);
+          border-color: var(--main-color-front);
+        }
+
+        &:not(.custom-btn-disabled):hover {
+          color: var(--secondary-color-front);
+          background-color: var(--main-color-front);
+        }
+      }
+
+      .common-page &,
+      .blog-page &,
+      .post-page & {
+        &:not(.custom-btn-disabled) {
+          border-color: var(--main-color-front);
+          color: var(--main-color-front);
+        }
+      }
     }
 
     .light-background & {
-      border-color: var(--secondary-color-front);
-      color: var(--secondary-color-front);
-    }
-
-    .front-page & {
-      &:hover {
-        .dark-background & {
+      .front-page & {
+        &:not(.custom-btn-disabled) {
           color: var(--secondary-color-front);
-          border-color: var(--main-color-front);
-          background-color: var(--main-color-front);
+          border-color: var(--secondary-color-front);
         }
 
-        .light-background & {
+        &:not(.custom-btn-disabled):hover {
           color: var(--main-color-front);
-          border-color: var(--secondary-color-front);
           background-color: var(--secondary-color-front);
+        }
+      }
+
+      .common-page &,
+      .blog-page &,
+      .post-page & {
+        &:not(.custom-btn-disabled) {
+          border-color: var(--secondary-color-front);
+          color: var(--secondary-color-front);
         }
       }
     }
@@ -391,6 +427,7 @@ body {
         text-transform: var(--focus-area-body-text-transform);
 
         h1 {
+          font-family: var(--secondary-font-family);
           font-size: var(--focus-area-title-font-size);
           line-height: var(--focus-area-title-line-height);
           font-weight: var(--focus-area-title-font-weight);

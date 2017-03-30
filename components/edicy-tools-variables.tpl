@@ -485,9 +485,9 @@
     {% endif %}
   {% endif %}
 
-  {% comment %}===================================================================
-  || Design editor variables.
-  =============================================================== {% endcomment %}
+  {% comment %}=================================================================
+  | Design editor variables.
+  ============================================================= {% endcomment %}
   {% capture base_font_set %}
     [
       {
@@ -508,11 +508,19 @@
           },
           {
             "title": "Montserrat",
-            "value": "\"Montserrat\", Helvetica, Arial, sans-serif"
+            "value": "\"Montserrat\", sans-serif"
           },
           {
             "title": "Open Sans",
             "value": "\"Open Sans\", sans-serif"
+          },
+          {
+            "title": "PT Sans",
+            "value": "\"PT Sans\", sans-serif"
+          },
+          {
+            "title": "Raleway",
+            "value": "\"Raleway\", sans-serif"
           },
           {
             "title": "Roboto",
@@ -539,6 +547,14 @@
           {
             "title": "Crimson Text",
             "value": "\"Crimson Text\", serif"
+          },
+          {
+            "title": "Georgia",
+            "value": "\"Georgia\", serif"
+          },
+          {
+            "title": "Georgia",
+            "value": "\"Georgia\", serif"
           },
           {
             "title": "Lora",
