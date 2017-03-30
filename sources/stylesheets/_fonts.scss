@@ -27,7 +27,7 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/2fc187");
+@import url('//hello.myfonts.net/count/2fc187');
 
-@include font-face("Avenir", "../assets/2FC187_0_0", 100); // AvenirLTCom-Light
-@include font-face("Avenir", "../assets/2FC187_1_0", 400); // AvenirLTCom-Roman
+@include font-face('Avenir', '../assets/2FC187_0_0', 100); // AvenirLTCom-Light
+@include font-face('Avenir', '../assets/2FC187_1_0', 400); // AvenirLTCom-Roman

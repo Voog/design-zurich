@@ -271,6 +271,7 @@ body {
   text-transform: var(--focus-area-body-text-transform);
 }
 .front-page .content .content-inner .content-formatted h1 {
+  font-family: var(--secondary-font-family);
   font-size: var(--focus-area-title-font-size);
   line-height: var(--focus-area-title-line-height);
   font-weight: var(--focus-area-title-font-weight);
