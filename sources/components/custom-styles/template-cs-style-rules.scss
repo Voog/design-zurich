@@ -176,6 +176,29 @@ body {
 }
 
 // =============================================================================
+// SITE'S LANGUAGE MENU
+// =============================================================================
+.menu-lang {
+  .menu-link {
+    .dark-background & {
+      .front-page & {
+        .language-menu-mode-list & {
+          color: var(--main-color-front);
+        }
+      }
+    }
+
+    .light-background & {
+      .front-page & {
+        .language-menu-mode-list & {
+          color: var(--secondary-color-front);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
 // BLOG LISTING AND ARTICLE
 // =============================================================================
 .post-page .post post-title,

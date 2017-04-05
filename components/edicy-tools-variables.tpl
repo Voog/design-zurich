@@ -6,6 +6,36 @@
     {% assign flags_state = site.data.flags_state %}
   {% endif %}
 
+  {% comment %}Detects language flags visibility setting.{% endcomment %}
+  {% if site.data.settings_language_menu.item_state %}
+    {% if site.data.settings_language_menu.item_state == "names_only" %}
+      {% assign language_flags_mode = "language-flags-disabled" %}
+    {% else %}
+      {% assign language_flags_mode = "language-flags-enabled" %}
+    {% endif %}
+  {% else %}
+    {% comment %}Fallback for older flags toggle button.{% endcomment %}
+    {% if site.data.language_flags_enabled == true %}
+      {% assign language_flags_mode = "language-flags-enabled" %}
+    {% else %}
+      {% assign language_flags_mode = "language-flags-disabled" %}
+    {% endif %}
+  {% endif %}
+
+  {% comment %}Detects language flags visibility setting.{% endcomment %}
+  {% if site.data.settings_language_menu.item_state == "flags_only" %}
+    {% assign language_names_mode = "language-names-disabled" %}
+  {% else %}
+    {% assign language_names_mode = "language-names-enabled" %}
+  {% endif %}
+
+  {% comment %}Detects language menu mode setting.{% endcomment %}
+  {% if site.data.settings_language_menu.type == "list" %}
+    {% assign language_menu_mode = "language-menu-mode-list" %}
+  {% else %}
+    {% assign language_menu_mode = "language-menu-mode-popover" %}
+  {% endif %}
+
   {% comment %}ASSIGN FEATURE 1 SECTION WIDTH{% endcomment %}
   {% assign feature_1_is_wide = page.data.feature_1_is_wide %}
   {% if feature_1_is_wide == true %}

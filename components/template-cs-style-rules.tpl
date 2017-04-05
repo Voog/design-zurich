@@ -106,6 +106,13 @@ body {
   text-transform: var(--menu-sub-hover-text-transform);
 }
 
+.language-menu-mode-list .front-page .dark-background .menu-lang .menu-link {
+  color: var(--main-color-front);
+}
+.language-menu-mode-list .front-page .light-background .menu-lang .menu-link {
+  color: var(--secondary-color-front);
+}
+
 .post-page .post post-title,
 .post .post-title a,
 .blog-pate .post-date,

@@ -115,46 +115,19 @@
   }
 }
 
-.option-btn {
-  @include reset-button;
-  font-family: inherit;
-  font-size: inherit;
-  color: $blue-1;
-
-  &:hover {
-    color: rgba($blue-1, .8);
-  }
-
-  .flags-disabled & {
-
-    .disable-text {
-
-      display: none;
-    }
-  }
-
-  .flags-enabled & {
-
-    .enable-text {
-
-      display: none;
-    }
-  }
-
-  .disable-text,
-  .enable-text {
-
-    &:first-letter {
-
-      text-transform: capitalize;
-    }
-  }
-}
-
 .menu-lang {
+  .front-page & {
+    line-height: 2;
+  }
 
-  .edit-btn {
-    display: block;
+  .menu-item-cms {
+    .language-menu-mode-popover & {
+      display: block;
+    }
+
+    .language-menu-mode-list & {
+      display: inline-block;
+    }
 
     .edy-menu-langadd {
       display: inline-block;
@@ -203,7 +176,7 @@
 
 .menu-main {
 
-  .edit-btn {
+  .menu-item-cms {
     position: relative;
     display: inline-block;
     margin-left: 20px;
@@ -230,9 +203,8 @@
 }
 
 .menu-lang {
-
-  .edit-btn {
-    padding: 5px 10px 4px 0;
+  .menu-item-cms {
+    padding: 5px 10px 4px;
     text-align: right;
 
     .edy-menu-langadd {
@@ -244,15 +216,17 @@
     }
 
     .front-page & {
-      top: 3px;
-      display: block;
+      .language-menu-mode-popover & {
+        top: 3px;
+        display: block;
+      }
     }
   }
 }
 
 .menu-sub {
 
-  .edit-btn {
+  .menu-item-cms {
     display: inline-block;
     margin-left: 0;
   }
