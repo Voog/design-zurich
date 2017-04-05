@@ -63,12 +63,6 @@ body {
   text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
 }
-.language-menu-mode-list .front-page .dark-background .menu-main .menu-link {
-  color: var(--main-color-front);
-}
-.language-menu-mode-list .front-page .light-background .menu-main .menu-link {
-  color: var(--secondary-color-front);
-}
 @media screen and (min-width: 961px) {
   .menu-main .menu-link {
     font-size: var(--menu-main-font-size);
@@ -110,6 +104,13 @@ body {
   color: var(--menu-sub-hover-color);
   text-decoration: var(--menu-sub-hover-text-decoration);
   text-transform: var(--menu-sub-hover-text-transform);
+}
+
+.language-menu-mode-list .front-page .dark-background .menu-lang .menu-link {
+  color: var(--main-color-front);
+}
+.language-menu-mode-list .front-page .light-background .menu-lang .menu-link {
+  color: var(--secondary-color-front);
 }
 
 .post-page .post post-title,
