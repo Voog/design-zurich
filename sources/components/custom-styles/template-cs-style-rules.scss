@@ -466,7 +466,6 @@ body {
   .form_field_textarea,
   .form_field_select {
     font-size: var(--form-field-font-size);
-    color: var(--form-field-color);
     border-color: var(--form-field-color);
     border-width: var(--form-field-border-width);
 
@@ -479,7 +478,6 @@ body {
     }
   }
 
-  .form_field,
   .edy-fe-label {
     color: var(--form-field-color);
   }

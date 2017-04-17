@@ -297,7 +297,6 @@ body {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select {
   font-size: var(--form-field-font-size);
-  color: var(--form-field-color);
   border-color: var(--form-field-color);
   border-width: var(--form-field-border-width);
 }
@@ -311,7 +310,6 @@ body {
 .content-formatted .form_field_select {
   border-color: var(--secondary-color-front);
 }
-.content-formatted .form_field,
 .content-formatted .edy-fe-label {
   color: var(--form-field-color);
 }
