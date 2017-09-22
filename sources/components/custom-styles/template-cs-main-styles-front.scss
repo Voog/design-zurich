@@ -27,7 +27,7 @@
     "featured": true,
     "scope": "global"
   */
-  --main-font-family: $base-font-family;
+  #{--main-font-family}: $base-font-family;
 
   /* VoogStyle
     "pathI18n": ["main_styles"],
@@ -37,7 +37,7 @@
     "featured": true,
     "scope": "global"
   */
-  --secondary-font-family: $font-serif;
+  #{--secondary-font-family}: $font-serif;
 
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
@@ -46,7 +46,7 @@
     "featured": true,
     "scope": "global"
   */
-  --main-color-front: rgba($color-white, 1);
+  #{--main-color-front}: rgba($color-white, 1);
 
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
@@ -55,7 +55,7 @@
     "featured": true,
     "scope": "global"
   */
-  --secondary-color-front: rgba($color-black, 1);
+  #{--secondary-color-front}: rgba($color-black, 1);
 
   // scss-lint:enable Comment, Indentation
 }

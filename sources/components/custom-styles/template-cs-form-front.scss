@@ -27,7 +27,7 @@
     "featured": true,
     "scope": "global"
   */
-  --form-field-border-width: 0px;
+  #{--form-field-border-width}: 0px;
 
   /* VoogStyle
     "pathI18n": ["form"],
@@ -39,7 +39,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-font-size: 14px;
+  #{--form-field-font-size}: 14px;
 
   /* VoogStyle
     "pathI18n": ["form"],
@@ -51,7 +51,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --form-button-padding: 11px;
+  #{--form-button-padding}: 11px;
 
   // scss-lint:enable Comment, Indentation
 }
