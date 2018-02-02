@@ -8,9 +8,9 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "file": "layouts/common_page_two_column.tpl",
+      "layout_name": "page_two_column",
+      "title": "Common page two column"
     },
     {
       "content_type": "page",
@@ -22,9 +22,9 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page_two_column.tpl",
-      "layout_name": "page_two_column",
-      "title": "Common page two column"
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
     },
     {
       "content_type": "blog",
@@ -39,6 +39,34 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-form-front.tpl",
+      "layout_name": "template-cs-form-front",
+      "title": "template-cs-form-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl",
+      "layout_name": "template-meta",
+      "title": "template-meta"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content-content.tpl",
+      "layout_name": "template-cs-content-content",
+      "title": "template-cs-content-content"
     },
     {
       "content_type": "component",
@@ -113,9 +141,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-form-front.tpl",
-      "layout_name": "template-cs-form-front",
-      "title": "template-cs-form-front"
+      "file": "components/template-cs-footer-content.tpl",
+      "layout_name": "template-cs-footer-content",
+      "title": "template-cs-footer-content"
     },
     {
       "content_type": "component",
@@ -249,34 +277,6 @@
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-footer-content.tpl",
-      "layout_name": "template-cs-footer-content",
-      "title": "template-cs-footer-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-meta.tpl",
-      "layout_name": "template-meta",
-      "title": "template-meta"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content-content.tpl",
-      "layout_name": "template-cs-content-content",
-      "title": "template-cs-content-content"
     }
   ],
   "assets": [
