@@ -265,7 +265,7 @@
     }
 
     &:hover {
-      @include transition($transition-std);
+      transition: $transition-std;
     }
 
     &-disabled {
