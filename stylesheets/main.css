@@ -78,8 +78,7 @@ body.search-open {
   clear: both;
 }
 
-.background-image,
-.background-color {
+.background-image, .background-color {
   position: absolute;
   top: 0;
   left: 0;
@@ -112,13 +111,13 @@ body.search-open {
   outline: none;
 }
 
-.main-feature .background-image, .main-feature
-.background-color {
+.main-feature .background-image,
+.main-feature .background-color {
   z-index: -1;
 }
 @media screen and (min-width: 961px) {
-  .main-feature .background-image, .main-feature
-  .background-color {
+  .main-feature .background-image,
+  .main-feature .background-color {
     background-attachment: fixed;
   }
 }
@@ -248,30 +247,20 @@ body.search-open {
 .content-formatted .edy-positionable-container-maxwidth:last-child {
   margin-bottom: 0;
 }
-.light-background .content-formatted, .light-background
-.content-formatted h1, .light-background
-.content-formatted h2, .light-background
-.content-formatted h3, .light-background
-.content-formatted h4, .light-background
-.content-formatted h5, .light-background
-.content-formatted h6, .light-background
-.content-formatted p, .light-background
-.content-formatted ul, .light-background
-.content-formatted ol, .light-background
-.content-formatted table {
+.light-background .content-formatted,
+.light-background .content-formatted h1,
+.light-background .content-formatted h2,
+.light-background .content-formatted h3,
+.light-background .content-formatted h4,
+.light-background .content-formatted h5,
+.light-background .content-formatted h6,
+.light-background .content-formatted p,
+.light-background .content-formatted ul,
+.light-background .content-formatted ol,
+.light-background .content-formatted table {
   color: black;
 }
-.dark-background .content-formatted, .dark-background
-.content-formatted h1, .dark-background
-.content-formatted h2, .dark-background
-.content-formatted h3, .dark-background
-.content-formatted h4, .dark-background
-.content-formatted h5, .dark-background
-.content-formatted h6, .dark-background
-.content-formatted p, .dark-background
-.content-formatted ul, .dark-background
-.content-formatted ol, .dark-background
-.content-formatted table {
+.dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
   color: white;
 }
 .content-formatted h1,
@@ -346,14 +335,13 @@ body.search-open {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.content-formatted pre,
-.content-formatted code {
+.content-formatted pre, .content-formatted code {
   font-size: 14px;
   background-color: #fafafa;
   line-height: 1.2;
 }
-.front-page .content-formatted pre, .front-page
-.content-formatted code {
+.front-page .content-formatted pre,
+.front-page .content-formatted code {
   color: black;
 }
 .content-formatted pre {
@@ -420,7 +408,7 @@ body.search-open {
 .content-formatted .custom-btn {
   display: inline-block;
   background-color: #000;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 9px 21px;
@@ -850,20 +838,16 @@ body.search-open {
   background-color: #000;
   content: '';
 }
-.menu-lang-btn:after,
-.menu-lang .lang-flag:after,
-.menu-lang-mobile .lang-flag:after {
+.menu-lang-btn:after, .menu-lang .lang-flag:after, .menu-lang-mobile .lang-flag:after {
   opacity: 0.95;
   background-repeat: no-repeat;
 }
-.no-svg .menu-lang-btn:after, .no-svg
-.menu-lang .lang-flag:after, .no-svg
-.menu-lang-mobile .lang-flag:after {
+.no-svg .menu-lang-btn:after,
+.no-svg .menu-lang .lang-flag:after,
+.no-svg .menu-lang-mobile .lang-flag:after {
   background-image: url("../images/ico-flags.png");
 }
-.svg .menu-lang-btn:after, .svg
-.menu-lang .lang-flag:after, .svg
-.menu-lang-mobile .lang-flag:after {
+.svg .menu-lang-btn:after, .svg .menu-lang .lang-flag:after, .svg .menu-lang-mobile .lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
 }
 
@@ -2116,8 +2100,8 @@ body.search-open {
     display: block;
   }
 }
-.no-flexbox .blog-page .post-left, .no-flexbox
-.blog-page .post-right {
+.no-flexbox .blog-page .post-left,
+.no-flexbox .blog-page .post-right {
   display: table-cell;
   vertical-align: top;
 }
@@ -2266,8 +2250,7 @@ body.search-open {
   outline: none;
 }
 
-.search-submit,
-.search-btn {
+.search-submit, .search-btn {
   display: inline-block;
   vertical-align: top;
   width: 30px;
@@ -2282,8 +2265,8 @@ body.search-open {
 .search-btn:hover {
   opacity: 0.6;
 }
-.no-svg .search-submit, .no-svg
-.search-btn {
+.no-svg .search-submit,
+.no-svg .search-btn {
   background-image: url("../images/ico-search.png");
 }
 
@@ -2365,19 +2348,17 @@ body.search-open {
   }
 }
 
-.search-open-btn,
-.search-close-btn {
+.search-open-btn, .search-close-btn {
   display: none;
 }
 @media screen and (max-width: 480px) {
-  .search-open-btn,
-  .search-close-btn {
+  .search-open-btn, .search-close-btn {
     position: absolute;
     right: 40px;
     z-index: 40;
   }
-  .no-lang-menu .search-open-btn, .no-lang-menu
-  .search-close-btn {
+  .no-lang-menu .search-open-btn,
+  .no-lang-menu .search-close-btn {
     right: 0;
   }
 }
@@ -2583,8 +2564,8 @@ body.search-open {
 .content-formatted textarea {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-.footer .content-formatted .form_area, .footer
-.content-formatted .form {
+.footer .content-formatted .form_area,
+.footer .content-formatted .form {
   text-align: left;
 }
 .content-formatted .form_field {
@@ -2597,13 +2578,12 @@ body.search-open {
 .content-formatted .form_field:last-child {
   padding-bottom: 0;
 }
-.content-formatted .form_field,
-.content-formatted .edy-fe-label {
+.content-formatted .form_field, .content-formatted .edy-fe-label {
   font-size: 14px;
   color: #1b2124;
 }
-.dark-background .content-formatted .form_field, .dark-background
-.content-formatted .edy-fe-label {
+.dark-background .content-formatted .form_field,
+.dark-background .content-formatted .edy-fe-label {
   color: white;
 }
 .content-formatted .form_field label {
@@ -2621,28 +2601,24 @@ body.search-open {
 .content-formatted .form_field label:before {
   display: block;
 }
-.content-formatted .form_field .edy-fe-label,
-.content-formatted .form_field .form_field_label {
+.content-formatted .form_field .edy-fe-label, .content-formatted .form_field .form_field_label {
   padding-left: 0;
   font-weight: 600;
 }
-.dark-background .content-formatted .form_field .edy-fe-label, .dark-background
-.content-formatted .form_field .form_field_label {
+.dark-background .content-formatted .form_field .edy-fe-label,
+.dark-background .content-formatted .form_field .form_field_label {
   color: white;
 }
-.content-formatted .form_field_textfield,
-.content-formatted .form_field_textarea,
-.content-formatted .form_field_select,
-.content-formatted .form_submit input {
+.content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select, .content-formatted .form_submit input {
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
   border-radius: 0;
 }
-.light-background .content-formatted .form_field_textfield, .light-background
-.content-formatted .form_field_textarea, .light-background
-.content-formatted .form_field_select, .light-background
-.content-formatted .form_submit input {
+.light-background .content-formatted .form_field_textfield,
+.light-background .content-formatted .form_field_textarea,
+.light-background .content-formatted .form_field_select,
+.light-background .content-formatted .form_submit input {
   color: white;
 }
 .content-formatted .form_field_textfield,
@@ -2651,37 +2627,26 @@ body.search-open {
 .content-formatted .form_field_file {
   max-width: 100%;
 }
-.content-formatted .form_field_textfield,
-.content-formatted .form_field_textarea,
-.content-formatted .form_field_select,
-.content-formatted .form_submit input {
+.content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select, .content-formatted .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
           box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
 }
-.light-background .content-formatted .form_field_textfield, .light-background
-.content-formatted .form_field_textarea, .light-background
-.content-formatted .form_field_select, .light-background
-.content-formatted .form_submit input {
+.light-background .content-formatted .form_field_textfield,
+.light-background .content-formatted .form_field_textarea,
+.light-background .content-formatted .form_field_select,
+.light-background .content-formatted .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
           box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
 }
-.feature-section:not(.section-with-padding) .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding)
-.content-formatted .form_field_textarea, .feature-section:not(.section-with-padding)
-.content-formatted .form_field_select, .feature-section:not(.section-with-padding)
-.content-formatted .form_submit input {
+.feature-section:not(.section-with-padding) .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding) .content-formatted .form_field_textarea, .feature-section:not(.section-with-padding) .content-formatted .form_field_select, .feature-section:not(.section-with-padding) .content-formatted .form_submit input {
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1) ;
           box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1) ;
 }
-.feature-section:not(.section-with-padding) .light-background .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding) .light-background
-.content-formatted .form_field_textarea, .feature-section:not(.section-with-padding) .light-background
-.content-formatted .form_field_select, .feature-section:not(.section-with-padding) .light-background
-.content-formatted .form_submit input {
+.feature-section:not(.section-with-padding) .light-background .content-formatted .form_field_textfield, .feature-section:not(.section-with-padding) .light-background .content-formatted .form_field_textarea, .feature-section:not(.section-with-padding) .light-background .content-formatted .form_field_select, .feature-section:not(.section-with-padding) .light-background .content-formatted .form_submit input {
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2) ;
           box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2) ;
 }
-.content-formatted .form_field_textfield,
-.content-formatted .form_field_textarea,
-.content-formatted .form_field_select {
+.content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
   width: 280px;
   border-width: 0;
   border-style: solid;
@@ -2693,9 +2658,7 @@ body.search-open {
           box-sizing: border-box;
 }
 @media screen and (max-width: 420px) {
-  .content-formatted .form_field_textfield,
-  .content-formatted .form_field_textarea,
-  .content-formatted .form_field_select {
+  .content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
     width: 100%;
   }
 }
@@ -2704,14 +2667,12 @@ body.search-open {
 .content-formatted .form_field_select:focus {
   outline: none;
 }
-.light-background .content-formatted .form_field_textfield, .light-background
-.content-formatted .form_field_textarea, .light-background
-.content-formatted .form_field_select {
+.light-background .content-formatted .form_field_textfield,
+.light-background .content-formatted .form_field_textarea,
+.light-background .content-formatted .form_field_select {
   background-color: #1b2124;
 }
-.footer .content-formatted .form_field_textfield, .footer
-.content-formatted .form_field_textarea, .footer
-.content-formatted .form_field_select {
+.footer .content-formatted .form_field_textfield, .footer .content-formatted .form_field_textarea, .footer .content-formatted .form_field_select {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -2739,8 +2700,7 @@ body.search-open {
   visibility: hidden;
   margin-bottom: 8px;
 }
-.content-formatted .form_field_checkbox + .form_control_indicator,
-.content-formatted .form_field_radio + .form_control_indicator {
+.content-formatted .form_field_checkbox + .form_control_indicator, .content-formatted .form_field_radio + .form_control_indicator {
   position: absolute;
   top: 1px;
   left: 0;
@@ -2751,8 +2711,8 @@ body.search-open {
   -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) ;
           box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) ;
 }
-.light-background .content-formatted .form_field_checkbox + .form_control_indicator, .light-background
-.content-formatted .form_field_radio + .form_control_indicator {
+.light-background .content-formatted .form_field_checkbox + .form_control_indicator,
+.light-background .content-formatted .form_field_radio + .form_control_indicator {
   background-color: black;
 }
 .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
