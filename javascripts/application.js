@@ -554,7 +554,7 @@ MMCQ = (function() {
         resultsContainer: $('.js-voog-search-modal-inner').get(0),
         // Defines if modal should close on sideclick.
         sideclick: true,
-        // Mobile checkpoint 
+        // Mobile checkpoint
         mobileModeWidth: 480,
         // Updates results on every keypress.
         updateOnKeypress: true,
@@ -1109,7 +1109,7 @@ MMCQ = (function() {
     bgPickerPreview: bgPickerPreview,
     bgPickerCommit: bgPickerCommit,
     bgPickerColorScheme: bgPickerColorScheme,
-    bindSiteSearch: bindSiteSearch 
+    bindSiteSearch: bindSiteSearch
   });
 
   // Initiates site wide functions.
