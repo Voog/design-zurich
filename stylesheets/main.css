@@ -1378,9 +1378,6 @@ body.search-open {
 }
 .flexbox .header-container {
   display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1952,6 +1949,10 @@ body.search-open {
 }
 
 /* BLOG & BLOG ARTICLE */
+.post-intro-content {
+  padding-bottom: 20px;
+}
+
 .post .post-link {
   display: inline-block;
   margin-top: 12px;
@@ -2088,9 +2089,6 @@ body.search-open {
 }
 .flexbox .blog-page .post {
   display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2835,16 +2833,16 @@ body.search-open {
   margin: 0 3px 5px 0;
   background: transparent;
   border-radius: 50%;
-  -webkit-animation: feedback-loading 0.8s linear infinite;
-  animation: feedback-loading 0.8s linear infinite;
+  -webkit-animation: feedback-loading .8s linear infinite;
+          animation: feedback-loading .8s linear infinite;
 }
 .content-formatted .feedback-loading span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 .content-formatted .feedback-loading span:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
