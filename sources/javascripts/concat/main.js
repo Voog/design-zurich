@@ -16,7 +16,7 @@
         // Mobile checkpoint
         mobileModeWidth: 480,
         // Updates results on every keypress.
-        updateOnKeypress: false,
+        updateOnKeypress: true,
         // String for feedback if no results are found.
         noResults: noResultsString
       });
@@ -37,12 +37,13 @@
         // Mobile checkpoint
         mobileModeWidth: 480,
         // Updates results on every keypress.
-        updateOnKeypress: false,
+        updateOnKeypress: true,
         // String for feedback if no results are found.
         noResults: noResultsString
       });
     }
   };
+
   var editmode = $('html').hasClass('editmode');
 
   // Function to limit the rate at which a function can fire.
