@@ -2966,6 +2966,9 @@ body.search-open {
   border: 1px solid #000;
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
+.footer .signout-btn-pad {
+  padding-top: 25px;
+}
 
 .signout-btn-wrap {
   position: fixed;
