@@ -117,7 +117,7 @@
     </footer>
 
   </div>
-
+  {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" %}
 
