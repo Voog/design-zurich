@@ -292,6 +292,7 @@
 
   &.no-content.search-results-active {
     text-align: center;
+    white-space: initial;
   }
 
   @include query($mobile-1) {
