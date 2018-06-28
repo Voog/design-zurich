@@ -11,6 +11,8 @@ $third-color: #9C9E9E;
 $color-black: #000;
 $color-white: #fff;
 
+$color-science-blue: #06b;
+
 $red: #CC0000;
 $green: #60a740;
 $blue-1: #0066bb;
@@ -55,11 +57,15 @@ $desktop-1: 1366px;
 $tablet-1: 1020px;
 $tablet-2: 960px;
 $tablet-3: 840px;
+$tablet: 768px;
 $tablet-4: 760px;
 $tablet-5: 600px;
 
+$mobile: 640px;
+$break-small: 500px;
 $mobile-1: 480px;
 $mobile-2: 420px;
+$nano: 320px;
 
 // Reusable values
 $search-height-1: 30px;

@@ -8,6 +8,13 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/common_page_two_column.tpl",
       "layout_name": "page_two_column",
       "title": "Common page two column"
@@ -27,6 +34,13 @@
       "title": "Common page"
     },
     {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
+    },
+    {
       "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
@@ -43,9 +57,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-form-front.tpl",
-      "layout_name": "template-cs-form-front",
-      "title": "template-cs-form-front"
+      "file": "components/product-list-loop.tpl",
+      "layout_name": "product-list-loop",
+      "title": "product-list-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-footer-content.tpl",
+      "layout_name": "template-cs-footer-content",
+      "title": "template-cs-footer-content"
     },
     {
       "content_type": "component",
@@ -113,9 +134,23 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/product-list-item.tpl",
+      "layout_name": "product-list-item",
+      "title": "product-list-item"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-content-front.tpl",
       "layout_name": "template-cs-content-front",
       "title": "template-cs-content-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/submenu-for-current.tpl",
+      "layout_name": "submenu-for-current",
+      "title": "submenu-for-current"
     },
     {
       "content_type": "component",
@@ -148,9 +183,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-footer-content.tpl",
-      "layout_name": "template-cs-footer-content",
-      "title": "template-cs-footer-content"
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-form-front.tpl",
+      "layout_name": "template-cs-form-front",
+      "title": "template-cs-form-front"
     },
     {
       "content_type": "component",
@@ -197,9 +239,23 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/menu-breadcrumbs-buttons-loop.tpl",
+      "layout_name": "menu-breadcrumbs-buttons-loop",
+      "title": "menu-breadcrumbs-buttons-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/header.tpl",
       "layout_name": "header",
       "title": "header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl",
+      "layout_name": "template-variables",
+      "title": "template-variables"
     },
     {
       "content_type": "component",
@@ -263,6 +319,27 @@
       "file": "components/template-cs-focus-area-front.tpl",
       "layout_name": "template-cs-focus-area-front",
       "title": "template-cs-focus-area-front"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-svg-spritesheet.tpl",
+      "layout_name": "template-svg-spritesheet",
+      "title": "template-svg-spritesheet"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs.tpl",
+      "layout_name": "menu-breadcrumbs",
+      "title": "menu-breadcrumbs"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-items-loop.tpl",
+      "layout_name": "menu-breadcrumbs-items-loop",
+      "title": "menu-breadcrumbs-items-loop"
     },
     {
       "content_type": "component",
