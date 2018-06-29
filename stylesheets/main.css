@@ -594,6 +594,9 @@ body.search-open {
   vertical-align: middle;
   font-size: 14px;
 }
+.menu-item.is-hidden {
+  display: none;
+}
 
 .menu-main {
   display: inline-block;
