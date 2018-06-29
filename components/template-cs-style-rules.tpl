@@ -114,6 +114,16 @@ body {
   text-transform: var(--menu-sub-hover-text-transform);
 }
 
+.menu-horizontal.menu-breadcrumbs .menu-item a {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item a:hover {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .current.menu-item a {
+  color: var(--menu-sub-color);
+}
+
 .language-menu-mode-list .front-page .dark-background .menu-lang .menu-link {
   color: var(--main-color-front);
 }

@@ -20,12 +20,10 @@
       padding-left: 0;
 
       a {
-        color: #000;
         opacity: .43;
       }
 
       a:hover {
-        color: #000;
         opacity: 1;
       }
     }
@@ -33,7 +31,6 @@
     .current {
       &.menu-item {
         a {
-          color: #000;
           opacity: 1;
         }
       }
