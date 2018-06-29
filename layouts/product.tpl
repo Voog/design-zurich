@@ -30,7 +30,9 @@
 <body class="common-page item-page js-bgpicker-body-image">
   <div class="container js-container">
     {% include "header" %}
-    {% include "menu-level-2" %}
+    {% if page.level != 0 %}
+      {% include "submenu-for-current" exclude_products: true %}
+    {% endif %}
     {% include "template-svg-spritesheet" %}
 
     <main class="content" role="main">
@@ -83,7 +85,7 @@
 
     {% include "footer" %}
   </div>
-  
+
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" items_page: true %}

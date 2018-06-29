@@ -8,7 +8,7 @@
 <body class="common-page js-bgpicker-body-image">
   <div class="container js-container">
     {% include "header" %}
-    {% include "menu-level-2" %}
+    {% include "menu-level-2" exclude_products: true %}
 
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">

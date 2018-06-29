@@ -10,8 +10,10 @@
 <body class="common-page item-list-page js-bgpicker-body-image">
   <div class="container js-container">
     {% include "header" %}
-    {% include "menu-level-2" %}
     {% include "template-svg-spritesheet" %}
+    {% if page.level != 0 %}
+      {% include "submenu-for-current" exclude_products: true %}
+    {% endif %}
 
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
@@ -34,7 +36,7 @@
 
     {% include "footer" %}
   </div>
-  
+
   {% include "site-signout" %}
   {% include "javascripts" %}
   {% include "edicy-tools" items_page: true %}
