@@ -34,19 +34,23 @@
       {% if item.selected? and page.level == page_lvl %}
         {% if editmode or item.children? %}
           {% if item.layout_title == 'Product' or item.layout_title == 'Product list' %}
-            <ul class="menu">
-              {% for child in item.visible_children %}
-                {% if exclude_products == true and child.layout_title != 'Product' and child.layout_title != "Product list" %}
-                  <li class="menu-item">
-                    <a href="{{child.url}}" class="menu-link{% if child.selected? %} active{% endif %}{% unless child.translated? %} untranslated fci-editor-menuadd{% endunless %}">{{child.title}}</a>
-                  </li>
-                  {% elsif exclude_products != true %}
-                  <li class="menu-item">
-                    <a href="{{child.url}}" class="menu-link{% if child.selected? %} active{% endif %}{% unless child.translated? %} untranslated fci-editor-menuadd{% endunless %}">{{child.title}}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
+            <section class="content-topbar">
+              <nav class="menu-sub">
+                <ul class="menu sss">
+                  {% for child in item.visible_children %}
+                    {% if exclude_products == true and child.layout_title != 'Product' and child.layout_title != "Product list" %}
+                      <li class="menu-item">
+                        <a href="{{child.url}}" class="menu-link{% if child.selected? %} active{% endif %}{% unless child.translated? %} untranslated fci-editor-menuadd{% endunless %}">{{child.title}}</a>
+                      </li>
+                      {% elsif exclude_products != true %}
+                      <li class="menu-item">
+                        <a href="{{child.url}}" class="menu-link{% if child.selected? %} active{% endif %}{% unless child.translated? %} untranslated fci-editor-menuadd{% endunless %}">{{child.title}}</a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </nav>
+            </section>
           {% endif %}
         {% endif %}
       {% endif %}
