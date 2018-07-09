@@ -595,7 +595,7 @@ body.search-open {
   font-size: 14px;
 }
 .menu-item.is-hidden {
-  display: none;
+  display: none !important;
 }
 
 .menu-main {

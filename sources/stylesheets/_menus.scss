@@ -72,7 +72,7 @@
     font-size: 14px;
 
     &.is-hidden {
-      display: none;
+      display: none !important;
     }
   }
 }
