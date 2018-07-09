@@ -3349,6 +3349,7 @@ body.search-open {
 .menu-horizontal .menu-separator {
   opacity: .36;
   font-size: 12px;
+  vertical-align: middle;
 }
 .menu-horizontal .menu-separator:first-child {
   display: none;
