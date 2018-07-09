@@ -18,6 +18,8 @@
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
         <section class="content-body content-formatted" {{ edy_intro_edit_text }}>
+          <div class="content-formatted intro-content" data-search-indexing-allowed="true">{% content %}</div>
+
           {% include "menu-breadcrumbs" %}
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}
