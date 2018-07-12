@@ -37,9 +37,9 @@
 
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
-        <section class="content-body content-formatted" {{ edy_intro_edit_text }}>
+        <section class="content-body" {{ edy_intro_edit_text }}>
         {% include "menu-breadcrumbs" %}
-        
+
           <div class="items-body">
             <div class="content-illustrations">
               {% if editmode %}
