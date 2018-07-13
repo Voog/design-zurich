@@ -529,6 +529,9 @@ body.search-open {
 }
 .content-formatted .edy-buy-button-variants .form_field_select {
   width: initial;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .menu-btn {

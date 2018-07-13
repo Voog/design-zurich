@@ -341,6 +341,9 @@ body {
 .content-formatted .form_field_select {
   border-color: var(--secondary-color-front);
 }
+.content-formatted .edy-buy-button-variants .form_field_label {
+  color: var(--form-field-color);
+}
 .content-formatted .edy-fe-label {
   color: var(--form-field-color);
 }

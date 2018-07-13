@@ -507,6 +507,13 @@ body {
     }
   }
 
+  .edy-buy-button-variants {
+    .form_field_label,
+    .form_field_select {
+      color: var(--form-field-color);
+    }
+  }
+
   .edy-fe-label {
     color: var(--form-field-color);
   }
