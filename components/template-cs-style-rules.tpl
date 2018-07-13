@@ -114,6 +114,9 @@ body {
   text-transform: var(--menu-sub-hover-text-transform);
 }
 
+.menu-horizontal.menu-breadcrumbs .menu-separator {
+  color: var(--menu-sub-color);
+}
 .menu-horizontal.menu-breadcrumbs .menu-item a {
   color: var(--menu-sub-color);
 }

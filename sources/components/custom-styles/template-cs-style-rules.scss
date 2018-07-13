@@ -180,6 +180,10 @@ body {
 // =============================================================================
 .menu-horizontal {
   &.menu-breadcrumbs {
+    .menu-separator {
+      color: var(--menu-sub-color);
+    }
+
     .menu-item {
       a {
         color: var(--menu-sub-color);
