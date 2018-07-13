@@ -1,6 +1,10 @@
 .content-item-box {
   color: rgba($color-black, .8);
 
+  &:hover {
+    text-decoration: none !important;
+  }
+
   .item-list-page & {
     padding-top: 15px;
     padding-bottom: 15px;

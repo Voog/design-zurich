@@ -18,6 +18,8 @@
 .feature-section .voog-padding-switcher {
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
   transition: 500ms;
 }
 .feature-section .voog-bg-picker-btn.open,
@@ -37,11 +39,15 @@
 .feature-section:hover .voog-padding-switcher {
   visibility: visible;
   opacity: .3;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
   transition: 500ms;
 }
 .feature-section:hover .voog-bg-picker-btn:hover,
 .feature-section:hover .voog-padding-switcher:hover {
   opacity: 1;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
   transition: 500ms;
 }
 
@@ -85,9 +91,13 @@
 }
 
 .feature-section {
+  -webkit-transition: padding 500ms;
+  -o-transition: padding 500ms;
   transition: padding 500ms;
 }
 .feature-section.section-with-padding {
+  -webkit-transition: padding 500ms;
+  -o-transition: padding 500ms;
   transition: padding 500ms;
 }
 .feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
