@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 {% include "edicy-tools-variables" %}
+{% include "template-variables" %}
+
 <html class="{% if editmode %}editmode{% else %}public{% endif %} {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" content_page: true %}
@@ -9,7 +11,7 @@
 
   <div class="container js-container">
     {% include "header" %}
-    {% include "menu-level-2" %}
+    {% include "menu-level-2" exclude_products: true %}
 
     {% capture content_default_html %}{% unless editmode %}{% content %}{% endunless %}{% endcapture %}
     {% capture content_default_size %}{{ content_default_html | size | minus : 1 }}{% endcapture %}

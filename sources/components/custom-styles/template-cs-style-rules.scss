@@ -176,6 +176,35 @@ body {
 }
 
 // =============================================================================
+// BREADCRUMBS MENU
+// =============================================================================
+.menu-horizontal {
+  &.menu-breadcrumbs {
+    .menu-separator {
+      color: var(--menu-sub-color);
+    }
+
+    .menu-item {
+      a {
+        color: var(--menu-sub-color);
+
+        &:hover {
+          color: var(--menu-sub-color);
+        }
+      }
+    }
+
+    .current {
+      &.menu-item {
+        a {
+          color: var(--menu-sub-color);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
 // SITE'S LANGUAGE MENU
 // =============================================================================
 .menu-lang {
@@ -475,6 +504,13 @@ body {
 
     .light-background & {
       border-color: var(--secondary-color-front);
+    }
+  }
+
+  .edy-buy-button-variants {
+    .form_field_label,
+    .form_field_select {
+      color: var(--form-field-color);
     }
   }
 

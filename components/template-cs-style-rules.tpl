@@ -114,6 +114,19 @@ body {
   text-transform: var(--menu-sub-hover-text-transform);
 }
 
+.menu-horizontal.menu-breadcrumbs .menu-separator {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item a {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item a:hover {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .current.menu-item a {
+  color: var(--menu-sub-color);
+}
+
 .language-menu-mode-list .front-page .dark-background .menu-lang .menu-link {
   color: var(--main-color-front);
 }
@@ -223,8 +236,8 @@ body {
   text-transform: var(--content-link-hover-text-transform);
   color: var(--content-link-hover-color);
 }
-.front-page .content-formatted pre,
-.front-page .content-formatted code {
+.front-page .content-formatted pre, .front-page
+.content-formatted code {
   color: var(--secondary-color-front);
 }
 .content-formatted table th,
@@ -311,18 +324,25 @@ body {
   line-height: var(--content-body-line-height);
 }
 
-.content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select {
   font-size: var(--form-field-font-size);
   border-color: var(--form-field-color);
   border-width: var(--form-field-border-width);
 }
-.dark-background .content-formatted .form_field_textfield,
-.dark-background .content-formatted .form_field_textarea,
-.dark-background .content-formatted .form_field_select {
+.dark-background .content-formatted .form_field_textfield, .dark-background
+.content-formatted .form_field_textarea, .dark-background
+.content-formatted .form_field_select {
   border-color: var(--main-color-front);
 }
-.light-background .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textarea, .light-background .content-formatted .form_field_select {
+.light-background .content-formatted .form_field_textfield, .light-background
+.content-formatted .form_field_textarea, .light-background
+.content-formatted .form_field_select {
   border-color: var(--secondary-color-front);
+}
+.content-formatted .edy-buy-button-variants .form_field_label {
+  color: var(--form-field-color);
 }
 .content-formatted .edy-fe-label {
   color: var(--form-field-color);
