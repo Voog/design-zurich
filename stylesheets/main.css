@@ -3269,6 +3269,8 @@ body.search-open {
 }
 .item-top .top-inner .item-placeholder {
   padding: .5em;
+  color: initial;
+  text-transform: none;
 }
 .item-top .image-drop-area {
   background-position: center !important;
