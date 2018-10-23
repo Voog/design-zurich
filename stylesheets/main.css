@@ -1331,11 +1331,6 @@ body.search-open {
   content: '';
 }
 
-[data-lang-code^="pt_PT"]:after {
-  background-position: -63px 0;
-  content: '';
-}
-
 .tags-title {
   display: inline-block;
   font-size: 14px;
