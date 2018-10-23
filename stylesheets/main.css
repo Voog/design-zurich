@@ -1331,6 +1331,11 @@ body.search-open {
   content: '';
 }
 
+[data-lang-code^="fr_CA"]:after {
+  background-position: -105px -60px;
+  content: '';
+}
+
 .tags-title {
   display: inline-block;
   font-size: 14px;
