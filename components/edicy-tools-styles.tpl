@@ -12,8 +12,6 @@
           .main-feature .background-image {
             background-image: url("{{ imageSize.url }}");
           }
-        {% elsif imageSize.url contains "_block" %}
-          {% break %}
         {% else %}
           @media screen and (max-width: {{ imageSize.width }}px) {
             .main-feature .background-image {
