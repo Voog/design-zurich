@@ -11,17 +11,17 @@
   */
   --content-button-padding: 21px;
   /* VoogStyle
-  "pathI18n": ["button", "normal"],
-  "titleI18n": "size",
-  "editor": "rangePicker",
-  "min": 8,
-  "max": 100,
-  "unit": "px",
-  "featured": true,
-  "scope": "global",
-  "boundVariables": [
-  "--content-button-hover-font-size"
-  ]
+    "pathI18n": ["button", "normal"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "featured": true,
+    "scope": "global",
+    "boundVariables": [
+      "--content-button-hover-font-size"
+    ]
   */
   --content-button-font-size: 15px;
   /* VoogStyle

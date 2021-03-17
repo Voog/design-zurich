@@ -25,10 +25,10 @@
   */
   --header-alignment: center;
   /* VoogStyle
-   "pathI18n": ["header"],
-   "titleI18n": "background_color",
-   "editor": "colorPicker",
-   "scope": "global"
+    "pathI18n": ["header"],
+    "titleI18n": "background_color",
+    "editor": "colorPicker",
+    "scope": "global"
   */
   --header-background-color: transparent;
   /* VoogStyle
