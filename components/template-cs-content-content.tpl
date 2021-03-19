@@ -157,7 +157,7 @@
     },
     "icon": "underline",
     "scope": "global"
-   */
+  */
   --menu-sub-active-text-decoration: none;
   /* VoogStyle
     "pathI18n": ["content", "sub_menu", "normal"],
