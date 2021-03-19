@@ -11,8 +11,8 @@
 // =============================================================================
 // Modules
 // =============================================================================
-@import '../../stylesheets/modules/mixins';
-@import '../../stylesheets/modules/variables';
+@import "../../stylesheets/modules/mixins";
+@import "../../stylesheets/modules/variables";
 
 // =============================================================================
 // DEFAULT STYLESHEET OVERRIDE STYLES
@@ -22,21 +22,20 @@ body {
   color: var(--content-body-text-color);
 }
 
-
-
 // =============================================================================
 // HEADER BACKGROUND COLOR
 // =============================================================================
 @include querymin($tablet-2) {
-.front-page .header-container   {
-  background-color: var(--header-background-color);}
+  .front-page .header-container {
+    background-color: var(--header-background-color);
+  }
 }
 
 @include querymin($tablet-2) {
-.front-page .flex-container {
-  justify-content: var(--header-alignment);}
+  .front-page .flex-container {
+    justify-content: var(--header-alignment);
+  }
 }
-
 
 // =============================================================================
 // NAVIGATION MENUS
@@ -87,7 +86,8 @@ body {
 // SITE HEADER
 // =============================================================================
 .header-title {
-  &, & .header-link {
+  &,
+  & .header-link {
     font-size: var(--header-body-font-size);
     font-style: var(--header-body-font-style);
     font-weight: var(--header-body-font-weight);
@@ -259,7 +259,17 @@ body {
   }
 
   // Colors for editable content area elements with editable background.
-  &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table {
     .light-background & {
       color: var(--secondary-color-front);
     }

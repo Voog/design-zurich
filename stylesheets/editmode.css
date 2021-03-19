@@ -5,6 +5,7 @@
 .content-right .edy-empty-bordered {
   padding: 251px 40px 252px;
 }
+
 .content-right .edy-texteditor-view {
   min-height: 525px;
 }
@@ -22,19 +23,23 @@
   -o-transition: 500ms;
   transition: 500ms;
 }
+
 .feature-section .voog-bg-picker-btn.open,
 .feature-section .voog-padding-switcher.open {
   visibility: visible;
   opacity: 1;
 }
+
 .feature-section .voog-bg-picker-btn {
   top: 0;
   left: 0;
 }
+
 .feature-section .voog-padding-switcher {
   top: 0;
   right: 0;
 }
+
 .feature-section:hover .voog-bg-picker-btn,
 .feature-section:hover .voog-padding-switcher {
   visibility: visible;
@@ -43,6 +48,7 @@
   -o-transition: 500ms;
   transition: 500ms;
 }
+
 .feature-section:hover .voog-bg-picker-btn:hover,
 .feature-section:hover .voog-padding-switcher:hover {
   opacity: 1;
@@ -65,9 +71,11 @@
   background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
   border-radius: 100%;
 }
+
 .voog-padding-switcher:focus {
   outline: none;
 }
+
 .voog-padding-switcher::-moz-focus-inner {
   padding: 0;
   border: none;
@@ -76,14 +84,17 @@
 .front-page {
   margin-bottom: 40px;
 }
+
 .front-page.edy-bar-open {
   margin-bottom: 150px;
 }
+
 @media screen and (max-width: 600px) {
   .front-page.edy-bar-open {
     margin-bottom: 125px;
   }
 }
+
 @media screen and (max-width: 960px) {
   .front-page .main-feature .voog-bg-picker-btn {
     top: 80px;
@@ -95,11 +106,13 @@
   -o-transition: padding 500ms;
   transition: padding 500ms;
 }
+
 .feature-section.section-with-padding {
   -webkit-transition: padding 500ms;
   -o-transition: padding 500ms;
   transition: padding 500ms;
 }
+
 .feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
 }
@@ -107,12 +120,15 @@
 .front-page .menu-lang {
   line-height: 2;
 }
+
 .language-menu-mode-popover .menu-lang .menu-item-cms {
   display: block;
 }
+
 .language-menu-mode-list .menu-lang .menu-item-cms {
   display: inline-block;
 }
+
 .menu-lang .menu-item-cms .edy-menu-langadd {
   display: inline-block;
   padding: 0;
@@ -129,12 +145,15 @@
 .blog-page .edy-site-menu-add {
   margin-left: 10px;
 }
+
 @media screen and (max-width: 960px) {
   .blog-page .edy-site-menu-add {
     margin-left: 0;
   }
 }
-.blog-page .post:first-child, .editmode .blog-page .post:nth-child(2) {
+
+.blog-page .post:first-child,
+.editmode .blog-page .post:nth-child(2) {
   margin-top: 0;
 }
 
@@ -148,6 +167,7 @@
   display: inline-block;
   margin-left: 20px;
 }
+
 @media screen and (max-width: 960px) {
   .menu-main .menu-item-cms {
     position: static;
@@ -171,14 +191,17 @@
   padding: 5px 10px 4px;
   text-align: right;
 }
+
 .menu-lang .menu-item-cms .edy-menu-langadd {
   margin: 7px 20px;
 }
+
 @media screen and (max-width: 960px) {
   .menu-lang .menu-item-cms .edy-menu-langadd {
     margin: 0;
   }
 }
+
 .language-menu-mode-popover .front-page .menu-lang .menu-item-cms {
   top: 3px;
   display: block;
