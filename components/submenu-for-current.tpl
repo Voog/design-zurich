@@ -13,7 +13,7 @@
           {% if page.menuitem.hidden_children.size > 0 %}
             <li class="edy-btn">{% menubtn page.menuitem.hidden_children %}</li>
           {% endif %}
-          {% include 'add-page-button', _menuItem: page, _wrapperClassName: "edy-btn" %}
+          <li class="edy-btn">{% menuadd parent="page"%}</li>
         {% endif %}
       </ul>
     </nav>
