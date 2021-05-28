@@ -30,7 +30,11 @@
     {% endfor %}
   {%- endif -%}
 
-  {%- if editmode and page.layout_title == product_list_layout -%}
-      {% include 'add-page-button' _menuItem: page, _wrapperClassName: "menu-item menu-item-cms" %}
+  {%- if editmode and page.layout_title != product_layout -%}
+    {%- assign add_product_label = 'add_product' | lce | escape_once -%}
+    {%- assign add_product_title = 'add_product_page' | lce | escape_once -%}
+    <li class="menu-item menu-item-cms">
+      {% menuadd parent=page label=add_product_label title=add_product_title layout_title=product_layout | lce %}
+    </li>
   {%- endif -%}
 </ul>
