@@ -1,5 +1,3 @@
-{%- assign hasChildren = false -%}
-
 {%- capture lvl2 -%}
   {% for level2 in page.menuitem.visible_children %}
     {% if level2.layout_title != product_layout and level2.layout_title != product_list_layout %}
@@ -17,7 +15,7 @@
   {% endif %}
 {%- endcapture -%}
 
-{% if editmode or hasChildren  %}
+{% if lvl2 != blank %}
   <section class="content-topbar">
     <nav class="menu-sub">
       <ul class="menu">
