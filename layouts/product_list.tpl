@@ -12,7 +12,7 @@
     {% include "header" %}
     {% include "template-svg-spritesheet" %}
     {% if page.level != 0 %}
-      {% include "submenu-for-current" exclude_products: true %}
+      {% include "submenu-for-current" %}
     {% endif %}
 
     <main class="content" role="main">

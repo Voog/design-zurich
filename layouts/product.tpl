@@ -31,7 +31,7 @@
   <div class="container js-container">
     {% include "header" %}
     {% if page.level != 0 %}
-      {% include "submenu-for-current" exclude_products: true %}
+      {% include "submenu-for-current" %}
     {% endif %}
     {% include "template-svg-spritesheet" %}
 

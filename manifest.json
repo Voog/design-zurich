@@ -8,13 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/common_page_two_column.tpl",
       "layout_name": "page_two_column",
       "title": "Common page two column"
@@ -29,6 +22,13 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/common_page.tpl",
       "layout_name": "page_default",
       "title": "Common page"
@@ -36,9 +36,9 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
     },
     {
       "content_type": "blog",
@@ -53,48 +53,6 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-list-loop.tpl",
-      "layout_name": "product-list-loop",
-      "title": "product-list-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-footer-content.tpl",
-      "layout_name": "template-cs-footer-content",
-      "title": "template-cs-footer-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-meta.tpl",
-      "layout_name": "template-meta",
-      "title": "template-meta"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/site-signout.tpl",
-      "layout_name": "site-signout",
-      "title": "site-signout"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-content-content.tpl",
-      "layout_name": "template-cs-content-content",
-      "title": "template-cs-content-content"
     },
     {
       "content_type": "component",
@@ -183,9 +141,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-level-1-link.tpl",
-      "layout_name": "menu-level-1-link",
-      "title": "menu-level-1-link"
+      "file": "components/product-list-loop.tpl",
+      "layout_name": "product-list-loop",
+      "title": "product-list-loop"
     },
     {
       "content_type": "component",
@@ -235,13 +193,6 @@
       "file": "components/javascripts.tpl",
       "layout_name": "javascripts",
       "title": "javascripts"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-breadcrumbs-buttons-loop.tpl",
-      "layout_name": "menu-breadcrumbs-buttons-loop",
-      "title": "menu-breadcrumbs-buttons-loop"
     },
     {
       "content_type": "component",
@@ -337,13 +288,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-breadcrumbs-items-loop.tpl",
-      "layout_name": "menu-breadcrumbs-items-loop",
-      "title": "menu-breadcrumbs-items-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-button-front.tpl",
       "layout_name": "template-cs-button-front",
       "title": "template-cs-button-front"
@@ -361,6 +305,48 @@
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1-link.tpl",
+      "layout_name": "menu-level-1-link",
+      "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-footer-content.tpl",
+      "layout_name": "template-cs-footer-content",
+      "title": "template-cs-footer-content"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl",
+      "layout_name": "template-meta",
+      "title": "template-meta"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content-content.tpl",
+      "layout_name": "template-cs-content-content",
+      "title": "template-cs-content-content"
     }
   ],
   "assets": [
