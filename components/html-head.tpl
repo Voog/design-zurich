@@ -44,6 +44,7 @@
     {% include "template-cs-table-content" %}
     {% include "template-cs-form-content" %}
     {% include "template-cs-footer-content" %}
+    {% include "template-cs-product" %}
   {% endif %}
 
 

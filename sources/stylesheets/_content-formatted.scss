@@ -270,7 +270,8 @@
 
     &-disabled {
       // scss-lint:disable NestingDepth
-      .public & {
+      .public &,
+      .product-content & {
         cursor: default;
         color: $disabled;
         border-color: $disabled;
