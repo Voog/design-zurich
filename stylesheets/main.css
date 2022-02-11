@@ -3928,6 +3928,7 @@ body.search-open {
   position: -webkit-sticky;
   position: sticky;
   top: 104px;
+  z-index: 10601;
 }
 
 @media screen and (min-width: 641px) {
