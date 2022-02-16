@@ -8,7 +8,7 @@
 
 <ul class="menu menu-horizontal menu-public menu-breadcrumbs">
   {%- for listItem in breadcrumbsObj.itemListElement offset: breadcrumbsOffset %}
-    <li class="menu-item {% if forloop.last %}current{% endif %}">
+    <li class="menu-item{% if forloop.last %} current{% endif %}">
       <a href="/{{listItem.item.id}}">{{ listItem.item.name }}</a>
     </li>
     {% if forloop.rindex > 1 %}
