@@ -377,7 +377,7 @@ body {
     }
   }
 
-  .custom-btn {
+  .custom-btn, .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     padding: calc(var(--content-button-padding) - 12px) var(--content-button-padding);
     font-size: var(--content-button-font-size);
     font-style: var(--content-button-font-style);
