@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
-{% include "edicy-tools-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
+{%- include "edicy-tools-variables" -%}
 
 <html class="{% if editmode %}editmode{% else %}public{% endif %} {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">

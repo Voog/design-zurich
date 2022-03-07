@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
-{% include "edicy-tools-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
+{%- include "edicy-tools-variables" -%}
 
 {%- if product.image == blank -%}
   {%- assign product_image_state = "without-image" -%}
