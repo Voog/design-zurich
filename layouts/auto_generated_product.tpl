@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
-{% include "edicy-tools-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
+{%- include "edicy-tools-variables" -%}
 
 {%- if product.image == blank -%}
   {%- assign product_image_state = "without-image" -%}
@@ -47,7 +48,7 @@
                     {%- if product.image != blank- %}
                       <div class="top-inner aspect-ratio-inner">
                         {%- assign image_class = "item-image not-cropped" -%}
-                        {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
                       </div>
                     {%- endif -%}
                   </div>

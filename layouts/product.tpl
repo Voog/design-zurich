@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
-{% include "edicy-tools-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
+{%- include "edicy-tools-variables" -%}
 
 {% unless page.image %}
   {% assign page_image_state = "without-image" %}
