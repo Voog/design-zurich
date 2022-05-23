@@ -18,8 +18,12 @@
 
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
-        <section class="content-body content-formatted" {{ edy_intro_edit_text }}>
-          <div class="content-formatted intro-content" data-search-indexing-allowed="true">{% content %}</div>
+        <section class="content-body content-formatted">
+          <div class="content-formatted intro-content" data-search-indexing-allowed="true">
+            {%- assign content_default_title = "content" | lce -%}
+            {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+            {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+          </div>
 
           {% include "menu-breadcrumbs" %}
           <section class="content-item-boxes">
