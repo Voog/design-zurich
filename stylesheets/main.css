@@ -1917,6 +1917,10 @@ body.search-open {
   }
 }
 
+.content .content-right {
+  padding: 43px 50px;
+}
+
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
@@ -3899,6 +3903,10 @@ body.search-open {
 
 .item-page .content-product-description {
   margin-bottom: 12px;
+}
+
+.item-page .product-cross-page-info {
+  margin-bottom: 32px;
 }
 
 .editmode .item-page .product-content .product-image {

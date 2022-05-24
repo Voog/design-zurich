@@ -22,12 +22,17 @@
         {% endif %}
 
         <div class="content-inner js-background-type {{ main_bg_type }}">
-          <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+          <section class="content-body content-formatted" data-search-indexing-allowed="true">
+            {%- assign content_default_title = "content" | lce -%}
+            {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+            {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+          </section>
         </div>
       </div>
     </main>
 
     <footer>
+      {%- assign additional_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
       <div class="sections {% if site.branding.enabled %}voog-reference-enabled{% endif %}">
         {% if feature_1_visible or editmode %}
           <div class="feature-section {{ content_bg_transparent }} {{ feature_1_empty }} {{ feature_1_section_width }} js-bg-picker-area feature-1" data-section-name="feature_1" data-bg-global="main_bg" data-bg-global-boolean="{{ content_1_global_bg_boolean }}">
@@ -39,7 +44,9 @@
             {% endif %}
 
             <div class="wrap js-background-type {{ content_bg_1_type }}">
-              <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
+              <section class="feature-content content-formatted" data-search-indexing-allowed="true">
+                {% content name="feature_1" title_tooltip=additional_content_title_tooltip %}
+              </section>
             </div>
           </div>
         {% else %}
@@ -58,7 +65,9 @@
             {% endif %}
 
             <div class="wrap js-background-type {{ content_bg_2_type }}">
-              <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_2" %}</section>
+              <section class="feature-content content-formatted" data-search-indexing-allowed="true">
+                {% content name="feature_2" title_tooltip=additional_content_title_tooltip %}
+              </section>
             </div>
           </div>
         {% else %}
@@ -77,7 +86,9 @@
             {% endif %}
 
             <div class="wrap js-background-type {{ content_bg_3_type }}">
-              <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_3" %}</section>
+              <section class="feature-content content-formatted" data-search-indexing-allowed="true">
+                {% content name="feature_3" title_tooltip=additional_content_title_tooltip %}
+              </section>
             </div>
           </div>
         {% else %}
@@ -96,7 +107,9 @@
             {% endif %}
 
             <div class="wrap js-background-type {{ content_bg_4_type }}">
-              <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_4" %}</section>
+              <section class="feature-content content-formatted" data-search-indexing-allowed="true">
+                {% content name="feature_4" title_tooltip=additional_content_title_tooltip %}
+              </section>
             </div>
           </div>
         {% endif %}

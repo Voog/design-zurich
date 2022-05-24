@@ -16,7 +16,11 @@
 
     <main class="content" role="main">
       <div class="content-inner">
-        <div class="post-intro-content content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</div>
+        <div class="post-intro-content content-formatted" data-search-indexing-allowed="true">
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </div>
         {% addbutton %}
         {% for article in articles %}
           <article class="post">
