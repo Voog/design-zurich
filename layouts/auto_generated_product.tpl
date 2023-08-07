@@ -12,6 +12,8 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %} {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" content_page: true %}
+
+  {% sd_product %}
 </head>
 
 <body class="common-page item-page product-page js-bgpicker-body-image">
