@@ -377,7 +377,8 @@ body {
     }
   }
 
-  .custom-btn, .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+  .custom-btn,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     padding: calc(var(--content-button-padding) - 12px) var(--content-button-padding);
     font-size: var(--content-button-font-size);
     font-style: var(--content-button-font-style);
@@ -458,6 +459,13 @@ body {
       }
     }
   }
+
+  .edy-buy-button-price-container {
+    .edy-buy-button-price-original,
+    .edy-buy-button-effective-price {
+      color: var(--content-body-text-color);
+    }
+  }
 }
 
 .front-page {
@@ -493,6 +501,24 @@ body {
   .feature-section {
     .content-formatted {
       line-height: var(--content-body-line-height);
+    }
+  }
+
+  .dark-background {
+    .edy-buy-button-price-container {
+      .edy-buy-button-price-original,
+      .edy-buy-button-effective-price {
+        color: var(--main-color-front);
+      }
+    }
+  }
+
+  .light-background {
+    .edy-buy-button-price-container {
+      .edy-buy-button-price-original,
+      .edy-buy-button-effective-price {
+        color: var(--secondary-color-front);
+      }
     }
   }
 }
@@ -563,7 +589,10 @@ body {
   font-size: var(--product-price-size);
   font-weight: var(--product-price-font-weight);
   font-style: var(--product-price-font-style);
-  text-decoration: var(--product-price-font-text-decoration);
+
+  .product-price-final {
+    text-decoration: var(--product-price-font-text-decoration);
+  }
 }
 
 .dark-background {
@@ -574,7 +603,6 @@ body {
         color: var(--main-color-front);
       }
 
-      .edy-product-widget-item-price,
       .edy-product-widget-item-description {
         color: var(--main-color-front);
         opacity: .7;
@@ -610,11 +638,6 @@ body {
         }
       }
 
-      .edy-product-widget-item-price {
-        color: var(--main-color-front);
-        opacity: .7;
-      }
-
       .edy-product-widget-item-out-of-stock {
         color: var(--main-color-front);
       }
@@ -639,10 +662,16 @@ body {
 }
 
 .dark-background {
+  .edy-product-widget-item-price-original,
+  .edy-product-widget-item-price-final,
   .edy-product-widget-filter-name,
   .edy-product-widget-filter-sort,
   .edy-product-widget-filter-label,
   .edy-product-widget-filter-search-input {
     color: var(--main-color-front);
+  }
+
+  .edy-product-widget-item-price-original {
+    opacity: .4;
   }
 }

@@ -599,6 +599,10 @@ body.search-open {
   padding-top: 15px;
 }
 
+.content-formatted .edy-buy-button-container .edy-buy-button-price-container .edy-buy-button-price-original {
+  opacity: .4;
+}
+
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -3897,8 +3901,14 @@ body.search-open {
   padding-bottom: 24px;
 }
 
-.item-page .product-price-divider {
-  margin: 0 4px;
+.item-page .product-price .product-price-original {
+  display: inline-block;
+  padding-right: 4px;
+  opacity: .4;
+}
+
+.item-page .product-price .product-price-final {
+  display: inline-block;
 }
 
 .item-page .content-product-description {
