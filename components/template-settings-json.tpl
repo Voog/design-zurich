@@ -1,3 +1,3 @@
 {
-  "version": "zurich-2.4.4"
+  "version": "zurich-2.5.0"
 }
