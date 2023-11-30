@@ -3,10 +3,10 @@
 {%- include "template-variables" -%}
 {%- include "edicy-tools-variables" -%}
 
-{%- if product.image == blank -%}
-  {%- assign product_image_state = "without-image" -%}
+{%- if product.photos != blank -%}
+  {%- assign product_image_state = "with-images" -%}
 {%- else -%}
-  {%- assign product_image_state = "with-image" -%}
+  {%- assign product_image_state = "without-images" -%}
 {%- endif -%}
 
 <html class="{% if editmode %}editmode{% else %}public{% endif %} {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}">
@@ -54,14 +54,11 @@
             <div class="flex-col flex-col-left">
               <div class="content-illustrations">
                 <div class="content-item-box {{ product_image_state }} js-content-item-box">
-                  <div class="item-top product-image">
-                    {%- if product.image != blank- %}
-                      <div class="top-inner aspect-ratio-inner">
-                        {%- assign image_class = "item-image not-cropped" -%}
-                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
-                      </div>
-                    {%- endif -%}
-                  </div>
+                  {%- if product.photos == blank -%}
+                    <div class="item-top"></div>
+                  {%- else -%}
+                    {% gallery product layout="product_slider" %}
+                  {%- endif -%}
                 </div>
                 {%- if gallery_content_size > 0 or editmode -%}
                   <div class="content-body formatted js-product-gallery" data-search-indexing-allowed="true">
@@ -167,10 +164,6 @@
   <script>
     if (site) {
       site.handleProductPageContent();
-
-      {%- if product and editmode -%}
-        site.handleProductImageClick({{ product.id }});
-      {% endif %}
     }
   </script>
 
